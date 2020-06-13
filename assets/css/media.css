@@ -1,0 +1,34 @@
+@media only screen and (min-width:320px) and (max-width:465px) {
+    #predict-fututre #img-bg-circle {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:800px) {
+    #predict-fututre #img-bg-circle {
+        right: 90%;
+    }
+    .card {
+        z-index: 9999;
+        background: transparent;
+    }
+    h4 {
+        font-size: 1.009rem;
+    }
+    p {
+        font-size: .1rem;
+    }
+}
+
+@media only screen and (min-width:800px) {
+    #predict-fututre #img-bg-circle {
+        right: 90%;
+    }
+    .card {
+        z-index: 9999;
+        background: transparent;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+}
