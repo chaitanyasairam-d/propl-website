@@ -11,14 +11,25 @@ body {
     font-size: 20px;
 }
 
+//font variables
+$header-font: MinionPro;
+$paragraph-font: ProximaNova;
+//color-variables
+$orange:#ff5050;
+$text-color:#061134;
 @font-face {
     font-family: MinionPro;
     src: url("../Minion\ Web\ Pro\ Bold.ttf");
 }
 
 @font-face {
-    font-family: Proxima;
+    font-family: ProximaNova;
     src: url("../ProximaNova-Regular.ttf");
+    /*mixins for margin 0 auto and custom width*/
+    @mixin marginAuto($value) {
+        margin: 0 auto;
+        width: $value;
+    }
 }
 
 
@@ -51,20 +62,21 @@ body {
 .btn-more {
     text-align: center;
     width: 120px;
-    height: 33px;
-    border-color: #ff5050;
-    background-color: #ff5050;
+    height: 40px;
+    border-color: $orange;
+    background-color: $orange;
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     margin-top: 20px;
-    font-family: ProximaNova;
+    font-family: $paragraph-font;
+    font-size: 0.75rem;
 }
 
 .underline {
     margin: 0 auto;
     width: 50px;
     height: 4px;
-    background-color: #ff5050;
+    background-color: $orange;
     border-radius: 10px;
 }
 
@@ -108,7 +120,7 @@ body {
         color: #ffffff;
         //font-weight: 800;
         font-size: 2.5rem;
-        font-family: "MinionPro", sans-serif;
+        font-family: $header-font;
         letter-spacing: 3.2px;
         text-transform: uppercase;
     }
@@ -162,6 +174,8 @@ body {
     width: 75%;
     margin: 0 auto;
     padding: 30px 0;
+    @include marginAuto(75%);
+    padding: 30px 0;
 }
 
 .testimonials {
@@ -188,6 +202,26 @@ body {
             text-align: left;
             span {
                 font-weight: bold;
+            }
+        }
+        h4 {
+            line-height: 2.27;
+            color: $text-color;
+            font-size: 1.1rem;
+            font-weight: 400;
+            text-align: left;
+        }
+        .testimonial-footer {
+            h5 {
+                color: $text-color;
+                line-height: 1.5;
+                height: 1.9rem;
+                font-size: 1rem;
+                font-weight: 400;
+                text-align: left;
+                span {
+                    font-weight: bold;
+                }
             }
         }
     }
@@ -220,16 +254,15 @@ body {
 }
 
 #predict-fututre .content-header-body h2 {
-    font-size: 38px;
+    font-size: 2.2rem;
     font-weight: bolder;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.2;
     letter-spacing: normal;
     text-align: center;
-    color: #061134;
-    /* font-family: 'Libre Baskerville', serif; */
-    font-family: MinionPro;
+    color: $text-color;
+    font-family: $header-font;
 }
 
 #predict-fututre .content-header-body>p {
@@ -240,8 +273,8 @@ body {
     line-height: 1.67;
     letter-spacing: normal;
     text-align: center;
-    color: #061134;
-    font-family: ProximaNova;
+    color: $text-color;
+    font-family: $paragraph-font;
 }
 
 #predict-fututre .card-title {
@@ -250,7 +283,8 @@ body {
     line-height: 1.76;
     letter-spacing: normal;
     text-align: center;
-    color: #061134;
+    color: $text-color;
+    font-family: $header-font;
 }
 
 #predict-fututre .card .card-body {
@@ -266,15 +300,16 @@ body {
     line-height: 1.82;
     letter-spacing: normal;
     text-align: center;
-    color: #061134;
+    color: $text-color;
     margin-top: 15px;
-    font-family: ProximaNova;
+    font-family: $paragraph-font;
+    height: 5rem;
 }
 
 #predict-fututre h4 {
     /* font-size: 1.17rem; */
     font-weight: 800;
-    font-family: MinionPro;
+    font-family: $header-font;
     /* font-family: 'Libre Baskerville', serif; */
 }
 
@@ -292,7 +327,7 @@ body {
     /* width: 338px;
     height: 50px; */
     text-align: center;
-    font-family: MinionPro;
+    font-family: $header-font;
     font-size: 50px;
     font-weight: bold;
     font-stretch: normal;
@@ -300,11 +335,11 @@ body {
     line-height: 1.2;
     letter-spacing: normal;
     text-align: left;
-    color: #061134;
+    color: $text-color;
 }
 
 #we-believe .content-header-body h1 {
-    font-family: ProximaNova;
+    font-family: $paragraph-font;
     /* font-size: 24px; */
     font-weight: 600;
     line-height: 60px;
@@ -338,7 +373,7 @@ body {
     line-height: 1.82;
     letter-spacing: normal;
     text-align: center;
-    color: #061134;
+    color: $text-color;
 }
 
 #we-believe .img-bg-circle {
