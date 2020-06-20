@@ -14,8 +14,8 @@ body {
 $header-font: MinionPro;
 $paragraph-font: ProximaNova;
 //color-variables
-$orange:#ff5050;
-$text-color:#061134;
+$orange: #ff5050;
+$text-color: #061134;
 @font-face {
   font-family: MinionPro;
   src: url("../Minion\ Web\ Pro\ Bold.ttf");
@@ -31,7 +31,8 @@ $text-color:#061134;
   margin: 0 auto;
   width: $value;
 }
-/* common styling for all sections start */
+/* common styling 
+for all sections start */
 
 .card {
   border: 0;
@@ -67,6 +68,9 @@ $text-color:#061134;
   margin-top: 20px;
   font-family: $paragraph-font;
   font-size: 0.75rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .underline {
@@ -174,6 +178,7 @@ $text-color:#061134;
     font-size: 1.1rem;
     font-weight: 400;
     text-align: left;
+    font-family: $paragraph-font;
   }
   .testimonial-footer {
     h5 {
@@ -183,8 +188,10 @@ $text-color:#061134;
       font-size: 1rem;
       font-weight: 400;
       text-align: left;
+      font-family: $paragraph-font;
       span {
         font-weight: bold;
+        font-family: $header-font;
       }
     }
   }
@@ -233,7 +240,7 @@ $text-color:#061134;
   text-align: center;
   color: $text-color;
   font-family: $paragraph-font;
-
+  @include marginAuto(80%);
 }
 
 #predict-fututre .card-title {
@@ -248,6 +255,7 @@ $text-color:#061134;
 
 #predict-fututre .card .card-body {
   text-align: center;
+  padding: 0.5rem;
 }
 
 #predict-fututre .card-body .card-text {

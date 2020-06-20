@@ -23,7 +23,8 @@ body {
 }
 
 /*mixins for margin 0 auto and custom width*/
-/* common styling for all sections start */
+/* common styling 
+for all sections start */
 .card {
   border: 0;
 }
@@ -60,6 +61,15 @@ body {
   margin-top: 20px;
   font-family: ProximaNova;
   font-size: 0.75rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .underline {
@@ -150,8 +160,8 @@ body {
 }
 
 .item {
-  width: 75%;
   margin: 0 auto;
+  width: 75%;
   padding: 30px 0;
 }
 
@@ -167,6 +177,7 @@ body {
   font-size: 1.1rem;
   font-weight: 400;
   text-align: left;
+  font-family: ProximaNova;
 }
 
 .testimonial-container .testimonial-footer h5 {
@@ -176,10 +187,12 @@ body {
   font-size: 1rem;
   font-weight: 400;
   text-align: left;
+  font-family: ProximaNova;
 }
 
 .testimonial-container .testimonial-footer h5 span {
   font-weight: bold;
+  font-family: MinionPro;
 }
 
 /*===testimonials*/
@@ -225,6 +238,8 @@ body {
   text-align: center;
   color: #061134;
   font-family: ProximaNova;
+  margin: 0 auto;
+  width: 80%;
 }
 
 #predict-fututre .card-title {
@@ -239,6 +254,7 @@ body {
 
 #predict-fututre .card .card-body {
   text-align: center;
+  padding: 0.5rem;
 }
 
 #predict-fututre .card-body .card-text {
