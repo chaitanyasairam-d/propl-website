@@ -453,8 +453,8 @@ for all sections start */
         line-height: 2.5;
         letter-spacing: normal;
         text-align: left;
-        color: #ffffff!important;
-        text-decoration: underline!important;
+        color: #ffffff !important;
+        text-decoration: underline !important;
     }
     #footer-logo-container {
         padding-bottom: 112.5px;
@@ -499,3 +499,5 @@ for all sections start */
         bottom: -88%;
     }
 }
+
+@import './experience/experience.scss';
