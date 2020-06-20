@@ -203,6 +203,21 @@ for all sections start */
   font-family: MinionPro;
 }
 
+.testimonial-container .testimonial-footer .testimonial-footer h5 {
+  color: #061134;
+  line-height: 1.5;
+  height: 1.9rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  font-family: ProximaNova;
+}
+
+.testimonial-container .testimonial-footer .testimonial-footer h5 span {
+  font-weight: bold;
+  font-family: MinionPro;
+}
+
 /*===testimonials*/
 /* common styling for all sections end */
 /* predict fututre styling start */
@@ -473,14 +488,287 @@ for all sections start */
   font-style: normal;
   line-height: 1.88;
   letter-spacing: normal;
+  text-align: left;
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+
+#footer #footer-logo-container li:nth-child(3) #footer-logo-container {
+  padding-bottom: 112.5px;
+  margin-top: 30px;
+}
+
+#footer #footer-logo-container li:nth-child(3) #footer-logo-container li:nth-child(2) {
+  font-family: ProximaNova;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+#footer #footer-logo-container li:nth-child(3) #footer-logo-container .btn {
+  width: 140px;
+  height: 40px;
+  color: #ffffff;
+}
+
+#footer #footer-logo-container li:nth-child(3) #footer-logo-container li:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer #footer-logo-container li:nth-child(3) #footer-logo-container li:nth-child(3) .footer-copy-right {
+  font-family: ProximaNova;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
   text-align: right;
   color: #ffffff;
 }
 
-#footer .footer-bg-circle {
+#footer #footer-logo-container li:nth-child(3) .footer-bg-circle {
   position: absolute;
   right: -17%;
   bottom: -88%;
+}
+
+/* Experience page styling */
+.btn-business {
+  width: 200px;
+  height: 60px;
+  padding: 18px 23px;
+  border-color: #ff5050;
+  background-color: #ff5050;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  margin-top: 20px;
+  font-family: ProximaNova;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+#business-design-sprint .back-btn {
+  font-family: ProximaNova;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.89;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#business-design-sprint .back-btn img {
+  margin-right: 10px;
+}
+
+#business-design-sprint .back-btn img:hover {
+  cursor: pointer;
+}
+
+#business-design-sprint .img-border {
+  border: 2px solid #ff5050;
+  height: 505px;
+  width: 705px;
+  position: absolute;
+  border-top-left-radius: 80px;
+  left: -20px;
+  bottom: 48px;
+  z-index: -1;
+}
+
+#business-design-sprint .card {
+  margin-top: -70px;
+}
+
+#business-design-sprint .card h1 {
+  font-family: MinionWebPro;
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#business-design-sprint .card p {
+  font-family: ProximaNova;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#desirable {
+  margin-top: 210px;
+  background-color: #061134;
+}
+
+#desirable .section-starter {
+  margin-top: 90px;
+  margin-bottom: 52px;
+}
+
+#desirable .section-header {
+  text-align: center;
+  font-family: MinionWebPro;
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+#desirable .card {
+  text-align: center;
+  margin-bottom: 182px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: solid 1px #707070;
+}
+
+#desirable .card img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+#desirable .card .card-body {
+  padding: 23px;
+  font-family: ProximaNova;
+  font-size: 28px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #061134;
+}
+
+#what-to-expect .section-starter {
+  margin-top: 200px;
+  margin-bottom: 52px;
+}
+
+#what-to-expect h3 {
+  margin-bottom: 159.5px;
+}
+
+#what-to-expect .divider-bar {
+  width: 1px;
+  height: 474px;
+  padding: 0;
+  position: absolute;
+  background-color: grey;
+  right: 50%;
+  margin-top: 525px;
+}
+
+#what-to-expect .card {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#what-to-expect .card img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+#what-to-expect .card .card-title {
+  font-family: ProximaNova;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #061134;
+}
+
+#what-to-expect .card .card-body {
+  padding: 0 3rem;
+  margin-bottom: 108px;
+  font-family: ProximaNova;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.82;
+  letter-spacing: normal;
+  text-align: center;
+  color: #061134;
+  word-wrap: break-word;
+}
+
+#what-to-expect .divider-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#what-to-expect .divider-btn .what-we-expect-underline {
+  margin: 0 40px;
+  width: 400px;
+  height: 2px;
+  background-color: #ff5050;
+  border-radius: 10px;
+}
+
+#loved-by {
+  margin-bottom: 301px;
+}
+
+#loved-by .section-starter {
+  margin-top: 200px;
+  margin-bottom: 52px;
+}
+
+.business-footer-underline {
+  margin: 0 auto;
+  width: 80vw;
+  height: 8px;
+  background-color: #ff5050;
+  border-radius: 10px;
 }
 
 /* strategy future css*/
