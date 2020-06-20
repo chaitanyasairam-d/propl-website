@@ -1,0 +1,22 @@
+/* strategy future css*/
+.strategy-img-container {
+  background-image: url(../images/special_icons/strategy_future.png);
+  background-size: cover;
+  height: 350px;
+  width: 450px;
+}
+
+.future-icon img {
+  width: 3rem;
+  margin-top: 1rem;
+}
+
+.future-header h2 {
+  font-size: 3rem;
+}
+
+.btn-back img {
+  position: relative;
+  right: 10px;
+}
+/*# sourceMappingURL=strategy-future.css.map */
