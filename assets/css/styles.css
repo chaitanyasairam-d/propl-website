@@ -9,11 +9,25 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: MinionPro;
+  src: url(../MinionPro-Bold.otf);
 }
 
 /* common styling for all sections start */
 .card {
   border: 0;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mt100 {
+  margin-top: 100px;
 }
 
 .card .group-19-icons {
@@ -26,7 +40,7 @@ body {
 
 .col-md-3,
 .col-md-4 {
-  margin-top: .6rem;
+  margin-top: 0.6rem;
 }
 
 .btn-more {
@@ -87,14 +101,14 @@ body {
   color: #ffffff;
   font-weight: 800;
   font-size: 3rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "MinionPro", sans-serif;
   letter-spacing: 3.2px;
   text-transform: uppercase;
 }
 
 .home-content-box-inner h4 {
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: "MinionPro", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 1.2px;
@@ -105,7 +119,7 @@ body {
 /*===Home Section styling*/
 /*Clients*/
 .client_icon {
-  width: 160px;
+  width: 150px;
 }
 
 .client-list {
@@ -118,25 +132,69 @@ body {
 
 .client-list li {
   list-style: none;
-  width: 25%;
+  width: 20%;
   float: left;
   margin-top: 20px;
 }
 
 /*===Clients*/
+/*testimonials*/
+.owl-nav {
+  display: none;
+}
+
+.item {
+  width: 75%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.testimonials {
+  background-color: rgba(255, 80, 80, 0.06);
+  border-top-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+}
+
+.testimonial-container h4 {
+  line-height: 2.27;
+  color: #061134;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.testimonial-container .testimonial-footer h5 {
+  color: #061134;
+  line-height: 1.5;
+  height: 1.9rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.testimonial-container .testimonial-footer h5 span {
+  font-weight: bold;
+}
+
+/*===testimonials*/
 /* common styling for all sections end */
 /* predict fututre styling start */
 #predict-fututre .img-bg-circle {
   position: absolute;
-  top: 85px;
-  right: 85%;
+  right: 90%;
   z-index: 10;
+}
+
+#predict-fututre .img-bg-circle img {
+  width: 350px;
+  height: 350px;
+  margin-top: 50%;
 }
 
 #predict-fututre .content-header-container {
   width: 100%;
   height: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 #predict-fututre .content-header-body h2 {
@@ -200,10 +258,6 @@ body {
 
 /* predict fututre styling end */
 /* we believe styling start */
-#we-believe {
-  margin-top: 200px;
-}
-
 #we-believe .content-header {
   /* width: 338px;
     height: 50px; */
@@ -226,6 +280,10 @@ body {
   line-height: 60px;
 }
 
+#we-believe .card-body {
+  padding: 0.7rem;
+}
+
 #we-believe .content-header-body p {
   width: 60%;
   margin: 0 auto;
@@ -241,7 +299,7 @@ body {
 
 #we-believe .card-text {
   font-family: ProximaNova;
-  font-size: 1.01rem;
+  font-size: 0.8rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -254,7 +312,11 @@ body {
 #we-believe .img-bg-circle {
   position: absolute;
   right: 0;
-  margin-top: 90px;
+}
+
+#we-believe .img-bg-circle img {
+  height: 350px;
+  width: 350px;
 }
 
 /* we believe styling end */
