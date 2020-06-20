@@ -14,6 +14,7 @@ body {
 //font variables
 $header-font: MinionPro;
 $paragraph-font: ProximaNova;
+$paragraph-semi-bold-font: ProximaNovaSemiBold;
 //color-variables
 $orange: #ff5050;
 $text-color: #061134;
@@ -25,11 +26,11 @@ $text-color: #061134;
 @font-face {
     font-family: ProximaNova;
     src: url("../ProximaNova-Regular.ttf");
-    /*mixins for margin 0 auto and custom width*/
-    @mixin marginAuto($value) {
-        margin: 0 auto;
-        width: $value;
-    }
+}
+
+@font-face {
+    font-family: ProximaNovaSemiBold;
+    src: url("../ProximaNova-Semibold.ttf");
 }
 
 
@@ -219,6 +220,21 @@ for all sections start */
                 font-family: $header-font;
             }
         }
+        .testimonial-footer {
+            h5 {
+                color: $text-color;
+                line-height: 1.5;
+                height: 1.9rem;
+                font-size: 1rem;
+                font-weight: 400;
+                text-align: left;
+                font-family: $paragraph-font;
+                span {
+                    font-weight: bold;
+                    font-family: $header-font;
+                }
+            }
+        }
     }
 }
 
@@ -242,13 +258,13 @@ for all sections start */
     }
 }
 
-#predict-fututre .content-header-container {
+.content-header-container {
     width: 100%;
     height: 100%;
     margin-bottom: 50px;
 }
 
-#predict-fututre .content-header-body h2 {
+.content-header-body h2 {
     font-size: 2.2rem;
     font-weight: bolder;
     font-stretch: normal;
@@ -488,16 +504,55 @@ for all sections start */
                 font-style: normal;
                 line-height: 1.88;
                 letter-spacing: normal;
-                text-align: right;
-                color: #ffffff;
+                text-align: left;
+                color: #ffffff !important;
+                text-decoration: underline !important;
+            }
+            #footer-logo-container {
+                padding-bottom: 112.5px;
+                margin-top: 30px;
+                li:nth-child(2) {
+                    font-family: ProximaNova;
+                    font-size: 16px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 2.5;
+                    letter-spacing: normal;
+                    text-align: left;
+                    color: #ffffff;
+                }
+                .btn {
+                    width: 140px;
+                    height: 40px;
+                    color: #ffffff;
+                }
+                li:nth-child(3) {
+                    display: flex;
+                    align-items: baseline;
+                    justify-content: space-between;
+                    .footer-copy-right {
+                        // display: inline-block;
+                        font-family: ProximaNova;
+                        font-size: 16px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.88;
+                        letter-spacing: normal;
+                        text-align: right;
+                        color: #ffffff;
+                    }
+                }
+            }
+            .footer-bg-circle {
+                position: absolute;
+                right: -17%;
+                bottom: -88%;
             }
         }
-    }
-    .footer-bg-circle {
-        position: absolute;
-        right: -17%;
-        bottom: -88%;
     }
 }
 
 @import './experience/experience.scss';
+@import "./strategy-future.scss";
