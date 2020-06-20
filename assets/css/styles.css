@@ -324,4 +324,45 @@ body {
 }
 
 /* we believe styling end */
+/* common footer for all section */
+#footer .footer {
+  background-color: #1a2239;
+}
+
+#footer li:nth-child(1) {
+  font-family: ProximaNova;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ff5050;
+}
+
+#footer li:nth-child(1) span {
+  opacity: 0.5;
+  font-family: ProximaNova;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.86;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+#footer li:nth-child(1) a {
+  font-family: ProximaNova;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
 /*# sourceMappingURL=styles.css.map */
