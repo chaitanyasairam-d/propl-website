@@ -21,329 +21,461 @@ body {
   font-family: ProximaNova;
   src: url("../ProximaNova-Regular.ttf");
   /*mixins for margin 0 auto and custom width*/
-  /* common styling for all sections start */
-  .card {
-    border: 0;
-  }
-  .mt50 {
-    margin-top: 50px;
-  }
-  .mt100 {
-    margin-top: 100px;
-  }
-  .card .group-19-icons {
-    width: 100px;
-    height: 100px;
-    -o-object-fit: contain;
-       object-fit: contain;
-    margin: 0 auto;
-  }
-  .col-md-3,
-  .col-md-4 {
-    margin-top: 0.6rem;
-  }
-  .btn-more {
-    text-align: center;
-    width: 120px;
-    height: 40px;
-    border-color: #ff5050;
-    background-color: #ff5050;
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    margin-top: 20px;
-    font-family: ProximaNova;
-    font-size: 0.75rem;
-  }
-  .underline {
-    margin: 0 auto;
-    width: 50px;
-    height: 4px;
-    background-color: #ff5050;
-    border-radius: 10px;
-  }
-  /*Home Section styling*/
-  #home {
-    height: 100%;
-    width: 100%;
-  }
-  #home-cover {
-    height: 100vh;
-    background-image: url(../images/rocket-launch-liftoff-long-exposure-23764.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: 9999;
-  }
-  .home-content-box {
-    height: 100%;
-    width: 100%;
-    display: table;
-  }
-  .home-content-box-inner {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-  .home_desc {
-    width: 700px;
-    margin: 0 auto;
-  }
-  .home-content-box-inner h1 {
-    color: #ffffff;
-    font-size: 2.5rem;
-    font-family: MinionPro;
-    letter-spacing: 3.2px;
-    text-transform: uppercase;
-  }
-  .home-content-box-inner h4 {
-    color: #fff;
-    font-family: "Proxima", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    letter-spacing: 1.2px;
-    margin-bottom: 30px;
-    margin-top: 20px;
-  }
-  /*===Home Section styling*/
-  /*Clients*/
-  .client_icon {
-    width: 150px;
-  }
-  .client-list {
-    float: left;
-    clear: both;
-    text-align: center;
-    padding-bottom: 50px;
-    margin: 0;
-  }
-  .client-list li {
-    list-style: none;
-    width: 20%;
-    float: left;
-    margin-top: 20px;
-  }
-  /*===Clients*/
-  /*testimonials*/
-  .owl-nav {
-    display: none;
-  }
-  .item {
-    width: 75%;
-    margin: 0 auto;
-    padding: 30px 0;
-    margin: 0 auto;
-    width: 75%;
-    padding: 30px 0;
-  }
-  .testimonials {
-    background-color: rgba(255, 80, 80, 0.06);
-    border-top-left-radius: 75px;
-    border-bottom-right-radius: 75px;
-  }
-  .testimonial-container h4 {
-    line-height: 2.27;
-    color: #061134;
-    font-size: 1.1rem;
-    font-weight: 400;
-    text-align: left;
-  }
-  .testimonial-container .testimonial-footer h5 {
-    color: #061134;
-    line-height: 1.5;
-    height: 1.9rem;
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: left;
-  }
-  .testimonial-container .testimonial-footer h5 span {
-    font-weight: bold;
-  }
-  .testimonial-container .testimonial-footer h4 {
-    line-height: 2.27;
-    color: #061134;
-    font-size: 1.1rem;
-    font-weight: 400;
-    text-align: left;
-  }
-  .testimonial-container .testimonial-footer .testimonial-footer h5 {
-    color: #061134;
-    line-height: 1.5;
-    height: 1.9rem;
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: left;
-  }
-  .testimonial-container .testimonial-footer .testimonial-footer h5 span {
-    font-weight: bold;
-  }
-  /*===testimonials*/
-  /* common styling for all sections end */
-  /* predict fututre styling start */
-  #predict-fututre .img-bg-circle {
-    position: absolute;
-    right: 90%;
-    z-index: 10;
-  }
-  #predict-fututre .img-bg-circle img {
-    width: 350px;
-    height: 350px;
-    margin-top: 50%;
-  }
-  #predict-fututre .content-header-container {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 50px;
-  }
-  #predict-fututre .content-header-body h2 {
-    font-size: 2.2rem;
-    font-weight: bolder;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
-    text-align: center;
-    color: #061134;
-    font-family: MinionPro;
-  }
-  #predict-fututre .content-header-body > p {
-    font-size: 21px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.67;
-    letter-spacing: normal;
-    text-align: center;
-    color: #061134;
-    font-family: ProximaNova;
-  }
-  #predict-fututre .card-title {
-    /* font-weight: normal; */
-    font-style: normal;
-    line-height: 1.76;
-    letter-spacing: normal;
-    text-align: center;
-    color: #061134;
-    font-family: MinionPro;
-  }
-  #predict-fututre .card .card-body {
-    text-align: center;
-  }
-  #predict-fututre .card-body .card-text {
-    /* font-size: .9rem; */
-    /* font-weight: 400; */
-    font-size: 18px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.82;
-    letter-spacing: normal;
-    text-align: center;
-    color: #061134;
-    margin-top: 15px;
-    font-family: ProximaNova;
-    height: 5rem;
-  }
-  #predict-fututre h4 {
-    /* font-size: 1.17rem; */
-    font-weight: 800;
-    font-family: MinionPro;
-    /* font-family: 'Libre Baskerville', serif; */
-  }
-  /* predict fututre styling end */
-  /* we believe styling start */
-  #we-believe .content-header {
-    /* width: 338px;
+}
+
+/*mixins for margin 0 auto and custom width*/
+/* common styling 
+for all sections start */
+.card {
+  border: 0;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+.card .group-19-icons {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 auto;
+}
+
+.col-md-3,
+.col-md-4 {
+  margin-top: 0.6rem;
+}
+
+.btn-more {
+  text-align: center;
+  width: 120px;
+  height: 40px;
+  border-color: #ff5050;
+  background-color: #ff5050;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-top: 20px;
+  font-family: ProximaNova;
+  font-size: 0.75rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.underline {
+  margin: 0 auto;
+  width: 50px;
+  height: 4px;
+  background-color: #ff5050;
+  border-radius: 10px;
+}
+
+/*Home Section styling*/
+#home {
+  height: 100%;
+  width: 100%;
+}
+
+#home-cover {
+  height: 100vh;
+  background-image: url(../images/rocket-launch-liftoff-long-exposure-23764.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 9999;
+}
+
+.home-content-box {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+.home-content-box-inner {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.home_desc {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.home-content-box-inner h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-family: MinionPro;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+
+.home-content-box-inner h4 {
+  color: #fff;
+  font-family: "Proxima", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+/*===Home Section styling*/
+/*Clients*/
+.client_icon {
+  width: 150px;
+}
+
+.client-list {
+  float: left;
+  clear: both;
+  text-align: center;
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+.client-list li {
+  list-style: none;
+  width: 20%;
+  float: left;
+  margin-top: 20px;
+}
+
+/*===Clients*/
+/*testimonials*/
+.owl-nav {
+  display: none;
+}
+
+.item {
+  width: 75%;
+  margin: 0 auto;
+  padding: 30px 0;
+  margin: 0 auto;
+  width: 75%;
+  padding: 30px 0;
+}
+
+.testimonials {
+  background-color: rgba(255, 80, 80, 0.06);
+  border-top-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+}
+
+.testimonial-container h4 {
+  line-height: 2.27;
+  color: #061134;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: left;
+  font-family: ProximaNova;
+}
+
+.testimonial-container .testimonial-footer h5 {
+  color: #061134;
+  line-height: 1.5;
+  height: 1.9rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: left;
+  font-family: ProximaNova;
+}
+
+.testimonial-container .testimonial-footer h5 span {
+  font-weight: bold;
+  font-family: MinionPro;
+}
+
+/*===testimonials*/
+/* common styling for all sections end */
+/* predict fututre styling start */
+#predict-fututre .img-bg-circle {
+  position: absolute;
+  right: 90%;
+  z-index: 10;
+}
+
+#predict-fututre .img-bg-circle img {
+  width: 350px;
+  height: 350px;
+  margin-top: 50%;
+}
+
+#predict-fututre .content-header-container {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+#predict-fututre .content-header-body h2 {
+  font-size: 2.2rem;
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #061134;
+  font-family: MinionPro;
+}
+
+#predict-fututre .content-header-body > p {
+  font-size: 21px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #061134;
+  font-family: ProximaNova;
+  margin: 0 auto;
+  width: 80%;
+}
+
+#predict-fututre .card-title {
+  /* font-weight: normal; */
+  font-style: normal;
+  line-height: 1.76;
+  letter-spacing: normal;
+  text-align: center;
+  color: #061134;
+  font-family: MinionPro;
+}
+
+#predict-fututre .card .card-body {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#predict-fututre .card-body .card-text {
+  /* font-size: .9rem; */
+  /* font-weight: 400; */
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.82;
+  letter-spacing: normal;
+  text-align: center;
+  color: #061134;
+  margin-top: 15px;
+  font-family: ProximaNova;
+  height: 5rem;
+}
+
+#predict-fututre h4 {
+  /* font-size: 1.17rem; */
+  font-weight: 800;
+  font-family: MinionPro;
+  /* font-family: 'Libre Baskerville', serif; */
+}
+
+/* predict fututre styling end */
+/* we believe styling start */
+#we-believe {
+  width: 100%;
+  overflow: hidden;
+}
+
+#we-believe .content-header {
+  /* width: 338px;
     height: 50px; */
-    text-align: center;
-    font-family: MinionPro;
-    font-size: 50px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
-    text-align: left;
-    color: #061134;
-  }
-  #we-believe .content-header-body h1 {
-    font-family: ProximaNova;
-    /* font-size: 24px; */
-    font-weight: 600;
-    line-height: 60px;
-  }
-  #we-believe .card-body {
-    padding: 0.7rem;
-  }
-  #we-believe .content-header-body p {
-    width: 60%;
-    margin: 0 auto;
-    font-family: ProximaNova;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.67;
-    letter-spacing: normal;
-    text-align: center;
-  }
-  #we-believe .card-text {
-    font-family: ProximaNova;
-    font-size: 0.8rem;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.82;
-    letter-spacing: normal;
-    text-align: center;
-    color: #061134;
-  }
-  #we-believe .img-bg-circle {
-    position: absolute;
-    right: 0;
-  }
-  #we-believe .img-bg-circle img {
-    height: 350px;
-    width: 350px;
-  }
-  /* we believe styling end */
-  /* common footer for all section */
-  #footer .footer {
-    background-color: #1a2239;
-  }
-  #footer li:nth-child(1) {
-    font-family: ProximaNova;
-    font-size: 18px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.22;
-    letter-spacing: normal;
-    text-align: left;
-    color: #ff5050;
-  }
-  #footer li:nth-child(1) span {
-    opacity: 0.5;
-    font-family: ProximaNova;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2.86;
-    letter-spacing: normal;
-    text-align: left;
-    color: #ffffff;
-  }
-  #footer li:nth-child(1) a {
-    font-family: ProximaNova;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2.5;
-    letter-spacing: normal;
-    text-align: left;
-    color: #ffffff;
-  }
+  text-align: center;
+  font-family: MinionPro;
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#we-believe .content-header-body h1 {
+  font-family: ProximaNova;
+  /* font-size: 24px; */
+  font-weight: 600;
+  line-height: 60px;
+}
+
+#we-believe .card-body {
+  padding: 0.7rem;
+}
+
+#we-believe .content-header-body p {
+  width: 60%;
+  margin: 0 auto;
+  font-family: ProximaNova;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+#we-believe .card-text {
+  font-family: ProximaNova;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.82;
+  letter-spacing: normal;
+  text-align: center;
+  color: #061134;
+}
+
+#we-believe .img-circle-container {
+  position: absolute;
+  margin-top: 150px;
+  width: 130px;
+  right: 0;
+  overflow: hidden;
+}
+
+#we-believe .img-circle-container .img-bg-circle {
+  width: 350px;
+  overflow: hidden;
+}
+
+#we-believe .img-circle-container .img-bg-circle img {
+  height: 350px;
+  width: 350px;
+  overflow: hidden;
+}
+
+/* we believe styling end */
+/* common footer for all section */
+#footer {
+  background-color: #1a2239;
+  overflow: hidden;
+}
+
+#footer .footer {
+  padding-top: 88px;
+  margin: 0 auto;
+}
+
+#footer .footer-card > ul {
+  height: 200px;
+}
+
+#footer .footer-card:nth-child(3) > ul {
+  margin-left: 3rem;
+}
+
+#footer .footer-card:nth-child(2) > ul {
+  margin-left: 1.5rem;
+}
+
+#footer .footer-card:nth-child(1) > ul {
+  margin-left: 0;
+}
+
+#footer .item-main {
+  font-family: ProximaNova;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ff5050;
+}
+
+#footer .item-main .item-span {
+  opacity: 0.5;
+  font-family: ProximaNova;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.86;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+#footer .item {
+  font-family: ProximaNova;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff !important;
+  text-decoration: underline !important;
+}
+
+#footer #footer-logo-container {
+  padding-bottom: 112.5px;
+  margin-top: 30px;
+}
+
+#footer #footer-logo-container li:nth-child(2) {
+  font-family: ProximaNova;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+#footer #footer-logo-container .btn {
+  width: 140px;
+  height: 40px;
+  color: #ffffff;
+}
+
+#footer #footer-logo-container li:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#footer #footer-logo-container li:nth-child(3) .footer-copy-right {
+  font-family: ProximaNova;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: right;
+  color: #ffffff;
+}
+
+#footer .footer-bg-circle {
+  position: absolute;
+  right: -17%;
+  bottom: -88%;
 }
 /*# sourceMappingURL=styles.css.map */

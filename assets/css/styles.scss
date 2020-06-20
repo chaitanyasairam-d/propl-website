@@ -15,8 +15,8 @@ body {
 $header-font: MinionPro;
 $paragraph-font: ProximaNova;
 //color-variables
-$orange:#ff5050;
-$text-color:#061134;
+$orange: #ff5050;
+$text-color: #061134;
 @font-face {
     font-family: MinionPro;
     src: url("../Minion\ Web\ Pro\ Bold.ttf");
@@ -33,7 +33,16 @@ $text-color:#061134;
 }
 
 
-/* common styling for all sections start */
+/*mixins for margin 0 auto and custom width*/
+
+@mixin marginAuto($value) {
+    margin: 0 auto;
+    width: $value;
+}
+
+
+/* common styling 
+for all sections start */
 
 .card {
     border: 0;
@@ -70,6 +79,9 @@ $text-color:#061134;
     margin-top: 20px;
     font-family: $paragraph-font;
     font-size: 0.75rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .underline {
@@ -187,41 +199,24 @@ $text-color:#061134;
 .testimonial-container {
     h4 {
         line-height: 2.27;
-        color: #061134;
+        color: $text-color;
         font-size: 1.1rem;
         font-weight: 400;
         text-align: left;
+        font-family: $paragraph-font;
     }
     .testimonial-footer {
         h5 {
-            color: #061134;
+            color: $text-color;
             line-height: 1.5;
             height: 1.9rem;
             font-size: 1rem;
             font-weight: 400;
             text-align: left;
+            font-family: $paragraph-font;
             span {
                 font-weight: bold;
-            }
-        }
-        h4 {
-            line-height: 2.27;
-            color: $text-color;
-            font-size: 1.1rem;
-            font-weight: 400;
-            text-align: left;
-        }
-        .testimonial-footer {
-            h5 {
-                color: $text-color;
-                line-height: 1.5;
-                height: 1.9rem;
-                font-size: 1rem;
-                font-weight: 400;
-                text-align: left;
-                span {
-                    font-weight: bold;
-                }
+                font-family: $header-font;
             }
         }
     }
@@ -275,6 +270,7 @@ $text-color:#061134;
     text-align: center;
     color: $text-color;
     font-family: $paragraph-font;
+    @include marginAuto(80%);
 }
 
 #predict-fututre .card-title {
@@ -289,6 +285,7 @@ $text-color:#061134;
 
 #predict-fututre .card .card-body {
     text-align: center;
+    padding: 0.5rem;
 }
 
 #predict-fututre .card-body .card-text {
@@ -321,6 +318,8 @@ $text-color:#061134;
 
 #we-believe {
     //   margin-top: 200px;
+    width: 100%;
+    overflow: hidden;
 }
 
 #we-believe .content-header {
@@ -376,12 +375,20 @@ $text-color:#061134;
     color: $text-color;
 }
 
-#we-believe .img-bg-circle {
+#we-believe .img-circle-container {
     position: absolute;
+    margin-top: 150px;
+    width: 130px;
     right: 0;
-    img {
-        height: 350px;
+    overflow: hidden;
+    .img-bg-circle {
         width: 350px;
+        overflow: hidden;
+        img {
+            height: 350px;
+            width: 350px;
+            overflow: hidden;
+        }
     }
 }
 
@@ -392,10 +399,29 @@ $text-color:#061134;
 /* common footer for all section */
 
 #footer {
+    background-color: #1a2239;
+    overflow: hidden;
     .footer {
-        background-color: #1a2239;
+        // background-color: red;
+        padding-top: 88px;
+        // width: 90vw;
+        // margin-left: 100px;
+        margin: 0 auto;
     }
-    li:nth-child(1) {
+    .footer-card>ul {
+        height: 200px;
+        // background-color: grey;
+    }
+    .footer-card:nth-child(3)>ul {
+        margin-left: 3rem;
+    }
+    .footer-card:nth-child(2)>ul {
+        margin-left: 1.5rem;
+    }
+    .footer-card:nth-child(1)>ul {
+        margin-left: 0;
+    }
+    .item-main {
         font-family: ProximaNova;
         font-size: 18px;
         font-weight: 600;
@@ -405,7 +431,7 @@ $text-color:#061134;
         letter-spacing: normal;
         text-align: left;
         color: #ff5050;
-        span {
+        .item-span {
             opacity: 0.5;
             font-family: ProximaNova;
             font-size: 14px;
@@ -417,7 +443,23 @@ $text-color:#061134;
             text-align: left;
             color: #ffffff;
         }
-        a {
+    }
+    .item {
+        font-family: ProximaNova;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 2.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff!important;
+        text-decoration: underline!important;
+    }
+    #footer-logo-container {
+        padding-bottom: 112.5px;
+        margin-top: 30px;
+        li:nth-child(2) {
             font-family: ProximaNova;
             font-size: 16px;
             font-weight: normal;
@@ -428,5 +470,32 @@ $text-color:#061134;
             text-align: left;
             color: #ffffff;
         }
+        .btn {
+            width: 140px;
+            height: 40px;
+            color: #ffffff;
+        }
+        li:nth-child(3) {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            .footer-copy-right {
+                // display: inline-block;
+                font-family: ProximaNova;
+                font-size: 16px;
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.88;
+                letter-spacing: normal;
+                text-align: right;
+                color: #ffffff;
+            }
+        }
+    }
+    .footer-bg-circle {
+        position: absolute;
+        right: -17%;
+        bottom: -88%;
     }
 }
