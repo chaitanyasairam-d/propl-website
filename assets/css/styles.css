@@ -14,7 +14,12 @@ body {
 
 @font-face {
   font-family: MinionPro;
-  src: url(../MinionPro-Bold.otf);
+  src: url("../Minion Web Pro Bold.ttf");
+}
+
+@font-face {
+  font-family: Proxima;
+  src: url("../ProximaNova-Regular.ttf");
 }
 
 /* common styling for all sections start */
@@ -99,8 +104,7 @@ body {
 
 .home-content-box-inner h1 {
   color: #ffffff;
-  font-weight: 800;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "MinionPro", sans-serif;
   letter-spacing: 3.2px;
   text-transform: uppercase;
@@ -108,7 +112,7 @@ body {
 
 .home-content-box-inner h4 {
   color: #fff;
-  font-family: "MinionPro", sans-serif;
+  font-family: "Proxima", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: 1.2px;
