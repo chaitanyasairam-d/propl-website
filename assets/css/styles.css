@@ -164,6 +164,16 @@ for all sections start */
   display: none;
 }
 
+.owl-theme .owl-dots .owl-dot span {
+  background: #ff5050 !important;
+  opacity: 0.4;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #ff5050;
+  opacity: 1;
+}
+
 .item {
   width: 75%;
   margin: 0 auto;
@@ -772,11 +782,18 @@ for all sections start */
 }
 
 /* strategy future css*/
-.strategy-img-container {
-  background-image: url(../images/special_icons/strategy_future.png);
+.circle-img-container {
   background-size: cover;
   height: 350px;
   width: 450px;
+}
+
+.experience {
+  background-image: url(../images/special_icons/experience_circle.png);
+}
+
+.strategy {
+  background-image: url(../images/special_icons/strategy_future.png);
 }
 
 .future-icon img {
@@ -785,7 +802,7 @@ for all sections start */
 }
 
 .future-header {
-  width: 50%;
+  width: 70%;
 }
 
 .future-header h2 {
