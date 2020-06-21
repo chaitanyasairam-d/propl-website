@@ -493,54 +493,7 @@ for all sections start */
   text-decoration: underline !important;
 }
 
-#footer #footer-logo-container li:nth-child(3) #footer-logo-container {
-  padding-bottom: 112.5px;
-  margin-top: 30px;
-}
-
-#footer #footer-logo-container li:nth-child(3) #footer-logo-container li:nth-child(2) {
-  font-family: ProximaNova;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.5;
-  letter-spacing: normal;
-  text-align: left;
-  color: #ffffff;
-}
-
-#footer #footer-logo-container li:nth-child(3) #footer-logo-container .btn {
-  width: 140px;
-  height: 40px;
-  color: #ffffff;
-}
-
-#footer #footer-logo-container li:nth-child(3) #footer-logo-container li:nth-child(3) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#footer #footer-logo-container li:nth-child(3) #footer-logo-container li:nth-child(3) .footer-copy-right {
-  font-family: ProximaNova;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.88;
-  letter-spacing: normal;
-  text-align: right;
-  color: #ffffff;
-}
-
-#footer #footer-logo-container li:nth-child(3) .footer-bg-circle {
+#footer .footer-bg-circle {
   position: absolute;
   right: -17%;
   bottom: -88%;
@@ -558,6 +511,7 @@ for all sections start */
   border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;
   margin-top: 20px;
+  line-height: 0;
   font-family: ProximaNova;
   font-size: 20px;
   font-weight: 600;
@@ -589,22 +543,26 @@ for all sections start */
 
 #business-design-sprint .img-border {
   border: 2px solid #ff5050;
-  height: 505px;
-  width: 705px;
+  height: 457px;
+  width: 651px;
   position: absolute;
   border-top-left-radius: 80px;
-  left: -20px;
-  bottom: 48px;
+  left: -13px;
+  bottom: 35px;
   z-index: -1;
 }
 
+#business-design-sprint .img-container img {
+  width: 650px;
+}
+
 #business-design-sprint .card {
-  margin-top: -70px;
+  margin-top: -60px;
 }
 
 #business-design-sprint .card h1 {
   font-family: MinionWebPro;
-  font-size: 50px;
+  font-size: 2rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -616,7 +574,7 @@ for all sections start */
 
 #business-design-sprint .card p {
   font-family: ProximaNova;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -624,6 +582,7 @@ for all sections start */
   letter-spacing: normal;
   text-align: left;
   color: #061134;
+  word-wrap: break-word;
 }
 
 #desirable {
@@ -639,7 +598,6 @@ for all sections start */
 #desirable .section-header {
   text-align: center;
   font-family: MinionWebPro;
-  font-size: 50px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -649,8 +607,23 @@ for all sections start */
   color: #ffffff;
 }
 
+#desirable .card-container {
+  margin-right: 30px;
+}
+
+#desirable .row {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
 #desirable .card {
   text-align: center;
+  width: 13rem;
+  height: 209px;
+  margin-right: 20px;
+  margin-right: auto;
+  margin-left: auto;
   margin-bottom: 182px;
   background-color: #ffffff;
   border-radius: 20px;
@@ -660,13 +633,15 @@ for all sections start */
 #desirable .card img {
   width: 100px;
   height: 100px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
 }
 
 #desirable .card .card-body {
-  padding: 23px;
+  padding: 18px;
   font-family: ProximaNova;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -683,32 +658,56 @@ for all sections start */
 
 #what-to-expect h3 {
   margin-bottom: 159.5px;
+  font-family: MinionWebPro;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
 }
 
 #what-to-expect .divider-bar {
   width: 1px;
-  height: 474px;
+  height: 430px;
   padding: 0;
   position: absolute;
   background-color: grey;
   right: 50%;
-  margin-top: 525px;
+  margin-top: 537px;
+}
+
+#what-to-expect .business-design-sprint-divider-bar {
+  height: 23rem !important;
+}
+
+#what-to-expect .col-md-6:nth-child(even) .card {
+  margin-left: 100px;
+}
+
+#what-to-expect .col-md-6:nth-child(odd) .card {
+  margin-right: 100px;
 }
 
 #what-to-expect .card {
   text-align: center;
+  width: 19rem;
   margin: 0 auto;
 }
 
 #what-to-expect .card img {
   width: 100px;
   height: 100px;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 23px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #what-to-expect .card .card-title {
   font-family: ProximaNova;
-  font-size: 30px;
+  font-size: .9rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -716,13 +715,14 @@ for all sections start */
   letter-spacing: normal;
   text-align: center;
   color: #061134;
+  margin-bottom: .5rem;
 }
 
 #what-to-expect .card .card-body {
-  padding: 0 3rem;
+  padding: 0 1rem;
   margin-bottom: 108px;
   font-family: ProximaNova;
-  font-size: 22px;
+  font-size: 15.6px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -769,6 +769,285 @@ for all sections start */
   height: 8px;
   background-color: #ff5050;
   border-radius: 10px;
+}
+
+/* Experience page styling */
+#solution-design .back-btn {
+  font-family: ProximaNova;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.89;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#solution-design .back-btn img {
+  margin-right: 10px;
+}
+
+#solution-design .back-btn img:hover {
+  cursor: pointer;
+}
+
+#solution-design .img-border {
+  border: 2px solid #ff5050;
+  height: 457px;
+  width: 651px;
+  position: absolute;
+  border-top-left-radius: 80px;
+  left: -13px;
+  bottom: 35px;
+  z-index: -1;
+}
+
+#solution-design .img-container img {
+  width: 650px;
+}
+
+#solution-design .card {
+  margin-top: -60px;
+}
+
+#solution-design .card h1 {
+  font-family: MinionWebPro;
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#solution-design .card p {
+  font-family: ProximaNova;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+  word-wrap: break-word;
+}
+
+.solution-design-divider-bar {
+  height: 450px !important;
+  margin-top: 547px !important;
+}
+
+/* Experience page styling */
+#solution-delivery .back-btn {
+  font-family: ProximaNova;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.89;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#solution-delivery .back-btn img {
+  margin-right: 10px;
+}
+
+#solution-delivery .back-btn img:hover {
+  cursor: pointer;
+}
+
+#solution-delivery .img-border {
+  border: 2px solid #ff5050;
+  height: 457px;
+  width: 651px;
+  position: absolute;
+  border-top-left-radius: 80px;
+  left: -13px;
+  bottom: 35px;
+  z-index: -1;
+}
+
+#solution-delivery .img-container img {
+  width: 650px;
+}
+
+#solution-delivery .card {
+  margin-top: -60px;
+}
+
+#solution-delivery .card h1 {
+  font-family: MinionWebPro;
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#solution-delivery .card p {
+  font-family: ProximaNova;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+  word-wrap: break-word;
+}
+
+.solution-delivery-divider-bar {
+  height: 435px !important;
+  margin-top: 530px !important;
+}
+
+/* Experience page styling */
+#innovation-transformation .back-btn {
+  font-family: ProximaNova;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.89;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#innovation-transformation .back-btn img {
+  margin-right: 10px;
+}
+
+#innovation-transformation .back-btn img:hover {
+  cursor: pointer;
+}
+
+#innovation-transformation .img-border {
+  border: 2px solid #ff5050;
+  height: 457px;
+  width: 651px;
+  position: absolute;
+  border-top-left-radius: 80px;
+  left: -13px;
+  bottom: 35px;
+  z-index: -1;
+}
+
+#innovation-transformation .img-container img {
+  width: 650px;
+}
+
+#innovation-transformation .card {
+  margin-top: -60px;
+}
+
+#innovation-transformation .card h1 {
+  font-family: MinionWebPro;
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#innovation-transformation .card p {
+  font-family: ProximaNova;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+  word-wrap: break-word;
+}
+
+.innovation-transformation-divider-bar {
+  height: 23rem !important;
+}
+
+/* Experience page styling */
+#experiential-learning .back-btn {
+  font-family: ProximaNova;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.89;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#experiential-learning .back-btn img {
+  margin-right: 10px;
+}
+
+#experiential-learning .back-btn img:hover {
+  cursor: pointer;
+}
+
+#experiential-learning .img-border {
+  border: 2px solid #ff5050;
+  height: 457px;
+  width: 651px;
+  position: absolute;
+  border-top-left-radius: 80px;
+  left: -13px;
+  bottom: 35px;
+  z-index: -1;
+}
+
+#experiential-learning .img-container img {
+  width: 650px;
+}
+
+#experiential-learning .card {
+  margin-top: -60px;
+}
+
+#experiential-learning .card h1 {
+  font-family: MinionWebPro;
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#experiential-learning .card p {
+  font-family: ProximaNova;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+  word-wrap: break-word;
+}
+
+#what-to-expect .experiential-learning-divider-bar {
+  height: 230px;
+  margin-top: 537px;
 }
 
 /* strategy future css*/

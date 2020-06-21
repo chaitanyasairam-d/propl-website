@@ -508,51 +508,18 @@ for all sections start */
                 color: #ffffff !important;
                 text-decoration: underline !important;
             }
-            #footer-logo-container {
-                padding-bottom: 112.5px;
-                margin-top: 30px;
-                li:nth-child(2) {
-                    font-family: ProximaNova;
-                    font-size: 16px;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 2.5;
-                    letter-spacing: normal;
-                    text-align: left;
-                    color: #ffffff;
-                }
-                .btn {
-                    width: 140px;
-                    height: 40px;
-                    color: #ffffff;
-                }
-                li:nth-child(3) {
-                    display: flex;
-                    align-items: baseline;
-                    justify-content: space-between;
-                    .footer-copy-right {
-                        // display: inline-block;
-                        font-family: ProximaNova;
-                        font-size: 16px;
-                        font-weight: normal;
-                        font-stretch: normal;
-                        font-style: normal;
-                        line-height: 1.88;
-                        letter-spacing: normal;
-                        text-align: right;
-                        color: #ffffff;
-                    }
-                }
-            }
-            .footer-bg-circle {
-                position: absolute;
-                right: -17%;
-                bottom: -88%;
-            }
         }
+    }
+    .footer-bg-circle {
+        position: absolute;
+        right: -17%;
+        bottom: -88%;
     }
 }
 
 @import './experience/experience.scss';
+@import './experience/experience-1.scss';
+@import './experience/experience-2.scss';
+@import './capability/capability.scss';
+@import './capability/capability-1.scss';
 @import "./strategy-future.scss";
