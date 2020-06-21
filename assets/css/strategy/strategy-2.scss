@@ -1,8 +1,8 @@
 /* Experience page styling */
 
-#solution-design {
+#growth-experiments {
     .btn-business {
-        margin-top: 2rem;
+        margin-top: 2.6rem;
     }
     .back-btn {
         font-family: ProximaNova;
@@ -24,7 +24,7 @@
     .img-border {
         border: 2px solid $orange;
         height: 457px;
-        width: 621px;
+        width: 651px;
         position: absolute;
         border-top-left-radius: 80px;
         left: -13px;
@@ -33,11 +33,10 @@
     }
     .img-container {
         img {
-            width: 620px;
+            width: 650px;
         }
     }
     .card {
-        margin-top: -55px;
         h1 {
             font-family: MinionWebPro;
             font-size: 2rem;
@@ -48,10 +47,6 @@
             letter-spacing: normal;
             text-align: left;
             color: #061134;
-        }
-        .card-body {
-            width: 18.3rem;
-            // padding-right: 1.5rem;
         }
         p {
             font-family: ProximaNova;
@@ -66,8 +61,4 @@
             word-wrap: break-word;
         }
     }
-}
-
-.solution-design-divider-bar::after {
-    height: 22.8rem!important;
 }

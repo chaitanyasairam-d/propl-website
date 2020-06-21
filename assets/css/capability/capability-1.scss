@@ -62,8 +62,7 @@
 }
 
 #what-to-expect {
-    .experiential-learning-divider-bar {
-        height: 230px;
-        margin-top: 537px;
+    .experiential-learning-divider-bar::after {
+        height: 11.5rem;
     }
 }
