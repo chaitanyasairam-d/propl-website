@@ -107,16 +107,11 @@
     .card-container {
         margin-right: 30px;
     }
-    .row {
-        align-items: baseline;
-    }
     .card {
         text-align: center;
         width: 13rem;
-        height: 209px;
         margin-right: 20px;
-        margin-right: auto;
-        margin-left: auto;
+        margin: 0 auto;
         margin-bottom: 182px;
         background-color: #ffffff;
         border-radius: 20px;
@@ -124,9 +119,7 @@
         img {
             width: 100px;
             height: 100px;
-            margin-right: auto;
-            margin-left: auto;
-            margin-top: 15px;
+            margin: 0 auto;
         }
         .card-body {
             padding: 18px;
@@ -168,9 +161,6 @@
         right: 50%;
         margin-top: 537px;
     }
-    .business-design-sprint-divider-bar {
-        height: 23rem!important;
-    }
     .col-md-6:nth-child(even) .card {
         margin-left: 100px;
     }
@@ -206,7 +196,7 @@
             padding: 0 1rem;
             margin-bottom: 108px;
             font-family: ProximaNova;
-            font-size: 15.6px;
+            font-size: 15px;
             font-weight: normal;
             font-stretch: normal;
             font-style: normal;

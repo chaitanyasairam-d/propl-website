@@ -1,0 +1,67 @@
+/* Experience page styling */
+
+#solution-design {
+    .back-btn {
+        font-family: ProximaNova;
+        font-size: 18px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.89;
+        letter-spacing: normal;
+        text-align: left;
+        color: #061134;
+        img {
+            margin-right: 10px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    .img-border {
+        border: 2px solid $orange;
+        height: 457px;
+        width: 651px;
+        position: absolute;
+        border-top-left-radius: 80px;
+        left: -13px;
+        bottom: 35px;
+        z-index: -1;
+    }
+    .img-container {
+        img {
+            width: 650px;
+        }
+    }
+    .card {
+        margin-top: -60px;
+        h1 {
+            font-family: MinionWebPro;
+            font-size: 2rem;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.2;
+            letter-spacing: normal;
+            text-align: left;
+            color: #061134;
+        }
+        p {
+            font-family: ProximaNova;
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.08;
+            letter-spacing: normal;
+            text-align: left;
+            color: #061134;
+            word-wrap: break-word;
+        }
+    }
+}
+
+.solution-design-divider-bar {
+    height: 450px!important;
+    margin-top: 547px!important;
+}
