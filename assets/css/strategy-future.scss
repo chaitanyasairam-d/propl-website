@@ -1,9 +1,15 @@
 /* strategy future css*/
-.strategy-img-container {
-  background-image: url(../images/special_icons/strategy_future.png);
+.circle-img-container {
+  //background-image: url(../images/special_icons/strategy_future.png);
   background-size: cover;
   height: 350px;
   width: 450px;
+}
+.experience {
+  background-image: url(../images/special_icons/experience_circle.png);
+}
+.strategy {
+  background-image: url(../images/special_icons/strategy_future.png);
 }
 
 .future-icon {
@@ -14,7 +20,7 @@
 }
 
 .future-header {
-  width: 50%;
+  width: 70%;
   h2 {
     font-size: 3rem;
     font-family: $header-font;
