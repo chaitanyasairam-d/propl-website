@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Propyl</title>
+    <link rel="shortcut icon" href="./assets/images/special_icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
@@ -14,7 +15,65 @@
 </head>
 
 <body>
-    <section id="home">
+    <section id="home-navbar">
+        <nav class="navbar navbar-expand-lg nav-bg">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/images/PP2.png" id="navbar-brand-img" class="" alt="Propyl">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./about-us.html">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Strategy
+          </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./strategy/strategy-future.html">Action</a>
+                            <a class="dropdown-item" href="./strategy/strategy-1.html">Another action</a>
+                            <a class="dropdown-item" href="./strategy/strategy-2.html">Another action</a>
+                            <a class="dropdown-item" href="./strategy/strategy-3.html">Another action</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Experience
+          </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./experience/experience-n.html">Action</a>
+                            <a class="dropdown-item" href="./experience/experience.html">Another action</a>
+                            <a class="dropdown-item" href="./experience/experience-1.html">Another action</a>
+                            <a class="dropdown-item" href="./experience/experience-2.html">Another action</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Capability Building
+          </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="./capability/capability-n.html">Action</a>
+                            <a class="dropdown-item" href="./capability/capability.html">Another action</a>
+                            <a class="dropdown-item" href="./capability/capability-1.html">Another action</a>
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </section>
+
+    <section id="home" style="margin-top: -65px;">
         <div id="home-cover">
             <div class="home-content-box">
                 <div class="home-content-box-inner text-center">
@@ -340,7 +399,37 @@
     <script src="assets/js/jQuery.js" charset="utf-8"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- <script src="./assets/js/app.js"></script> -->
     <script>
+        $(document).ready(function() {
+            var $nav = $('.navbar'); //Caching element
+            // hide .navbar first - you can also do this in css .nav{display:none;}
+            //$nav.hide();
+
+            // $('#experience').on('click', () => {
+            //     $('#experience')
+            // })
+
+
+            // fade in .navbar
+            $(function() {
+                $(window).scroll(function() {
+                    var $scroll = $(this).scrollTop()
+                        // set distance user needs to scroll before we start fadeIn
+                    if ($scroll > 100) { //For dynamic effect use $nav.height() instead of '100'
+                        $nav.addClass('fixed-top navbar-bg-onscroll ').slideDown('slow');
+                        $('#navbar-brand-img').attr('src', './assets/images/special_icons/PP2_3.png')
+                        $nav.removeClass('nav-bg')
+                    } else {
+                        $nav.removeClass('fixed-top navbar-bg-onscroll');
+                        $('#navbar-brand-img').attr('src', './assets/images/PP2.png')
+                        $nav.addClass('nav-bg')
+
+                    }
+                });
+            });
+
+        });
         $(".owl-carousel").owlCarousel({
             loop: true,
             margin: 10,

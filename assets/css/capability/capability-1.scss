@@ -1,6 +1,9 @@
 /* Experience page styling */
 
 #experiential-learning {
+    .btn-business {
+        margin-top: 1.6rem;
+    }
     .back-btn {
         font-family: ProximaNova;
         font-size: 18px;
@@ -34,7 +37,8 @@
         }
     }
     .card {
-        margin-top: -60px;
+        margin-top: -20px;
+        margin-left: 50px;
         h1 {
             font-family: MinionWebPro;
             font-size: 2rem;

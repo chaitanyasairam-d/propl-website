@@ -48,21 +48,21 @@
     }
     .img-border {
         border: 2px solid $orange;
-        height: 457px;
-        width: 621px;
+        height: 434px;
+        width: 635px;
         position: absolute;
         border-top-left-radius: 80px;
         left: -13px;
-        bottom: 35px;
+        bottom: 47px;
         z-index: -1;
     }
     .img-container {
         img {
-            width: 620px;
+            width: 100%;
         }
     }
     .card {
-        margin-top: -60px;
+        margin-top: -45px;
         h1 {
             font-family: MinionWebPro;
             font-size: 2rem;
