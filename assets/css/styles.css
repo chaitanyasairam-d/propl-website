@@ -27,6 +27,11 @@ body {
   src: url("../ProximaNova-Semibold.ttf");
 }
 
+@font-face {
+  font-family: ProximaNovaBold;
+  src: url("../ProximaNova-Bold.ttf");
+}
+
 /*mixins for margin 0 auto and custom width*/
 /* common styling 
 for all sections start */
@@ -259,6 +264,19 @@ for all sections start */
   text-align: center;
   color: #061134;
   font-family: MinionPro;
+}
+
+.content-header-body p {
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #061134;
+  font-family: ProximaNova;
+  margin: 0 auto;
+  width: 75%;
 }
 
 #predict-fututre .content-header-body > p {
@@ -1075,6 +1093,10 @@ for all sections start */
   background-image: url(../images/special_icons/strategy_future.png);
 }
 
+.capability {
+  background-image: url(../images/special_icons/capability_circle.png);
+}
+
 .future-icon img {
   width: 3rem;
   margin-top: 1rem;
@@ -1209,6 +1231,7 @@ for all sections start */
   font-size: 0.8rem;
   line-height: 2.08;
   color: #061134;
+  text-align: center;
 }
 
 .do-list ul li .orange-background {
@@ -1223,5 +1246,118 @@ for all sections start */
 .do-list ul li .orange-background .btn-more {
   background: #ffffff;
   color: #ff5050;
+}
+
+.capability-width .do-list {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.propl-about-container {
+  height: 18rem;
+  background-color: #ff5050;
+  border-radius: 75px 0px 75px;
+}
+
+.propl-about-container img {
+  width: 60%;
+}
+
+.love-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.love-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.love-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33%;
+          flex: 1 1 33%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.love-list li .list-container .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.love-list li .list-container .title h4 {
+  font-family: ProximaNovaBold;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.love-list li .list-container .text {
+  font-family: ProximaNova;
+  line-height: 1.82;
+  font-size: 0.75rem;
+  margin: 0 auto;
+  width: 70%;
+  height: 5rem;
+}
+
+.love-list li .list-container .text p {
+  margin-bottom: 0;
+}
+
+.contact-container {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.contact-container .contact-box {
+  border-radius: 20px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-container .get-in-touch-bg img {
+  height: 250px;
+  overflow: visible;
+  margin: -60px 30px 0px 30px;
+}
+
+.contact-container .text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-container .text-container p {
+  font-family: ProximaNova;
+  width: 70%;
 }
 /*# sourceMappingURL=styles.css.map */

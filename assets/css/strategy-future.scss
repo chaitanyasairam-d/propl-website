@@ -11,6 +11,9 @@
 .strategy {
   background-image: url(../images/special_icons/strategy_future.png);
 }
+.capability {
+  background-image: url(../images/special_icons/capability_circle.png);
+}
 
 .future-icon {
   img {
@@ -115,6 +118,7 @@
             font-size: 0.8rem;
             line-height: 2.08;
             color: $text-color;
+            text-align: center;
           }
         }
       }
@@ -130,5 +134,10 @@
         }
       }
     }
+  }
+}
+.capability-width {
+  .do-list {
+    @include marginAuto(60%);
   }
 }
