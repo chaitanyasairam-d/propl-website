@@ -1,706 +1,710 @@
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        
-        html,
-        body {
-            height: 100%;
-            text-rendering: optimizeLegibility;
-            box-sizing: border-box;
-            font-size: 20px;
-        }
-        
-        //font variables
-        $header-font: MinionPro;
-        $paragraph-font: ProximaNova;
-        $paragraph-semi-bold-font: ProximaNovaSemiBold;
-        //color-variables
-        $orange: #ff5050;
-        $text-color: #061134;
-        @font-face {
-            font-family: MinionPro;
-            src: url("../Minion\ Web\ Pro\ Bold.ttf");
-        }
-        
-        @font-face {
-            font-family: ProximaNova;
-            src: url("../ProximaNova-Regular.ttf");
-        }
-        
-        @font-face {
-            font-family: ProximaNovaSemiBold;
-            src: url("../ProximaNova-Semibold.ttf");
-        }
-        /*mixins for margin 0 auto and custom width*/
-        
-        @mixin marginAuto($value) {
-            margin: 0 auto;
-            width: $value;
-        }
-        
-        section:nth-child(2):not(#home) {
-            margin-top: 100px!important;
-        }
-        
-        // navbar styling
-        // .navbar-toggler {
-        //     border: none;
-        //     background: transparent !important;
-        // }
-        // .navbar-toggler:focus {
-        //     outline: none;
-        //     background: transparent !important;
-        // }
-        // .navbar-toggler .icon-bar {
-        //     background-color: #fff;
-        //     transform: rotate(0deg) translate(0px, 0px);
-        //     transition: ease all .2s;
-        // }
-        // .navbar-toggler .icon-bar {
-        //     display: block;
-        //     width: 22px;
-        //     height: 2px;
-        //     border-radius: 1px;
-        // }
-        // .navbar-toggler .icon-bar+.icon-bar {
-        //     margin-top: 4px;
-        // }
-        // .icon-bar:nth-child(2) {
-        //     transition: ease all .2s;
-        // }
-        // .navbar-toggler:hover>.icon-bar:nth-child(2) {
-        //     width: 22px;
-        //     transition: ease all .2s;
-        // }
-        // .navbar-toggler:active>.icon-bar:nth-child(2) {
-        //     width: 22px;
-        //     transition: ease all .2s;
-        // }
-        // .navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
-        //     transform: rotate(45deg) translate(5px, 4px);
-        //     transition: ease all .2s;
-        // }
-        // .navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
-        //     opacity: 0;
-        //     transition: ease all .2s;
-        // }
-        // .navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
-        //     transform: rotate(-45deg) translate(4px, -4px);
-        //     transition: ease all .2s;
-        // }
-        // .bootstrap-select .dropdown-toggle:focus {
-        //     outline: 0 !important;
-        // }
-        // .wrapper {
-        //     max-width: 960px;
-        //     margin: 0 auto;
-        // }
-        // .navbar {
-        //     padding: 10px 50px;
-        //     position: absolute;
-        //     width: 100%;
-        //     transition: all .33s cubic-bezier(.694, .0482, .335, 1);
-        // }
-        .nav-bg {
-            background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
-            padding: 0 10rem;
-        }
-        
-        .nav-link {
-            color: white;
-        }
-        
-        .navbar-content {
-            width: 100%;
-        }
-        
-        .navbar-bg-onscroll {
-            height: 4rem;
-            font-size: .9rem;
-            background-color: #ffffff;
-            box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-            padding: 0 10rem;
-            z-index: 99999999;
-            .dropdown-menu {
-                // position: relative;
-                margin-top: 20px;
-                box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-            }
-            .nav-link {
-                color: #0b1120!important;
-            }
-        }
-        
-        .dropdown-item {
-            font-size: .8rem;
-            font-family: ProximaNova;
-        }
-        
-        // .navbar-sticky {
-        //     position: sticky;
-        //     top: 0;
-        //     box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
-        //     transition: all .33s cubic-bezier(.694, .0482, .335, 1);
-        //     z-index: 999999999999999;
-        // }
-        .navbar-brand img {
-            width: 145px;
-        }
-        
-        // .nav-item a {
-        //     padding: 0;
-        // }
-        // .navbar-light .nav-item .nav-link {
-        //     color: #ffffff;
-        //     font-size: .83rem;
-        //     font-weight: 400;
-        //     // letter-spacing: -0.2px;
-        //     font-family: ProximaNova;
-        //     text-align: right;
-        //     display: inline-block;
-        //     position: relative;
-        //     text-transform: uppercase;
-        //     margin: 0 13px !important;
-        // }
-        .nav-item .nav-link:hover {
-            color: #ffffff;
-            transition: all .3s;
-        }
-        
-        .nav-link::before {
-            transition: .7s;
-            height: 2.5px;
-            content: "";
-            position: absolute;
-            background-color: #006df0 !important;
-        }
-        
-        .nav-underline {
-            height: 2px;
-            background-color: #006df0;
-            width: 85%;
-            margin: auto;
-        }
-        
-        // .dropdown-list {
-        //     display: none;
-        //     position: absolute;
-        //     background-color: #f9f9f9;
-        //     margin-top: .2rem;
-        //     padding: 12px 18px;
-        //     border-radius: 5px;
-        //     z-index: 1;
-        // }
-        // li:hover .dropdown-list {
-        //     display: block;
-        // }
-        // .navbar-menu {
-        //     position: absolute;
-        //     padding: .1rem .9rem .4rem;
-        //     margin-top: .5rem;
-        //     background-color: #ffffff;
-        //     border-radius: 5px;
-        //     top: 0
-        // }
-        // .nav-active {
-        //     color: #006df0 !important;
-        //     font-weight: 500 !important;
-        // }
-        // .nav-link-ltr::before {
-        //     width: 0%;
-        //     bottom: -5px;
-        // }
-        // .nav-link-ltr:hover::before {
-        //     width: 100%;
-        // }
-        // .navbar-toggle .icon-bar:nth-of-type(2) {
-        //     top: 1px;
-        // }
-        // navbar styling end
-        /* common styling 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+//font variables
+$header-font: MinionPro;
+$paragraph-font: ProximaNova;
+$paragraph-semi-bold-font: ProximaNovaSemiBold;
+//color-variables
+$orange: #ff5050;
+$text-color: #061134;
+@font-face {
+  font-family: MinionPro;
+  src: url("../Minion\ Web\ Pro\ Bold.ttf");
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url("../ProximaNova-Regular.ttf");
+}
+
+@font-face {
+  font-family: ProximaNovaSemiBold;
+  src: url("../ProximaNova-Semibold.ttf");
+}
+/*mixins for margin 0 auto and custom width*/
+
+@mixin marginAuto($value) {
+  margin: 0 auto;
+  width: $value;
+}
+
+section:nth-child(2):not(#home) {
+  margin-top: 100px !important;
+}
+
+// navbar styling
+// .navbar-toggler {
+//     border: none;
+//     background: transparent !important;
+// }
+// .navbar-toggler:focus {
+//     outline: none;
+//     background: transparent !important;
+// }
+// .navbar-toggler .icon-bar {
+//     background-color: #fff;
+//     transform: rotate(0deg) translate(0px, 0px);
+//     transition: ease all .2s;
+// }
+// .navbar-toggler .icon-bar {
+//     display: block;
+//     width: 22px;
+//     height: 2px;
+//     border-radius: 1px;
+// }
+// .navbar-toggler .icon-bar+.icon-bar {
+//     margin-top: 4px;
+// }
+// .icon-bar:nth-child(2) {
+//     transition: ease all .2s;
+// }
+// .navbar-toggler:hover>.icon-bar:nth-child(2) {
+//     width: 22px;
+//     transition: ease all .2s;
+// }
+// .navbar-toggler:active>.icon-bar:nth-child(2) {
+//     width: 22px;
+//     transition: ease all .2s;
+// }
+// .navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+//     transform: rotate(45deg) translate(5px, 4px);
+//     transition: ease all .2s;
+// }
+// .navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+//     opacity: 0;
+//     transition: ease all .2s;
+// }
+// .navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+//     transform: rotate(-45deg) translate(4px, -4px);
+//     transition: ease all .2s;
+// }
+// .bootstrap-select .dropdown-toggle:focus {
+//     outline: 0 !important;
+// }
+// .wrapper {
+//     max-width: 960px;
+//     margin: 0 auto;
+// }
+// .navbar {
+//     padding: 10px 50px;
+//     position: absolute;
+//     width: 100%;
+//     transition: all .33s cubic-bezier(.694, .0482, .335, 1);
+// }
+.nav-bg {
+  background-image: linear-gradient(
+    to bottom,
+    #0b1120 65%,
+    rgba(11, 17, 33, 0) 77%
+  );
+  padding: 0 10rem;
+}
+
+.nav-link {
+  color: white;
+}
+
+.navbar-content {
+  width: 100%;
+}
+
+.navbar-bg-onscroll {
+  height: 4rem;
+  font-size: 0.9rem;
+  background-color: #ffffff;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+  padding: 0 10rem;
+  z-index: 99999999;
+  .dropdown-menu {
+    // position: relative;
+    margin-top: 20px;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+  }
+  .nav-link {
+    color: #0b1120 !important;
+  }
+}
+
+.dropdown-item {
+  font-size: 0.8rem;
+  font-family: ProximaNova;
+}
+
+// .navbar-sticky {
+//     position: sticky;
+//     top: 0;
+//     box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+//     transition: all .33s cubic-bezier(.694, .0482, .335, 1);
+//     z-index: 999999999999999;
+// }
+.navbar-brand img {
+  width: 145px;
+}
+
+// .nav-item a {
+//     padding: 0;
+// }
+// .navbar-light .nav-item .nav-link {
+//     color: #ffffff;
+//     font-size: .83rem;
+//     font-weight: 400;
+//     // letter-spacing: -0.2px;
+//     font-family: ProximaNova;
+//     text-align: right;
+//     display: inline-block;
+//     position: relative;
+//     text-transform: uppercase;
+//     margin: 0 13px !important;
+// }
+.nav-item .nav-link:hover {
+  color: #ffffff;
+  transition: all 0.3s;
+}
+
+.nav-link::before {
+  transition: 0.7s;
+  height: 2.5px;
+  content: "";
+  position: absolute;
+  background-color: #006df0 !important;
+}
+
+.nav-underline {
+  height: 2px;
+  background-color: #006df0;
+  width: 85%;
+  margin: auto;
+}
+
+// .dropdown-list {
+//     display: none;
+//     position: absolute;
+//     background-color: #f9f9f9;
+//     margin-top: .2rem;
+//     padding: 12px 18px;
+//     border-radius: 5px;
+//     z-index: 1;
+// }
+// li:hover .dropdown-list {
+//     display: block;
+// }
+// .navbar-menu {
+//     position: absolute;
+//     padding: .1rem .9rem .4rem;
+//     margin-top: .5rem;
+//     background-color: #ffffff;
+//     border-radius: 5px;
+//     top: 0
+// }
+// .nav-active {
+//     color: #006df0 !important;
+//     font-weight: 500 !important;
+// }
+// .nav-link-ltr::before {
+//     width: 0%;
+//     bottom: -5px;
+// }
+// .nav-link-ltr:hover::before {
+//     width: 100%;
+// }
+// .navbar-toggle .icon-bar:nth-of-type(2) {
+//     top: 1px;
+// }
+// navbar styling end
+/* common styling 
 for all sections start */
-        
-        .card {
-            border: 0;
+
+.card {
+  border: 0;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+.card .group-19-icons {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.col-md-3,
+.col-md-4 {
+  margin-top: 0.6rem;
+}
+
+.btn-more {
+  text-align: center;
+  width: 120px;
+  height: 40px;
+  border-color: $orange;
+  background-color: $orange;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-top: 20px;
+  font-family: $paragraph-font;
+  font-size: 0.75rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.underline {
+  margin: 0 auto;
+  width: 50px;
+  height: 4px;
+  background-color: $orange;
+  border-radius: 10px;
+}
+/*Home Section styling*/
+
+#home {
+  height: 100%;
+  width: 100%;
+}
+
+#home-cover {
+  height: 100vh;
+  background-image: url(../images/rocket-launch-liftoff-long-exposure-23764.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 9999;
+}
+
+.home-content-box {
+  height: 100%;
+  width: 100%;
+  display: table;
+}
+
+.home-content-box-inner {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home_desc {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.home-content-box-inner {
+  h1 {
+    color: #ffffff;
+    //font-weight: 800;
+    font-size: 2.5rem;
+    font-family: $header-font;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+  }
+  h4 {
+    color: #fff;
+    font-family: "Proxima", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+}
+/*===Home Section styling*/
+/*Clients*/
+
+.client_icon {
+  width: 150px;
+}
+
+.client-list {
+  float: left;
+  clear: both;
+  text-align: center;
+  padding-bottom: 50px;
+  margin: 0;
+}
+
+.client-list li {
+  list-style: none;
+  width: 20%;
+  float: left;
+  margin-top: 20px;
+}
+/*===Clients*/
+/*testimonials*/
+
+.owl-nav {
+  display: none;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: $orange !important;
+  opacity: 0.4;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: $orange;
+  opacity: 1;
+}
+
+.item {
+  width: 75%;
+  margin: 0 auto;
+  padding: 30px 0;
+  @include marginAuto(75%);
+  padding: 30px 0;
+}
+
+.testimonials {
+  background-color: rgba(255, 80, 80, 0.06);
+  border-top-left-radius: 75px;
+  border-bottom-right-radius: 75px;
+}
+
+.testimonial-container {
+  h4 {
+    line-height: 2.27;
+    color: $text-color;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: left;
+    font-family: $paragraph-font;
+  }
+  .testimonial-footer {
+    h5 {
+      color: $text-color;
+      line-height: 1.5;
+      height: 1.9rem;
+      font-size: 1rem;
+      font-weight: 400;
+      text-align: left;
+      font-family: $paragraph-font;
+      span {
+        font-weight: bold;
+        font-family: $header-font;
+      }
+    }
+    .testimonial-footer {
+      h5 {
+        color: $text-color;
+        line-height: 1.5;
+        height: 1.9rem;
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: left;
+        font-family: $paragraph-font;
+        span {
+          font-weight: bold;
+          font-family: $header-font;
         }
-        
-        .mt50 {
-            margin-top: 50px;
-        }
-        
-        .mt100 {
-            margin-top: 100px;
-        }
-        
-        .card .group-19-icons {
-            width: 100px;
-            height: 100px;
-            object-fit: contain;
-            margin: 0 auto;
-        }
-        
-        .col-md-3,
-        .col-md-4 {
-            margin-top: 0.6rem;
-        }
-        
-        .btn-more {
-            text-align: center;
-            width: 120px;
-            height: 40px;
-            border-color: $orange;
-            background-color: $orange;
-            border-top-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-            margin-top: 20px;
-            font-family: $paragraph-font;
-            font-size: 0.75rem;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .underline {
-            margin: 0 auto;
-            width: 50px;
-            height: 4px;
-            background-color: $orange;
-            border-radius: 10px;
-        }
-        /*Home Section styling*/
-        
-        #home {
-            height: 100%;
-            width: 100%;
-        }
-        
-        #home-cover {
-            height: 100vh;
-            background-image: url(../images/rocket-launch-liftoff-long-exposure-23764.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            z-index: 9999;
-        }
-        
-        .home-content-box {
-            height: 100%;
-            width: 100%;
-            display: table;
-        }
-        
-        .home-content-box-inner {
-            position: absolute;
-            top: 55%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
-        .home_desc {
-            width: 700px;
-            margin: 0 auto;
-        }
-        
-        .home-content-box-inner {
-            h1 {
-                color: #ffffff;
-                //font-weight: 800;
-                font-size: 2.5rem;
-                font-family: $header-font;
-                letter-spacing: 3.2px;
-                text-transform: uppercase;
-            }
-            h4 {
-                color: #fff;
-                font-family: "Proxima", sans-serif;
-                font-size: 1.2rem;
-                font-weight: 400;
-                letter-spacing: 1.2px;
-                margin-bottom: 30px;
-                margin-top: 20px;
-            }
-        }
-        /*===Home Section styling*/
-        /*Clients*/
-        
-        .client_icon {
-            width: 150px;
-        }
-        
-        .client-list {
-            float: left;
-            clear: both;
-            text-align: center;
-            padding-bottom: 50px;
-            margin: 0;
-        }
-        
-        .client-list li {
-            list-style: none;
-            width: 20%;
-            float: left;
-            margin-top: 20px;
-        }
-        /*===Clients*/
-        /*testimonials*/
-        
-        .owl-nav {
-            display: none;
-        }
-        
-        .owl-theme .owl-dots .owl-dot span {
-            background: $orange !important;
-            opacity: 0.4;
-        }
-        
-        .owl-theme .owl-dots .owl-dot.active span {
-            background: $orange;
-            opacity: 1;
-        }
-        
-        .item {
-            width: 75%;
-            margin: 0 auto;
-            padding: 30px 0;
-            @include marginAuto(75%);
-            padding: 30px 0;
-        }
-        
-        .testimonials {
-            background-color: rgba(255, 80, 80, 0.06);
-            border-top-left-radius: 75px;
-            border-bottom-right-radius: 75px;
-        }
-        
-        .testimonial-container {
-            h4 {
-                line-height: 2.27;
-                color: $text-color;
-                font-size: 1.1rem;
-                font-weight: 400;
-                text-align: left;
-                font-family: $paragraph-font;
-            }
-            .testimonial-footer {
-                h5 {
-                    color: $text-color;
-                    line-height: 1.5;
-                    height: 1.9rem;
-                    font-size: 1rem;
-                    font-weight: 400;
-                    text-align: left;
-                    font-family: $paragraph-font;
-                    span {
-                        font-weight: bold;
-                        font-family: $header-font;
-                    }
-                }
-                .testimonial-footer {
-                    h5 {
-                        color: $text-color;
-                        line-height: 1.5;
-                        height: 1.9rem;
-                        font-size: 1rem;
-                        font-weight: 400;
-                        text-align: left;
-                        font-family: $paragraph-font;
-                        span {
-                            font-weight: bold;
-                            font-family: $header-font;
-                        }
-                    }
-                }
-            }
-        }
-        /*===testimonials*/
-        /* common styling for all sections end */
-        /* predict fututre styling start */
-        
-        #predict-fututre .img-bg-circle {
-            position: absolute;
-            right: 90%;
-            z-index: 10;
-            img {
-                width: 350px;
-                height: 350px;
-                margin-top: 50%;
-            }
-        }
-        
-        .content-header-container {
-            width: 100%;
-            height: 100%;
-            margin-bottom: 50px;
-        }
-        
-        .content-header-body h2 {
-            font-size: 2.2rem;
-            font-weight: bolder;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.2;
-            letter-spacing: normal;
-            text-align: center;
-            color: $text-color;
-            font-family: $header-font;
-        }
-        
-        .content-header-body p {
-            font-size: 1rem;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.2;
-            letter-spacing: normal;
-            text-align: center;
-            color: $text-color;
-            font-family: $paragraph-font;
-            @include marginAuto(75%);
-        }
-        
-        #predict-fututre .content-header-body>p {
-            font-size: 21px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.67;
-            letter-spacing: normal;
-            text-align: center;
-            color: $text-color;
-            font-family: $paragraph-font;
-            @include marginAuto(80%);
-        }
-        
-        #predict-fututre .card-title {
-            /* font-weight: normal; */
-            font-style: normal;
-            line-height: 1.76;
-            letter-spacing: normal;
-            text-align: center;
-            color: $text-color;
-            font-family: $header-font;
-        }
-        
-        #predict-fututre .card .card-body {
-            text-align: center;
-            padding: 0.5rem;
-        }
-        
-        #predict-fututre .card-body .card-text {
-            /* font-size: .9rem; */
-            /* font-weight: 400; */
-            font-size: 18px;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.82;
-            letter-spacing: normal;
-            text-align: center;
-            color: $text-color;
-            margin-top: 15px;
-            font-family: $paragraph-font;
-            height: 5rem;
-        }
-        
-        #predict-fututre h4 {
-            /* font-size: 1.17rem; */
-            font-weight: 800;
-            font-family: $header-font;
-            /* font-family: 'Libre Baskerville', serif; */
-        }
-        /* predict fututre styling end */
-        /* we believe styling start */
-        
-        #we-believe {
-            //   margin-top: 200px;
-            width: 100%;
-            overflow: hidden;
-        }
-        
-        #we-believe .content-header {
-            /* width: 338px;
+      }
+    }
+  }
+}
+/*===testimonials*/
+/* common styling for all sections end */
+/* predict fututre styling start */
+
+#predict-fututre .img-bg-circle {
+  position: absolute;
+  right: 90%;
+  z-index: 10;
+  img {
+    width: 350px;
+    height: 350px;
+    margin-top: 50%;
+  }
+}
+
+.content-header-container {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.content-header-body h2 {
+  font-size: 2.2rem;
+  font-weight: bolder;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: $text-color;
+  font-family: $header-font;
+}
+
+.content-header-body p {
+  font-size: 1rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: $text-color;
+  font-family: $paragraph-font;
+  @include marginAuto(75%);
+}
+
+#predict-fututre .content-header-body > p {
+  font-size: 21px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: $text-color;
+  font-family: $paragraph-font;
+  @include marginAuto(80%);
+}
+
+#predict-fututre .card-title {
+  /* font-weight: normal; */
+  font-style: normal;
+  line-height: 1.76;
+  letter-spacing: normal;
+  text-align: center;
+  color: $text-color;
+  font-family: $header-font;
+}
+
+#predict-fututre .card .card-body {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+#predict-fututre .card-body .card-text {
+  /* font-size: .9rem; */
+  /* font-weight: 400; */
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.82;
+  letter-spacing: normal;
+  text-align: center;
+  color: $text-color;
+  margin-top: 15px;
+  font-family: $paragraph-font;
+  height: 5rem;
+}
+
+#predict-fututre h4 {
+  /* font-size: 1.17rem; */
+  font-weight: 800;
+  font-family: $header-font;
+  /* font-family: 'Libre Baskerville', serif; */
+}
+/* predict fututre styling end */
+/* we believe styling start */
+
+#we-believe {
+  //   margin-top: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#we-believe .content-header {
+  /* width: 338px;
     height: 50px; */
-            text-align: center;
-            font-family: $header-font;
-            font-size: 50px;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.2;
-            letter-spacing: normal;
-            text-align: left;
-            color: $text-color;
-        }
-        
-        #we-believe .content-header-body h1 {
-            font-family: $paragraph-font;
-            /* font-size: 24px; */
-            font-weight: 600;
-            line-height: 60px;
-        }
-        
-        #we-believe {
-            .card-body {
-                padding: 0.7rem;
-            }
-        }
-        
-        #we-believe .content-header-body p {
-            width: 60%;
-            margin: 0 auto;
-            font-family: ProximaNova;
-            font-size: 20px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.67;
-            letter-spacing: normal;
-            text-align: center;
-        }
-        
-        #we-believe .card-text {
-            font-family: ProximaNova;
-            font-size: 0.8rem;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.82;
-            letter-spacing: normal;
-            text-align: center;
-            color: $text-color;
-        }
-        
-        #we-believe .img-circle-container {
-            position: absolute;
-            margin-top: 150px;
-            width: 130px;
-            right: 0;
-            overflow: hidden;
-            .img-bg-circle {
-                width: 350px;
-                overflow: hidden;
-                img {
-                    height: 350px;
-                    width: 350px;
-                    overflow: hidden;
-                }
-            }
-        }
-        /* we believe styling end */
-        /* common footer for all section */
-        
-        #footer {
-            background-color: #1a2239;
-            overflow: hidden;
-            .footer {
-                // background-color: red;
-                padding-top: 88px;
-                // width: 90vw;
-                // margin-left: 100px;
-                margin: 0 auto;
-            }
-            .footer-card>ul {
-                height: 200px;
-                // background-color: grey;
-            }
-            .footer-card:nth-child(3)>ul {
-                margin-left: 3rem;
-            }
-            .footer-card:nth-child(2)>ul {
-                margin-left: 1.5rem;
-            }
-            .footer-card:nth-child(1)>ul {
-                margin-left: 0;
-            }
-            .item-main {
-                font-family: ProximaNova;
-                font-size: 18px;
-                font-weight: 600;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.22;
-                letter-spacing: normal;
-                text-align: left;
-                color: #ff5050;
-                .item-span {
-                    opacity: 0.5;
-                    font-family: ProximaNova;
-                    font-size: 14px;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 2.86;
-                    letter-spacing: normal;
-                    text-align: left;
-                    color: #ffffff;
-                }
-            }
-            .item {
-                font-family: ProximaNova;
-                font-size: 16px;
-                font-weight: normal;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 2.5;
-                letter-spacing: normal;
-                text-align: left;
-                color: #ffffff !important;
-                text-decoration: underline !important;
-            }
-            #footer-logo-container {
-                padding-bottom: 112.5px;
-                margin-top: 30px;
-                li {
-                    width: 90%;
-                }
-                li:nth-child(2) {
-                    font-family: ProximaNova;
-                    font-size: 16px;
-                    font-weight: normal;
-                    font-stretch: normal;
-                    font-style: normal;
-                    line-height: 2.5;
-                    letter-spacing: normal;
-                    text-align: left;
-                    color: #ffffff;
-                }
-                .btn {
-                    width: 140px;
-                    height: 40px;
-                    color: #ffffff;
-                }
-                li:nth-child(3) {
-                    display: flex;
-                    align-items: baseline;
-                    justify-content: space-between;
-                    .footer-copy-right {
-                        // display: inline-block;
-                        font-family: ProximaNova;
-                        font-size: 16px;
-                        font-weight: normal;
-                        font-stretch: normal;
-                        font-style: normal;
-                        line-height: 1.88;
-                        letter-spacing: normal;
-                        text-align: left;
-                        color: #ffffff !important;
-                        text-decoration: underline !important;
-                    }
-                }
-                .footer-bg-circle {
-                    position: absolute;
-                    right: -8%;
-                    bottom: -88%;
-                }
-            }
-        }
-        
-        @import "./experience/experience.scss";
-        @import "./experience/experience-1.scss";
-        @import "./experience/experience-2.scss";
-        @import "./capability/capability.scss";
-        @import "./capability/capability-1.scss";
-        @import "./strategy/strategy-future.scss";
-        @import "./strategy/strategy.scss";
-        @import "./strategy/strategy-2.scss";
-        @import "./strategy/strategy-3.scss";
-        @import "./about.scss";
+  text-align: center;
+  font-family: $header-font;
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: $text-color;
+}
+
+#we-believe .content-header-body h1 {
+  font-family: $paragraph-font;
+  /* font-size: 24px; */
+  font-weight: 600;
+  line-height: 60px;
+}
+
+#we-believe {
+  .card-body {
+    padding: 0.7rem;
+  }
+}
+
+#we-believe .content-header-body p {
+  width: 60%;
+  margin: 0 auto;
+  font-family: ProximaNova;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+#we-believe .card-text {
+  font-family: ProximaNova;
+  font-size: 0.8rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.82;
+  letter-spacing: normal;
+  text-align: center;
+  color: $text-color;
+}
+
+#we-believe .img-circle-container {
+  position: absolute;
+  margin-top: 150px;
+  width: 130px;
+  right: 0;
+  overflow: hidden;
+  .img-bg-circle {
+    width: 350px;
+    overflow: hidden;
+    img {
+      height: 350px;
+      width: 350px;
+      overflow: hidden;
+    }
+  }
+}
+/* we believe styling end */
+/* common footer for all section */
+
+#footer {
+  background-color: #1a2239;
+  overflow: hidden;
+  .footer {
+    // background-color: red;
+    padding-top: 88px;
+    // width: 90vw;
+    // margin-left: 100px;
+    margin: 0 auto;
+  }
+  .footer-card > ul {
+    height: 200px;
+    // background-color: grey;
+  }
+  .footer-card:nth-child(3) > ul {
+    margin-left: 3rem;
+  }
+  .footer-card:nth-child(2) > ul {
+    margin-left: 1.5rem;
+  }
+  .footer-card:nth-child(1) > ul {
+    margin-left: 0;
+  }
+  .item-main {
+    font-family: ProximaNova;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ff5050;
+    .item-span {
+      opacity: 0.5;
+      font-family: ProximaNova;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.86;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+    }
+  }
+  .item {
+    font-family: ProximaNova;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff !important;
+    text-decoration: underline !important;
+  }
+  #footer-logo-container {
+    padding-bottom: 112.5px;
+    margin-top: 30px;
+    li {
+      width: 90%;
+    }
+    li:nth-child(2) {
+      font-family: ProximaNova;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 2.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ffffff;
+    }
+    .btn {
+      width: 140px;
+      height: 40px;
+      color: #ffffff;
+    }
+    li:nth-child(3) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      .footer-copy-right {
+        // display: inline-block;
+        font-family: ProximaNova;
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.88;
+        letter-spacing: normal;
+        text-align: left;
+        color: #ffffff !important;
+        text-decoration: underline !important;
+      }
+    }
+    .footer-bg-circle {
+      position: absolute;
+      right: -8%;
+      bottom: -88%;
+    }
+  }
+}
+
+@import "./experience/experience.scss";
+@import "./experience/experience-1.scss";
+@import "./experience/experience-2.scss";
+@import "./capability/capability.scss";
+@import "./capability/capability-1.scss";
+@import "./strategy/strategy-future.scss";
+@import "./strategy/strategy.scss";
+@import "./strategy/strategy-2.scss";
+@import "./strategy/strategy-3.scss";
+@import "./about.scss";

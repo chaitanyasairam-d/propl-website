@@ -1,19 +1,32 @@
 /* strategy future css*/
+
+.strategy-container {
+  @include marginAuto(90%);
+}
 .circle-img-container {
-  //background-image: url(../images/special_icons/strategy_future.png);
-  background-size: cover;
-  height: 350px;
-  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110%;
+  img {
+    width: 20rem;
+  }
 }
-.experience {
-  background-image: url(../images/special_icons/experience_circle.png);
-}
-.strategy {
-  background-image: url(../images/special_icons/strategy_future.png);
-}
-.capability {
-  background-image: url(../images/special_icons/capability_circle.png);
-}
+// .circle-img-container {
+//   //background-image: url(../images/special_icons/strategy_future.png);
+//   background-size: cover;
+//   height: 350px;
+//   width: 450px;
+// }
+// .experience {
+//   background-image: url(../images/special_icons/experience_circle.png);
+// }
+// .strategy {
+//   background-image: url(../images/special_icons/strategy_future.png);
+// }
+// .capability {
+//   background-image: url(../images/special_icons/capability_circle.png);
+// }
 
 .future-icon {
   img {
@@ -36,7 +49,7 @@
 }
 
 .future-text {
-  width: 75%;
+  width: 85%;
   p {
     font-family: $paragraph-font;
   }
