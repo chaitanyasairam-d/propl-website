@@ -1,6 +1,9 @@
 /* Experience page styling */
 
 #solution-design {
+    .btn-business {
+        margin-top: 2rem;
+    }
     .back-btn {
         font-family: ProximaNova;
         font-size: 18px;
@@ -20,8 +23,8 @@
     }
     .img-border {
         border: 2px solid $orange;
-        height: 457px;
-        width: 651px;
+        height: 437px;
+        width: 621px;
         position: absolute;
         border-top-left-radius: 80px;
         left: -13px;
@@ -30,11 +33,11 @@
     }
     .img-container {
         img {
-            width: 650px;
+            width: 620px;
         }
     }
     .card {
-        margin-top: -60px;
+        margin-top: -45px;
         h1 {
             font-family: MinionWebPro;
             font-size: 2rem;
@@ -45,6 +48,10 @@
             letter-spacing: normal;
             text-align: left;
             color: #061134;
+        }
+        .card-body {
+            width: 18.3rem;
+            // padding-right: 1.5rem;
         }
         p {
             font-family: ProximaNova;
@@ -61,7 +68,6 @@
     }
 }
 
-.solution-design-divider-bar {
-    height: 450px!important;
-    margin-top: 547px!important;
+.solution-design-divider-bar::after {
+    height: 22.8rem!important;
 }

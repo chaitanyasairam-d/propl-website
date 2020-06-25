@@ -27,12 +27,76 @@ body {
   src: url("../ProximaNova-Semibold.ttf");
 }
 
-@font-face {
-  font-family: ProximaNovaBold;
-  src: url("../ProximaNova-Bold.ttf");
+/*mixins for margin 0 auto and custom width*/
+section:nth-child(2):not(#home) {
+  margin-top: 100px !important;
 }
 
-/*mixins for margin 0 auto and custom width*/
+.nav-bg {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #0b1120), color-stop(77%, rgba(11, 17, 33, 0)));
+  background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
+  padding: 0 10rem;
+}
+
+.nav-link {
+  color: white;
+}
+
+.navbar-content {
+  width: 100%;
+}
+
+.navbar-bg-onscroll {
+  height: 4rem;
+  font-size: .9rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+  padding: 0 10rem;
+  z-index: 99999999;
+}
+
+.navbar-bg-onscroll .dropdown-menu {
+  margin-top: 20px;
+  -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+}
+
+.navbar-bg-onscroll .nav-link {
+  color: #0b1120 !important;
+}
+
+.dropdown-item {
+  font-size: .8rem;
+  font-family: ProximaNova;
+}
+
+.navbar-brand img {
+  width: 145px;
+}
+
+.nav-item .nav-link:hover {
+  color: #ffffff;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.nav-link::before {
+  -webkit-transition: .7s;
+  transition: .7s;
+  height: 2.5px;
+  content: "";
+  position: absolute;
+  background-color: #006df0 !important;
+}
+
+.nav-underline {
+  height: 2px;
+  background-color: #006df0;
+  width: 85%;
+  margin: auto;
+}
+
 /* common styling 
 for all sections start */
 .card {
@@ -478,6 +542,10 @@ for all sections start */
   margin-top: 30px;
 }
 
+#footer #footer-logo-container li {
+  width: 90%;
+}
+
 #footer #footer-logo-container li:nth-child(2) {
   font-family: ProximaNova;
   font-size: 16px;
@@ -523,15 +591,15 @@ for all sections start */
 
 #footer #footer-logo-container .footer-bg-circle {
   position: absolute;
-  right: -17%;
+  right: -8%;
   bottom: -88%;
 }
 
 /* Experience page styling */
 .btn-business {
-  width: 200px;
-  height: 60px;
-  padding: 18px 23px;
+  width: 150px;
+  height: 50px;
+  padding: 12px 18px;
   border-color: #ff5050;
   background-color: #ff5050;
   border-top-right-radius: 0;
@@ -539,14 +607,17 @@ for all sections start */
   border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;
   margin-top: 20px;
-  line-height: 0;
   font-family: ProximaNova;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
   color: #ffffff;
+}
+
+#business-design-sprint .btn-business {
+  margin-top: 2rem !important;
 }
 
 #business-design-sprint .back-btn {
@@ -571,21 +642,21 @@ for all sections start */
 
 #business-design-sprint .img-border {
   border: 2px solid #ff5050;
-  height: 457px;
-  width: 651px;
+  height: 434px;
+  width: 635px;
   position: absolute;
   border-top-left-radius: 80px;
   left: -13px;
-  bottom: 35px;
+  bottom: 47px;
   z-index: -1;
 }
 
 #business-design-sprint .img-container img {
-  width: 650px;
+  width: 100%;
 }
 
 #business-design-sprint .card {
-  margin-top: -60px;
+  margin-top: -45px;
 }
 
 #business-design-sprint .card h1 {
@@ -598,6 +669,11 @@ for all sections start */
   letter-spacing: normal;
   text-align: left;
   color: #061134;
+}
+
+#business-design-sprint .card .card-body {
+  width: 20rem;
+  padding-right: 3.5rem;
 }
 
 #business-design-sprint .card p {
@@ -696,25 +772,25 @@ for all sections start */
   color: #061134;
 }
 
-#what-to-expect .divider-bar {
-  width: 1px;
-  height: 430px;
-  padding: 0;
-  position: absolute;
-  background-color: grey;
-  right: 50%;
-  margin-top: 537px;
-}
-
 #what-to-expect .business-design-sprint-divider-bar {
   height: 23rem !important;
 }
 
-#what-to-expect .col-md-6:nth-child(even) .card {
+#what-to-expect .col-md-6:nth-child(odd) .card {
   margin-left: 100px;
 }
 
-#what-to-expect .col-md-6:nth-child(odd) .card {
+#what-to-expect .divider-bar::after {
+  content: '';
+  width: 1px;
+  height: 22.9rem;
+  background-color: grey;
+  position: absolute;
+  right: 0;
+  top: 4.3rem;
+}
+
+#what-to-expect .col-md-6:nth-child(even) .card {
   margin-right: 100px;
 }
 
@@ -800,6 +876,10 @@ for all sections start */
 }
 
 /* Experience page styling */
+#solution-design .btn-business {
+  margin-top: 2rem;
+}
+
 #solution-design .back-btn {
   font-family: ProximaNova;
   font-size: 18px;
@@ -822,8 +902,8 @@ for all sections start */
 
 #solution-design .img-border {
   border: 2px solid #ff5050;
-  height: 457px;
-  width: 651px;
+  height: 437px;
+  width: 621px;
   position: absolute;
   border-top-left-radius: 80px;
   left: -13px;
@@ -832,11 +912,11 @@ for all sections start */
 }
 
 #solution-design .img-container img {
-  width: 650px;
+  width: 620px;
 }
 
 #solution-design .card {
-  margin-top: -60px;
+  margin-top: -45px;
 }
 
 #solution-design .card h1 {
@@ -849,6 +929,10 @@ for all sections start */
   letter-spacing: normal;
   text-align: left;
   color: #061134;
+}
+
+#solution-design .card .card-body {
+  width: 18.3rem;
 }
 
 #solution-design .card p {
@@ -864,12 +948,15 @@ for all sections start */
   word-wrap: break-word;
 }
 
-.solution-design-divider-bar {
-  height: 450px !important;
-  margin-top: 547px !important;
+.solution-design-divider-bar::after {
+  height: 22.8rem !important;
 }
 
 /* Experience page styling */
+#solution-delivery .btn-business {
+  margin-top: 2rem;
+}
+
 #solution-delivery .back-btn {
   font-family: ProximaNova;
   font-size: 18px;
@@ -905,10 +992,6 @@ for all sections start */
   width: 650px;
 }
 
-#solution-delivery .card {
-  margin-top: -60px;
-}
-
 #solution-delivery .card h1 {
   font-family: MinionWebPro;
   font-size: 2rem;
@@ -934,12 +1017,15 @@ for all sections start */
   word-wrap: break-word;
 }
 
-.solution-delivery-divider-bar {
-  height: 435px !important;
-  margin-top: 530px !important;
+.solution-delivery-divider-bar::after {
+  height: 21.5rem !important;
 }
 
 /* Experience page styling */
+#innovation-transformation .btn-business {
+  margin-top: 2.6rem;
+}
+
 #innovation-transformation .back-btn {
   font-family: ProximaNova;
   font-size: 18px;
@@ -976,7 +1062,8 @@ for all sections start */
 }
 
 #innovation-transformation .card {
-  margin-top: -60px;
+  margin-top: -30px;
+  margin-left: 50px;
 }
 
 #innovation-transformation .card h1 {
@@ -1004,11 +1091,15 @@ for all sections start */
   word-wrap: break-word;
 }
 
-.innovation-transformation-divider-bar {
+.innovation-transformation-divider-bar::after {
   height: 23rem !important;
 }
 
 /* Experience page styling */
+#experiential-learning .btn-business {
+  margin-top: 1.6rem;
+}
+
 #experiential-learning .back-btn {
   font-family: ProximaNova;
   font-size: 18px;
@@ -1045,7 +1136,8 @@ for all sections start */
 }
 
 #experiential-learning .card {
-  margin-top: -60px;
+  margin-top: -20px;
+  margin-left: 50px;
 }
 
 #experiential-learning .card h1 {
@@ -1073,9 +1165,8 @@ for all sections start */
   word-wrap: break-word;
 }
 
-#what-to-expect .experiential-learning-divider-bar {
-  height: 230px;
-  margin-top: 537px;
+#what-to-expect .experiential-learning-divider-bar::after {
+  height: 11.5rem;
 }
 
 /* strategy future css*/
@@ -1251,6 +1342,211 @@ for all sections start */
 .capability-width .do-list {
   margin: 0 auto;
   width: 60%;
+}
+
+/* Experience page styling */
+#growth-strategy .btn-business {
+  margin-top: 3rem;
+}
+
+#growth-strategy .back-btn {
+  font-family: ProximaNova;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.89;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#growth-strategy .back-btn img {
+  margin-right: 10px;
+}
+
+#growth-strategy .back-btn img:hover {
+  cursor: pointer;
+}
+
+#growth-strategy .img-border {
+  border: 2px solid #ff5050;
+  height: 457px;
+  width: 651px;
+  position: absolute;
+  border-top-left-radius: 80px;
+  left: -13px;
+  bottom: 35px;
+  z-index: -1;
+}
+
+#growth-strategy .img-container img {
+  width: 650px;
+}
+
+#growth-strategy .card {
+  margin-top: -45px;
+  margin-left: 50px;
+}
+
+#growth-strategy .card h1 {
+  font-family: MinionWebPro;
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#growth-strategy .card p {
+  font-family: ProximaNova;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+  word-wrap: break-word;
+}
+
+/* Experience page styling */
+#growth-experiments .btn-business {
+  margin-top: 2.6rem;
+}
+
+#growth-experiments .back-btn {
+  font-family: ProximaNova;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.89;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#growth-experiments .back-btn img {
+  margin-right: 10px;
+}
+
+#growth-experiments .back-btn img:hover {
+  cursor: pointer;
+}
+
+#growth-experiments .img-border {
+  border: 2px solid #ff5050;
+  height: 457px;
+  width: 651px;
+  position: absolute;
+  border-top-left-radius: 80px;
+  left: -13px;
+  bottom: 35px;
+  z-index: -1;
+}
+
+#growth-experiments .img-container img {
+  width: 650px;
+}
+
+#growth-experiments .card h1 {
+  font-family: MinionWebPro;
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#growth-experiments .card p {
+  font-family: ProximaNova;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+  word-wrap: break-word;
+}
+
+/* Experience page styling */
+#entrepreneur-residence .btn-business {
+  margin-top: 2rem !important;
+}
+
+#entrepreneur-residence .back-btn {
+  font-family: ProximaNova;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.89;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#entrepreneur-residence .back-btn img {
+  margin-right: 10px;
+}
+
+#entrepreneur-residence .back-btn img:hover {
+  cursor: pointer;
+}
+
+#entrepreneur-residence .img-border {
+  border: 2px solid #ff5050;
+  height: 457px;
+  width: 651px;
+  position: absolute;
+  border-top-left-radius: 80px;
+  left: -13px;
+  bottom: 35px;
+  z-index: -1;
+}
+
+#entrepreneur-residence .img-container img {
+  width: 650px;
+}
+
+#entrepreneur-residence .card {
+  margin-top: -20px;
+  margin-left: 50px;
+}
+
+#entrepreneur-residence .card h1 {
+  font-family: MinionWebPro;
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#entrepreneur-residence .card p {
+  font-family: ProximaNova;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+  word-wrap: break-word;
 }
 
 .propl-about-container {

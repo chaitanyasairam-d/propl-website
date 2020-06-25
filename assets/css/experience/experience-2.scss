@@ -1,6 +1,9 @@
 /* Experience page styling */
 
 #solution-delivery {
+    .btn-business {
+        margin-top: 2rem;
+    }
     .back-btn {
         font-family: ProximaNova;
         font-size: 18px;
@@ -34,7 +37,6 @@
         }
     }
     .card {
-        margin-top: -60px;
         h1 {
             font-family: MinionWebPro;
             font-size: 2rem;
@@ -61,7 +63,6 @@
     }
 }
 
-.solution-delivery-divider-bar {
-    height: 435px!important;
-    margin-top: 530px!important;
+.solution-delivery-divider-bar::after {
+    height: 21.5rem!important;
 }

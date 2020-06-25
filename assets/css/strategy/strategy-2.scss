@@ -1,6 +1,6 @@
 /* Experience page styling */
 
-#innovation-transformation {
+#growth-experiments {
     .btn-business {
         margin-top: 2.6rem;
     }
@@ -37,8 +37,6 @@
         }
     }
     .card {
-        margin-top: -30px;
-        margin-left: 50px;
         h1 {
             font-family: MinionWebPro;
             font-size: 2rem;
@@ -63,9 +61,4 @@
             word-wrap: break-word;
         }
     }
-}
-
-.innovation-transformation-divider-bar::after {
-    height: 23rem!important;
-    // margin-top: 539px;
 }

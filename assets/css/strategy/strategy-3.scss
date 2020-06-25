@@ -1,8 +1,8 @@
 /* Experience page styling */
 
-#innovation-transformation {
+#entrepreneur-residence {
     .btn-business {
-        margin-top: 2.6rem;
+        margin-top: 2rem!important;
     }
     .back-btn {
         font-family: ProximaNova;
@@ -37,7 +37,7 @@
         }
     }
     .card {
-        margin-top: -30px;
+        margin-top: -20px;
         margin-left: 50px;
         h1 {
             font-family: MinionWebPro;
@@ -63,9 +63,4 @@
             word-wrap: break-word;
         }
     }
-}
-
-.innovation-transformation-divider-bar::after {
-    height: 23rem!important;
-    // margin-top: 539px;
 }

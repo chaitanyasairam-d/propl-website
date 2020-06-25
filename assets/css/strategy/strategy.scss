@@ -1,31 +1,9 @@
 /* Experience page styling */
 
-.btn-business {
-    // text-align: center;
-    width: 200px;
-    height: 60px;
-    padding: 18px 23px;
-    border-color: $orange;
-    background-color: $orange;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    margin-top: 20px;
-    line-height: 0;
-    //     width: 109px;
-    //   height: 24px;
-    font-family: ProximaNova;
-    font-size: 20px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    // line-height: 2.5;
-    letter-spacing: normal;
-    color: #ffffff;
-}
-
-#business-design-sprint {
+#growth-strategy {
+    .btn-business {
+        margin-top: 3rem;
+    }
     .back-btn {
         font-family: ProximaNova;
         font-size: 18px;
@@ -59,7 +37,8 @@
         }
     }
     .card {
-        margin-top: -60px;
+        margin-top: -45px;
+        margin-left: 50px;
         h1 {
             font-family: MinionWebPro;
             font-size: 2rem;
@@ -84,156 +63,4 @@
             word-wrap: break-word;
         }
     }
-}
-
-#desirable {
-    margin-top: 210px;
-    background-color: #061134;
-    .section-starter {
-        margin-top: 90px;
-        margin-bottom: 52px;
-    }
-    .section-header {
-        text-align: center;
-        font-family: MinionWebPro;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.2;
-        letter-spacing: normal;
-        text-align: left;
-        color: #ffffff;
-    }
-    .card-container {
-        margin-right: 30px;
-    }
-    .card {
-        text-align: center;
-        width: 13rem;
-        margin-right: 20px;
-        margin: 0 auto;
-        margin-bottom: 182px;
-        background-color: #ffffff;
-        border-radius: 20px;
-        border: solid 1px #707070;
-        img {
-            width: 100px;
-            height: 100px;
-            margin: 0 auto;
-        }
-        .card-body {
-            padding: 18px;
-            font-family: ProximaNova;
-            font-size: 20px;
-            font-weight: 600;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.43;
-            letter-spacing: normal;
-            text-align: center;
-            color: #061134;
-        }
-    }
-}
-
-#what-to-expect {
-    .section-starter {
-        margin-top: 200px;
-        margin-bottom: 52px;
-    }
-    h3 {
-        margin-bottom: 159.5px;
-        font-family: MinionWebPro;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.2;
-        letter-spacing: normal;
-        text-align: left;
-        color: #061134;
-    }
-    .divider-bar {
-        width: 1px;
-        height: 430px;
-        padding: 0;
-        position: absolute;
-        background-color: grey;
-        right: 50%;
-        margin-top: 537px;
-    }
-    .col-md-6:nth-child(even) .card {
-        margin-left: 100px;
-    }
-    .col-md-6:nth-child(odd) .card {
-        margin-right: 100px;
-    }
-    .card {
-        text-align: center;
-        width: 19rem;
-        margin: 0 auto;
-        img {
-            width: 100px;
-            height: 100px;
-            // margin: 0 auto;
-            margin-top: 0;
-            margin-bottom: 23px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        .card-title {
-            font-family: ProximaNova;
-            font-size: .9rem;
-            font-weight: bold;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1;
-            letter-spacing: normal;
-            text-align: center;
-            color: #061134;
-            margin-bottom: .5rem;
-        }
-        .card-body {
-            padding: 0 1rem;
-            margin-bottom: 108px;
-            font-family: ProximaNova;
-            font-size: 15px;
-            font-weight: normal;
-            font-stretch: normal;
-            font-style: normal;
-            line-height: 1.82;
-            letter-spacing: normal;
-            text-align: center;
-            color: #061134;
-            word-wrap: break-word;
-        }
-    }
-    .divider-btn {
-        display: flex;
-        align-items: baseline;
-        margin: 0 auto;
-        justify-content: center;
-        .what-we-expect-underline {
-            margin: 0 40px;
-            width: 400px;
-            height: 2px;
-            background-color: $orange;
-            border-radius: 10px;
-        }
-    }
-}
-
-#loved-by {
-    .section-starter {
-        margin-top: 200px;
-        margin-bottom: 52px;
-    }
-    margin-bottom: 301px;
-}
-
-.business-footer-underline {
-    margin: 0 auto;
-    width: 80vw;
-    height: 8px;
-    background-color: $orange;
-    border-radius: 10px;
 }
