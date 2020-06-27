@@ -176,7 +176,7 @@
     </section>
     <section id="future" style="margin-top: 140px;">
       <div class="container">
-        <div class="row">
+        <div class="row layout-margin">
           <div class="col-md-6">
             <div class="strategy-future-continer">
               <div class="back-btn">
@@ -236,16 +236,16 @@
     </section>
     <section id="misssion">
       <div class="container mt100">
-        <div class="row">
+        <div class="row layout-margin">
           <div class="underline"></div>
           <div
             class="col-md-12 ml-auto mr-auto text-center"
           >
             <div class="content-header-container mb-4 mt50">
               <div class="content-header-body">
-                <h1 class="text-center">
+                <h2 class="text-center">
                   Our Mission
-                </h1>
+                </h2>
                 <p>
                   Our long-term vision is to make India and
                   Indian companies known for strategic
@@ -261,16 +261,16 @@
     </section>
     <section id="whyloveus">
       <div class="container mt100">
-        <div class="row">
+        <div class="row layout-margin">
           <div class="underline"></div>
           <div
             class="col-md-12 ml-auto mr-auto text-center"
           >
             <div class="content-header-container mb-4 mt50">
               <div class="content-header-body">
-                <h1 class="text-center">
+                <h2 class="text-center">
                   Why clients love us?
-                </h1>
+                </h2>
               </div>
             </div>
           </div>
@@ -400,16 +400,16 @@
     </section>
     <section id="what-to-expect">
       <div class="container mt100">
-        <div class="row">
+        <div class="row layout-margin">
           <div class="underline"></div>
           <div
             class="col-md-12 ml-auto mr-auto text-center"
           >
             <div class="content-header-container mb-4 mt50">
               <div class="content-header-body">
-                <h1 class="text-center">
+                <h2 class="text-center">
                   Let’s Propl together!
-                </h1>
+                </h2>
               </div>
             </div>
           </div>
@@ -427,16 +427,16 @@
     </section>
     <section id="misssion" style="margin-bottom: 100px;">
       <div class="container mt100">
-        <div class="row">
+        <div class="row layout-margin">
           <div class="underline"></div>
           <div
             class="col-md-12 ml-auto mr-auto text-center"
           >
             <div class="content-header-container mb-4 mt50">
               <div class="content-header-body">
-                <h1 class="text-center">
+                <h2 class="text-center">
                   Get in touch
-                </h1>
+                </h2>
                 <p>
                   We will help you tackle your most
                   challenging business problems!
@@ -454,8 +454,8 @@
               </div>
               <div class="text-container">
                 <p>Can’t wait to hear from you</p>
-                <a class="btn btn-more text-white"
-                  >Let’s Propl</a
+                <button class="btn btn-more text-white"
+                data-toggle="modal" data-target="#exampleModal">Let’s Propl</button
                 >
               </div>
             </div>
@@ -583,6 +583,70 @@
         </div>
       </div>
     </section>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content orange-background">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="contact-submit">
+              <div class="submit-left">
+                <img src="assets/images/special_icons/contact-success.png" class="img-fluid">
+              </div>
+              <div class="submit-right">
+               <div class="message-container">
+                 <div class="underline underline-left">
+                 </div>
+                 <div class="contact-header">
+                   <h4>Your message has 
+                    been sent successfully!</h4>
+                 </div>
+               </div>
+              </div>
+            </div>
+            <div class="modal-body" style="display: none;">
+                <div class="contact-us-container" >
+                  <div class="contact-left">
+                    <img src="assets/images/special_icons/contact_us.png" class="img-fluid">
+                  </div>
+                  <div class="contact-right">
+                    <div class="underline underline-left"></div>
+                    <div class="contact-header mt-2">
+                      <h4>Let’s Talk</h4>
+                    </div>
+                    <p class="mt-2">We’ll be in touch within 24 hours</p>
+                     <div class="form-contact">
+                      <div class="floating-form">
+                        <div class="floating-label">      
+                          <input class="floating-input" type="text" placeholder=" ">
+                          <span class="highlight"></span>
+                          <label>Name *</label>
+                        </div>
+                        <div class="floating-label">      
+                          <input class="floating-input" type="text" placeholder=" ">
+                          <span class="highlight"></span>
+                          <label>Email *</label>
+                        </div>
+                        <div class="floating-label">      
+                          <input class="floating-input" type="text" placeholder=" ">
+                          <span class="highlight"></span>
+                          <label>More info *</label>
+                        </div>
+                        <span class="note">(please provide some context or reason for reaching out)</span>
+                        <a class="btn btn-more text-white">Let’s Propl</a>
+                        <p class="policy mt-2">
+                          Propl is committed to protecting and respecting your privacy, and we’ll 
+only use your personal data to provide the info requested from us. 
+Review our <span>Privacy Policy</span>
+                        </p>
+                    </div>
+                </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    </div>
     <script
       src="assets/js/jQuery.js"
       charset="utf-8"
@@ -614,6 +678,9 @@
           },
         },
       });
+      $('#myModal').on('shown.bs.modal', function () {
+         $('#myInput').trigger('focus')
+       })
     </script>
   </body>
 </html>

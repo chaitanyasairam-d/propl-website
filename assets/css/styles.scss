@@ -125,7 +125,7 @@ section:nth-child(2):not(#home) {
   background-color: #ffffff;
   box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
   padding: 0 10rem;
-  z-index: 99999999;
+  z-index: 99999;
   .dropdown-menu {
     // position: relative;
     margin-top: 20px;
@@ -135,7 +135,6 @@ section:nth-child(2):not(#home) {
     color: #0b1120 !important;
   }
 }
-
 .dropdown-item {
   font-size: 0.8rem;
   font-family: ProximaNova;
