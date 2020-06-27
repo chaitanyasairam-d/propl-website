@@ -484,7 +484,7 @@ for all sections start */
   font-family: $paragraph-font;
   @include marginAuto(70%);
 }
-section .row {
+.layout-margin {
   @include marginAuto(90%);
 }
 

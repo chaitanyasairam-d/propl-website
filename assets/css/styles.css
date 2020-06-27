@@ -377,7 +377,7 @@ for all sections start */
   width: 70%;
 }
 
-section .row {
+.layout-margin {
   margin: 0 auto;
   width: 90%;
 }
