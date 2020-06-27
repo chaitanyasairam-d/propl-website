@@ -1,54 +1,54 @@
 @media only screen and (min-width: 320px) and (max-width: 465px) {
-  #predict-fututre #img-bg-circle {
-    display: none;
-  }
-  /*Home css*/
-  /*----Home Css ----*/
-  .home-content-box-inner h1 {
-    font-size: 1.8rem;
-    margin-bottom: 0.1rem;
-  }
+    #predict-fututre #img-bg-circle {
+        display: none;
+    }
+    /*Home css*/
+    /*----Home Css ----*/
+    .home-content-box-inner h1 {
+        font-size: 1.8rem;
+        margin-bottom: 0.1rem;
+    }
 
-  .home-content-box-inner h4 {
-    font-size: 1.1rem !important;
-  }
+    .home-content-box-inner h4 {
+        font-size: 1.1rem !important;
+    }
 
-  .home_desc {
-    width: 350px;
-  }
-  /*----Home Css ----*/
-  .img-bg-circle {
-    display: none;
-  }
-  .content-header-container h2 {
-    font-size: 1rem !important;
-  }
-  .content-header-container p {
-    font-size: 0.8rem !important;
-    width: 80% !important;
-  }
-  .card-title {
-    font-size: 1rem !important;
-  }
-  .card.text p label {
-    width: 70% !important;
-    font-size: 0.85rem;
-  }
+    .home_desc {
+        width: 350px;
+    }
+    /*----Home Css ----*/
+    .img-bg-circle {
+        display: none;
+    }
+    .content-header-container h2 {
+        font-size: 1rem !important;
+    }
+    .content-header-container p {
+        font-size: 0.8rem !important;
+        width: 80% !important;
+    }
+    .card-title {
+        font-size: 1rem !important;
+    }
+    .card.text p label {
+        width: 70% !important;
+        font-size: 0.85rem;
+    }
 
-  /*clients list*/
+    /*clients list*/
 
-  /*predict-future*/
+    /*predict-future*/
 }
 
 @media only screen and (min-width: 500px) and (max-width: 800px) {
-  #predict-fututre #img-bg-circle {
-    right: 90%;
-  }
-  .card {
-    z-index: 9999;
-    background: transparent;
-  }
-  /* h4 {
+    #predict-fututre #img-bg-circle {
+        right: 90%;
+    }
+    .card {
+        z-index: 9999;
+        background: transparent;
+    }
+    /* h4 {
     font-size: 1.009rem;
   }
   p {
@@ -57,14 +57,14 @@
 }
 
 @media only screen and (min-width: 800px) {
-  #predict-fututre #img-bg-circle {
-    right: 90%;
-  }
-  .card {
-    z-index: 9999;
-    background: transparent;
-  }
-  /* h4 {
+    #predict-fututre #img-bg-circle {
+        right: 90%;
+    }
+    .card {
+        z-index: 9999;
+        background: transparent;
+    }
+    /* h4 {
     font-size: 1.2rem;
   } */
 }

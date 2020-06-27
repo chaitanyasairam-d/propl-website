@@ -360,12 +360,15 @@ for all sections start */
   float: left;
   margin-top: 20px;
 }
+
+
 /*===Clients*/
 /*testimonials*/
 
 .owl-nav {
   display: none;
 }
+
 .owl-dots {
   padding-bottom: 20px;
 }
@@ -440,7 +443,10 @@ for all sections start */
     }
   }
 }
+
+
 /*===testimonials*/
+
 /* common styling for all sections end */
 /* predict fututre styling start */
 
@@ -521,6 +527,7 @@ for all sections start */
   font-weight: 800;
   font-family: $header-font;
 }
+
 /* predict fututre styling end */
 /* we believe styling start */
 
@@ -533,6 +540,7 @@ for all sections start */
     @include marginAuto(55%);
   }
 }
+
 #we-believe {
   .card-body {
     padding: 0.7rem;
@@ -598,7 +606,7 @@ for all sections start */
   }
   .item-main {
     font-family: ProximaNova;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -609,7 +617,7 @@ for all sections start */
     .item-span {
       opacity: 0.5;
       font-family: ProximaNova;
-      font-size: 14px;
+     font-size: 10px;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
@@ -621,7 +629,7 @@ for all sections start */
   }
   .item {
     font-family: ProximaNova;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -639,7 +647,7 @@ for all sections start */
     }
     li:nth-child(2) {
       font-family: ProximaNova;
-      font-size: 16px;
+      font-size: 13px;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
@@ -649,9 +657,10 @@ for all sections start */
       color: #ffffff;
     }
     .btn {
-      width: 140px;
+      width: 120px;
       height: 40px;
       color: #ffffff;
+      border-radius: 20px 0 20px 0 !important;
     }
     li:nth-child(3) {
       display: flex;
@@ -660,7 +669,7 @@ for all sections start */
       .footer-copy-right {
         // display: inline-block;
         font-family: ProximaNova;
-        font-size: 16px;
+        font-size: 13px;
         font-weight: normal;
         font-stretch: normal;
         font-style: normal;
