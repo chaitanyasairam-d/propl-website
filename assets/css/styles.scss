@@ -20,17 +20,17 @@ $orange: #ff5050;
 $text-color: #061134;
 @font-face {
   font-family: MinionPro;
-  src: url("../Minion\ Web\ Pro\ Bold.ttf");
+  src: url('../Minion\ Web\ Pro\ Bold.ttf');
 }
 
 @font-face {
   font-family: ProximaNova;
-  src: url("../ProximaNova-Regular.ttf");
+  src: url('../ProximaNova-Regular.ttf');
 }
 
 @font-face {
   font-family: ProximaNovaSemiBold;
-  src: url("../ProximaNova-Semibold.ttf");
+  src: url('../ProximaNova-Semibold.ttf');
 }
 /*mixins for margin 0 auto and custom width*/
 
@@ -175,7 +175,7 @@ section:nth-child(2):not(#home) {
 .nav-link::before {
   transition: 0.7s;
   height: 2.5px;
-  content: "";
+  content: '';
   position: absolute;
   background-color: #006df0 !important;
 }
@@ -679,13 +679,13 @@ for all sections start */
   }
 }
 
-@import "./experience/experience.scss";
-@import "./experience/experience-1.scss";
-@import "./experience/experience-2.scss";
-@import "./capability/capability.scss";
-@import "./capability/capability-1.scss";
-@import "./strategy/strategy-future.scss";
-@import "./strategy/strategy.scss";
-@import "./strategy/strategy-2.scss";
-@import "./strategy/strategy-3.scss";
-@import "./about.scss";
+@import './experience/experience.scss';
+@import './experience/experience-1.scss';
+@import './experience/experience-2.scss';
+@import './capability/capability.scss';
+@import './capability/capability-1.scss';
+@import './strategy/strategy-future.scss';
+@import './strategy/strategy.scss';
+@import './strategy/strategy-2.scss';
+@import './strategy/strategy-3.scss';
+@import './about.scss';
