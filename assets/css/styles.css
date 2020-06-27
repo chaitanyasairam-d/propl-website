@@ -111,6 +111,10 @@ for all sections start */
   margin-top: 100px;
 }
 
+.mb100 {
+  margin-bottom: 100px;
+}
+
 .card .group-19-icons {
   width: 100px;
   height: 100px;
@@ -144,6 +148,11 @@ for all sections start */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.btn-more:hover {
+  background: #ff5050 !important;
+  border: none;
 }
 
 .underline {
@@ -190,26 +199,32 @@ for all sections start */
 
 .home-content-box-inner h1 {
   color: #ffffff;
-  font-size: 2.5rem;
+  font-weight: bold;
+  font-size: 3.5rem;
   font-family: MinionPro;
-  letter-spacing: 3.2px;
-  text-transform: uppercase;
+  line-height: 0.6;
+  margin-top: 2rem;
 }
 
 .home-content-box-inner h4 {
   color: #fff;
-  font-family: "Proxima", sans-serif;
-  font-size: 1.2rem;
+  font-family: ProximaNova, sans-serif;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: 1.2px;
-  margin-bottom: 30px;
+  line-height: 1.67;
   margin-top: 20px;
+}
+
+.go-down-btn img {
+  position: relative;
+  top: 85px;
 }
 
 /*===Home Section styling*/
 /*Clients*/
 .client_icon {
-  width: 150px;
+  width: 120px;
 }
 
 .client-list {
@@ -233,6 +248,10 @@ for all sections start */
   display: none;
 }
 
+.owl-dots {
+  padding-bottom: 20px;
+}
+
 .owl-theme .owl-dots .owl-dot span {
   background: #ff5050 !important;
   opacity: 0.4;
@@ -248,7 +267,7 @@ for all sections start */
   margin: 0 auto;
   padding: 30px 0;
   margin: 0 auto;
-  width: 75%;
+  width: 90%;
   padding: 30px 0;
 }
 
@@ -261,20 +280,35 @@ for all sections start */
 .testimonial-container h4 {
   line-height: 2.27;
   color: #061134;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   text-align: left;
   font-family: ProximaNova;
+  height: 150px;
+}
+
+.testimonial-container .testimonial-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .testimonial-container .testimonial-footer h5 {
   color: #061134;
   line-height: 1.5;
   height: 1.9rem;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 400;
   text-align: left;
   font-family: ProximaNova;
+  position: relative;
+  top: 40px;
 }
 
 .testimonial-container .testimonial-footer h5 span {
@@ -319,7 +353,7 @@ for all sections start */
 }
 
 .content-header-body h2 {
-  font-size: 2.2rem;
+  font-size: 1.85rem;
   font-weight: bolder;
   font-stretch: normal;
   font-style: normal;
@@ -331,21 +365,7 @@ for all sections start */
 }
 
 .content-header-body p {
-  font-size: 1rem;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
-  text-align: center;
-  color: #061134;
-  font-family: ProximaNova;
-  margin: 0 auto;
-  width: 75%;
-}
-
-#predict-fututre .content-header-body > p {
-  font-size: 21px;
-  font-weight: normal;
+  font-size: 0.85rem;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.67;
@@ -354,7 +374,12 @@ for all sections start */
   color: #061134;
   font-family: ProximaNova;
   margin: 0 auto;
-  width: 80%;
+  width: 70%;
+}
+
+section .row {
+  margin: 0 auto;
+  width: 90%;
 }
 
 #predict-fututre .card-title {
@@ -365,6 +390,7 @@ for all sections start */
   text-align: center;
   color: #061134;
   font-family: MinionPro;
+  font-size: 1.2rem;
 }
 
 #predict-fututre .card .card-body {
@@ -373,9 +399,7 @@ for all sections start */
 }
 
 #predict-fututre .card-body .card-text {
-  /* font-size: .9rem; */
-  /* font-weight: 400; */
-  font-size: 18px;
+  font-size: 0.85rem;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.82;
@@ -388,10 +412,8 @@ for all sections start */
 }
 
 #predict-fututre h4 {
-  /* font-size: 1.17rem; */
   font-weight: 800;
   font-family: MinionPro;
-  /* font-family: 'Libre Baskerville', serif; */
 }
 
 /* predict fututre styling end */
@@ -401,43 +423,13 @@ for all sections start */
   overflow: hidden;
 }
 
-#we-believe .content-header {
-  /* width: 338px;
-    height: 50px; */
-  text-align: center;
-  font-family: MinionPro;
-  font-size: 50px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #061134;
-}
-
-#we-believe .content-header-body h1 {
-  font-family: ProximaNova;
-  /* font-size: 24px; */
-  font-weight: 600;
-  line-height: 60px;
+#we-believe .content-header-body p {
+  margin: 0 auto;
+  width: 55%;
 }
 
 #we-believe .card-body {
   padding: 0.7rem;
-}
-
-#we-believe .content-header-body p {
-  width: 60%;
-  margin: 0 auto;
-  font-family: ProximaNova;
-  font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.67;
-  letter-spacing: normal;
-  text-align: center;
 }
 
 #we-believe .card-text {
@@ -473,6 +465,10 @@ for all sections start */
 
 /* we believe styling end */
 /* common footer for all section */
+.mt180 {
+  margin-top: 180px;
+}
+
 #footer {
   background-color: #1a2239;
   overflow: hidden;
