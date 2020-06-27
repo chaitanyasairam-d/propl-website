@@ -3,7 +3,6 @@
 .strategy-container {
   @include marginAuto(90%);
 }
-
 .circle-img-container {
   display: flex;
   justify-content: center;
@@ -13,6 +12,21 @@
     width: 20rem;
   }
 }
+// .circle-img-container {
+//   //background-image: url(../images/special_icons/strategy_future.png);
+//   background-size: cover;
+//   height: 350px;
+//   width: 450px;
+// }
+// .experience {
+//   background-image: url(../images/special_icons/experience_circle.png);
+// }
+// .strategy {
+//   background-image: url(../images/special_icons/strategy_future.png);
+// }
+// .capability {
+//   background-image: url(../images/special_icons/capability_circle.png);
+// }
 
 // .circle-img-container {
 //   //background-image: url(../images/special_icons/strategy_future.png);

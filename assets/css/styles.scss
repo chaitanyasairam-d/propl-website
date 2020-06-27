@@ -32,7 +32,6 @@ $text-color: #061134;
   font-family: ProximaNovaSemiBold;
   src: url('../ProximaNova-Semibold.ttf');
 }
-
 /*mixins for margin 0 auto and custom width*/
 
 @mixin marginAuto($value) {
@@ -223,7 +222,6 @@ section:nth-child(2):not(#home) {
 //     top: 1px;
 // }
 // navbar styling end
-
 /* common styling 
 for all sections start */
 
@@ -238,7 +236,6 @@ for all sections start */
 .mt100 {
   margin-top: 100px;
 }
-
 .mb100 {
   margin-bottom: 100px;
 }
@@ -282,7 +279,6 @@ for all sections start */
   background-color: $orange;
   border-radius: 10px;
 }
-
 /*Home Section styling*/
 
 #home {
@@ -343,9 +339,7 @@ for all sections start */
     top: 85px;
   }
 }
-
 /*===Home Section styling*/
-
 /*Clients*/
 
 .client_icon {
@@ -367,8 +361,8 @@ for all sections start */
   margin-top: 20px;
 }
 
-/*===Clients*/
 
+/*===Clients*/
 /*testimonials*/
 
 .owl-nav {
@@ -450,10 +444,10 @@ for all sections start */
   }
 }
 
+
 /*===testimonials*/
 
 /* common styling for all sections end */
-
 /* predict fututre styling start */
 
 #predict-fututre .img-bg-circle {
@@ -496,7 +490,6 @@ for all sections start */
   font-family: $paragraph-font;
   @include marginAuto(70%);
 }
-
 .layout-margin {
   @include marginAuto(90%);
 }
@@ -536,14 +529,12 @@ for all sections start */
 }
 
 /* predict fututre styling end */
-
 /* we believe styling start */
 
 #we-believe {
   width: 100%;
   overflow: hidden;
 }
-
 #we-believe {
   .content-header-body p {
     @include marginAuto(55%);
@@ -584,11 +575,8 @@ for all sections start */
     }
   }
 }
-
 /* we believe styling end */
-
 /* common footer for all section */
-
 .mt180 {
   margin-top: 180px;
 }
@@ -629,7 +617,7 @@ for all sections start */
     .item-span {
       opacity: 0.5;
       font-family: ProximaNova;
-      font-size: 10px;
+     font-size: 10px;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
