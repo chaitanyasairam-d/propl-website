@@ -1,69 +1,69 @@
 .propl-about-container {
-  height: 18rem;
-  background-color: $orange;
-  border-radius: 75px 0px 75px;
-  img {
-    width: 60%;
-  }
+    height: 18rem;
+    background-color: $orange;
+    border-radius: 75px 0px 75px;
+    img {
+        width: 60%;
+    }
 }
 .love-list {
-  display: flex;
-  flex-wrap: wrap;
-  ul {
     display: flex;
     flex-wrap: wrap;
-  }
-  li {
-    display: flex;
-    flex: 1 1 33%;
-    justify-content: center;
-    .list-container {
-      .img-box {
+    ul {
         display: flex;
-        justify-content: center;
-      }
-      .title h4 {
-        font-family: ProximaNovaBold;
-        font-weight: 600;
-        font-size: 1rem;
-      }
-      .text {
-        font-family: $paragraph-font;
-        line-height: 1.82;
-        font-size: 0.75rem;
-        @include marginAuto(70%);
-        height: 5rem;
-        p {
-          margin-bottom: 0;
-        }
-      }
+        flex-wrap: wrap;
     }
-  }
+    li {
+        display: flex;
+        flex: 1 1 33%;
+        justify-content: center;
+        .list-container {
+            .img-box {
+                display: flex;
+                justify-content: center;
+            }
+            .title h4 {
+                font-family: ProximaNovaBold;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+            .text {
+                font-family: $paragraph-font;
+                line-height: 1.82;
+                font-size: 0.75rem;
+                @include marginAuto(70%);
+                height: 5rem;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }
 
 .contact-container {
-  @include marginAuto(60%);
-  .contact-box {
-    border-radius: 20px;
-    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    display: flex;
-  }
-  .get-in-touch-bg {
-    img {
-      height: 250px;
-      overflow: visible;
-      margin: -60px 30px 0px 30px;
+    @include marginAuto(60%);
+    .contact-box {
+        border-radius: 20px;
+        box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        display: flex;
     }
-  }
-  .text-container {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    flex-direction: column;
-    p {
-      font-family: $paragraph-font;
-      width: 70%;
+    .get-in-touch-bg {
+        img {
+            height: 250px;
+            overflow: visible;
+            margin: -60px 30px 0px 30px;
+        }
     }
-  }
+    .text-container {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        flex-direction: column;
+        p {
+            font-family: $paragraph-font;
+            width: 70%;
+        }
+    }
 }
