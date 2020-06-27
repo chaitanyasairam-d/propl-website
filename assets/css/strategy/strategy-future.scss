@@ -1,143 +1,157 @@
 /* strategy future css*/
-.circle-img-container {
-  //background-image: url(../images/special_icons/strategy_future.png);
-  background-size: cover;
-  height: 350px;
-  width: 450px;
-}
-.experience {
-  background-image: url(../images/special_icons/experience_circle.png);
-}
-.strategy {
-  background-image: url(../images/special_icons/strategy_future.png);
-}
-.capability {
-  background-image: url(../images/special_icons/capability_circle.png);
+
+.strategy-container {
+    @include marginAuto(90%);
 }
 
+.circle-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110%;
+    img {
+        width: 20rem;
+    }
+}
+
+// .circle-img-container {
+//   //background-image: url(../images/special_icons/strategy_future.png);
+//   background-size: cover;
+//   height: 350px;
+//   width: 450px;
+// }
+// .experience {
+//   background-image: url(../images/special_icons/experience_circle.png);
+// }
+// .strategy {
+//   background-image: url(../images/special_icons/strategy_future.png);
+// }
+// .capability {
+//   background-image: url(../images/special_icons/capability_circle.png);
+// }
 .future-icon {
-  img {
-    width: 3rem;
-    margin-top: 1rem;
-  }
+    img {
+        width: 3rem;
+        margin-top: 1rem;
+    }
 }
 
 .future-header {
-  width: 70%;
-  h2 {
-    font-size: 3rem;
-    font-family: $header-font;
-    text-align: left;
-  }
+    width: 70%;
+    h2 {
+        font-size: 3rem;
+        font-family: $header-font;
+        text-align: left;
+    }
 }
 
 .underline-left {
-  margin: 0;
+    margin: 0;
 }
 
 .future-text {
-  width: 75%;
-  p {
-    font-family: $paragraph-font;
-  }
+    width: 85%;
+    p {
+        font-family: $paragraph-font;
+    }
 }
 
 .btn-back {
-  img {
-    position: relative;
-    right: 10px;
-  }
+    img {
+        position: relative;
+        right: 10px;
+    }
 }
 
 #achieve {
-  background: $text-color;
-
-  .text-white {
-    color: #fff;
-  }
+    background: $text-color;
+    .text-white {
+        color: #fff;
+    }
 }
 
 .point-list {
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  li {
-    display: flex;
-    flex: 1 1 50%;
-    justify-content: center;
-  }
-  .acheiver-container {
-    width: 55%;
-    text-align: center;
-    margin-bottom: 40px;
-    h4 {
-      font-family: $paragraph-semi-bold-font;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.47;
-      letter-spacing: normal;
-      text-align: center;
-      color: #ffffff;
-      font-size: 1.25rem;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
     }
-    .btn-points {
-      color: $orange;
-      img {
-        position: relative;
-        left: 15px;
-      }
+    li {
+        display: flex;
+        flex: 1 1 50%;
+        justify-content: center;
     }
-  }
+    .acheiver-container {
+        width: 55%;
+        text-align: center;
+        margin-bottom: 40px;
+        h4 {
+            font-family: $paragraph-semi-bold-font;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.47;
+            letter-spacing: normal;
+            text-align: center;
+            color: #ffffff;
+            font-size: 1.25rem;
+        }
+        .btn-points {
+            color: $orange;
+            img {
+                position: relative;
+                left: 15px;
+            }
+        }
+    }
 }
 
 .do-list {
-  @include marginAuto(80%);
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    li {
-      display: flex;
-      flex: 1 1 33%;
-      .card {
-        &:not(:nth-child(2)) {
-          box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.1);
+    @include marginAuto(80%);
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            display: flex;
+            flex: 1 1 33%;
+            .card {
+                &:not(:nth-child(2)) {
+                    box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.1);
+                }
+                padding: 25px;
+                border-radius: 1rem;
+                .card-title {
+                    font-family: $header-font;
+                    font-size: 1.5rem;
+                    line-height: 1.25;
+                    text-align: center;
+                }
+                .card-body {
+                    padding: 0.5rem;
+                    p {
+                        font-family: $paragraph-font;
+                        font-size: 0.8rem;
+                        line-height: 2.08;
+                        color: $text-color;
+                        text-align: center;
+                    }
+                }
+            }
+            .orange-background {
+                background-color: $orange;
+                color: #ffffff !important;
+                p {
+                    color: #ffffff !important;
+                }
+                .btn-more {
+                    background: #ffffff;
+                    color: $orange;
+                }
+            }
         }
-        padding: 25px;
-        border-radius: 1rem;
-        .card-title {
-          font-family: $header-font;
-          font-size: 1.5rem;
-          line-height: 1.25;
-          text-align: center;
-        }
-        .card-body {
-          padding: 0.5rem;
-          p {
-            font-family: $paragraph-font;
-            font-size: 0.8rem;
-            line-height: 2.08;
-            color: $text-color;
-            text-align: center;
-          }
-        }
-      }
-      .orange-background {
-        background-color: $orange;
-        color: #ffffff !important;
-        p {
-          color: #ffffff !important;
-        }
-        .btn-more {
-          background: #ffffff;
-          color: $orange;
-        }
-      }
     }
-  }
 }
+
 .capability-width {
-  .do-list {
-    @include marginAuto(60%);
-  }
+    .do-list {
+        @include marginAuto(60%);
+    }
 }
