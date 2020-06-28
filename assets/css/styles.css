@@ -41,6 +41,7 @@ section:nth-child(2):not(#home) {
 .nav-link {
   color: white;
   font-size: 0.8rem;
+  font-family: ProximaNovaSemiBold;
 }
 
 .navbar-content {
@@ -53,22 +54,18 @@ section:nth-child(2):not(#home) {
   background-color: #ffffff;
   -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-<<<<<<< HEAD
-  padding: 2.5rem 10rem;
+  padding: 2.5rem 12rem;
   z-index: 99999999;
-=======
-  padding: 0 10rem;
-  z-index: 99999;
->>>>>>> 6cb059d013091b8a1e5cf3d48a6ad15bc2dd39f4
 }
 
 .navbar-bg-onscroll .dropdown-menu {
-  margin-top: 20px;
+  margin-top: 28px;
   -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
 }
 
 .navbar-bg-onscroll .nav-link {
+  margin: 0 .5rem;
   color: #0b1120 !important;
 }
 
@@ -83,26 +80,48 @@ section:nth-child(2):not(#home) {
 
 .nav-item .nav-link:hover {
   color: #ffffff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0s;
+  transition: all 0s;
 }
 
-.nav-link::before {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-  height: 2.5px;
+.nav-link:active, .nav-link:focus {
+  color: #ff5050 !important;
+}
+
+.nav-link:active .dropdown-icon, .nav-link:focus .dropdown-icon {
+  background-image: url("../images/special_icons/down-arrow-orange.svg") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 9999999;
+  top: 3px;
+  left: 3px;
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+.nav-underline::after {
+  position: absolute;
   content: '';
-  position: absolute;
-  background-color: #ff5050 !important;
+  top: 42px;
+  left: 0;
+  width: 50px;
+  margin-left: 1.8rem;
+  background-color: #ff5050;
+  border-radius: 10px;
+  border-top-color: #ff5050;
 }
 
-.nav-underline::before {
-  position: absolute;
-  top: 50px;
-  height: 2px;
-  background-color: #ff5050;
-  width: 85%;
-  margin: auto;
+.dropdown-icon {
+  background-image: url(../images/special_icons/down-arrow-black.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 9999999;
+  top: 3px;
+  left: 3px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 /* common styling 
@@ -817,13 +836,8 @@ for all sections start */
 
 #what-to-expect .card .card-title {
   font-family: ProximaNova;
-<<<<<<< HEAD
   font-size: 1rem;
   font-weight: 800;
-=======
-  font-size: 0.9rem;
-  font-weight: bold;
->>>>>>> 6cb059d013091b8a1e5cf3d48a6ad15bc2dd39f4
   font-stretch: normal;
   font-style: normal;
   line-height: 1;
@@ -886,92 +900,6 @@ for all sections start */
 }
 
 /* Experience page styling */
-<<<<<<< HEAD
-#solution-design .btn-business {
-  margin-top: 1rem;
-}
-
-#solution-design .back-btn {
-  font-family: ProximaNova;
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.89;
-  letter-spacing: normal;
-  text-align: left;
-  color: #061134;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-
-#solution-design .back-btn img {
-  width: 10px;
-  margin-right: 7px;
-}
-
-#solution-design .back-btn img:hover {
-  cursor: pointer;
-}
-
-#solution-design .img-border {
-  border: 1.5px solid #ff5050;
-  height: 395px;
-  width: 553px;
-  position: absolute;
-  border-top-left-radius: 75px;
-  left: -10px;
-  bottom: 35px;
-  z-index: -1;
-}
-
-#solution-design .img-container img {
-  height: 395px;
-  width: 557px;
-}
-
-#solution-design .card {
-  margin-top: -45px;
-  margin-left: 50px;
-}
-
-#solution-design .card h1 {
-  font-family: MinionWebPro;
-  font-weight: bold;
-  font-size: 1.8rem;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #061134;
-}
-
-#solution-design .card .card-body {
-  width: 20rem;
-  padding-right: 3.5rem;
-}
-
-#solution-design .card p {
-  font-family: ProximaNova;
-  font-size: 20px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2.08;
-  letter-spacing: normal;
-  text-align: left;
-  color: #061134;
-  word-wrap: break-word;
-}
-
-.solution-design-divider-bar::after {
-  height: 18.5rem !important;
-}
-
-/* Experience page styling */
-=======
->>>>>>> 6cb059d013091b8a1e5cf3d48a6ad15bc2dd39f4
 #solution-delivery .btn-business {
   margin-top: 1rem;
 }
@@ -1122,87 +1050,6 @@ for all sections start */
   height: 18.5rem !important;
 }
 
-<<<<<<< HEAD
-/* Experience page styling */
-#experiential-learning .btn-business {
-  margin-top: 1rem;
-}
-
-#experiential-learning .back-btn {
-  font-family: ProximaNova;
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.89;
-  letter-spacing: normal;
-  text-align: left;
-  color: #061134;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-
-#experiential-learning .back-btn img {
-  width: 10px;
-  margin-right: 7px;
-}
-
-#experiential-learning .back-btn img:hover {
-  cursor: pointer;
-}
-
-#experiential-learning .img-border {
-  border: 1.5px solid #ff5050;
-  height: 395px;
-  width: 553px;
-  position: absolute;
-  border-top-left-radius: 75px;
-  left: -10px;
-  bottom: 25px;
-  z-index: -1;
-}
-
-#experiential-learning .img-container img {
-  height: 395px;
-  width: 557px;
-}
-
-#experiential-learning .card {
-  margin-top: -20px;
-  margin-left: 25px;
-}
-
-#experiential-learning .card h1 {
-  font-family: MinionWebPro;
-  font-size: 2rem;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #061134;
-}
-
-#experiential-learning .card p {
-  font-family: ProximaNova;
-  font-size: 19.5px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: normal;
-  text-align: left;
-  color: #061134;
-  word-wrap: break-word;
-}
-
-#what-to-expect .experiential-learning-divider-bar::after {
-  height: 8.5rem;
-}
-
-=======
->>>>>>> 6cb059d013091b8a1e5cf3d48a6ad15bc2dd39f4
 /* strategy future css*/
 .strategy-container {
   margin: 0 auto;
@@ -1390,12 +1237,12 @@ for all sections start */
 
 /* Experience page styling */
 #solution-design .btn-business {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #solution-design .back-btn {
   font-family: ProximaNova;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -1403,10 +1250,13 @@ for all sections start */
   letter-spacing: normal;
   text-align: left;
   color: #061134;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 #solution-design .back-btn img {
-  margin-right: 10px;
+  width: 10px;
+  margin-right: 7px;
 }
 
 #solution-design .back-btn img:hover {
@@ -1414,28 +1264,30 @@ for all sections start */
 }
 
 #solution-design .img-border {
-  border: 2px solid #ff5050;
-  height: 437px;
-  width: 621px;
+  border: 1.5px solid #ff5050;
+  height: 395px;
+  width: 553px;
   position: absolute;
-  border-top-left-radius: 80px;
-  left: -13px;
+  border-top-left-radius: 75px;
+  left: -10px;
   bottom: 35px;
   z-index: -1;
 }
 
 #solution-design .img-container img {
-  width: 620px;
+  height: 395px;
+  width: 557px;
 }
 
 #solution-design .card {
   margin-top: -45px;
+  margin-left: 50px;
 }
 
 #solution-design .card h1 {
   font-family: MinionWebPro;
-  font-size: 2rem;
   font-weight: bold;
+  font-size: 1.8rem;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
@@ -1445,13 +1297,14 @@ for all sections start */
 }
 
 #solution-design .card .card-body {
-  width: 18.3rem;
+  width: 20rem;
+  padding-right: 3.5rem;
 }
 
 #solution-design .card p {
   font-family: ProximaNova;
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 2.08;
@@ -1462,17 +1315,17 @@ for all sections start */
 }
 
 .solution-design-divider-bar::after {
-  height: 22.8rem !important;
+  height: 18.5rem !important;
 }
 
 /* Experience page styling */
 #experiential-learning .btn-business {
-  margin-top: 1.6rem;
+  margin-top: 1rem;
 }
 
 #experiential-learning .back-btn {
   font-family: ProximaNova;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -1480,10 +1333,13 @@ for all sections start */
   letter-spacing: normal;
   text-align: left;
   color: #061134;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 #experiential-learning .back-btn img {
-  margin-right: 10px;
+  width: 10px;
+  margin-right: 7px;
 }
 
 #experiential-learning .back-btn img:hover {
@@ -1491,23 +1347,24 @@ for all sections start */
 }
 
 #experiential-learning .img-border {
-  border: 2px solid #ff5050;
-  height: 457px;
-  width: 651px;
+  border: 1.5px solid #ff5050;
+  height: 395px;
+  width: 553px;
   position: absolute;
-  border-top-left-radius: 80px;
-  left: -13px;
-  bottom: 35px;
+  border-top-left-radius: 75px;
+  left: -10px;
+  bottom: 25px;
   z-index: -1;
 }
 
 #experiential-learning .img-container img {
-  width: 650px;
+  height: 395px;
+  width: 557px;
 }
 
 #experiential-learning .card {
   margin-top: -20px;
-  margin-left: 50px;
+  margin-left: 25px;
 }
 
 #experiential-learning .card h1 {
@@ -1524,11 +1381,11 @@ for all sections start */
 
 #experiential-learning .card p {
   font-family: ProximaNova;
-  font-size: 20px;
+  font-size: 19.5px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 2.08;
+  line-height: 2;
   letter-spacing: normal;
   text-align: left;
   color: #061134;
@@ -1544,7 +1401,7 @@ for all sections start */
 }
 
 #what-to-expect .experiential-learning-divider-bar::after {
-  height: 11.5rem;
+  height: 8.5rem;
 }
 
 /* Experience page styling */
@@ -1892,10 +1749,6 @@ for all sections start */
 .contact-container .text-container p {
   font-family: ProximaNova;
   width: 70%;
-}
-
-.btn-business {
-  width: 200px;
 }
 
 .contact-us-container {

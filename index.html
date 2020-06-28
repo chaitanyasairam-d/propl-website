@@ -745,6 +745,17 @@
         </div>
       </div>
     </section>
+
+
+    <section>
+      <!-- <form id="contact-form">
+        <input type="hidden" name="to_email" value="d.chaitanyasairam@gmail.com">
+        <input type="text" name="to_name">
+        <input type="email" name="from_email">
+        <input type="text" name="to_message">
+        <button type="submit">submit</button>
+      </form> -->
+    </section>
     <script
       src="assets/js/jQuery.js"
       charset="utf-8"
@@ -815,5 +826,20 @@
         },
       });
     </script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_o1SY3Yz3mI8GWtJeuZhIQ");
+   })();
+
+ 
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  // generate the contact number value
+  console.log(this)
+
+  emailjs.sendForm('gmail', 'template_i2YiDv4m',{"from_name":"chaitanya","reply_to":"sandeep.guntupalli567@gmail.com","to_name":"sandeep.guntupalli567@gmail.com","message_html":"thank you"});
+});
+</script>
   </body>
 </html>
