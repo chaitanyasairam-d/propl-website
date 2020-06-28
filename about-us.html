@@ -316,7 +316,7 @@
         </div>
       </div>
     </section>
-    <section id="misssion" style="margin-bottom: 100px;">
+    <section id="contact" style="margin-bottom: 100px;">
       <div class="container mt100">
         <div class="row layout-margin">
           <div class="underline"></div>
@@ -420,7 +420,7 @@
                   Interested to be at the cutting edge?
                 </li>
                 <li>
-                  <button class="btn btn-more">
+                  <button class="btn btn-more" data-toggle="modal" data-target="#exampleModal">
                     Get in touch
                   </button>
                   <div class="footer-copy-right">
@@ -515,8 +515,11 @@
     </div>
     <script src="assets/js/jQuery.js" charset="utf-8"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
     <script>
+      var href = window.location.href;
+      if (href.includes('contact')) {
+        $('#exampleModal').modal('show');
+      }
       $('#myModal').on('shown.bs.modal', function () {
         $('#myInput').trigger('focus');
       });

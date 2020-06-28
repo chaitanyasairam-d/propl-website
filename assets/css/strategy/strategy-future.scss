@@ -41,7 +41,7 @@
 }
 
 .btn-back {
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-family: $paragraph-semi-bold-font;
   img {
     position: relative;
@@ -135,6 +135,10 @@
         .btn-more {
           background: #ffffff;
           color: $orange;
+          &:hover {
+            background: #ffffff !important;
+            color: $orange !important;
+          }
         }
       }
     }

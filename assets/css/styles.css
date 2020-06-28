@@ -88,13 +88,8 @@ section:nth-child(2):not(#home) {
   background-color: #ffffff;
   -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-<<<<<<< HEAD
   padding: 2.5rem 12rem;
-  z-index: 99999999;
-=======
-  padding: 2.5rem 10rem;
   z-index: 9999;
->>>>>>> 533d584dab96f93a764fd34f810e69ba28172173
 }
 
 .navbar-bg-onscroll .dropdown-menu {
@@ -104,7 +99,7 @@ section:nth-child(2):not(#home) {
 }
 
 .navbar-bg-onscroll .nav-link {
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
   color: #0b1120 !important;
 }
 
@@ -123,12 +118,13 @@ section:nth-child(2):not(#home) {
   transition: all 0s;
 }
 
-<<<<<<< HEAD
-.nav-link:active, .nav-link:focus {
+.nav-link:active,
+.nav-link:focus {
   color: #ff5050 !important;
 }
 
-.nav-link:active .dropdown-icon, .nav-link:focus .dropdown-icon {
+.nav-link:active .dropdown-icon,
+.nav-link:focus .dropdown-icon {
   background-image: url("../images/special_icons/down-arrow-orange.svg") !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -147,12 +143,6 @@ section:nth-child(2):not(#home) {
   left: 0;
   width: 50px;
   margin-left: 1.8rem;
-=======
-.nav-underline::before {
-  position: absolute;
-  top: 25px;
-  height: 2px;
->>>>>>> 533d584dab96f93a764fd34f810e69ba28172173
   background-color: #ff5050;
   border-radius: 10px;
   border-top-color: #ff5050;
@@ -166,8 +156,8 @@ section:nth-child(2):not(#home) {
   z-index: 9999999;
   top: 3px;
   left: 3px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 /* common styling 
@@ -1279,6 +1269,11 @@ for all sections start */
 .do-list ul li .orange-background .btn-more {
   background: #ffffff;
   color: #ff5050;
+}
+
+.do-list ul li .orange-background .btn-more:hover {
+  background: #ffffff !important;
+  color: #ff5050 !important;
 }
 
 .capability-width .do-list {
