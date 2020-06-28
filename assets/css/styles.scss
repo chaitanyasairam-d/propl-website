@@ -132,11 +132,7 @@ section:nth-child(2):not(#home) {
 //     transition: all .33s cubic-bezier(.694, .0482, .335, 1);
 // }
 .nav-bg {
-  background-image: linear-gradient(
-    to bottom,
-    #0b1120 65%,
-    rgba(11, 17, 33, 0) 77%
-  );
+  background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
   padding: 0 10rem;
 }
 
