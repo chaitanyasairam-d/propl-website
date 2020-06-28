@@ -1754,8 +1754,43 @@ for all sections start */
   color: #ffffff;
 }
 
+.modal-body {
+  padding: 0;
+}
+
+.message-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 5px;
+}
+
 .orange-background {
   background-color: #ff5050;
+}
+
+.orange-background .underline {
+  background-color: #ffffff;
+}
+
+.orange-background .contact-header h4 {
+  color: #ffffff;
+  font-family: MinionPro;
+  font-size: 1.5rem;
+}
+
+.orange-background .contact-header p {
+  font-family: ProximaNova;
+  font-size: 1rem;
+  color: #ffffff;
 }
 
 .contact-submit {
@@ -1765,6 +1800,19 @@ for all sections start */
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.submit-left {
+  max-width: 60%;
+}
+
+.success-img {
+  background-image: url(../images/special_icons/contact-success.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20rem;
+  background-size: cover;
+  width: 45rem;
 }
 
 /****  floating-Lable style start ****/
@@ -1793,7 +1841,7 @@ for all sections start */
   border-bottom: 2px solid #5264AE;
 }
 
-label {
+.floating-label label {
   color: #061134;
   font-size: 14px;
   font-weight: 800;
