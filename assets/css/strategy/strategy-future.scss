@@ -41,9 +41,12 @@
 }
 
 .btn-back {
+  font-size: .75rem;
+  font-family: $paragraph-semi-bold-font;
   img {
     position: relative;
     right: 10px;
+    height: 10px;
   }
 }
 
