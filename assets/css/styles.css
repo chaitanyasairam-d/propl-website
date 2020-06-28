@@ -75,6 +75,7 @@ section:nth-child(2):not(#home) {
 .nav-link {
   color: white;
   font-size: 0.8rem;
+  font-family: ProximaNovaSemiBold;
 }
 
 .navbar-content {
@@ -87,17 +88,23 @@ section:nth-child(2):not(#home) {
   background-color: #ffffff;
   -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+<<<<<<< HEAD
+  padding: 2.5rem 12rem;
+  z-index: 99999999;
+=======
   padding: 2.5rem 10rem;
   z-index: 9999;
+>>>>>>> 533d584dab96f93a764fd34f810e69ba28172173
 }
 
 .navbar-bg-onscroll .dropdown-menu {
-  margin-top: 20px;
+  margin-top: 28px;
   -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
 }
 
 .navbar-bg-onscroll .nav-link {
+  margin: 0 .5rem;
   color: #0b1120 !important;
 }
 
@@ -112,17 +119,55 @@ section:nth-child(2):not(#home) {
 
 .nav-item .nav-link:hover {
   color: #ffffff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0s;
+  transition: all 0s;
 }
 
+<<<<<<< HEAD
+.nav-link:active, .nav-link:focus {
+  color: #ff5050 !important;
+}
+
+.nav-link:active .dropdown-icon, .nav-link:focus .dropdown-icon {
+  background-image: url("../images/special_icons/down-arrow-orange.svg") !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 9999999;
+  top: 3px;
+  left: 3px;
+  -webkit-transition: all 0s;
+  transition: all 0s;
+}
+
+.nav-underline::after {
+  position: absolute;
+  content: '';
+  top: 42px;
+  left: 0;
+  width: 50px;
+  margin-left: 1.8rem;
+=======
 .nav-underline::before {
   position: absolute;
   top: 25px;
   height: 2px;
+>>>>>>> 533d584dab96f93a764fd34f810e69ba28172173
   background-color: #ff5050;
-  width: 85%;
-  margin: auto;
+  border-radius: 10px;
+  border-top-color: #ff5050;
+}
+
+.dropdown-icon {
+  background-image: url(../images/special_icons/down-arrow-black.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 9999999;
+  top: 3px;
+  left: 3px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 /* common styling 
@@ -1755,10 +1800,6 @@ for all sections start */
 .contact-container .text-container p {
   font-family: ProximaNova;
   width: 70%;
-}
-
-.btn-business {
-  width: 200px;
 }
 
 .contact-us-container {
