@@ -197,6 +197,14 @@ section:nth-child(2):not(#home) {
 
 /* common styling 
 for all sections start */
+section:not(:nth-child(1)) {
+  z-index: -99999999999;
+}
+
+section:not(:nth-child(1)) .card {
+  z-index: 1;
+}
+
 .card {
   border: 0;
 }
