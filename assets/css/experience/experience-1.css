@@ -1,0 +1,72 @@
+/* Experience page styling */
+#solution-design .btn-business {
+  margin-top: 2rem;
+}
+
+#solution-design .back-btn {
+  font-family: ProximaNova;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.89;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+#solution-design .back-btn img {
+  width: 10px;
+  margin-right: 7px;
+}
+
+#solution-design .back-btn img:hover {
+  cursor: pointer;
+}
+
+#solution-design .img-container img {
+  height: 395px;
+  width: 557px;
+}
+
+#solution-design .card {
+  margin-top: -45px;
+  margin-left: 50px;
+}
+
+#solution-design .card h1 {
+  font-family: MinionWebPro;
+  font-weight: bold;
+  font-size: 1.8rem;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+}
+
+#solution-design .card .card-body {
+  width: 20rem;
+  padding-right: 3.5rem;
+}
+
+#solution-design .card p {
+  font-family: ProximaNova;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: normal;
+  text-align: left;
+  color: #061134;
+  word-wrap: break-word;
+}
+
+.solution-design-divider-bar::after {
+  height: 18.5rem !important;
+}
+/*# sourceMappingURL=experience-1.css.map */

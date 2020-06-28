@@ -113,6 +113,7 @@ section:nth-child(2):not(#home) {
 
 .nav-link {
   color: white;
+  font-size: 0.8rem;
 }
 
 .navbar-content {
@@ -124,8 +125,8 @@ section:nth-child(2):not(#home) {
   font-size: 0.9rem;
   background-color: #ffffff;
   box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-  padding: 0 10rem;
-  z-index: 99999;
+  padding: 2.5rem 10rem;
+  z-index: 99999999;
   .dropdown-menu {
     // position: relative;
     margin-top: 20px;
@@ -171,17 +172,19 @@ section:nth-child(2):not(#home) {
   transition: all 0.3s;
 }
 
-.nav-link::before {
-  transition: 0.7s;
-  height: 2.5px;
-  content: '';
-  position: absolute;
-  background-color: #006df0 !important;
-}
+// .nav-link::before {
+//   transition: 0.7s;
+//   height: 2.5px;
+//   content: '';
+//   position: absolute;
+//   background-color: #006df0 !important;
+// }
 
-.nav-underline {
+.nav-underline::before{
+  position: absolute;
+  top: 25px;
   height: 2px;
-  background-color: #006df0;
+  background-color: $orange;
   width: 85%;
   margin: auto;
 }
@@ -581,9 +584,10 @@ for all sections start */
 #footer {
   background-color: #1a2239;
   overflow: hidden;
+  height: 28rem;
   .footer {
     // background-color: red;
-    padding-top: 88px;
+    padding-top:70px;
     // width: 90vw;
     // margin-left: 100px;
     margin: 0 auto;
@@ -638,7 +642,6 @@ for all sections start */
   }
   #footer-logo-container {
     padding-bottom: 112.5px;
-    margin-top: 30px;
     li {
       width: 90%;
     }
@@ -654,9 +657,8 @@ for all sections start */
       color: #ffffff;
     }
     .btn {
-      width: 120px;
-      height: 40px;
       color: #ffffff;
+      font-size: 12px;
       border-radius: 20px 0 20px 0 !important;
     }
     li:nth-child(3) {
@@ -679,7 +681,7 @@ for all sections start */
     }
     .footer-bg-circle {
       position: absolute;
-      right: -8%;
+      right: -13%;
       bottom: -88%;
     }
   }
