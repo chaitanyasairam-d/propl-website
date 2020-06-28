@@ -41,6 +41,8 @@
     }
   }
   .card {
+    z-index: -9999999;
+
     h1 {
       font-family: MinionWebPro;
       font-size: 2rem;

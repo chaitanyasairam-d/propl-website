@@ -41,6 +41,8 @@
     }
   }
   .card {
+    z-index: -9999999;
+
     width: 18rem !important;
     margin-top: -45px;
     margin-left: 40px;
