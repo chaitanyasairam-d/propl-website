@@ -2,11 +2,11 @@
 
 #experiential-learning {
   .btn-business {
-    margin-top: 1.6rem;
+    margin-top: 1rem;
   }
   .back-btn {
     font-family: ProximaNova;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -14,31 +14,35 @@
     letter-spacing: normal;
     text-align: left;
     color: #061134;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
     img {
-      margin-right: 10px;
+      width: 10px;
+      margin-right: 7px;
       &:hover {
         cursor: pointer;
       }
     }
   }
   .img-border {
-    border: 2px solid $orange;
-    height: 457px;
-    width: 651px;
+    border: 1.5px solid $orange;
+    height: 395px;
+    width: 553px;
     position: absolute;
-    border-top-left-radius: 80px;
-    left: -13px;
-    bottom: 35px;
+    border-top-left-radius: 75px;
+    left: -10px;
+    bottom: 25px;
     z-index: -1;
   }
   .img-container {
     img {
-      width: 650px;
+      height: 395px;
+      width: 557px;
     }
   }
   .card {
     margin-top: -20px;
-    margin-left: 50px;
+    margin-left: 25px;
     h1 {
       font-family: MinionWebPro;
       font-size: 2rem;
@@ -52,11 +56,11 @@
     }
     p {
       font-family: ProximaNova;
-      font-size: 20px;
+      font-size: 19.5px;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
-      line-height: 2.08;
+      line-height: 2;
       letter-spacing: normal;
       text-align: left;
       color: #061134;
@@ -67,6 +71,6 @@
 
 #what-to-expect {
   .experiential-learning-divider-bar::after {
-    height: 11.5rem;
+    height: 8.5rem;
   }
 }

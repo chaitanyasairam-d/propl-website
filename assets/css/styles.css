@@ -40,6 +40,7 @@ section:nth-child(2):not(#home) {
 
 .nav-link {
   color: white;
+  font-size: 0.8rem;
 }
 
 .navbar-content {
@@ -52,7 +53,7 @@ section:nth-child(2):not(#home) {
   background-color: #ffffff;
   -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-  padding: 0 10rem;
+  padding: 2.5rem 10rem;
   z-index: 99999999;
 }
 
@@ -85,14 +86,16 @@ section:nth-child(2):not(#home) {
   -webkit-transition: 0.7s;
   transition: 0.7s;
   height: 2.5px;
-  content: "";
+  content: '';
   position: absolute;
-  background-color: #006df0 !important;
+  background-color: #ff5050 !important;
 }
 
-.nav-underline {
+.nav-underline::before {
+  position: absolute;
+  top: 50px;
   height: 2px;
-  background-color: #006df0;
+  background-color: #ff5050;
   width: 85%;
   margin: auto;
 }
@@ -472,10 +475,11 @@ for all sections start */
 #footer {
   background-color: #1a2239;
   overflow: hidden;
+  height: 28rem;
 }
 
 #footer .footer {
-  padding-top: 88px;
+  padding-top: 70px;
   margin: 0 auto;
 }
 
@@ -535,7 +539,6 @@ for all sections start */
 
 #footer #footer-logo-container {
   padding-bottom: 112.5px;
-  margin-top: 30px;
 }
 
 #footer #footer-logo-container li {
@@ -555,9 +558,8 @@ for all sections start */
 }
 
 #footer #footer-logo-container .btn {
-  width: 120px;
-  height: 40px;
   color: #ffffff;
+  font-size: 12px;
   border-radius: 20px 0 20px 0 !important;
 }
 
@@ -588,24 +590,23 @@ for all sections start */
 
 #footer #footer-logo-container .footer-bg-circle {
   position: absolute;
-  right: -8%;
+  right: -13%;
   bottom: -88%;
 }
 
 /* Experience page styling */
 .btn-business {
-  width: 150px;
-  height: 50px;
+  width: 140px;
+  height: 45px;
   padding: 12px 18px;
   border-color: #ff5050;
   background-color: #ff5050;
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
-  border-top-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  margin-top: 20px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   font-family: ProximaNova;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -614,12 +615,12 @@ for all sections start */
 }
 
 #business-design-sprint .btn-business {
-  margin-top: 2rem !important;
+  margin-top: 1rem;
 }
 
 #business-design-sprint .back-btn {
   font-family: ProximaNova;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -627,10 +628,13 @@ for all sections start */
   letter-spacing: normal;
   text-align: left;
   color: #061134;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 #business-design-sprint .back-btn img {
-  margin-right: 10px;
+  width: 10px;
+  margin-right: 7px;
 }
 
 #business-design-sprint .back-btn img:hover {
@@ -638,28 +642,30 @@ for all sections start */
 }
 
 #business-design-sprint .img-border {
-  border: 2px solid #ff5050;
-  height: 434px;
-  width: 635px;
+  border: 1.5px solid #ff5050;
+  height: 395px;
+  width: 557px;
   position: absolute;
-  border-top-left-radius: 80px;
-  left: -13px;
-  bottom: 47px;
+  border-top-left-radius: 75px;
+  left: -10px;
+  bottom: 35px;
   z-index: -1;
 }
 
 #business-design-sprint .img-container img {
-  width: 100%;
+  height: 395px;
+  width: 557px;
 }
 
 #business-design-sprint .card {
   margin-top: -45px;
+  margin-left: 40px;
 }
 
 #business-design-sprint .card h1 {
   font-family: MinionWebPro;
-  font-size: 2rem;
   font-weight: bold;
+  font-size: 1.8rem;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
@@ -676,7 +682,7 @@ for all sections start */
 #business-design-sprint .card p {
   font-family: ProximaNova;
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 2.08;
@@ -687,13 +693,13 @@ for all sections start */
 }
 
 #desirable {
-  margin-top: 210px;
+  margin-top: 120px;
   background-color: #061134;
 }
 
 #desirable .section-starter {
-  margin-top: 90px;
-  margin-bottom: 52px;
+  margin-top: 70px;
+  margin-bottom: 32px;
 }
 
 #desirable .section-header {
@@ -709,7 +715,7 @@ for all sections start */
 }
 
 #desirable .card-container {
-  margin-right: 30px;
+  margin-right: 60px;
 }
 
 #desirable .row {
@@ -721,10 +727,7 @@ for all sections start */
 #desirable .card {
   text-align: center;
   width: 13rem;
-  height: 209px;
-  margin-right: 20px;
-  margin-right: auto;
-  margin-left: auto;
+  height: 200px;
   margin-bottom: 182px;
   background-color: #ffffff;
   border-radius: 20px;
@@ -740,7 +743,7 @@ for all sections start */
 }
 
 #desirable .card .card-body {
-  padding: 18px;
+  padding: 0 .7rem;
   font-family: ProximaNova;
   font-size: 20px;
   font-weight: 600;
@@ -753,12 +756,12 @@ for all sections start */
 }
 
 #what-to-expect .section-starter {
-  margin-top: 200px;
-  margin-bottom: 52px;
+  margin-top: 150px;
+  margin-bottom: 32px;
 }
 
 #what-to-expect h3 {
-  margin-bottom: 159.5px;
+  margin-bottom: 60px;
   font-family: MinionWebPro;
   font-weight: bold;
   font-stretch: normal;
@@ -773,33 +776,34 @@ for all sections start */
   height: 23rem !important;
 }
 
+#what-to-expect .col-md-6:nth-child(even) .card {
+  margin-left: auto;
+  margin-right: 25px;
+}
+
 #what-to-expect .col-md-6:nth-child(odd) .card {
-  margin-left: 100px;
+  margin-left: 25px;
 }
 
 #what-to-expect .divider-bar::after {
   content: '';
   width: 1px;
-  height: 22.9rem;
+  height: 18.8rem;
   background-color: grey;
   position: absolute;
   right: 0;
-  top: 4.3rem;
-}
-
-#what-to-expect .col-md-6:nth-child(even) .card {
-  margin-right: 100px;
+  top: 2.5rem;
 }
 
 #what-to-expect .card {
   text-align: center;
-  width: 19rem;
-  margin: 0 auto;
+  width: 22.5rem;
+  height: 14rem;
 }
 
 #what-to-expect .card img {
-  width: 100px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
   margin-top: 0;
   margin-bottom: 23px;
   margin-right: auto;
@@ -808,23 +812,23 @@ for all sections start */
 
 #what-to-expect .card .card-title {
   font-family: ProximaNova;
-  font-size: .9rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 800;
   font-stretch: normal;
   font-style: normal;
   line-height: 1;
   letter-spacing: normal;
   text-align: center;
   color: #061134;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 #what-to-expect .card .card-body {
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   margin-bottom: 108px;
   font-family: ProximaNova;
-  font-size: 15.6px;
-  font-weight: normal;
+  font-size: 14px;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.82;
@@ -849,24 +853,23 @@ for all sections start */
 
 #what-to-expect .divider-btn .what-we-expect-underline {
   margin: 0 40px;
-  width: 400px;
-  height: 2px;
+  width: 350px;
+  height: 1px;
   background-color: #ff5050;
   border-radius: 10px;
 }
 
 #loved-by {
-  margin-bottom: 301px;
+  margin-bottom: 201px;
 }
 
 #loved-by .section-starter {
-  margin-top: 200px;
-  margin-bottom: 52px;
+  margin-top: 150px;
 }
 
 .business-footer-underline {
   margin: 0 auto;
-  width: 80vw;
+  width: 70vw;
   height: 8px;
   background-color: #ff5050;
   border-radius: 10px;
@@ -874,12 +877,12 @@ for all sections start */
 
 /* Experience page styling */
 #solution-design .btn-business {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #solution-design .back-btn {
   font-family: ProximaNova;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -887,10 +890,13 @@ for all sections start */
   letter-spacing: normal;
   text-align: left;
   color: #061134;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 #solution-design .back-btn img {
-  margin-right: 10px;
+  width: 10px;
+  margin-right: 7px;
 }
 
 #solution-design .back-btn img:hover {
@@ -898,28 +904,30 @@ for all sections start */
 }
 
 #solution-design .img-border {
-  border: 2px solid #ff5050;
-  height: 437px;
-  width: 621px;
+  border: 1.5px solid #ff5050;
+  height: 395px;
+  width: 553px;
   position: absolute;
-  border-top-left-radius: 80px;
-  left: -13px;
+  border-top-left-radius: 75px;
+  left: -10px;
   bottom: 35px;
   z-index: -1;
 }
 
 #solution-design .img-container img {
-  width: 620px;
+  height: 395px;
+  width: 557px;
 }
 
 #solution-design .card {
   margin-top: -45px;
+  margin-left: 50px;
 }
 
 #solution-design .card h1 {
   font-family: MinionWebPro;
-  font-size: 2rem;
   font-weight: bold;
+  font-size: 1.8rem;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
@@ -929,13 +937,14 @@ for all sections start */
 }
 
 #solution-design .card .card-body {
-  width: 18.3rem;
+  width: 20rem;
+  padding-right: 3.5rem;
 }
 
 #solution-design .card p {
   font-family: ProximaNova;
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 2.08;
@@ -946,17 +955,17 @@ for all sections start */
 }
 
 .solution-design-divider-bar::after {
-  height: 22.8rem !important;
+  height: 18.5rem !important;
 }
 
 /* Experience page styling */
 #solution-delivery .btn-business {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #solution-delivery .back-btn {
   font-family: ProximaNova;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -964,10 +973,13 @@ for all sections start */
   letter-spacing: normal;
   text-align: left;
   color: #061134;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 #solution-delivery .back-btn img {
-  margin-right: 10px;
+  width: 10px;
+  margin-right: 7px;
 }
 
 #solution-delivery .back-btn img:hover {
@@ -975,23 +987,24 @@ for all sections start */
 }
 
 #solution-delivery .img-border {
-  border: 2px solid #ff5050;
-  height: 457px;
-  width: 651px;
+  border: 1.5px solid #ff5050;
+  height: 395px;
+  width: 553px;
   position: absolute;
-  border-top-left-radius: 80px;
-  left: -13px;
-  bottom: 35px;
+  border-top-left-radius: 75px;
+  left: -10px;
+  bottom: 25px;
   z-index: -1;
 }
 
 #solution-delivery .img-container img {
-  width: 650px;
+  height: 395px;
+  width: 557px;
 }
 
 #solution-delivery .card h1 {
   font-family: MinionWebPro;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -1015,17 +1028,17 @@ for all sections start */
 }
 
 .solution-delivery-divider-bar::after {
-  height: 21.5rem !important;
+  height: 18.2rem !important;
 }
 
 /* Experience page styling */
 #innovation-transformation .btn-business {
-  margin-top: 2.6rem;
+  margin-top: 1rem;
 }
 
 #innovation-transformation .back-btn {
   font-family: ProximaNova;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -1033,10 +1046,13 @@ for all sections start */
   letter-spacing: normal;
   text-align: left;
   color: #061134;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 #innovation-transformation .back-btn img {
-  margin-right: 10px;
+  width: 10px;
+  margin-right: 7px;
 }
 
 #innovation-transformation .back-btn img:hover {
@@ -1044,18 +1060,19 @@ for all sections start */
 }
 
 #innovation-transformation .img-border {
-  border: 2px solid #ff5050;
-  height: 457px;
-  width: 651px;
+  border: 1.5px solid #ff5050;
+  height: 395px;
+  width: 553px;
   position: absolute;
-  border-top-left-radius: 80px;
-  left: -13px;
-  bottom: 35px;
+  border-top-left-radius: 75px;
+  left: -10px;
+  bottom: 25px;
   z-index: -1;
 }
 
 #innovation-transformation .img-container img {
-  width: 650px;
+  height: 395px;
+  width: 557px;
 }
 
 #innovation-transformation .card {
@@ -1065,7 +1082,7 @@ for all sections start */
 
 #innovation-transformation .card h1 {
   font-family: MinionWebPro;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -1089,17 +1106,17 @@ for all sections start */
 }
 
 .innovation-transformation-divider-bar::after {
-  height: 23rem !important;
+  height: 18.5rem !important;
 }
 
 /* Experience page styling */
 #experiential-learning .btn-business {
-  margin-top: 1.6rem;
+  margin-top: 1rem;
 }
 
 #experiential-learning .back-btn {
   font-family: ProximaNova;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -1107,10 +1124,13 @@ for all sections start */
   letter-spacing: normal;
   text-align: left;
   color: #061134;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 #experiential-learning .back-btn img {
-  margin-right: 10px;
+  width: 10px;
+  margin-right: 7px;
 }
 
 #experiential-learning .back-btn img:hover {
@@ -1118,23 +1138,24 @@ for all sections start */
 }
 
 #experiential-learning .img-border {
-  border: 2px solid #ff5050;
-  height: 457px;
-  width: 651px;
+  border: 1.5px solid #ff5050;
+  height: 395px;
+  width: 553px;
   position: absolute;
-  border-top-left-radius: 80px;
-  left: -13px;
-  bottom: 35px;
+  border-top-left-radius: 75px;
+  left: -10px;
+  bottom: 25px;
   z-index: -1;
 }
 
 #experiential-learning .img-container img {
-  width: 650px;
+  height: 395px;
+  width: 557px;
 }
 
 #experiential-learning .card {
   margin-top: -20px;
-  margin-left: 50px;
+  margin-left: 25px;
 }
 
 #experiential-learning .card h1 {
@@ -1151,11 +1172,11 @@ for all sections start */
 
 #experiential-learning .card p {
   font-family: ProximaNova;
-  font-size: 20px;
+  font-size: 19.5px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 2.08;
+  line-height: 2;
   letter-spacing: normal;
   text-align: left;
   color: #061134;
@@ -1163,7 +1184,7 @@ for all sections start */
 }
 
 #what-to-expect .experiential-learning-divider-bar::after {
-  height: 11.5rem;
+  height: 8.5rem;
 }
 
 /* strategy future css*/
@@ -1347,12 +1368,12 @@ for all sections start */
 
 /* Experience page styling */
 #growth-strategy .btn-business {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 #growth-strategy .back-btn {
   font-family: ProximaNova;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -1360,10 +1381,13 @@ for all sections start */
   letter-spacing: normal;
   text-align: left;
   color: #061134;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 #growth-strategy .back-btn img {
-  margin-right: 10px;
+  width: 10px;
+  margin-right: 7px;
 }
 
 #growth-strategy .back-btn img:hover {
@@ -1371,28 +1395,30 @@ for all sections start */
 }
 
 #growth-strategy .img-border {
-  border: 2px solid #ff5050;
-  height: 457px;
-  width: 651px;
+  border: 1.5px solid #ff5050;
+  height: 395px;
+  width: 553px;
   position: absolute;
-  border-top-left-radius: 80px;
-  left: -13px;
-  bottom: 35px;
+  border-top-left-radius: 75px;
+  left: -10px;
+  bottom: 25px;
   z-index: -1;
 }
 
 #growth-strategy .img-container img {
-  width: 650px;
+  height: 395px;
+  width: 557px;
 }
 
 #growth-strategy .card {
+  width: 18rem !important;
   margin-top: -45px;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 #growth-strategy .card h1 {
   font-family: MinionWebPro;
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -1404,8 +1430,8 @@ for all sections start */
 
 #growth-strategy .card p {
   font-family: ProximaNova;
-  font-size: 20px;
-  font-weight: normal;
+  font-size: 17px;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 2.08;
@@ -1415,14 +1441,18 @@ for all sections start */
   word-wrap: break-word;
 }
 
+.growth-strategy-divider-bar::after {
+  height: 18.5rem !important;
+}
+
 /* Experience page styling */
 #growth-experiments .btn-business {
-  margin-top: 2.6rem;
+  margin-top: 1rem;
 }
 
 #growth-experiments .back-btn {
   font-family: ProximaNova;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -1430,10 +1460,13 @@ for all sections start */
   letter-spacing: normal;
   text-align: left;
   color: #061134;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 #growth-experiments .back-btn img {
-  margin-right: 10px;
+  width: 10px;
+  margin-right: 7px;
 }
 
 #growth-experiments .back-btn img:hover {
@@ -1441,18 +1474,19 @@ for all sections start */
 }
 
 #growth-experiments .img-border {
-  border: 2px solid #ff5050;
-  height: 457px;
-  width: 651px;
+  border: 1.5px solid #ff5050;
+  height: 395px;
+  width: 553px;
   position: absolute;
-  border-top-left-radius: 80px;
-  left: -13px;
-  bottom: 35px;
+  border-top-left-radius: 75px;
+  left: -10px;
+  bottom: 25px;
   z-index: -1;
 }
 
 #growth-experiments .img-container img {
-  width: 650px;
+  height: 395px;
+  width: 557px;
 }
 
 #growth-experiments .card h1 {
@@ -1480,14 +1514,18 @@ for all sections start */
   word-wrap: break-word;
 }
 
+.growth-experiments-divider-bar::after {
+  height: 18.4rem !important;
+}
+
 /* Experience page styling */
 #entrepreneur-residence .btn-business {
-  margin-top: 2rem !important;
+  margin-top: 1rem !important;
 }
 
 #entrepreneur-residence .back-btn {
   font-family: ProximaNova;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
   font-style: normal;
@@ -1495,10 +1533,13 @@ for all sections start */
   letter-spacing: normal;
   text-align: left;
   color: #061134;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 #entrepreneur-residence .back-btn img {
-  margin-right: 10px;
+  width: 10px;
+  margin-right: 7px;
 }
 
 #entrepreneur-residence .back-btn img:hover {
@@ -1506,18 +1547,19 @@ for all sections start */
 }
 
 #entrepreneur-residence .img-border {
-  border: 2px solid #ff5050;
-  height: 457px;
-  width: 651px;
+  border: 1.5px solid #ff5050;
+  height: 395px;
+  width: 553px;
   position: absolute;
-  border-top-left-radius: 80px;
-  left: -13px;
-  bottom: 35px;
+  border-top-left-radius: 75px;
+  left: -10px;
+  bottom: 25px;
   z-index: -1;
 }
 
 #entrepreneur-residence .img-container img {
-  width: 650px;
+  height: 395px;
+  width: 557px;
 }
 
 #entrepreneur-residence .card {
@@ -1527,7 +1569,7 @@ for all sections start */
 
 #entrepreneur-residence .card h1 {
   font-family: MinionWebPro;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -1548,6 +1590,10 @@ for all sections start */
   text-align: left;
   color: #061134;
   word-wrap: break-word;
+}
+
+.entrepreneur-residence-divider-bar::after {
+  height: 18.4rem !important;
 }
 
 .propl-about-container {
