@@ -136,7 +136,6 @@ section:nth-child(2):not(#home) {
     color: #0b1120 !important;
   }
 }
-
 .dropdown-item {
   font-size: 0.8rem;
   font-family: ProximaNova;
@@ -183,7 +182,7 @@ section:nth-child(2):not(#home) {
 
 .nav-underline::before{
   position: absolute;
-  top: ;
+  top: 25px;
   height: 2px;
   background-color: $orange;
   width: 85%;
@@ -364,7 +363,6 @@ for all sections start */
   margin-top: 20px;
 }
 
-
 /*===Clients*/
 /*testimonials*/
 
@@ -446,7 +444,6 @@ for all sections start */
     }
   }
 }
-
 
 /*===testimonials*/
 
@@ -621,7 +618,7 @@ for all sections start */
     .item-span {
       opacity: 0.5;
       font-family: ProximaNova;
-     font-size: 10px;
+      font-size: 10px;
       font-weight: normal;
       font-stretch: normal;
       font-style: normal;
@@ -691,11 +688,11 @@ for all sections start */
 }
 
 @import './experience/experience.scss';
-@import './experience/experience-1.scss';
 @import './experience/experience-2.scss';
 @import './capability/capability.scss';
-@import './capability/capability-1.scss';
 @import './strategy/strategy-future.scss';
+@import './experience/experience-1.scss';
+@import './capability/capability-1.scss';
 @import './strategy/strategy.scss';
 @import './strategy/strategy-2.scss';
 @import './strategy/strategy-3.scss';
