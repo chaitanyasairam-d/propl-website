@@ -9,6 +9,35 @@ body {
   text-rendering: optimizeLegibility;
   box-sizing: border-box;
   font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+button {
+  outline: none !important;
+}
+
+a,
+a:focus,
+a:hover,
+a:active {
+  text-decoration: none;
+  outline: 0 !important;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn.focus:active,
+.btn:active:focus,
+.btn:focus {
+  text-decoration: none;
+  outline: 0;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 //font variables
@@ -126,7 +155,7 @@ section:nth-child(2):not(#home) {
   background-color: #ffffff;
   box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
   padding: 2.5rem 10rem;
-  z-index: 99999999;
+  z-index: 9999;
   .dropdown-menu {
     // position: relative;
     margin-top: 20px;
@@ -180,7 +209,7 @@ section:nth-child(2):not(#home) {
 //   background-color: #006df0 !important;
 // }
 
-.nav-underline::before{
+.nav-underline::before {
   position: absolute;
   top: 25px;
   height: 2px;
@@ -260,8 +289,7 @@ for all sections start */
   height: 40px;
   border-color: $orange;
   background-color: $orange;
-  border-top-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px 0 15px;
   margin-top: 20px;
   font-family: $paragraph-font;
   font-size: 0.75rem;
@@ -587,7 +615,7 @@ for all sections start */
   height: 28rem;
   .footer {
     // background-color: red;
-    padding-top:70px;
+    padding-top: 70px;
     // width: 90vw;
     // margin-left: 100px;
     margin: 0 auto;
