@@ -49,27 +49,6 @@ $mobile: 320px;
     font-size: 0.85rem;
   }
 
-<<<<<<< HEAD
-  /*clients list*/
-  .client-list li {
-    width: 50%;
-  }
-  .client_icon {
-    width: 100px;
-  }
-  /*testimonials*/
-  .item {
-    width: 100%;
-    padding: 30px 20px;
-    .testimonial-container {
-      h4 {
-        height: auto;
-        font-size: 0.7rem;
-      }
-      .testimonial-footer h5 {
-        span {
-          font-size: 0.8rem;
-=======
     /*clients list*/
     .client-list li {
         width: 50%;
@@ -94,21 +73,9 @@ $mobile: 320px;
                 font-size: .7rem;
                 top: 5px;
             }
->>>>>>> 3e7daee514ef2d164d0da4c95a32c7006d7dc341
-        }
-        font-size: 0.7rem;
-        top: 5px;
-      }
-    }
+           }
   }
 
-<<<<<<< HEAD
-  /*predict-future*/
-  /*Abouts us */
-  .future-text {
-    width: 100%;
-  }
-=======
     /*predict-future*/
     /*strategy-future*/
     .btn-business {
@@ -193,7 +160,6 @@ $mobile: 320px;
     .modal-content {
         padding: 10px;
     }
->>>>>>> 3e7daee514ef2d164d0da4c95a32c7006d7dc341
 }
 
 @media only screen and (min-width: 500px) and (max-width: 800px) {
