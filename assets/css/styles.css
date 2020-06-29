@@ -2193,6 +2193,10 @@ section:not(:nth-child(1)) .card {
     width: 100px;
   }
   /*predict-future*/
+  /*Abouts us */
+  .future-text {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 800px) {
