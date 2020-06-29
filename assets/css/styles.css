@@ -708,6 +708,10 @@ for all sections start */
   color: #ffffff;
 }
 
+.btn-business:hover {
+  color: #fff !important;
+}
+
 #business-design-sprint .btn-business {
   margin-top: 1rem;
 }
@@ -1451,7 +1455,7 @@ for all sections start */
 }
 
 #experiential-learning .card {
-  z-index: -9999999999;
+  z-index: 1;
   margin-top: -20px;
   margin-left: 25px;
 }
@@ -1538,7 +1542,7 @@ for all sections start */
 }
 
 #growth-strategy .card {
-  z-index: -9999999;
+  z-index: 1;
   width: 18rem !important;
   margin-top: -45px;
   margin-left: 40px;
@@ -1618,7 +1622,7 @@ for all sections start */
 }
 
 #growth-experiments .card {
-  z-index: -9999999;
+  z-index: 1;
 }
 
 #growth-experiments .card h1 {
