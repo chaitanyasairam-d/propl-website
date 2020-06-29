@@ -2192,6 +2192,10 @@ section:not(:nth-child(1)) .card {
   .client_icon {
     width: 100px;
   }
+  /*testimonials*/
+  .item {
+    width: 100%;
+  }
   /*predict-future*/
   /*Abouts us */
   .future-text {
