@@ -39,6 +39,9 @@ a:active {
   outline: none !important;
   box-shadow: none !important;
 }
+.btn-back{
+  color: black!important;
+}
 .back-btn {
   margin-top: 2rem;
 }
@@ -93,6 +96,7 @@ section:nth-child(2):not(#home) {
     margin: 0 0.5rem;
   }
 }
+}
 
 .navbar-content {
   width: 100%;
@@ -121,6 +125,7 @@ section:nth-child(2):not(#home) {
     color: #0b1120 !important;
   }
 }
+
 .dropdown-item {
   font-size: 0.8rem;
   font-family: ProximaNova;
@@ -666,7 +671,6 @@ section:not(:nth-child(1)){
       bottom: -88%;
     }
   }
-}
 }
 
 @import './experience/experience.scss';
