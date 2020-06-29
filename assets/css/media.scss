@@ -49,117 +49,117 @@ $mobile: 320px;
     font-size: 0.85rem;
   }
 
-    /*clients list*/
-    .client-list li {
-        width: 50%;
+  /*clients list*/
+  .client-list li {
+    width: 50%;
+  }
+  .client_icon {
+    width: 100px;
+  }
+  /*testimonials*/
+  .item {
+    width: 100%;
+    padding: 30px 20px;
+    .testimonial-container {
+      h4 {
+        height: auto;
+        font-size: 0.7rem;
+        line-height: 2;
+      }
+      .testimonial-footer h5 {
+        span {
+          font-size: 0.8rem;
+        }
+        font-size: 0.7rem;
+        top: 5px;
+      }
     }
-    .client_icon {
-        width: 100px;
-    }
-    /*testimonials*/
-    .item {
-        width: 100%;
-        padding: 30px 20px;
-        .testimonial-container {
-            h4 {
-                height: auto;
-            font-size: .7rem;
-            line-height: 2;
-            }
-            .testimonial-footer h5 {
-                span {
-                    font-size: .8rem;
-                }
-                font-size: .7rem;
-                top: 5px;
-            }
-           }
   }
 
-    /*predict-future*/
-    /*strategy-future*/
-    .btn-business {
-        font-size: 12px;
+  /*predict-future*/
+  /*strategy-future*/
+  .btn-business {
+    font-size: 12px;
+  }
+  .future-header {
+    width: 100%;
+  }
+  .future-text {
+    width: 100%;
+    p {
+      font-size: 1.25rem;
     }
-    .future-header {
-        width: 100%;
+  }
+  .point-list {
+    li {
+      flex: 1 1 100%;
     }
-    .future-text {
-        width: 100%;
-        p {
-            font-size: 1.25rem;
-        }
+    .acheiver-container {
+      width: 100%;
     }
-    .point-list  {
-        li {
-            flex: 1 1 100%;
-        }
-        .acheiver-container {
-            width: 100%;
-        }
+  }
+  .capabilty .point-list .acheiver-container {
+    width: 100%;
+  }
+  .capability-width .do-list {
+    width: 100%;
+  }
+  .do-list {
+    @include marginAuto(100%);
+    li {
+      margin-bottom: 20px;
     }
-    .capabilty .point-list .acheiver-container {
-        width: 100%;
+    .btn-more {
+      margin-top: 0px;
     }
-    .capability-width .do-list {
-        width: 100%;
-    }
-    .do-list {
-        @include marginAuto(100%);
-        li {
-            margin-bottom: 20px;
-        }
-        .btn-more {
-            margin-top: 0px;
-        }
-    }
-    /*strategy-future*/
+  }
+  /*strategy-future*/
 
-    /*Abouts us */ 
-    .propl-about-container {
-        height: 8.5rem;
-    }
-    .love-list {
-        li {
-            flex: 1 1 100%;
-            margin-bottom: 0px;
-            .list-container {
-                .text {
-                    width: 100%;
-                    height: 4rem;
-                }
-            }
+  /*Abouts us */
+  .propl-about-container {
+    height: 8.5rem;
+  }
+  .love-list {
+    li {
+      flex: 1 1 100%;
+      margin-bottom: 0px;
+      .list-container {
+        .text {
+          width: 100%;
+          height: 4rem;
         }
+      }
     }
-    .contact-container {
+  }
+  .contact-container {
+    width: 100%;
+    .contact-box {
+      width: 100%;
+    }
+    .get-in-touch-bg img {
+      height: 125px;
+      overflow: visible;
+      margin: 10px 30px 0px 15px;
+    }
+    .text-container {
+      p {
+        margin: 0;
         width: 100%;
-        .contact-box {
-            width: 100%;
-        }
-        .get-in-touch-bg img {
-            height: 125px;
-            overflow: visible;
-            margin: 10px 30px 0px 15px;
-        }
-        .text-container {
-            p {
-                margin: 0;
-                width: 100%;
-                font-size: .8rem;
-            }
-            .btn-more {
-                width: auto;
-                margin-top: 5px;
-                font-size: .7rem;
-            }
-        }
+        font-size: 0.8rem;
+      }
+      .btn-more {
+        width: auto;
+        margin-top: 5px;
+        font-size: 0.7rem;
+      }
     }
-    .contact-left {
-        display: none;
-    }
-    .modal-content {
-        padding: 10px;
-    }
+  }
+  .contact-left {
+    display: none;
+  }
+  .modal-content {
+    padding: 10px;
+  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 800px) {
@@ -281,34 +281,33 @@ $mobile: 320px;
     }
   }
 
-  #footer{
-        height: 50rem!important;
-        .footer-card{
-            text-align: center;
-            margin: 0!important;
-            ul{
-                margin: 0!important;
-                
-            }
-            li{
-                text-align: center;
-            }
+  #footer {
+    height: 50rem !important;
+    .footer-card {
+      text-align: center;
+      margin: 0 !important;
+      ul {
+        margin: 0 !important;
+      }
+      li {
+        text-align: center;
+      }
+    }
+    #footer-logo-container {
+      .footer-img {
+        width: 100px;
+      }
+
+      li:nth-child(3) {
+        display: block !important;
+        a {
+          margin: 1rem 0;
         }
-        #footer-logo-container {
-            .footer-img{
-                width: 100px;
-            }
-            
-            li:nth-child(3) {
-                display: block!important;
-                a{
-                    margin: 1rem 0;
-                }
-            }
-            .footer-bg-circle {
-                right: -50%!important;
-                bottom: -70%!important;
-            }
-        }
+      }
+      .footer-bg-circle {
+        right: -50% !important;
+        bottom: -70% !important;
+      }
+    }
   }
 }
