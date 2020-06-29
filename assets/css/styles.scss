@@ -77,7 +77,14 @@ section:nth-child(2):not(#home) {
 
 .nav-bg {
   background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
-  padding: 0.5rem 12rem;
+  padding: .5rem 10rem;
+
+  .nav-link{
+    color: #fff!important;
+  font-size: 0.85rem;
+  font-family: $paragraph-semi-bold-font;
+  margin: 0 0.5rem;
+
 
   .nav-link {
     color: #fff !important;
@@ -162,10 +169,10 @@ section:nth-child(2):not(#home) {
   top: 7px;
   display: block;
   margin: 0 auto;
-  width: 55px;
-  height: 2.5px;
-  border-radius: 10px;
-  border-color: #ff5050;
+    width: 55px;
+    height:1px;
+    border-radius: 10px;
+    border-color: #ff5050;
 }
 
 .dropdown-icon {
@@ -659,6 +666,7 @@ section:not(:nth-child(1)){
       bottom: -88%;
     }
   }
+}
 }
 
 @import './experience/experience.scss';
