@@ -22,6 +22,9 @@
   // line-height: 2.5;
   letter-spacing: normal;
   color: #ffffff;
+  &:hover {
+    color: #fff !important;
+  }
 }
 
 #business-design-sprint {
