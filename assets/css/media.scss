@@ -60,6 +60,20 @@ $mobile:320px;
     /*testimonials*/
     .item {
         width: 100%;
+        padding: 30px 20px;
+        .testimonial-container {
+            h4 {
+                height: auto;
+            font-size: .7rem;
+            }
+            .testimonial-footer h5 {
+                span {
+                    font-size: .8rem;
+                }
+                font-size: .7rem;
+                top: 5px;
+            }
+        }
     }
 
     /*predict-future*/
