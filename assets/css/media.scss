@@ -1,3 +1,12 @@
+
+$mobile:320px;
+
+@mixin  mobile {
+    @media (min-width: #{$mobile})  and (max-width:478px){
+        @content; 
+    }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 465px) {
     #predict-fututre #img-bg-circle {
         display: none;
@@ -83,4 +92,85 @@
     /* h4 {
     font-size: 1.2rem;
   } */
+}
+
+
+// Experience page Styling
+
+@include mobile{
+    #business-design-sprint{
+        .img-container,.img-border{
+            display: none;
+        }
+        .card{
+            margin-left: 0!important;
+            width: 100%!important;
+            .card-body{
+                width: 100%!important;
+                padding-right: 0!important;
+                .card-title{
+                    font-size: 1.2rem!important;
+                }
+                .card-body-text{
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+    #desirable{
+        h3{
+            font-size: 1.5rem;
+        }
+        .card-container{
+            height: 170px!important;
+            margin: 1rem 0!important;
+            padding: 0!important;
+            .card{
+                margin: 0 auto;
+                width: 75%!important;
+                height: 100%!important;
+                padding: 0;
+                margin: 0 auto;
+                img{
+                    width: 70px!important;
+                    height: 70px!important;
+                }
+                .card-body{
+                    font-size: .85rem;
+                height: 100%;
+
+                }
+            }
+        }
+        padding-bottom: 40px;
+    }
+    #what-to-expect {
+        .section-starter{
+        margin-top: 75px!important;
+        }
+        .divider-bar{
+            display:none;
+        }
+       .divider-btn .what-we-expect-underline {
+            margin: 10px 20px 0;
+            width: 50px;
+        }
+        .card{
+            width: 100%!important;
+            margin: 0 auto !important;
+            padding: 0!important;
+            
+            .card-body{
+                width: 100%!important;
+                margin: 0!important;
+                padding: 0!important;
+            }
+        
+    }
+}
+#loved-by {
+    .section-starter{
+        margin-top: 75px!important;
+    }
+    }
 }

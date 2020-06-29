@@ -2227,4 +2227,73 @@ section:not(:nth-child(1)) .card {
     font-size: 1.2rem;
   } */
 }
+
+@media (min-width: 320px) and (max-width: 478px) {
+  #business-design-sprint .img-container, #business-design-sprint .img-border {
+    display: none;
+  }
+  #business-design-sprint .card {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  #business-design-sprint .card .card-body {
+    width: 100% !important;
+    padding-right: 0 !important;
+  }
+  #business-design-sprint .card .card-body .card-title {
+    font-size: 1.2rem !important;
+  }
+  #business-design-sprint .card .card-body .card-body-text {
+    font-size: .8rem;
+  }
+  #desirable {
+    padding-bottom: 40px;
+  }
+  #desirable h3 {
+    font-size: 1.5rem;
+  }
+  #desirable .card-container {
+    height: 170px !important;
+    margin: 1rem 0 !important;
+    padding: 0 !important;
+  }
+  #desirable .card-container .card {
+    margin: 0 auto;
+    width: 75% !important;
+    height: 100% !important;
+    padding: 0;
+    margin: 0 auto;
+  }
+  #desirable .card-container .card img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  #desirable .card-container .card .card-body {
+    font-size: .85rem;
+    height: 100%;
+  }
+  #what-to-expect .section-starter {
+    margin-top: 75px !important;
+  }
+  #what-to-expect .divider-bar {
+    display: none;
+  }
+  #what-to-expect .divider-btn .what-we-expect-underline {
+    margin: 10px 20px 0;
+    width: 50px;
+  }
+  #what-to-expect .card {
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
+  #what-to-expect .card .card-body {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #loved-by .section-starter {
+    margin-top: 75px !important;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
