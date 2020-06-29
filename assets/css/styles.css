@@ -69,7 +69,7 @@ section:nth-child(2):not(#home) {
 .nav-bg {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #0b1120), color-stop(77%, rgba(11, 17, 33, 0)));
   background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
-  padding: .5rem 12rem;
+  padding: .5rem 10rem;
 }
 
 .nav-bg .nav-link {
@@ -165,7 +165,7 @@ section:nth-child(2):not(#home) {
   display: block;
   margin: 0 auto;
   width: 55px;
-  height: 4px;
+  height: 1px;
   border-radius: 10px;
   border-color: #ff5050;
 }
@@ -760,7 +760,7 @@ section:not(:nth-child(1)) .card {
 }
 
 #business-design-sprint .card {
-  z-index: -9999999;
+  z-index: -1;
   margin-top: -45px;
   margin-left: 40px;
 }
@@ -1023,7 +1023,7 @@ section:not(:nth-child(1)) .card {
 }
 
 #solution-delivery .card {
-  z-index: -9999999;
+  z-index: -1;
 }
 
 #solution-delivery .card h1 {
@@ -1100,7 +1100,7 @@ section:not(:nth-child(1)) .card {
 }
 
 #innovation-transformation .card {
-  z-index: -9999999999;
+  z-index: -1;
   margin-top: -30px;
   margin-left: 50px;
 }
@@ -1375,7 +1375,7 @@ section:not(:nth-child(1)) .card {
 }
 
 #solution-design .card {
-  z-index: -9999999;
+  z-index: -1;
   margin-top: -45px;
   margin-left: 50px;
 }
@@ -1459,7 +1459,7 @@ section:not(:nth-child(1)) .card {
 }
 
 #experiential-learning .card {
-  z-index: -9999999999;
+  z-index: -1;
   margin-top: -20px;
   margin-left: 25px;
 }
@@ -1546,7 +1546,7 @@ section:not(:nth-child(1)) .card {
 }
 
 #growth-strategy .card {
-  z-index: -9999999;
+  z-index: -1;
   width: 18rem !important;
   margin-top: -45px;
   margin-left: 40px;
@@ -1626,7 +1626,7 @@ section:not(:nth-child(1)) .card {
 }
 
 #growth-experiments .card {
-  z-index: -9999999;
+  z-index: -1;
 }
 
 #growth-experiments .card h1 {
