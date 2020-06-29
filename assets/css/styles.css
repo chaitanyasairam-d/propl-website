@@ -2200,6 +2200,7 @@ section:not(:nth-child(1)) .card {
   .item .testimonial-container h4 {
     height: auto;
     font-size: .7rem;
+    line-height: 2;
   }
   .item .testimonial-container .testimonial-footer h5 {
     font-size: .7rem;
