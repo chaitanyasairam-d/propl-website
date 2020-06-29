@@ -1,97 +1,96 @@
+$mobile: 320px;
 
-$mobile:320px;
-
-@mixin  mobile {
-    @media (min-width: #{$mobile})  and (max-width:478px){
-        @content; 
-    }
+@mixin mobile {
+  @media (min-width: #{$mobile})  and (max-width:478px) {
+    @content;
+  }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 465px) {
-    #predict-fututre #img-bg-circle {
-        display: none;
-    }
-    /*Home css*/
-    /*----Home Css ----*/
-    .home-content-box-inner {
-        top: 65%;
-    }
-    .home-content-box-inner h1 {
-        font-size: 1.65rem;
-        margin-bottom: 1.5rem;
-    }
+  #predict-fututre #img-bg-circle {
+    display: none;
+  }
+  /*Home css*/
+  /*----Home Css ----*/
+  .home-content-box-inner {
+    top: 65%;
+  }
+  .home-content-box-inner h1 {
+    font-size: 1.65rem;
+    margin-bottom: 1.5rem;
+  }
 
-    .home-content-box-inner h4 {
-        font-size: 1rem !important;
-        @include marginAuto(80%)
-    }
+  .home-content-box-inner h4 {
+    font-size: 1rem !important;
+    @include marginAuto(80%);
+  }
 
-    .home_desc {
-        width: 350px;
-    }
-    /*----Home Css ----*/
-    .img-bg-circle {
-        display: none;
-    }
-    .content-header-container h2 {
-        font-size: 1.4rem !important;
-    }
-    .content-header-body p {
-        font-size: 0.9rem !important;
-        width: 100% !important;
-        text-align: center;
-        line-height: 1.5;
-    }
-    .card-title {
-        font-size: 1rem !important;
-    }
-    .card.text p label {
-        width: 70% !important;
-        font-size: 0.85rem;
-    }
+  .home_desc {
+    width: 350px;
+  }
+  /*----Home Css ----*/
+  .img-bg-circle {
+    display: none;
+  }
+  .content-header-container h2 {
+    font-size: 1.4rem !important;
+  }
+  .content-header-body p {
+    font-size: 0.9rem !important;
+    width: 100% !important;
+    text-align: center;
+    line-height: 1.5;
+  }
+  .card-title {
+    font-size: 1rem !important;
+  }
+  .card.text p label {
+    width: 70% !important;
+    font-size: 0.85rem;
+  }
 
-    /*clients list*/
-    .client-list li {
-        width: 50%;
-    }
-    .client_icon {
-        width: 100px;
-    }
-    /*testimonials*/
-    .item {
-        width: 100%;
-        padding: 30px 20px;
-        .testimonial-container {
-            h4 {
-                height: auto;
-            font-size: .7rem;
-            }
-            .testimonial-footer h5 {
-                span {
-                    font-size: .8rem;
-                }
-                font-size: .7rem;
-                top: 5px;
-            }
+  /*clients list*/
+  .client-list li {
+    width: 50%;
+  }
+  .client_icon {
+    width: 100px;
+  }
+  /*testimonials*/
+  .item {
+    width: 100%;
+    padding: 30px 20px;
+    .testimonial-container {
+      h4 {
+        height: auto;
+        font-size: 0.7rem;
+      }
+      .testimonial-footer h5 {
+        span {
+          font-size: 0.8rem;
         }
+        font-size: 0.7rem;
+        top: 5px;
+      }
     }
+  }
 
-    /*predict-future*/
-    /*Abouts us */ 
-    .future-text {
-        width: 100%;
-    }
+  /*predict-future*/
+  /*Abouts us */
+  .future-text {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 800px) {
-    #predict-fututre #img-bg-circle {
-        right: 90%;
-    }
-    .card {
-        z-index: 9999;
-        background: transparent;
-    }
-    /* h4 {
+  #predict-fututre #img-bg-circle {
+    right: 90%;
+  }
+  .card {
+    z-index: 9999;
+    background: transparent;
+  }
+  /* h4 {
     font-size: 1.009rem;
   }
   p {
@@ -100,95 +99,136 @@ $mobile:320px;
 }
 
 @media only screen and (min-width: 800px) {
-    #predict-fututre #img-bg-circle {
-        right: 90%;
-    }
-    .card {
-        z-index: 9999;
-        background: transparent;
-    }
-    /* h4 {
+  #predict-fututre #img-bg-circle {
+    right: 90%;
+  }
+  .card {
+    z-index: 9999;
+    background: transparent;
+  }
+  /* h4 {
     font-size: 1.2rem;
   } */
 }
 
-
 // Experience page Styling
 
-@include mobile{
-    #business-design-sprint{
-        .img-container,.img-border{
-            display: none;
-        }
-        .card{
-            margin-left: 0!important;
-            width: 100%!important;
-            .card-body{
-                width: 100%!important;
-                padding-right: 0!important;
-                .card-title{
-                    font-size: 1.2rem!important;
-                }
-                .card-body-text{
-                    font-size: .8rem;
-                }
-            }
-        }
+@include mobile {
+  #business-design-sprint,
+  #solution-design,
+  #solution-delivery,
+  #growth-strategy,
+  #growth-experiments,
+  #entrepreneur-residence,
+  #innovation-transformation,
+  #experiential-learning {
+    .img-container,
+    .img-border {
+      display: none;
     }
-    #desirable{
-        h3{
-            font-size: 1.5rem;
+    .card {
+      margin-left: 0 !important;
+      width: 100% !important;
+      .card-body {
+        width: 100% !important;
+        padding-right: 0 !important;
+        .card-title {
+          font-size: 1.2rem !important;
         }
-        .card-container{
-            height: 170px!important;
-            margin: 1rem 0!important;
-            padding: 0!important;
-            .card{
-                margin: 0 auto;
-                width: 75%!important;
-                height: 100%!important;
-                padding: 0;
-                margin: 0 auto;
-                img{
-                    width: 70px!important;
-                    height: 70px!important;
-                }
-                .card-body{
-                    font-size: .85rem;
-                height: 100%;
+        .card-body-text {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  #desirable {
+    h3 {
+      font-size: 1.5rem;
+    }
+    .card-container {
+      height: 170px !important;
+      margin: 1rem 0 !important;
+      padding: 0 !important;
+      .card {
+        margin: 0 auto;
+        width: 75% !important;
+        height: 100% !important;
+        padding: 0;
+        margin: 0 auto;
+        img {
+          width: 70px !important;
+          height: 70px !important;
+        }
+        .card-body {
+          font-size: 0.85rem;
+          height: 100%;
+        }
+      }
+    }
+    padding-bottom: 40px;
+  }
+  #what-to-expect {
+    .section-starter {
+      margin-top: 75px !important;
+    }
+    .divider-bar {
+      display: none;
+    }
+    .divider-btn {
+      margin-top: 20px;
+      .what-we-expect-underline {
+        margin: 0 20px;
+        width: 50px;
+      }
+    }
+    .card {
+      width: 100% !important;
+      height: 100% !important;
+      margin: 1rem auto 1rem 0 !important;
+      padding: 0 !important;
 
+      .card-body {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+    }
+  }
+  #loved-by {
+    .section-starter {
+      margin-top: 75px !important;
+    }
+  }
+
+  #footer{
+        height: 50rem!important;
+        .footer-card{
+            text-align: center;
+            margin: 0!important;
+            ul{
+                margin: 0!important;
+                
+            }
+            li{
+                text-align: center;
+            }
+        }
+        #footer-logo-container {
+            .footer-img{
+                width: 100px;
+            }
+            
+            li:nth-child(3) {
+                display: block!important;
+                a{
+                    margin: 1rem 0;
                 }
             }
-        }
-        padding-bottom: 40px;
-    }
-    #what-to-expect {
-        .section-starter{
-        margin-top: 75px!important;
-        }
-        .divider-bar{
-            display:none;
-        }
-       .divider-btn .what-we-expect-underline {
-            margin: 10px 20px 0;
-            width: 50px;
-        }
-        .card{
-            width: 100%!important;
-            margin: 0 auto !important;
-            padding: 0!important;
-            
-            .card-body{
-                width: 100%!important;
-                margin: 0!important;
-                padding: 0!important;
+            .footer-bg-circle {
+                right: -50%!important;
+                bottom: -70%!important;
             }
-        
-    }
-}
-#loved-by {
-    .section-starter{
-        margin-top: 75px!important;
-    }
-    }
+        }
+  }
 }

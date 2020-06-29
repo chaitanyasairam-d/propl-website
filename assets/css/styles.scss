@@ -39,8 +39,8 @@ a:active {
   outline: none !important;
   box-shadow: none !important;
 }
-.btn-back{
-  color: black!important;
+.btn-back {
+  color: black !important;
 }
 .back-btn {
   margin-top: 2rem;
@@ -80,22 +80,21 @@ section:nth-child(2):not(#home) {
 
 .nav-bg {
   background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
-  padding: .5rem 10rem;
-
-  .nav-link{
-    color: #fff!important;
-  font-size: 0.85rem;
-  font-family: $paragraph-semi-bold-font;
-  margin: 0 0.5rem;
-
+  padding: 0.5rem 10rem;
 
   .nav-link {
     color: #fff !important;
     font-size: 0.85rem;
     font-family: $paragraph-semi-bold-font;
     margin: 0 0.5rem;
+
+    .nav-link {
+      color: #fff !important;
+      font-size: 0.85rem;
+      font-family: $paragraph-semi-bold-font;
+      margin: 0 0.5rem;
+    }
   }
-}
 }
 
 .navbar-content {
@@ -174,10 +173,10 @@ section:nth-child(2):not(#home) {
   top: 7px;
   display: block;
   margin: 0 auto;
-    width: 55px;
-    height:1px;
-    border-radius: 10px;
-    border-color: #ff5050;
+  width: 55px;
+  height: 1px;
+  border-radius: 10px;
+  border-color: #ff5050;
 }
 
 .dropdown-icon {
@@ -208,9 +207,9 @@ section:nth-child(2):not(#home) {
 /* common styling 
 for all sections start */
 
-section:not(:nth-child(1)){
+section:not(:nth-child(1)) {
   z-index: -99999999999;
-  .card{
+  .card {
     z-index: 1;
   }
 }
@@ -627,18 +626,11 @@ section:not(:nth-child(1)){
     text-decoration: underline !important;
   }
   #footer-logo-container {
-    padding-bottom: 112.5px;
     li {
       width: 90%;
-    }
-    li:nth-child(2) {
       font-family: ProximaNova;
       font-size: 13px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
       line-height: 2.5;
-      letter-spacing: normal;
       text-align: left;
       color: #ffffff;
     }
@@ -647,26 +639,14 @@ section:not(:nth-child(1)){
       font-size: 12px;
       border-radius: 20px 0 20px 0 !important;
     }
-    li:nth-child(3) {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      .footer-copy-right {
-        // display: inline-block;
-        font-family: ProximaNova;
-        font-size: 13px;
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.88;
-        letter-spacing: normal;
-        text-align: left;
-        color: #ffffff !important;
+  
+    .footer-copy-right {
+        line-height: 1.88!important;
         text-decoration: underline !important;
-      }
     }
     .footer-bg-circle {
       position: absolute;
+      top: -36%;
       right: -13%;
       bottom: -88%;
     }

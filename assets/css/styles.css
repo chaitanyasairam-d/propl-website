@@ -73,7 +73,7 @@ section:nth-child(2):not(#home) {
 .nav-bg {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #0b1120), color-stop(77%, rgba(11, 17, 33, 0)));
   background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
-  padding: .5rem 10rem;
+  padding: 0.5rem 10rem;
 }
 
 .nav-bg .nav-link {
@@ -650,22 +650,11 @@ section:not(:nth-child(1)) .card {
   text-decoration: underline !important;
 }
 
-#footer #footer-logo-container {
-  padding-bottom: 112.5px;
-}
-
 #footer #footer-logo-container li {
   width: 90%;
-}
-
-#footer #footer-logo-container li:nth-child(2) {
   font-family: ProximaNova;
   font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2.5;
-  letter-spacing: normal;
   text-align: left;
   color: #ffffff;
 }
@@ -676,33 +665,14 @@ section:not(:nth-child(1)) .card {
   border-radius: 20px 0 20px 0 !important;
 }
 
-#footer #footer-logo-container li:nth-child(3) {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-#footer #footer-logo-container li:nth-child(3) .footer-copy-right {
-  font-family: ProximaNova;
-  font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.88;
-  letter-spacing: normal;
-  text-align: left;
-  color: #ffffff !important;
+#footer #footer-logo-container .footer-copy-right {
+  line-height: 1.88 !important;
   text-decoration: underline !important;
 }
 
 #footer #footer-logo-container .footer-bg-circle {
   position: absolute;
+  top: -36%;
   right: -13%;
   bottom: -88%;
 }
@@ -2199,14 +2169,14 @@ section:not(:nth-child(1)) .card {
   }
   .item .testimonial-container h4 {
     height: auto;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
   .item .testimonial-container .testimonial-footer h5 {
-    font-size: .7rem;
+    font-size: 0.7rem;
     top: 5px;
   }
   .item .testimonial-container .testimonial-footer h5 span {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   /*predict-future*/
   /*Abouts us */
@@ -2245,22 +2215,65 @@ section:not(:nth-child(1)) .card {
 }
 
 @media (min-width: 320px) and (max-width: 478px) {
-  #business-design-sprint .img-container, #business-design-sprint .img-border {
+  #business-design-sprint .img-container,
+  #business-design-sprint .img-border,
+  #solution-design .img-container,
+  #solution-design .img-border,
+  #solution-delivery .img-container,
+  #solution-delivery .img-border,
+  #growth-strategy .img-container,
+  #growth-strategy .img-border,
+  #growth-experiments .img-container,
+  #growth-experiments .img-border,
+  #entrepreneur-residence .img-container,
+  #entrepreneur-residence .img-border,
+  #innovation-transformation .img-container,
+  #innovation-transformation .img-border,
+  #experiential-learning .img-container,
+  #experiential-learning .img-border {
     display: none;
   }
-  #business-design-sprint .card {
+  #business-design-sprint .card,
+  #solution-design .card,
+  #solution-delivery .card,
+  #growth-strategy .card,
+  #growth-experiments .card,
+  #entrepreneur-residence .card,
+  #innovation-transformation .card,
+  #experiential-learning .card {
     margin-left: 0 !important;
     width: 100% !important;
   }
-  #business-design-sprint .card .card-body {
+  #business-design-sprint .card .card-body,
+  #solution-design .card .card-body,
+  #solution-delivery .card .card-body,
+  #growth-strategy .card .card-body,
+  #growth-experiments .card .card-body,
+  #entrepreneur-residence .card .card-body,
+  #innovation-transformation .card .card-body,
+  #experiential-learning .card .card-body {
     width: 100% !important;
     padding-right: 0 !important;
   }
-  #business-design-sprint .card .card-body .card-title {
+  #business-design-sprint .card .card-body .card-title,
+  #solution-design .card .card-body .card-title,
+  #solution-delivery .card .card-body .card-title,
+  #growth-strategy .card .card-body .card-title,
+  #growth-experiments .card .card-body .card-title,
+  #entrepreneur-residence .card .card-body .card-title,
+  #innovation-transformation .card .card-body .card-title,
+  #experiential-learning .card .card-body .card-title {
     font-size: 1.2rem !important;
   }
-  #business-design-sprint .card .card-body .card-body-text {
-    font-size: .8rem;
+  #business-design-sprint .card .card-body .card-body-text,
+  #solution-design .card .card-body .card-body-text,
+  #solution-delivery .card .card-body .card-body-text,
+  #growth-strategy .card .card-body .card-body-text,
+  #growth-experiments .card .card-body .card-body-text,
+  #entrepreneur-residence .card .card-body .card-body-text,
+  #innovation-transformation .card .card-body .card-body-text,
+  #experiential-learning .card .card-body .card-body-text {
+    font-size: 0.8rem;
   }
   #desirable {
     padding-bottom: 40px;
@@ -2285,7 +2298,7 @@ section:not(:nth-child(1)) .card {
     height: 70px !important;
   }
   #desirable .card-container .card .card-body {
-    font-size: .85rem;
+    font-size: 0.85rem;
     height: 100%;
   }
   #what-to-expect .section-starter {
@@ -2294,22 +2307,53 @@ section:not(:nth-child(1)) .card {
   #what-to-expect .divider-bar {
     display: none;
   }
+  #what-to-expect .divider-btn {
+    margin-top: 20px;
+  }
   #what-to-expect .divider-btn .what-we-expect-underline {
-    margin: 10px 20px 0;
+    margin: 0 20px;
     width: 50px;
   }
   #what-to-expect .card {
     width: 100% !important;
-    margin: 0 auto !important;
+    height: 100% !important;
+    margin: 1rem auto 1rem 0 !important;
     padding: 0 !important;
   }
   #what-to-expect .card .card-body {
     width: 100% !important;
+    height: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
   }
   #loved-by .section-starter {
     margin-top: 75px !important;
+  }
+  #footer {
+    height: 50rem !important;
+  }
+  #footer .footer-card {
+    text-align: center;
+    margin: 0 !important;
+  }
+  #footer .footer-card ul {
+    margin: 0 !important;
+  }
+  #footer .footer-card li {
+    text-align: center;
+  }
+  #footer #footer-logo-container .footer-img {
+    width: 100px;
+  }
+  #footer #footer-logo-container li:nth-child(3) {
+    display: block !important;
+  }
+  #footer #footer-logo-container li:nth-child(3) a {
+    margin: 1rem 0;
+  }
+  #footer #footer-logo-container .footer-bg-circle {
+    right: -50% !important;
+    bottom: -70% !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */
