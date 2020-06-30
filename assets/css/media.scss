@@ -194,6 +194,106 @@ $mobile: 320px;
 // Experience page Styling
 
 @include mobile {
+  #home-navbar{
+    display: none;
+  }
+  #mobile-navbar{
+    display: block;
+  }
+  section:nth-child(2){
+    margin-top: 0!important;
+  }
+  
+#overlay-button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  padding: 26px 11px;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+  span {
+      height: 4px;
+      width: 25px;
+      border-radius: 2px;
+      background-color: white;
+      position: relative;
+      display: block;
+      transition: all .2s ease-in-out;
+      &:before {
+        top: -10px;
+        visibility: visible;
+      }
+      &:after {
+        top: 10px;
+      }
+      &:before, &:after {
+          height: 4px;
+          width: 25px;
+          border-radius: 2px;
+          background-color: white;
+          position: absolute;
+          content: "";
+          transition: all .2s ease-in-out;
+      }
+    }
+   
+}
+
+input[type=checkbox] {
+  display: none; 
+}
+
+input[type=checkbox]:checked ~ #overlay {
+  visibility: visible;
+}
+
+input[type=checkbox]:checked ~ #overlay-button {
+  &:hover span, span{
+    background: transparent;
+  }
+  span {
+    &:before {
+      transform: rotate(45deg) translate(7px, 7px);
+      opacity: 1;
+    }
+    &:after {
+      transform: rotate(-45deg) translate(7px, -7px);
+    }
+  }
+}
+
+#overlay {
+  height: 100vh;
+  width: 100vw;
+  background: #2b2b2bfa;
+  z-index: 2;
+  visibility: hidden;
+  position: fixed;
+  &.active {
+    visibility: visible;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding-left: 0;
+    list-style-type: none;
+    li {
+      padding: 1em;
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: .8em;
+       
+      }
+    }
+  }
+}
+
   #business-design-sprint,
   #solution-design,
   #solution-delivery,
@@ -305,8 +405,7 @@ $mobile: 320px;
         }
       }
       .footer-bg-circle {
-        right: -50% !important;
-        bottom: -70% !important;
+      display: none;
       }
     }
   }
