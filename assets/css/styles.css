@@ -2416,11 +2416,12 @@ section:not(:nth-child(1)) .card {
     height: 100vh;
     padding-left: 0;
     list-style-type: none;
-    z-index: 999999999999;
   }
   #overlay ul li {
-    z-index: 999999999999;
     padding: 1em;
+  }
+  #overlay ul li:focus .dropdown-menu {
+    display: block;
   }
   #overlay ul li a {
     color: white;
