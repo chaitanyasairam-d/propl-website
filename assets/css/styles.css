@@ -1739,6 +1739,10 @@ section:not(:nth-child(1)) .card {
   font-size: .8rem;
 }
 
+.about .btn-business {
+  width: 150px;
+}
+
 .love-list {
   display: -webkit-box;
   display: -ms-flexbox;
