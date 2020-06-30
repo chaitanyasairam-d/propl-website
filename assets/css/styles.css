@@ -295,7 +295,7 @@ section:not(:nth-child(1)) .card {
 
 #home-cover {
   height: 100vh;
-  background-image: url(../images/rocket-launch-liftoff-long-exposure-23764.png);
+  background-image: url(../images/cover_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1727,6 +1727,20 @@ section:not(:nth-child(1)) .card {
 
 .propl-about-container img {
   width: 60%;
+}
+
+.about .future-text {
+  width: 80%;
+}
+
+.about .future-text span {
+  display: block;
+  margin-top: 20px;
+  font-size: .8rem;
+}
+
+.about .btn-business {
+  width: 150px;
 }
 
 .love-list {

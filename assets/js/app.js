@@ -149,4 +149,32 @@
         }
 
     });
+
+    /**
+     * mobile view navbar dropdown toggle
+     * 
+     */
+    $("#experienceBtn ul").hide();
+    $("#capabilityBtn ul").hide();
+    $("#strategyBtn ul").hide();
+    
+    $("#strategyBtn").click(function(){
+      $("#strategyBtn ul").toggle();
+      $("#experienceBtn ul").hide();
+      $("#capabilityBtn ul").hide();
+      console.log("startegy clicked")
+    });
+    $("#experienceBtn").click(function(){
+      $("#strategyBtn ul").hide();
+      $("#capabilityBtn ul").hide();
+      $("#experienceBtn ul").toggle();
+      console.log("experiencee clicked")
+    });
+    $("#capabilityBtn").click(function(){
+      $("#strategyBtn ul").hide();
+      $("#experienceBtn ul").hide();
+      $("#capabilityBtn ul").toggle();
+      console.log("capability clicked")
+    });
+
 })(jQuery);

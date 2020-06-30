@@ -21,7 +21,7 @@
       <nav class="navbar navbar-expand-lg navbar-bg-onscroll fixed-top">
         <a class="navbar-brand" href="index.html">
           <img
-            src="./assets/images/special_icons/PP2_3.png"
+            src="assets/images/special_icons/PP2_3.png"
             id="navbar-brand-img"
             class=""
             alt="Propyl"
@@ -145,22 +145,16 @@
     <section id="future" style="margin-top: 140px;">
       <div class="container">
         <div class="row layout-margin">
-          <div class="col-md-6">
+          <div class="col-md-6 about">
             <div class="strategy-future-continer">
               <div class="back-btn">
-                <a class="btn-back"
+                <a class="btn-back" href="index.html"
                   ><img
                     src="./assets/images/special_icons/left_arrow.png"
                     class="img-fluid"
                   />Home</a
                 >
               </div>
-              <!-- <div class="future-icon">
-                <img
-                  src="./assets/images/special_icons/rocket.png"
-                  class="img-fluid"
-                />
-              </div> -->
               <div class="future-header mt-3">
                 <h2>
                   About Us
@@ -174,7 +168,10 @@
                 businesses, develop growth strategies, improve customer experience, deliver better
                 products, and build innovation capabilities. We focus on initiatives that produce
                 business impact. Our strategists and business designers are committed to delivering
-                return on innovation. In a few words, We Imagine It, Make It, and Scale It!
+                return on innovation.
+                <span>
+                  In a few words, We Imagine It, Make It, and Scale It!
+                </span>
               </p>
             </div>
           </div>
@@ -345,7 +342,7 @@
             </div>
           </div>
           <div class="col-md-10 ml-auto mr-auto">
-            <div class="divider-btn">
+            <div class="divider-btn about">
               <div class="what-we-expect-underline"></div>
               <button class="btn btn-business" data-toggle="modal" data-target="#exampleModal">
                 Work with us
@@ -462,7 +459,13 @@
             <div class="col-md-12" id="footer-logo-container">
               <ul class="list-unstyled">
                 <li class="footer-img">
-                  <img src="./assets/images/PP2.png" class="PP2" width="132" height="58" />
+                  <img
+                    src="./assets/images/special_icons/logo_propl.png"
+                    
+                    class="PP2"
+                    width="132"
+                    height="58"
+                  />
                 </li>
                 <li>
                   Interested to be at the cutting edge?
@@ -477,7 +480,7 @@
                 </li>
               </ul>
               <div class="footer-bg-circle">
-                <img src="assets/images/Group 63.png" width="591" height="591" alt="bg-circle" />
+                <img src="assets/images/special_icons/circle_footer.png" width="591" height="591" alt="bg-circle" />
               </div>
             </div>
           </div>
@@ -530,24 +533,24 @@
                 <div class="form-contact">
                   <div class="floating-form">
                     <div class="floating-label">
-                      <input class="floating-input" type="text" placeholder=" " />
+                      <input class="floating-input" id="user_name" type="text" placeholder=" " />
                       <span class="highlight"></span>
                       <label>Name *</label>
                     </div>
                     <div class="floating-label">
-                      <input class="floating-input" type="text" placeholder=" " />
+                      <input class="floating-input" id="user_email" type="email" placeholder=" " />
                       <span class="highlight"></span>
                       <label>Email *</label>
                     </div>
                     <div class="floating-label">
-                      <input class="floating-input" type="text" placeholder=" " />
+                      <input class="floating-input"  type="text" id="user_message" placeholder=" " />
                       <span class="highlight"></span>
                       <label>More info *</label>
                     </div>
                     <span class="note"
                       >(please provide some context or reason for reaching out)</span
                     >
-                    <a class="btn btn-more text-white">Let’s Propl</a>
+                    <a class="btn btn-more text-white" onclick="submitForm()" >Let’s Propl</a>
                     <p class="policy mt-2">
                       Propl is committed to protecting and respecting your privacy, and we’ll only
                       use your personal data to provide the info requested from us. Review our
@@ -563,7 +566,9 @@
     </div>
     <script src="assets/js/jQuery.js" charset="utf-8"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
     <script>
+      $('#success').hide()
       var href = window.location.href;
       if (href.includes('contact')) {
         $('#exampleModal').modal('show');
@@ -573,19 +578,36 @@
       });
       $('#success').hide();
 
-      let name = '';
-      let email = '';
-      let message = '';
+      function submitForm(){
+  //      console.log('submit clicked')
+      let name = $('#user_name').val();
+      let email = $('#user_email').val();
+      let message = $('#user_message').val();
 
-      var template_params = {
-        "from_name": '',
-        "reply_to": '',
-        "message": ''
+ 
+     let data = {
+      service_id :"gmail",
+      template_id : "template_i2YiDv4m",
+      user_id: "user_o1SY3Yz3mI8GWtJeuZhIQ",
+      template_params: {
+        "from_name": name,
+        "reply_to": email,
+        "message": message
      }
-     
-     var service_id = "default_service";
-     var template_id = "template_i2YiDv4m";
-     emailjs.send(service_id, template_id, template_params);
+     };
+     console.log(data)
+
+     $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
+      type: 'POST',
+      data: JSON.stringify(data),
+      contentType: 'application/json'
+  }).done(function() {
+     $('#success').addClass('orange-background').show();
+     $('#info-submit').hide();
+  }).fail(function(error) {
+      alert('Oops... ' + JSON.stringify(error));
+  });
+      }
     </script>
   </body>
 </html>

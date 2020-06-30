@@ -4,9 +4,9 @@ $(function() {
         margin: 10,
         responsiveClass: true,
         nav: true,
-        // autoplay: true,
-        // autoplayTimeout: 20000,
-        //autoplayHoverPause: true,
+        autoplay: true,
+        autoplayTimeout: 20000,
+        autoplayHoverPause: true,
         responsive: {
           0: {
             items: 1,

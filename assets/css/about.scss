@@ -6,6 +6,21 @@
     width: 60%;
   }
 }
+.about {
+  .future-text {
+    width: 80%;
+    span {
+      display: block;
+      margin-top: 20px;
+      font-size: .8rem;
+    }
+  }
+}
+.about {
+  .btn-business {
+    width: 150px;
+  }
+}
 .love-list {
   display: flex;
   flex-wrap: wrap;
@@ -73,9 +88,6 @@
     }
   }
 }
-// .btn-business {
-//   width: 200px;
-// }
 .contact-us-container {
   display: flex;
   justify-content: space-evenly;
