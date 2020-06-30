@@ -2179,11 +2179,14 @@ section:not(:nth-child(1)) .card {
   .future-header {
     width: 100%;
   }
+  .future-header h2 {
+    font-size: 1.25rem;
+  }
   .future-text {
     width: 100%;
   }
   .future-text p {
-    font-size: 1.25rem;
+    font-size: .9rem !important;
   }
   .point-list {
     width: 100%;
@@ -2206,6 +2209,15 @@ section:not(:nth-child(1)) .card {
   }
   .point-list .acheiver-container {
     width: 100%;
+  }
+  .point-list .acheiver-container h4 {
+    font-size: 1rem;
+  }
+  .point-list .acheiver-container .btn-points {
+    font-size: .8rem;
+  }
+  .point-list .acheiver-container .btn-points img {
+    width: 15px;
   }
   .capabilty .point-list .acheiver-container {
     width: 100%;
@@ -2262,10 +2274,10 @@ section:not(:nth-child(1)) .card {
     margin-top: 5px;
     font-size: 0.7rem;
   }
-  .contact-container .contact-left {
+  .contact-left {
     display: none;
   }
-  .contact-container .modal-content {
+  .modal-content {
     padding: 10px;
   }
 }
