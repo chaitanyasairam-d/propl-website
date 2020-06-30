@@ -12,9 +12,7 @@ $mobile: 320px;
   }
   /*Home css*/
   /*----Home Css ----*/
-  .home-content-box-inner {
-    top: 65%;
-  }
+
   .home-content-box-inner h1 {
     font-size: 1.65rem;
     margin-bottom: 1.5rem;
@@ -49,42 +47,50 @@ $mobile: 320px;
     font-size: 0.85rem;
   }
 
-    /*clients list*/
-    .client-list li {
-        width: 50%;
-    }
-    .client_icon {
-        width: 100px;
-    }
-    /*testimonials*/
-    .item {
-        width: 100%;
-        padding: 30px 20px;
-        .testimonial-container {
-            h4 {
-                height: auto;
-            font-size: .7rem;
-            line-height: 2;
-            }
-            .testimonial-footer h5 {
-                span {
-                    font-size: .8rem;
-                }
-                font-size: .7rem;
-                top: 5px;
-            }
+  /*clients list*/
+  .client-list li {
+    width: 50%;
+  }
+  .client_icon {
+    width: 100px;
+  }
+  /*testimonials*/
+  .item {
+    width: 100%;
+    padding: 30px 20px;
+    .testimonial-container {
+      h4 {
+        height: auto;
+        font-size: 0.7rem;
+        line-height: 2;
+      }
+      .testimonial-footer h5 {
+        span {
+          font-size: 0.8rem;
         }
         font-size: 0.7rem;
         top: 5px;
       }
-       /*predict-future*/
-    /*strategy-future*/
-    .btn-business {
-      font-size: 12px;
+    }
+  }
+
+  /*predict-future*/
+  /*strategy-future*/
+  .btn-business {
+    font-size: 12px;
   }
   .future-header {
-    h2 {
-      font-size: 1.2rem;
+    width: 100%;
+  }
+  .future-text {
+    width: 100%;
+    p {
+      font-size: 1.25rem;
+    }
+  }
+  .point-list {
+    li {
+      flex: 1 1 100%;
     }
       width: 100%;
   }
@@ -160,10 +166,15 @@ $mobile: 320px;
       font-size: 0.7rem;
     }
   }
+  .contact-left {
+    display: none;
+  }
+  .modal-content {
+    padding: 10px;
+  }
 }
 
     }
-
 @media only screen and (min-width: 500px) and (max-width: 800px) {
   #predict-fututre #img-bg-circle {
     right: 90%;
@@ -196,6 +207,118 @@ $mobile: 320px;
 // Experience page Styling
 
 @include mobile {
+  section:nth-child(2){
+    margin-top: 100px;
+  }
+  #home-navbar{
+    display: none;
+  }
+  #mobile-navbar{
+    display: block;
+   nav{
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    background-color: #0b1120;
+   }
+    // nav{
+    //   background-color: #0a101d;
+    // }
+  }
+#home{
+  margin: 0!important;
+}
+  
+#overlay-button {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  padding: 26px 11px;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+  span {
+      height: 4px;
+      width: 25px;
+      border-radius: 2px;
+      background-color: white;
+      position: relative;
+      display: block;
+      transition: all .2s ease-in-out;
+      &:before {
+        top: -10px;
+        visibility: visible;
+      }
+      &:after {
+        top: 10px;
+      }
+      &:before, &:after {
+          height: 4px;
+          width: 25px;
+          border-radius: 2px;
+          background-color: white;
+          position: absolute;
+          content: "";
+          transition: all .2s ease-in-out;
+      }
+    }
+   
+}
+
+input[type=checkbox] {
+  display: none; 
+}
+
+input[type=checkbox]:checked ~ #overlay {
+  visibility: visible;
+}
+
+input[type=checkbox]:checked ~ #overlay-button {
+  &:hover span, span{
+    background: transparent;
+  }
+  span {
+    &:before {
+      transform: rotate(45deg) translate(7px, 7px);
+      opacity: 1;
+    }
+    &:after {
+      transform: rotate(-45deg) translate(7px, -7px);
+    }
+  }
+}
+
+#overlay {
+  height: 100vh;
+  width: 100vw;
+  background: #050505fa;
+  z-index: 2;
+  visibility: hidden;
+  position: fixed;
+  &.active {
+    visibility: visible;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding-left: 0;
+    list-style-type: none;
+    li {
+      padding: 1em;
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: .8em;
+       
+      }
+    }
+  }
+}
+
   #business-design-sprint,
   #solution-design,
   #solution-delivery,
@@ -283,16 +406,23 @@ $mobile: 320px;
     }
   }
 
+  .business-footer-underline {
+    width: 80vw!important;
+    height: 5px!important;
+  }
   #footer {
     height: 50rem !important;
     .footer-card {
-      text-align: center;
+      text-align: left;
       margin: 0 !important;
       ul {
         margin: 0 !important;
       }
       li {
-        text-align: center;
+        text-align: left;
+        a{
+          padding: 0;
+        }
       }
     }
     #footer-logo-container {
@@ -307,8 +437,7 @@ $mobile: 320px;
         }
       }
       .footer-bg-circle {
-        right: -50% !important;
-        bottom: -70% !important;
+      display: none;
       }
     }
   }

@@ -74,10 +74,16 @@ $text-color: #061134;
   width: $value;
 }
 
-section:nth-child(2):not(#home) {
-  margin-top: 100px !important;
+// section:nth-child(2):not(#home) {
+//   margin-top: 100px !important;
+// }
+#home-navbar{
+  margin-top: 0!important;
 }
 
+#mobile-navbar{
+  display: none;
+}
 .nav-bg {
   background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
   padding: 0.5rem 10rem;
@@ -170,11 +176,11 @@ section:nth-child(2):not(#home) {
 .nav-underline::after {
   position: relative;
   content: '';
-  top: 7px;
+  top: 5px;
   display: block;
   margin: 0 auto;
   width: 55px;
-  height: 1px;
+  height: .5px;
   border-radius: 10px;
   border-color: #ff5050;
 }

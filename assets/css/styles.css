@@ -66,8 +66,12 @@ a:active {
 }
 
 /*mixins for margin 0 auto and custom width*/
-section:nth-child(2):not(#home) {
-  margin-top: 100px !important;
+#home-navbar {
+  margin-top: 0 !important;
+}
+
+#mobile-navbar {
+  display: none;
 }
 
 .nav-bg {
@@ -172,11 +176,11 @@ section:nth-child(2):not(#home) {
 .nav-underline::after {
   position: relative;
   content: '';
-  top: 7px;
+  top: 5px;
   display: block;
   margin: 0 auto;
   width: 55px;
-  height: 1px;
+  height: .5px;
   border-radius: 10px;
   border-color: #ff5050;
 }
@@ -864,15 +868,6 @@ section:not(:nth-child(1)) .card {
   height: 23rem !important;
 }
 
-#what-to-expect .col-md-6:nth-child(even) .card {
-  margin-left: auto;
-  margin-right: 25px;
-}
-
-#what-to-expect .col-md-6:nth-child(odd) .card {
-  margin-left: 25px;
-}
-
 #what-to-expect .divider-bar::after {
   content: '';
   width: 1px;
@@ -885,7 +880,7 @@ section:not(:nth-child(1)) .card {
 
 #what-to-expect .card {
   text-align: center;
-  width: 22.5rem;
+  width: 100%;
   height: 14rem;
 }
 
@@ -2120,9 +2115,6 @@ section:not(:nth-child(1)) .card {
   }
   /*Home css*/
   /*----Home Css ----*/
-  .home-content-box-inner {
-    top: 65%;
-  }
   .home-content-box-inner h1 {
     font-size: 1.65rem;
     margin-bottom: 1.5rem;
@@ -2166,20 +2158,18 @@ section:not(:nth-child(1)) .card {
   .item {
     width: 100%;
     padding: 30px 20px;
-    font-size: 0.7rem;
-    top: 5px;
   }
   .item .testimonial-container h4 {
     height: auto;
-    font-size: .7rem;
+    font-size: 0.7rem;
     line-height: 2;
   }
   .item .testimonial-container .testimonial-footer h5 {
-    font-size: .7rem;
+    font-size: 0.7rem;
     top: 5px;
   }
   .item .testimonial-container .testimonial-footer h5 span {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   /*predict-future*/
   /*strategy-future*/
@@ -2189,8 +2179,19 @@ section:not(:nth-child(1)) .card {
   .future-header {
     width: 100%;
   }
-  .future-header h2 {
-    font-size: 1.2rem;
+  .future-text {
+    width: 100%;
+  }
+  .future-text p {
+    font-size: 1.25rem;
+  }
+  .point-list {
+    width: 100%;
+  }
+  .point-list li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
   .future-text {
     width: 100%;
@@ -2261,6 +2262,12 @@ section:not(:nth-child(1)) .card {
     margin-top: 5px;
     font-size: 0.7rem;
   }
+  .contact-container .contact-left {
+    display: none;
+  }
+  .contact-container .modal-content {
+    padding: 10px;
+  }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 800px) {
@@ -2293,6 +2300,119 @@ section:not(:nth-child(1)) .card {
 }
 
 @media (min-width: 320px) and (max-width: 478px) {
+  section:nth-child(2) {
+    margin-top: 100px;
+  }
+  #home-navbar {
+    display: none;
+  }
+  #mobile-navbar {
+    display: block;
+  }
+  #mobile-navbar nav {
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    background-color: #0b1120;
+  }
+  #home {
+    margin: 0 !important;
+  }
+  #overlay-button {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    padding: 26px 11px;
+    z-index: 5;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  #overlay-button span {
+    height: 4px;
+    width: 25px;
+    border-radius: 2px;
+    background-color: white;
+    position: relative;
+    display: block;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  #overlay-button span:before {
+    top: -10px;
+    visibility: visible;
+  }
+  #overlay-button span:after {
+    top: 10px;
+  }
+  #overlay-button span:before, #overlay-button span:after {
+    height: 4px;
+    width: 25px;
+    border-radius: 2px;
+    background-color: white;
+    position: absolute;
+    content: "";
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  input[type=checkbox] {
+    display: none;
+  }
+  input[type=checkbox]:checked ~ #overlay {
+    visibility: visible;
+  }
+  input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
+    background: transparent;
+  }
+  input[type=checkbox]:checked ~ #overlay-button span:before {
+    -webkit-transform: rotate(45deg) translate(7px, 7px);
+            transform: rotate(45deg) translate(7px, 7px);
+    opacity: 1;
+  }
+  input[type=checkbox]:checked ~ #overlay-button span:after {
+    -webkit-transform: rotate(-45deg) translate(7px, -7px);
+            transform: rotate(-45deg) translate(7px, -7px);
+  }
+  #overlay {
+    height: 100vh;
+    width: 100vw;
+    background: #050505fa;
+    z-index: 2;
+    visibility: hidden;
+    position: fixed;
+  }
+  #overlay.active {
+    visibility: visible;
+  }
+  #overlay ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  #overlay ul li {
+    padding: 1em;
+  }
+  #overlay ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: .8em;
+  }
   #business-design-sprint .img-container,
   #business-design-sprint .img-border,
   #solution-design .img-container,
@@ -2407,18 +2527,25 @@ section:not(:nth-child(1)) .card {
   #loved-by .section-starter {
     margin-top: 75px !important;
   }
+  .business-footer-underline {
+    width: 80vw !important;
+    height: 5px !important;
+  }
   #footer {
     height: 50rem !important;
   }
   #footer .footer-card {
-    text-align: center;
+    text-align: left;
     margin: 0 !important;
   }
   #footer .footer-card ul {
     margin: 0 !important;
   }
   #footer .footer-card li {
-    text-align: center;
+    text-align: left;
+  }
+  #footer .footer-card li a {
+    padding: 0;
   }
   #footer #footer-logo-container .footer-img {
     width: 100px;
@@ -2430,8 +2557,7 @@ section:not(:nth-child(1)) .card {
     margin: 1rem 0;
   }
   #footer #footer-logo-container .footer-bg-circle {
-    right: -50% !important;
-    bottom: -70% !important;
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
