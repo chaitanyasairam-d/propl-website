@@ -226,7 +226,7 @@ $mobile: 320px;
   }
 
   .back-btn{
-    margin-top: 100px!important;
+    margin-top: 120px!important;
 
   }
 
@@ -239,17 +239,26 @@ $mobile: 320px;
       background-color: #0b1120;
     }
     // nav{
-    //   background-color: #0a101d;
-    // }
-  }
-  #home {
+      //   background-color: #0a101d;
+      // }
+    }
+    #mobile-navbar-fixed{
+      display: block;
+      background-color: #0b1120;
+      nav {
+        position: sticky;
+        top:0;
+        z-index:999999999;
+      }
+    }
+    #home {
     margin: 0 !important;
   }
 
   #overlay-button {
     position: absolute;
     right: 0;
-    top: .2rem;
+    top: .7rem;
     padding: 26px 11px;
     z-index: 5;
     cursor: pointer;

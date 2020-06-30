@@ -66,7 +66,7 @@ a:active {
 }
 
 /*mixins for margin 0 auto and custom width*/
-section:nth-child(2) {
+section:nth-child(3) {
   margin-top: 100px;
 }
 
@@ -752,7 +752,7 @@ section:not(:nth-child(1)) .card {
 }
 
 #business-design-sprint .card {
-  z-index: -1;
+  z-index: 1;
   margin-top: -45px;
   margin-left: 40px;
 }
@@ -2336,7 +2336,7 @@ section:not(:nth-child(1)) .card {
     display: none;
   }
   .back-btn {
-    margin-top: 100px !important;
+    margin-top: 120px !important;
   }
   #mobile-navbar {
     display: block;
@@ -2347,13 +2347,23 @@ section:not(:nth-child(1)) .card {
     height: 11%;
     background-color: #0b1120;
   }
+  #mobile-navbar-fixed {
+    display: block;
+    background-color: #0b1120;
+  }
+  #mobile-navbar-fixed nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 999999999;
+  }
   #home {
     margin: 0 !important;
   }
   #overlay-button {
     position: absolute;
     right: 0;
-    top: .2rem;
+    top: .7rem;
     padding: 26px 11px;
     z-index: 5;
     cursor: pointer;
