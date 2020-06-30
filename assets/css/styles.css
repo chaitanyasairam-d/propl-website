@@ -66,6 +66,10 @@ a:active {
 }
 
 /*mixins for margin 0 auto and custom width*/
+section:nth-child(2) {
+  margin-top: 100px !important;
+}
+
 #home-navbar {
   margin-top: 0 !important;
 }
@@ -592,7 +596,6 @@ section:not(:nth-child(1)) .card {
 #footer {
   background-color: #1a2239;
   overflow: hidden;
-  height: 28rem;
 }
 
 #footer .footer {
@@ -2300,9 +2303,6 @@ section:not(:nth-child(1)) .card {
 }
 
 @media (min-width: 320px) and (max-width: 478px) {
-  section:nth-child(2) {
-    margin-top: 100px;
-  }
   #home-navbar {
     display: none;
   }
@@ -2404,8 +2404,10 @@ section:not(:nth-child(1)) .card {
     height: 100vh;
     padding-left: 0;
     list-style-type: none;
+    z-index: 999999999999;
   }
   #overlay ul li {
+    z-index: 999999999999;
     padding: 1em;
   }
   #overlay ul li a {

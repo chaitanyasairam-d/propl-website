@@ -74,9 +74,10 @@ $text-color: #061134;
   width: $value;
 }
 
-// section:nth-child(2):not(#home) {
-//   margin-top: 100px !important;
-// }
+section:nth-child(2){
+  margin-top: 100px!important;
+}
+
 #home-navbar{
   margin-top: 0!important;
 }
@@ -84,6 +85,7 @@ $text-color: #061134;
 #mobile-navbar{
   display: none;
 }
+
 .nav-bg {
   background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
   padding: 0.5rem 10rem;
@@ -575,7 +577,6 @@ section:not(:nth-child(1)) {
 #footer {
   background-color: #1a2239;
   overflow: hidden;
-  height: 28rem;
   .footer {
     // background-color: red;
     padding-top: 70px;
