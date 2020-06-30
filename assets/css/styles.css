@@ -1729,6 +1729,16 @@ section:not(:nth-child(1)) .card {
   width: 60%;
 }
 
+.about .future-text {
+  width: 80%;
+}
+
+.about .future-text span {
+  display: block;
+  margin-top: 20px;
+  font-size: .8rem;
+}
+
 .love-list {
   display: -webkit-box;
   display: -ms-flexbox;
