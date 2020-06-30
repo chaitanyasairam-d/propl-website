@@ -23,5 +23,26 @@ $(function() {
           },
         },
       });
-
+      $("#experienceBtn ul").hide();
+      $("#capabilityBtn ul").hide();
+      $("#strategyBtn ul").hide();
+      
+      $("#strategyBtn").click(function(){
+        $("#strategyBtn ul").toggle(500);
+        $("#experienceBtn ul").hide();
+        $("#capabilityBtn ul").hide();
+        console.log("startegy clicked")
+      });
+      $("#experienceBtn").click(function(){
+        $("#strategyBtn ul").hide();
+        $("#capabilityBtn ul").hide();
+        $("#experienceBtn ul").toggle(500);
+        console.log("experiencee clicked")
+      });
+      $("#capabilityBtn").click(function(){
+        $("#strategyBtn ul").hide();
+        $("#experienceBtn ul").hide();
+        $("#capabilityBtn ul").toggle(500);
+        console.log("capability clicked")
+      });
 });
