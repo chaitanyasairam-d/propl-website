@@ -88,103 +88,103 @@ $mobile: 320px;
   .future-text {
     width: 100%;
     p {
-      font-size: .9rem !important;
+      font-size: 0.9rem !important;
     }
   }
   .point-list {
     li {
       flex: 1 1 100%;
     }
-      width: 100%;
+    width: 100%;
   }
   .future-text {
-      width: 100%;
-      p {
-          font-size: 1rem;
-      }
-  }
-.point-list {
-  li {
-    flex: 1 1 100%;
-  }
-  .acheiver-container {
     width: 100%;
+    p {
+      font-size: 1rem;
+    }
+  }
+  .point-list {
+    li {
+      flex: 1 1 100%;
+    }
+    .acheiver-container {
+      width: 100%;
+      h4 {
+        font-size: 1rem;
+      }
+      .btn-points {
+        font-size: 0.8rem;
+        img {
+          width: 15px;
+        }
+      }
+    }
+  }
+  .capabilty .point-list .acheiver-container {
     h4 {
       font-size: 1rem;
     }
-    .btn-points {
-      font-size: .8rem;
-      img {
-        width: 15px;
-      }
-    }
-  }
-}
-.capabilty .point-list .acheiver-container {
-  h4 {
-    font-size: 1rem;
-  }
-  width: 100%;
-}
-.capability-width .do-list {
-  width: 100%;
-}
-.do-list {
-  @include marginAuto(100%);
-  li {
-    margin-bottom: 20px;
-  }
-  .btn-more {
-    margin-top: 0px;
-  }
-}
-/*strategy-future*/
-
-/*Abouts us */
-.propl-about-container {
-  height: 8.5rem;
-}
-.love-list {
-  li {
-    flex: 1 1 100%;
-    margin-bottom: 0px;
-    .list-container {
-      .text {
-        width: 100%;
-        height: 4rem;
-      }
-    }
-  }
-}
-.contact-container {
-  width: 100%;
-  .contact-box {
     width: 100%;
   }
-  .get-in-touch-bg img {
-    height: 125px;
-    overflow: visible;
-    margin: 10px 30px 0px 15px;
+  .capability-width .do-list {
+    width: 100%;
   }
-  .text-container {
-    p {
-      margin: 0;
-      width: 100%;
-      font-size: 0.8rem;
+  .do-list {
+    @include marginAuto(100%);
+    li {
+      margin-bottom: 20px;
     }
     .btn-more {
-      width: auto;
-      margin-top: 5px;
-      font-size: 0.7rem;
+      margin-top: 0px;
     }
   }
-}
-.contact-left {
-  display: none;
-}
-.modal-content {
-  padding: 10px;
-}
+  /*strategy-future*/
+
+  /*Abouts us */
+  .propl-about-container {
+    height: 8.5rem;
+  }
+  .love-list {
+    li {
+      flex: 1 1 100%;
+      margin-bottom: 0px;
+      .list-container {
+        .text {
+          width: 100%;
+          height: 4rem;
+        }
+      }
+    }
+  }
+  .contact-container {
+    width: 100%;
+    .contact-box {
+      width: 100%;
+    }
+    .get-in-touch-bg img {
+      height: 125px;
+      overflow: visible;
+      margin: 10px 30px 0px 15px;
+    }
+    .text-container {
+      p {
+        margin: 0;
+        width: 100%;
+        font-size: 0.8rem;
+      }
+      .btn-more {
+        width: auto;
+        margin-top: 5px;
+        font-size: 0.7rem;
+      }
+    }
+  }
+  .contact-left {
+    display: none;
+  }
+  .modal-content {
+    padding: 10px;
+  }
 }
 @media only screen and (min-width: 500px) and (max-width: 800px) {
   #predict-fututre #img-bg-circle {
@@ -218,42 +218,41 @@ $mobile: 320px;
 // Experience page Styling
 
 @include mobile {
- 
-  #home-navbar{
+  #home-navbar {
     display: none;
   }
-  #mobile-navbar{
+  #mobile-navbar {
     display: block;
-   nav{
-    position: absolute;
-    width: 100%;
-    height: 8%;
-    background-color: #0b1120;
-   }
+    nav {
+      position: absolute;
+      width: 100%;
+      height: 8%;
+      background-color: #0b1120;
+    }
     // nav{
     //   background-color: #0a101d;
     // }
   }
-#home{
-  margin: 0!important;
-}
-  
-#overlay-button {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
-  padding: 26px 11px;
-  z-index: 5;
-  cursor: pointer;
-  user-select: none;
-  span {
+  #home {
+    margin: 0 !important;
+  }
+
+  #overlay-button {
+    position: absolute;
+    right: 0;
+    top: .5rem;
+    padding: 26px 11px;
+    z-index: 5;
+    cursor: pointer;
+    user-select: none;
+    span {
       height: 4px;
       width: 25px;
       border-radius: 2px;
       background-color: white;
       position: relative;
       display: block;
-      transition: all .2s ease-in-out;
+      transition: all 0.2s ease-in-out;
       &:before {
         top: -10px;
         visibility: visible;
@@ -261,77 +260,81 @@ $mobile: 320px;
       &:after {
         top: 10px;
       }
-      &:before, &:after {
-          height: 4px;
-          width: 25px;
-          border-radius: 2px;
-          background-color: white;
-          position: absolute;
-          content: "";
-          transition: all .2s ease-in-out;
+      &:before,
+      &:after {
+        height: 4px;
+        width: 25px;
+        border-radius: 2px;
+        background-color: white;
+        position: absolute;
+        content: '';
+        transition: all 0.2s ease-in-out;
       }
     }
-   
-}
-
-input[type=checkbox] {
-  display: none; 
-}
-
-input[type=checkbox]:checked ~ #overlay {
-  visibility: visible;
-}
-
-input[type=checkbox]:checked ~ #overlay-button {
-  &:hover span, span{
-    background: transparent;
   }
-  span {
-    &:before {
-      transform: rotate(45deg) translate(7px, 7px);
-      opacity: 1;
-    }
-    &:after {
-      transform: rotate(-45deg) translate(7px, -7px);
-    }
-  }
-}
 
-#overlay {
-  height: 100vh;
-  width: 100vw;
-  background: #050505fa;
-  z-index: 2;
-  visibility: hidden;
-  position: fixed;
-  &.active {
+  input[type='checkbox'] {
+    display: none;
+  }
+
+  input[type='checkbox']:checked ~ #overlay {
     visibility: visible;
   }
-  ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    height: 100vh;
-    padding-left: 0;
-    list-style-type: none;
-    li {
-      padding: 1em;
-      &:focus{
-        .dropdown-menu{
-          display: block;
-        }
+
+  input[type='checkbox']:checked ~ #overlay-button {
+    &:hover span,
+    span {
+      background: transparent;
+    }
+    span {
+      &:before {
+        transform: rotate(45deg) translate(7px, 7px);
+        opacity: 1;
       }
-      a {
-        color: white;
-        text-decoration: none;
-        font-size: .8em;
+      &:after {
+        transform: rotate(-45deg) translate(7px, -7px);
+      }
+    }
+  }
+
+  #overlay {
+    height: 100vh;
+    width: 100vw;
+    background: #050505fa;
+    z-index: 2;
+    visibility: hidden;
+    position: fixed;
+    &.active {
+      visibility: visible;
+    }
+    ul {
+     overflow: auto;
+     position: relative;
+      li {
+        text-align: center;
+        padding: 1rem;
+        list-style-type: none;
+
+        .custom-dropdown-menu{
+         li{
+           width: 220px;
+           list-style-type: none;
+           margin: .2px auto;
+           background-color: rgba(0, 0, 0, 0.842);
+           border: .5px solid black;
+          padding: 0!important;
+         }
+        }
+            
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 0.8em;
+        }
        
       }
     }
   }
-}
 
   #business-design-sprint,
   #solution-design,
@@ -421,8 +424,8 @@ input[type=checkbox]:checked ~ #overlay-button {
   }
 
   .business-footer-underline {
-    width: 80vw!important;
-    height: 5px!important;
+    width: 80vw !important;
+    height: 5px !important;
   }
   #footer {
     height: 50rem !important;
@@ -434,7 +437,7 @@ input[type=checkbox]:checked ~ #overlay-button {
       }
       li {
         text-align: left;
-        a{
+        a {
           padding: 0;
         }
       }
@@ -451,7 +454,7 @@ input[type=checkbox]:checked ~ #overlay-button {
         }
       }
       .footer-bg-circle {
-      display: none;
+        display: none;
       }
     }
   }

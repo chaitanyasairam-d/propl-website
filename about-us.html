@@ -130,7 +130,13 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="modal" data-target="#exampleModal" style="cursor: pointer;">Contact us</a>
+              <a
+                class="nav-link"
+                data-toggle="modal"
+                data-target="#exampleModal"
+                style="cursor: pointer;"
+                >Contact us</a
+              >
             </li>
           </ul>
         </div>
@@ -456,20 +462,13 @@
             <div class="col-md-12" id="footer-logo-container">
               <ul class="list-unstyled">
                 <li class="footer-img">
-                  <img
-                    src="./assets/images/PP2.png"
-                    
-                    class="PP2"
-                    width="132"
-                    height="58"
-                  />
+                  <img src="./assets/images/PP2.png" class="PP2" width="132" height="58" />
                 </li>
                 <li>
                   Interested to be at the cutting edge?
                 </li>
                 <li>
-                  <button class="btn btn-more"  data-toggle="modal"
-                  data-target="#exampleModal">
+                  <button class="btn btn-more" data-toggle="modal" data-target="#exampleModal">
                     Get in touch
                   </button>
                   <div class="footer-copy-right">
@@ -573,6 +572,20 @@
         $('#myInput').trigger('focus');
       });
       $('#success').hide();
+
+      let name = '';
+      let email = '';
+      let message = '';
+
+      var template_params = {
+        "from_name": '',
+        "reply_to": '',
+        "message": ''
+     }
+     
+     var service_id = "default_service";
+     var template_id = "template_i2YiDv4m";
+     emailjs.send(service_id, template_id, template_params);
     </script>
   </body>
 </html>

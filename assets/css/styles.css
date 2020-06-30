@@ -184,7 +184,7 @@ section:nth-child(2) {
   display: block;
   margin: 0 auto;
   width: 55px;
-  height: .5px;
+  height: 0.5px;
   border-radius: 10px;
   border-color: #ff5050;
 }
@@ -2189,7 +2189,7 @@ section:not(:nth-child(1)) .card {
     width: 100%;
   }
   .future-text p {
-    font-size: .9rem !important;
+    font-size: 0.9rem !important;
   }
   .point-list {
     width: 100%;
@@ -2217,7 +2217,7 @@ section:not(:nth-child(1)) .card {
     font-size: 1rem;
   }
   .point-list .acheiver-container .btn-points {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .point-list .acheiver-container .btn-points img {
     width: 15px;
@@ -2332,8 +2332,8 @@ section:not(:nth-child(1)) .card {
   }
   #overlay-button {
     position: absolute;
-    right: 1rem;
-    top: 1rem;
+    right: 0;
+    top: .5rem;
     padding: 26px 11px;
     z-index: 5;
     cursor: pointer;
@@ -2349,8 +2349,8 @@ section:not(:nth-child(1)) .card {
     background-color: white;
     position: relative;
     display: block;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
   #overlay-button span:before {
     top: -10px;
@@ -2365,25 +2365,26 @@ section:not(:nth-child(1)) .card {
     border-radius: 2px;
     background-color: white;
     position: absolute;
-    content: "";
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+    content: '';
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
   }
-  input[type=checkbox] {
+  input[type='checkbox'] {
     display: none;
   }
-  input[type=checkbox]:checked ~ #overlay {
+  input[type='checkbox']:checked ~ #overlay {
     visibility: visible;
   }
-  input[type=checkbox]:checked ~ #overlay-button:hover span, input[type=checkbox]:checked ~ #overlay-button span {
+  input[type='checkbox']:checked ~ #overlay-button:hover span,
+  input[type='checkbox']:checked ~ #overlay-button span {
     background: transparent;
   }
-  input[type=checkbox]:checked ~ #overlay-button span:before {
+  input[type='checkbox']:checked ~ #overlay-button span:before {
     -webkit-transform: rotate(45deg) translate(7px, 7px);
             transform: rotate(45deg) translate(7px, 7px);
     opacity: 1;
   }
-  input[type=checkbox]:checked ~ #overlay-button span:after {
+  input[type='checkbox']:checked ~ #overlay-button span:after {
     -webkit-transform: rotate(-45deg) translate(7px, -7px);
             transform: rotate(-45deg) translate(7px, -7px);
   }
@@ -2399,33 +2400,26 @@ section:not(:nth-child(1)) .card {
     visibility: visible;
   }
   #overlay ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    height: 100vh;
-    padding-left: 0;
-    list-style-type: none;
-    z-index: 999999999999;
+    overflow: auto;
+    position: relative;
   }
   #overlay ul li {
-    z-index: 999999999999;
-    padding: 1em;
+    text-align: center;
+    padding: 1rem;
+    list-style-type: none;
+  }
+  #overlay ul li .custom-dropdown-menu li {
+    width: 220px;
+    list-style-type: none;
+    margin: .2px auto;
+    background-color: rgba(0, 0, 0, 0.842);
+    border: .5px solid black;
+    padding: 0 !important;
   }
   #overlay ul li a {
     color: white;
     text-decoration: none;
-    font-size: .8em;
+    font-size: 0.8em;
   }
   #business-design-sprint .img-container,
   #business-design-sprint .img-border,

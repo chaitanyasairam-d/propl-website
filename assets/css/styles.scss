@@ -74,15 +74,15 @@ $text-color: #061134;
   width: $value;
 }
 
-section:nth-child(2){
-  margin-top: 100px!important;
+section:nth-child(2) {
+  margin-top: 100px !important;
 }
 
-#home-navbar{
-  margin-top: 0!important;
+#home-navbar {
+  margin-top: 0 !important;
 }
 
-#mobile-navbar{
+#mobile-navbar {
   display: none;
 }
 
@@ -140,7 +140,7 @@ section:nth-child(2){
 
 .navbar-brand img {
   width: 145px;
-}
+}   
 
 .nav-item .nav-link:hover {
   color: #ffffff;
@@ -182,7 +182,7 @@ section:nth-child(2){
   display: block;
   margin: 0 auto;
   width: 55px;
-  height: .5px;
+  height: 0.5px;
   border-radius: 10px;
   border-color: #ff5050;
 }
