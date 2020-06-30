@@ -81,11 +81,14 @@ $mobile: 320px;
   }
   .future-header {
     width: 100%;
+    h2 {
+      font-size: 1.25rem;
+    }
   }
   .future-text {
     width: 100%;
     p {
-      font-size: 1.25rem;
+      font-size: .9rem !important;
     }
   }
   .point-list {
@@ -106,6 +109,15 @@ $mobile: 320px;
   }
   .acheiver-container {
     width: 100%;
+    h4 {
+      font-size: 1rem;
+    }
+    .btn-points {
+      font-size: .8rem;
+      img {
+        width: 15px;
+      }
+    }
   }
 }
 .capabilty .point-list .acheiver-container {
@@ -166,15 +178,14 @@ $mobile: 320px;
       font-size: 0.7rem;
     }
   }
-  .contact-left {
-    display: none;
-  }
-  .modal-content {
-    padding: 10px;
-  }
 }
-
-    }
+.contact-left {
+  display: none;
+}
+.modal-content {
+  padding: 10px;
+}
+}
 @media only screen and (min-width: 500px) and (max-width: 800px) {
   #predict-fututre #img-bg-circle {
     right: 90%;
