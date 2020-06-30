@@ -66,8 +66,8 @@ a:active {
 }
 
 /*mixins for margin 0 auto and custom width*/
-section:nth-child(2):not(#home, #home-navbar) {
-  margin-top: 100px !important;
+#home-navbar {
+  margin-top: 0 !important;
 }
 
 #mobile-navbar {
@@ -2115,9 +2115,6 @@ section:not(:nth-child(1)) .card {
   }
   /*Home css*/
   /*----Home Css ----*/
-  .home-content-box-inner {
-    top: 65%;
-  }
   .home-content-box-inner h1 {
     font-size: 1.65rem;
     margin-bottom: 1.5rem;
@@ -2286,14 +2283,23 @@ section:not(:nth-child(1)) .card {
 }
 
 @media (min-width: 320px) and (max-width: 478px) {
+  section:nth-child(2) {
+    margin-top: 100px;
+  }
   #home-navbar {
     display: none;
   }
   #mobile-navbar {
     display: block;
   }
-  section:nth-child(2) {
-    margin-top: 0 !important;
+  #mobile-navbar nav {
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    background-color: #0b1120;
+  }
+  #home {
+    margin: 0 !important;
   }
   #overlay-button {
     position: absolute;
@@ -2355,7 +2361,7 @@ section:not(:nth-child(1)) .card {
   #overlay {
     height: 100vh;
     width: 100vw;
-    background: #2b2b2bfa;
+    background: #050505fa;
     z-index: 2;
     visibility: hidden;
     position: fixed;
@@ -2504,18 +2510,25 @@ section:not(:nth-child(1)) .card {
   #loved-by .section-starter {
     margin-top: 75px !important;
   }
+  .business-footer-underline {
+    width: 80vw !important;
+    height: 5px !important;
+  }
   #footer {
     height: 50rem !important;
   }
   #footer .footer-card {
-    text-align: center;
+    text-align: left;
     margin: 0 !important;
   }
   #footer .footer-card ul {
     margin: 0 !important;
   }
   #footer .footer-card li {
-    text-align: center;
+    text-align: left;
+  }
+  #footer .footer-card li a {
+    padding: 0;
   }
   #footer #footer-logo-container .footer-img {
     width: 100px;

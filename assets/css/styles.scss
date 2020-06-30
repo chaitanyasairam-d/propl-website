@@ -74,9 +74,13 @@ $text-color: #061134;
   width: $value;
 }
 
-section:nth-child(2):not(#home,#home-navbar) {
-  margin-top: 100px !important;
+// section:nth-child(2):not(#home) {
+//   margin-top: 100px !important;
+// }
+#home-navbar{
+  margin-top: 0!important;
 }
+
 #mobile-navbar{
   display: none;
 }
@@ -641,10 +645,10 @@ section:not(:nth-child(1)) {
       font-size: 12px;
       border-radius: 20px 0 20px 0 !important;
     }
-
+  
     .footer-copy-right {
-      line-height: 1.88 !important;
-      text-decoration: underline !important;
+        line-height: 1.88!important;
+        text-decoration: underline !important;
     }
     .footer-bg-circle {
       position: absolute;
