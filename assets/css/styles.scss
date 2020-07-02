@@ -82,7 +82,7 @@ section:nth-child(3) {
   margin-top: 0!important;
 }
 
-#mobile-navbar,#mobile-navbar-fixed {
+#mobile-navbar,#mobile-navbar-fixed    {
   display: none;
 }
 
@@ -442,7 +442,10 @@ section:not(:nth-child(1)) {
 
 /* common styling for all sections end */
 /* predict fututre styling start */
+.rotate-planets{
+animation: bg-circle-rotate 6s linear infinite;
 
+}
 #predict-fututre .img-bg-circle {
   position: absolute;
   right: 90%;
@@ -451,9 +454,15 @@ section:not(:nth-child(1)) {
     width: 350px;
     height: 350px;
     margin-top: 50%;
+
   }
 }
 
+@keyframes bg-circle-rotate{
+ 100%{
+    transform: rotate(360deg);
+  }
+}
 .content-header-container {
   width: 100%;
   height: 100%;

@@ -458,6 +458,11 @@ section:not(:nth-child(1)) .card {
 /*===testimonials*/
 /* common styling for all sections end */
 /* predict fututre styling start */
+.rotate-planets {
+  -webkit-animation: bg-circle-rotate 6s linear infinite;
+          animation: bg-circle-rotate 6s linear infinite;
+}
+
 #predict-fututre .img-bg-circle {
   position: absolute;
   right: 90%;
@@ -468,6 +473,20 @@ section:not(:nth-child(1)) .card {
   width: 350px;
   height: 350px;
   margin-top: 50%;
+}
+
+@-webkit-keyframes bg-circle-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes bg-circle-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .content-header-container {
