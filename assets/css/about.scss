@@ -1,20 +1,25 @@
 .propl-about-container {
-  height: 18rem;
+  height: 20rem;
   background-color: $orange;
-  border-radius: 75px 0px 75px;
+  border-radius: 0px 75px 0px;
+  margin-top: 4rem;
   img {
     width: 60%;
   }
 }
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 50%;
+}
 .about {
   .future-text {
     width: 80%;
-    span {
-      display: block;
-      margin-top: 20px;
-      font-size: .8rem;
-    }
   }
+}
+.scale {
+  display: block;
+  margin-top: 1rem;
 }
 .about {
   .btn-business {

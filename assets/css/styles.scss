@@ -43,7 +43,7 @@ a:active {
   color: black !important;
 }
 .back-btn {
-  margin-top: 2rem;
+  margin: 2rem 0 0 .8rem;
 }
 
 //font variables
@@ -114,7 +114,7 @@ section:nth-child(3) {
   font-size: 0.9rem;
   background-color: #ffffff;
   box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-  padding: 2.5rem 12rem;
+  padding: 2.5rem 8.5rem;
   z-index: 9999;
   .dropdown-menu {
     // position: relative;
@@ -311,8 +311,7 @@ section:not(:nth-child(1)) {
 .home-content-box-inner {
   h1 {
     color: #ffffff;
-    font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 3.3rem;
     font-family: $header-font;
     line-height: 0.6;
     margin-top: 2rem;
@@ -416,7 +415,6 @@ section:not(:nth-child(1)) {
       position: relative;
       top: 40px;
       span {
-        font-weight: bold;
         font-family: $header-font;
       }
     }
@@ -471,7 +469,6 @@ animation: bg-circle-rotate 6s linear infinite;
 
 .content-header-body h2 {
   font-size: 1.85rem;
-  font-weight: bolder;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
@@ -479,6 +476,11 @@ animation: bg-circle-rotate 6s linear infinite;
   text-align: center;
   color: $text-color;
   font-family: $header-font;
+}
+#we-believe {
+  .content-header-body p {
+    @include marginAuto(64%)
+  }
 }
 
 .content-header-body p {
@@ -490,7 +492,7 @@ animation: bg-circle-rotate 6s linear infinite;
   text-align: center;
   color: $text-color;
   font-family: $paragraph-font;
-  @include marginAuto(70%);
+  @include marginAuto(75%);
 }
 .layout-margin {
   @include marginAuto(90%);
@@ -504,7 +506,7 @@ animation: bg-circle-rotate 6s linear infinite;
   text-align: center;
   color: $text-color;
   font-family: $header-font;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 #predict-fututre .card .card-body {
@@ -513,7 +515,7 @@ animation: bg-circle-rotate 6s linear infinite;
 }
 
 #predict-fututre .card-body .card-text {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.82;
@@ -526,7 +528,6 @@ animation: bg-circle-rotate 6s linear infinite;
 }
 
 #predict-fututre h4 {
-  font-weight: 800;
   font-family: $header-font;
 }
 
@@ -536,11 +537,6 @@ animation: bg-circle-rotate 6s linear infinite;
 #we-believe {
   width: 100%;
   overflow: hidden;
-}
-#we-believe {
-  .content-header-body p {
-    @include marginAuto(55%);
-  }
 }
 
 #we-believe {

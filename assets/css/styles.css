@@ -47,7 +47,7 @@ a:active {
 }
 
 .back-btn {
-  margin-top: 2rem;
+  margin: 2rem 0 0 .8rem;
 }
 
 @font-face {
@@ -108,7 +108,7 @@ section:nth-child(3) {
   background-color: #ffffff;
   -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-  padding: 2.5rem 12rem;
+  padding: 2.5rem 8.5rem;
   z-index: 9999;
 }
 
@@ -323,8 +323,7 @@ section:not(:nth-child(1)) .card {
 
 .home-content-box-inner h1 {
   color: #ffffff;
-  font-weight: bold;
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   font-family: MinionPro;
   line-height: 0.6;
   margin-top: 2rem;
@@ -436,7 +435,6 @@ section:not(:nth-child(1)) .card {
 }
 
 .testimonial-container .testimonial-footer h5 span {
-  font-weight: bold;
   font-family: MinionPro;
 }
 
@@ -497,7 +495,6 @@ section:not(:nth-child(1)) .card {
 
 .content-header-body h2 {
   font-size: 1.85rem;
-  font-weight: bolder;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
@@ -505,6 +502,11 @@ section:not(:nth-child(1)) .card {
   text-align: center;
   color: #061134;
   font-family: MinionPro;
+}
+
+#we-believe .content-header-body p {
+  margin: 0 auto;
+  width: 64%;
 }
 
 .content-header-body p {
@@ -517,7 +519,7 @@ section:not(:nth-child(1)) .card {
   color: #061134;
   font-family: ProximaNova;
   margin: 0 auto;
-  width: 70%;
+  width: 75%;
 }
 
 .layout-margin {
@@ -533,7 +535,7 @@ section:not(:nth-child(1)) .card {
   text-align: center;
   color: #061134;
   font-family: MinionPro;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 #predict-fututre .card .card-body {
@@ -542,7 +544,7 @@ section:not(:nth-child(1)) .card {
 }
 
 #predict-fututre .card-body .card-text {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.82;
@@ -555,7 +557,6 @@ section:not(:nth-child(1)) .card {
 }
 
 #predict-fututre h4 {
-  font-weight: 800;
   font-family: MinionPro;
 }
 
@@ -564,11 +565,6 @@ section:not(:nth-child(1)) .card {
 #we-believe {
   width: 100%;
   overflow: hidden;
-}
-
-#we-believe .content-header-body p {
-  margin: 0 auto;
-  width: 55%;
 }
 
 #we-believe .card-body {
@@ -1164,10 +1160,6 @@ section:not(:nth-child(1)) .card {
   margin-top: 1rem;
 }
 
-.future-header {
-  width: 70%;
-}
-
 .future-header h2 {
   font-size: 2.5rem;
   font-family: MinionPro;
@@ -1739,23 +1731,34 @@ section:not(:nth-child(1)) .card {
 }
 
 .propl-about-container {
-  height: 18rem;
+  height: 20rem;
   background-color: #ff5050;
-  border-radius: 75px 0px 75px;
+  border-radius: 0px 75px 0px;
+  margin-top: 4rem;
 }
 
 .propl-about-container img {
   width: 60%;
 }
 
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
 .about .future-text {
   width: 80%;
 }
 
-.about .future-text span {
+.scale {
   display: block;
-  margin-top: 20px;
-  font-size: .8rem;
+  margin-top: 1rem;
 }
 
 .about .btn-business {
