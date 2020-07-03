@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#ff5050}
+        </style>
+    </defs>
+    <g id="prefix__Group_225" data-name="Group 225" transform="translate(-494 -1573)">
+        <g id="prefix__Group_18" data-name="Group 18">
+            <path id="prefix__Rectangle_8" d="M0 0H100V100H0z" data-name="Rectangle 8" transform="translate(494 1573)" style="fill:none"/>
+            <g id="prefix__noun_competition_2103923" transform="translate(502.5 1581.125)">
+                <g id="prefix__Group_357" data-name="Group 357" transform="translate(2.5 6.875)">
+                    <path id="prefix__Path_301" d="M77.908 65.083h-10.9V52.542a2.415 2.415 0 0 0-2.459-2.459H43.892v-8.524a2.459 2.459 0 0 0-4.918 0V50H18.319a2.415 2.415 0 0 0-2.459 2.46V65H4.959A2.415 2.415 0 0 0 2.5 67.46v13.36a2.415 2.415 0 0 0 2.459 2.459 2.415 2.415 0 0 0 2.459-2.459V70h21.8v10.9a2.459 2.459 0 1 0 4.918 0V67.542a2.415 2.415 0 0 0-2.459-2.459h-10.9V55h41.31v10.083h-10.9a2.415 2.415 0 0 0-2.459 2.459V80.9a2.459 2.459 0 1 0 4.918 0V70h21.8v10.9a2.459 2.459 0 1 0 4.918 0V67.542a2.415 2.415 0 0 0-2.456-2.459z" class="prefix__cls-2" data-name="Path 301" transform="translate(-2.5 -12.687)"/>
+                    <path id="prefix__Path_302" d="M40.094 21.239a1.581 1.581 0 0 1 .492 1.475l-1.393 5.9a1.44 1.44 0 0 0 2.213 1.557l5.164-3.115a1.736 1.736 0 0 1 1.557 0l5.164 3.115a1.489 1.489 0 0 0 2.209-1.637l-1.393-5.9a1.464 1.464 0 0 1 .492-1.475l4.59-3.934a1.5 1.5 0 0 0-.82-2.623l-6.147-.328a1.458 1.458 0 0 1-1.229-.9L48.7 7.8a1.514 1.514 0 0 0-2.787 0l-2.3 5.574a1.576 1.576 0 0 1-1.229.9l-5.983.492a1.49 1.49 0 0 0-.82 2.623z" class="prefix__cls-2" data-name="Path 302" transform="translate(-8.373 -6.875)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

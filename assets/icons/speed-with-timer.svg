@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#ff5050}
+        </style>
+    </defs>
+    <g id="prefix__Group_19" data-name="Group 19" transform="translate(-494 -1573)">
+        <g id="prefix__Group_18" data-name="Group 18">
+            <path id="prefix__Rectangle_8" d="M0 0H100V100H0z" data-name="Rectangle 8" transform="translate(494 1573)" style="fill:none"/>
+            <g id="prefix__Group_346" data-name="Group 346" transform="translate(497 1574.9)">
+                <path id="prefix__Path_276" d="M46.8 37.813a2.244 2.244 0 0 0-2.218-2.213H16.913a2.213 2.213 0 0 0 0 4.427h27.669a2.185 2.185 0 0 0 2.218-2.214z" class="prefix__cls-2" data-name="Path 276" transform="translate(-.754 -.894)"/>
+                <path id="prefix__Path_277" d="M44 49.313a2.244 2.244 0 0 0-2.215-2.213H27.213a2.213 2.213 0 1 0 0 4.427h14.572A2.185 2.185 0 0 0 44 49.313z" class="prefix__cls-2" data-name="Path 277" transform="translate(-1.554 -1.788)"/>
+                <path id="prefix__Path_278" d="M64.118 24.1H7.213a2.213 2.213 0 1 0 0 4.427h57a19.46 19.46 0 1 1-17.342 28.406 2.151 2.151 0 0 0-1.937-1.2H33.591a2.213 2.213 0 1 0 0 4.427h9.961A23.892 23.892 0 1 0 64.118 24.1z" class="prefix__cls-2" data-name="Path 278"/>
+                <path id="prefix__Path_279" d="M68.9 33.1a2.442 2.442 0 0 0-2.4 2.4v14.111c0 .184.092.277.092.461.092.092.092.277.184.369.092.092.184.277.277.369l6.087 6.087a2.48 2.48 0 0 0 1.66.738 2.31 2.31 0 0 0 1.66-.738 2.45 2.45 0 0 0 0-3.412l-5.441-5.441V35.5a2.02 2.02 0 0 0-2.119-2.4z" class="prefix__cls-2" data-name="Path 279" transform="translate(-4.78 -.7)"/>
+            </g>
+        </g>
+    </g>
+</svg>

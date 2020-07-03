@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#ff5050;stroke:#ff5050}
+        </style>
+    </defs>
+    <g id="prefix__Group_226" data-name="Group 226" transform="translate(-.461)">
+        <g id="prefix__Group_18" data-name="Group 18">
+            <path id="prefix__Rectangle_8" d="M0 0H100V100H0z" data-name="Rectangle 8" transform="translate(.461)" style="fill:none"/>
+            <g id="prefix__레이어_2" data-name="레이어 2" transform="translate(19.487 13.004)">
+                <g id="prefix__레이어_1" data-name="레이어 1" transform="translate(-.026 -.004)">
+                    <path id="prefix__Path_269" d="M31.246 74.764a1.364 1.364 0 0 1-.473 0C-.761 63.214-.287 38.332.047 16.373v-3.757a1.392 1.392 0 0 1 1.5-1.475A44.531 44.531 0 0 0 30.355.342a1.392 1.392 0 0 1 1.837 0 44.364 44.364 0 0 0 28.778 10.8 1.392 1.392 0 0 1 1.336 1.358v3.757c.417 21.959.891 46.841-30.615 58.308a1.364 1.364 0 0 1-.445.195zM2.969 13.924l-.139 2.5C2.44 37.33 1.967 60.96 31.163 71.87 60.442 61.043 60 37.358 59.579 16.429v-2.477A47.314 47.314 0 0 1 31.246 3.236 47.314 47.314 0 0 1 2.969 13.924z" class="prefix__cls-2" data-name="Path 269" transform="translate(.026 .004)"/>
+                    <path id="prefix__Path_270" d="M16.75 28.138a1.392 1.392 0 0 1-.974-.417l-7.9-7.876a1.392 1.392 0 1 1 1.976-1.893l6.9 6.9 14.22-14.22a1.4 1.4 0 1 1 1.976 1.976L17.613 27.721a1.392 1.392 0 0 1-.863.417z" class="prefix__cls-2" data-name="Path 270" transform="translate(13.075 18.242)"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

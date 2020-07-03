@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <g id="prefix__Group_226" data-name="Group 226" transform="translate(-.461)">
+        <g id="prefix__Group_18" data-name="Group 18">
+            <path id="prefix__Rectangle_8" d="M0 0H100V100H0z" data-name="Rectangle 8" transform="translate(.461)" style="fill:none"/>
+            <path id="prefix__Path_189" d="M82.446 70.164L55.5 23.487a6.348 6.348 0 0 0-11 0L17.555 70.164a6.348 6.348 0 0 0 5.5 9.523h53.9a6.349 6.349 0 0 0 5.5-9.523zm-3.465 4.35a2.351 2.351 0 0 1-2.033 1.173h-53.9a2.348 2.348 0 0 1-2.033-3.523l26.951-46.677a2.348 2.348 0 0 1 4.067 0l26.949 46.677a2.356 2.356 0 0 1-.001 2.35zM48 58.208h4v-19.5h-4zm0 10.084h4v-6.167h-4z" data-name="Path 189" transform="translate(.755 -.313)" style="fill:#ff5050"/>
+        </g>
+    </g>
+</svg>

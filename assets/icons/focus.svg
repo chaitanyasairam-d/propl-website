@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#ff5050}
+        </style>
+    </defs>
+    <g id="prefix__Group_19" data-name="Group 19" transform="translate(-494 -1573)">
+        <g id="prefix__Group_18" data-name="Group 18">
+            <path id="prefix__Rectangle_8" d="M0 0H100V100H0z" data-name="Rectangle 8" transform="translate(494 1573)" style="fill:none"/>
+            <g id="prefix__Group_149" data-name="Group 149" transform="translate(501 1580)">
+                <path id="prefix__Path_102" d="M80.438 69.368a11.082 11.082 0 0 1-11.07 11.07h-5.811v4.428h5.811a15.515 15.515 0 0 0 15.5-15.5v-5.809h-4.43z" class="prefix__cls-2" data-name="Path 102" transform="translate(-7.125 -7.125)"/>
+                <path id="prefix__Path_103" d="M69.368 8h-5.811v4.429h5.811A11.082 11.082 0 0 1 80.438 23.5v5.81h4.428V23.5A15.515 15.515 0 0 0 69.368 8z" class="prefix__cls-2" data-name="Path 103" transform="translate(-7.125)"/>
+                <path id="prefix__Path_104" d="M8 23.5v5.81h4.429V23.5A11.082 11.082 0 0 1 23.5 12.429h5.81V8H23.5A15.515 15.515 0 0 0 8 23.5z" class="prefix__cls-2" data-name="Path 104"/>
+                <path id="prefix__Path_105" d="M12.429 69.368v-5.811H8v5.811a15.515 15.515 0 0 0 15.5 15.5h5.81v-4.43H23.5a11.082 11.082 0 0 1-11.071-11.07z" class="prefix__cls-2" data-name="Path 105" transform="translate(0 -7.125)"/>
+                <path id="prefix__Path_106" d="M49.056 39.29h-4.291v5.47H39.5v4.2h5.262v5.517h4.291v-5.518h5.261v-4.2h-5.258z" class="prefix__cls-2" data-name="Path 106" transform="translate(-4.04 -4.013)"/>
+            </g>
+        </g>
+    </g>
+</svg>

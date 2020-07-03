@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="626" height="467.365" viewBox="0 0 626 467.365">
+    <defs>
+        <style>
+            .prefix__cls-13,.prefix__cls-2,.prefix__cls-8{fill:none}.prefix__cls-2,.prefix__cls-8{stroke:#ff5050}.prefix__cls-2{stroke-width:2px}.prefix__cls-6{fill:#ff5050}.prefix__cls-8{stroke-linecap:round}.prefix__cls-9{fill:#061134}.prefix__cls-8{stroke-width:1.4px}.prefix__cls-9{font-size:16px;font-family:ProximaNova-Bold,Proxima Nova;font-weight:700}.prefix__cls-12{stroke:none}
+        </style>
+    </defs>
+    <g id="prefix__Group_549" data-name="Group 549" transform="translate(-976 -407.457)">
+        <g id="prefix__Group_528" data-name="Group 528" transform="translate(0 18.843)">
+            <g id="prefix__Group_527" data-name="Group 527">
+                <g id="prefix__Ellipse_24" class="prefix__cls-2" data-name="Ellipse 24" transform="translate(976 407.979)">
+                    <circle cx="147" cy="147" r="147" class="prefix__cls-12"/>
+                    <circle cx="147" cy="147" r="146" class="prefix__cls-13"/>
+                </g>
+                <g id="prefix__Ellipse_25" class="prefix__cls-2" data-name="Ellipse 25" transform="translate(1200 407.979)">
+                    <circle cx="147" cy="147" r="147" class="prefix__cls-12"/>
+                    <circle cx="147" cy="147" r="146" class="prefix__cls-13"/>
+                </g>
+                <g id="prefix__Ellipse_39" class="prefix__cls-2" data-name="Ellipse 39" transform="translate(1088 561.979)">
+                    <circle cx="147" cy="147" r="147" class="prefix__cls-12"/>
+                    <circle cx="147" cy="147" r="146" class="prefix__cls-13"/>
+                </g>
+                <path id="prefix__Path_488" fill="#ff5050" d="M-1785.431 3349.646s-23.339-5.3-30.526-4.689-28.149 1.326-34.185 3.932-1.833.978-1.833.978l3.294 21.507 5.454 18.506 7.7 16.16 7.843 12.827 5.684 8.409 2.731 3.222 8.033-10.012 7.614-11.771 11.132-25.241 5.74-21.676z" data-name="Path 488" opacity="0.8" transform="translate(3054 -2782)"/>
+                <g id="prefix__Group_210" data-name="Group 210" transform="rotate(-27 1066.241 479.353)">
+                    <path id="prefix__Path_144" fill="none" stroke="#061134" stroke-linecap="round" stroke-width="2px" d="M-20.794 106.087S43.479 15.7 142.544 2.618c38.168-5.039 84.763-3.47 140.358 10.6" data-name="Path 144" transform="rotate(11 -2180.799 6510.104)"/>
+                    <g id="prefix__Group_208" data-name="Group 208" transform="rotate(24 -656.132 3760.177)">
+                        <path id="prefix__Path_145" fill="#061134" d="M.262 15.7a.98.98 0 0 0 1.386.052L9.22 8.727a.981.981 0 0 0 0-1.438L1.648.262A.981.981 0 0 0 .314 1.7l6.8 6.309-6.8 6.309A.981.981 0 0 0 .262 15.7z" data-name="Path 145"/>
+                    </g>
+                </g>
+                <g id="prefix__Group_524" data-name="Group 524" transform="translate(1193.293 696.541)">
+                    <path id="prefix__Rectangle_83" d="M0 0H9.938V1.778H0z" class="prefix__cls-6" data-name="Rectangle 83" transform="translate(37.237 51.927)"/>
+                    <path id="prefix__Rectangle_84" d="M0 0H8.132V1.454H0z" class="prefix__cls-6" data-name="Rectangle 84" transform="translate(38.14 54.189)"/>
+                    <path id="prefix__Rectangle_85" d="M0 0H6.776V1.212H0z" class="prefix__cls-6" data-name="Rectangle 85" transform="translate(38.818 56.128)"/>
+                    <path id="prefix__Path_492" d="M88.095 87.748A6.9 6.9 0 0 0 82.812 99.1h2.575a5.212 5.212 0 1 1 5.417 0h2.576a6.9 6.9 0 0 0-5.284-11.352z" class="prefix__cls-6" data-name="Path 492" transform="translate(-45.889 -48.062)"/>
+                    <circle id="prefix__Ellipse_40" cx=".988" cy=".988" r=".988" class="prefix__cls-6" data-name="Ellipse 40" transform="translate(66.73 44.678)"/>
+                    <circle id="prefix__Ellipse_41" cx="2.992" cy="2.992" r="2.992" class="prefix__cls-6" data-name="Ellipse 41" transform="translate(39.214 32.265)"/>
+                    <circle id="prefix__Ellipse_42" cx="2.174" cy="2.174" r="2.174" class="prefix__cls-6" data-name="Ellipse 42" transform="translate(40.032 26.619)"/>
+                    <circle id="prefix__Ellipse_43" cx="1.496" cy="1.496" r="1.496" class="prefix__cls-6" data-name="Ellipse 43" transform="translate(40.71 22.328)"/>
+                    <circle id="prefix__Ellipse_44" cx=".988" cy=".988" r=".988" class="prefix__cls-6" data-name="Ellipse 44" transform="translate(41.218 19.167)"/>
+                    <circle id="prefix__Ellipse_45" cx="2.992" cy="2.992" r="2.992" class="prefix__cls-6" data-name="Ellipse 45" transform="translate(49.623 42.674)"/>
+                    <circle id="prefix__Ellipse_46" cx="2.174" cy="2.174" r="2.174" class="prefix__cls-6" data-name="Ellipse 46" transform="translate(56.905 43.492)"/>
+                    <circle id="prefix__Ellipse_47" cx="1.496" cy="1.496" r="1.496" class="prefix__cls-6" data-name="Ellipse 47" transform="translate(62.552 44.17)"/>
+                    <circle id="prefix__Ellipse_48" cx="2.992" cy="2.992" r="2.992" class="prefix__cls-6" data-name="Ellipse 48" transform="translate(28.805 42.674)"/>
+                    <circle id="prefix__Ellipse_49" cx="2.174" cy="2.174" r="2.174" class="prefix__cls-6" data-name="Ellipse 49" transform="translate(23.159 43.492)"/>
+                    <circle id="prefix__Ellipse_50" cx="1.496" cy="1.496" r="1.496" class="prefix__cls-6" data-name="Ellipse 50" transform="translate(18.868 44.17)"/>
+                    <circle id="prefix__Ellipse_51" cx=".988" cy=".988" r=".988" class="prefix__cls-6" data-name="Ellipse 51" transform="translate(15.707 44.678)"/>
+                    <circle id="prefix__Ellipse_52" cx="2.992" cy="2.992" r="2.992" class="prefix__cls-6" data-name="Ellipse 52" transform="translate(46.574 35.314)"/>
+                    <circle id="prefix__Ellipse_53" cx="2.174" cy="2.174" r="2.174" class="prefix__cls-6" data-name="Ellipse 53" transform="translate(51.964 31.561)"/>
+                    <circle id="prefix__Ellipse_54" cx="1.496" cy="1.496" r="1.496" class="prefix__cls-6" data-name="Ellipse 54" transform="translate(56.155 28.726)"/>
+                    <circle id="prefix__Ellipse_55" cx=".988" cy=".988" r=".988" class="prefix__cls-6" data-name="Ellipse 55" transform="translate(59.257 26.639)"/>
+                    <circle id="prefix__Ellipse_56" cx="2.992" cy="2.992" r="2.992" class="prefix__cls-6" data-name="Ellipse 56" transform="translate(31.854 35.314)"/>
+                    <circle id="prefix__Ellipse_57" cx="2.174" cy="2.174" r="2.174" class="prefix__cls-6" data-name="Ellipse 57" transform="translate(28.101 31.561)"/>
+                    <circle id="prefix__Ellipse_58" cx="1.496" cy="1.496" r="1.496" class="prefix__cls-6" data-name="Ellipse 58" transform="translate(25.266 28.726)"/>
+                    <circle id="prefix__Ellipse_59" cx=".988" cy=".988" r=".988" class="prefix__cls-6" data-name="Ellipse 59" transform="translate(23.179 26.639)"/>
+                </g>
+                <g id="prefix__Group_525" data-name="Group 525" transform="translate(1362.716 488.316)">
+                    <path id="prefix__Path_489" d="M42.768 17.095L25.559 29.428l5.449.382-9.56 11.855L39.9 29.38h-6.023z" class="prefix__cls-6" data-name="Path 489" transform="translate(-11.164 -5.411)"/>
+                </g>
+                <g id="prefix__Group_526" data-name="Group 526" transform="translate(-6 -3)">
+                    <path id="prefix__Path_493" d="M-218.023 388.913a.772.772 0 0 1-.043 1.124 17.494 17.494 0 0 1-12.193 4.886 17.609 17.609 0 0 1-10.939-3.8v.649a.813.813 0 0 1-.778.822.813.813 0 0 1-.822-.778l-.043-2.638a.813.813 0 0 1 .778-.822l2.594-.043a.813.813 0 0 1 .822.778.813.813 0 0 1-.778.822h-.692a15.914 15.914 0 0 0 9.858 3.373 15.927 15.927 0 0 0 11.069-4.41.822.822 0 0 1 1.167.037zm7.091-11.934l-1.643 2.032a.9.9 0 0 1-.562.3h-.086a.831.831 0 0 1-.519-.173l-2.032-1.643a.813.813 0 0 1-.13-1.124.813.813 0 0 1 1.124-.13l.519.389a16.134 16.134 0 0 0-10.377-14.4.783.783 0 0 1-.476-1.038.783.783 0 0 1 1.038-.476 17.662 17.662 0 0 1 11.415 15.739l.432-.519a.813.813 0 0 1 1.124-.13.8.8 0 0 1 .173 1.173zm-28.147-12.579l.086-.562a15.97 15.97 0 0 0-7.307 13.447 15.784 15.784 0 0 0 .519 4.021.8.8 0 0 1-.562.994c-.086 0-.13.043-.216.043a.831.831 0 0 1-.778-.605 16.673 16.673 0 0 1-.562-4.41 17.621 17.621 0 0 1 8.085-14.831l-.735-.13a.8.8 0 0 1-.649-.951.8.8 0 0 1 .951-.649l2.594.476a.8.8 0 0 1 .649.951l-.432 2.551a.827.827 0 0 1-.778.692h-.13a.968.968 0 0 1-.735-1.037z" class="prefix__cls-6" data-name="Path 493" transform="translate(1280.9 137.338)"/>
+                    <path id="prefix__Path_128" fill="#ff5050" stroke="#ff5050" stroke-width="0.4px" d="M20.743 17.482a3.581 3.581 0 1 0-4.185 0A6.658 6.658 0 0 0 12 23.79v.51h13.3v-.51a6.659 6.659 0 0 0-4.557-6.308zm-4.651-2.9a2.558 2.558 0 1 1 2.558 2.558 2.561 2.561 0 0 1-2.557-2.559zm-3.047 8.7a5.628 5.628 0 0 1 11.209 0z" data-name="Path 128" transform="translate(1032.5 495.5)"/>
+                </g>
+            </g>
+            <path id="prefix__Path_495" d="M-1653 3218.214v6.069" class="prefix__cls-8" data-name="Path 495" transform="rotate(90 1211.72 3377.063)"/>
+            <path id="prefix__Path_496" d="M-1653 3218.214v6.069" class="prefix__cls-8" data-name="Path 496" transform="rotate(90 1227.72 3393.063)"/>
+        </g>
+        <text id="prefix__Unmet_unarticulated_needs" class="prefix__cls-9" data-name="Unmet &amp; unarticulated needs" transform="translate(1027 580.843)">
+            <tspan x="0" y="0">Unmet &amp; </tspan><tspan x="0" y="20">unarticulated </tspan><tspan x="0" y="40">needs</tspan>
+        </text>
+        <text id="prefix__Experience_innovations" class="prefix__cls-9" data-name="Experience innovations" transform="translate(1193 801.822)">
+            <tspan x="0" y="0">Experience </tspan><tspan x="0" y="20">innovations</tspan>
+        </text>
+        <text id="prefix__Drivers_of_change" class="prefix__cls-9" data-name="Drivers of change" transform="translate(1364 580.843)">
+            <tspan x="0" y="0">Drivers of </tspan><tspan x="0" y="20">change</tspan>
+        </text>
+        <text id="prefix__Sweet-spot_for_Delightful_solutions" fill="#061134" data-name="Sweet-spot for Delightful solutions" font-family="ProximaNova-Regular, Proxima Nova" font-size="16px" transform="translate(1499 422.822)">
+            <tspan x="0" y="0">Sweet-spot for</tspan><tspan font-family="ProximaNova-Bold, Proxima Nova" font-weight="700"><tspan x="0" y="18">Delightful </tspan><tspan x="0" y="36">solutions</tspan></tspan>
+        </text>
+    </g>
+</svg>

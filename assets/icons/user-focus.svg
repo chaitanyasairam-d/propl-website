@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <g id="prefix__Group_242" data-name="Group 242" transform="translate(-494 -1573)">
+        <g id="prefix__Group_18" data-name="Group 18">
+            <path id="prefix__Rectangle_8" d="M0 0H100V100H0z" data-name="Rectangle 8" transform="translate(494 1573)" style="fill:none"/>
+            <g id="prefix__noun_Customer_Focus_2021872" data-name="noun_Customer Focus_2021872" transform="translate(502 1581)">
+                <path id="prefix__Path_127" d="M44.16 6.267V1h-3.453v5.267a36.24 36.24 0 0 0-34.44 34.44H1v3.453h5.267a36.24 36.24 0 0 0 34.44 34.44v5.267h3.453V78.6A36.24 36.24 0 0 0 78.6 44.16h5.267v-3.453H78.6a36.24 36.24 0 0 0-34.44-34.44zm0 68.88v-5.091h-3.453v5.091A32.79 32.79 0 0 1 9.72 44.16h5.091v-3.453H9.72A32.79 32.79 0 0 1 40.707 9.72v5.091h3.453V9.72a32.79 32.79 0 0 1 30.987 30.987h-5.091v3.453h5.091A32.79 32.79 0 0 1 44.16 75.147z" data-name="Path 127" style="fill:#ff5050"/>
+                <path id="prefix__Path_128" d="M32.677 26.328a8.469 8.469 0 1 0-9.9 0A15.746 15.746 0 0 0 12 41.247v1.21h31.457v-1.21a15.748 15.748 0 0 0-10.78-14.919zm-11-6.859a6.049 6.049 0 1 1 6.049 6.049 6.056 6.056 0 0 1-6.047-6.049zm-7.2 20.568a13.31 13.31 0 0 1 26.509 0z" data-name="Path 128" transform="translate(14.705 13.979)" style="stroke:#ff5050;fill:#ff5050"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:none}.prefix__cls-2{fill:#ff5050}
+        </style>
+    </defs>
+    <g id="prefix__Group_19" data-name="Group 19" transform="translate(-494 -1573)">
+        <g id="prefix__Group_18" data-name="Group 18">
+            <path id="prefix__Rectangle_8" d="M0 0H100V100H0z" class="prefix__cls-1" data-name="Rectangle 8" transform="translate(494 1573)"/>
+            <g id="prefix__noun_fast_235439" transform="translate(498.485 1573.409)">
+                <path id="prefix__Path_30" d="M63.194 27.132a23.337 23.337 0 1 0 23.337 23.337 23.364 23.364 0 0 0-23.337-23.337zm1.786 24.377a2.066 2.066 0 0 1-2.826.745l-11.539-6.72a2.067 2.067 0 1 1 2.085-3.572l11.538 6.721a2.067 2.067 0 0 1 .742 2.826z" class="prefix__cls-1" data-name="Path 30" transform="translate(-3.267 -.408)"/>
+                <path id="prefix__Path_31" d="M62.786 22.591a27.471 27.471 0 1 0 27.471 27.471 27.5 27.5 0 0 0-27.471-27.471zm0 50.808a23.337 23.337 0 1 1 23.337-23.337A23.364 23.364 0 0 1 62.786 73.4z" class="prefix__cls-2" data-name="Path 31" transform="translate(-2.858)"/>
+                <path id="prefix__Path_32" d="M65.2 50.121L53.657 43.4a2.067 2.067 0 0 0-2.081 3.571l11.538 6.721a2.067 2.067 0 0 0 2.086-3.571z" class="prefix__cls-2" data-name="Path 32" transform="translate(-4.228 -1.845)"/>
+                <path id="prefix__Path_33" d="M9.335 37.82h19.113a1.82 1.82 0 1 0 0-3.64H9.335a1.82 1.82 0 0 0 0 3.64z" class="prefix__cls-2" data-name="Path 33" transform="translate(-.36 -1.042)"/>
+                <path id="prefix__Path_34" d="M5.335 48.474h19.113a1.82 1.82 0 1 0 0-3.64H5.335a1.82 1.82 0 0 0 0 3.64z" class="prefix__cls-2" data-name="Path 34" transform="translate(0 -1.999)"/>
+                <path id="prefix__Path_35" d="M26.268 57.308a1.821 1.821 0 0 0-1.82-1.82H5.335a1.82 1.82 0 0 0 0 3.64h19.113a1.821 1.821 0 0 0 1.82-1.82z" class="prefix__cls-2" data-name="Path 35" transform="translate(0 -2.957)"/>
+                <path id="prefix__Path_36" d="M30.268 67.962a1.821 1.821 0 0 0-1.82-1.82H9.335a1.82 1.82 0 0 0 0 3.64h19.113a1.821 1.821 0 0 0 1.82-1.82z" class="prefix__cls-2" data-name="Path 36" transform="translate(-.36 -3.915)"/>
+            </g>
+            <circle id="prefix__Ellipse_23" cx="18" cy="18" r="18" data-name="Ellipse 23" transform="translate(547 1609)" style="opacity:.2;fill:#ff5050"/>
+        </g>
+    </g>
+</svg>

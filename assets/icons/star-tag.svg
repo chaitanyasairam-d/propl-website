@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#ff5050}
+        </style>
+    </defs>
+    <g id="prefix__Group_225" data-name="Group 225" transform="translate(-494 -1573)">
+        <g id="prefix__Group_18" data-name="Group 18">
+            <path id="prefix__Rectangle_8" d="M0 0H100V100H0z" data-name="Rectangle 8" transform="translate(494 1573)" style="fill:none"/>
+            <g id="prefix__Group_248" data-name="Group 248" transform="translate(-10 10)">
+                <path id="prefix__Path_156" d="M52.539 46.574a1.455 1.455 0 0 0 2.24-1.632l-2.51-7.76 6.567-4.773a1.455 1.455 0 0 0-.855-2.633h-8.114l-2.51-7.7a1.455 1.455 0 0 0-2.771 0l-2.51 7.7h-8.121a1.455 1.455 0 0 0-.855 2.633l6.574 4.773-2.51 7.7a1.455 1.455 0 0 0 2.24 1.632l6.568-4.714zm-11.186-5l1.455-4.465a1.455 1.455 0 0 0-.531-1.632l-3.8-2.764h4.7a1.455 1.455 0 0 0 1.386-1.008l1.409-4.457 1.447 4.465a1.455 1.455 0 0 0 1.381 1.011h4.7l-3.8 2.764a1.455 1.455 0 0 0-.531 1.632l1.416 4.457-3.8-2.764a1.455 1.455 0 0 0-1.709 0z" class="prefix__cls-2" data-name="Path 156" transform="translate(507.663 1569.24)"/>
+                <path id="prefix__Path_157" d="M18.939 74.018a1.817 1.817 0 0 0 1.848-.054l21.848-13.7 21.848 13.7a1.817 1.817 0 0 0 2.787-1.54V6.9a1.817 1.817 0 0 0-1.818-1.82H19.817A1.817 1.817 0 0 0 18 6.9v65.525a1.825 1.825 0 0 0 .939 1.594zm2.7-65.3h41.989v60.419L43.6 56.6a1.817 1.817 0 0 0-1.932 0L21.657 69.161z" class="prefix__cls-2" data-name="Path 157" transform="translate(511 1572.92)"/>
+            </g>
+        </g>
+    </g>
+</svg>
