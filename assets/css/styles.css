@@ -1156,7 +1156,7 @@ section:not(:nth-child(1)) .card {
 }
 
 .future-icon img {
-  width: 3rem;
+  width: 3.5rem;
   margin-top: 1rem;
 }
 
@@ -1177,6 +1177,11 @@ section:not(:nth-child(1)) .card {
 .future-text p {
   font-family: ProximaNova;
   font-size: 0.9rem;
+  color: #061134;
+}
+
+.strategy-future .future-header {
+  width: 75%;
 }
 
 .btn-back {
@@ -1216,7 +1221,7 @@ section:not(:nth-child(1)) .card {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .point-list .acheiver-container {
@@ -1268,13 +1273,15 @@ section:not(:nth-child(1)) .card {
 }
 
 .do-list ul li .card {
-  padding: 35px 15px;
+  width: 90%;
+  padding: 35px 10px;
   border-radius: 1rem;
 }
 
 .do-list ul li .card:not(:nth-child(2)) {
   -webkit-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.1);
+  width: 90%;
 }
 
 .do-list ul li .card .card-title {
@@ -1296,32 +1303,36 @@ section:not(:nth-child(1)) .card {
   text-align: center;
 }
 
-.do-list ul li .orange-background {
+.do-list ul li .card .btn-more {
+  color: #ffffff !important;
+}
+
+.do-list ul li .card:hover {
+  cursor: pointer;
   background-color: #ff5050;
   color: white !important;
 }
 
-.do-list ul li .orange-background p {
+.do-list ul li .card:hover p {
   color: #ffffff !important;
 }
 
-.do-list ul li .orange-background .underline {
+.do-list ul li .card:hover .underline {
   background: #ffffff;
 }
 
-.do-list ul li .orange-background .btn-more {
+.do-list ul li .card:hover .btn-more {
   background: #ffffff;
-  color: #ff5050;
-}
-
-.do-list ul li .orange-background .btn-more:hover {
-  background: #ffffff !important;
   color: #ff5050 !important;
 }
 
 .capability-width .do-list {
   margin: 0 auto;
   width: 60%;
+}
+
+.p40 {
+  padding: 40px;
 }
 
 /* Experience page styling */
