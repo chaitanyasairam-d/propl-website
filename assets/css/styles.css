@@ -1973,7 +1973,7 @@ section:not(:nth-child(1)) .card {
 .orange-background .contact-header h4 {
   color: #ffffff;
   font-family: MinionPro;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
 
 .orange-background .contact-header p {
@@ -1993,6 +1993,13 @@ section:not(:nth-child(1)) .card {
 
 .submit-left {
   max-width: 60%;
+}
+
+.submit-left span {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  color: #ff5050;
 }
 
 .success-img {

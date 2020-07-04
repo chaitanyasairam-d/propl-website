@@ -165,7 +165,7 @@
     h4 {
       color: #ffffff;
       font-family: $header-font;
-      font-size: 1.5rem;
+      font-size: 1.9rem;
     }
     p {
       font-family: $paragraph-font;
@@ -180,6 +180,12 @@
 }
 .submit-left {
   max-width: 60%;
+  span {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    color: #ff5050;
+  }
 }
 .success-img {
   background-image: url(../images/special_icons/contact-success.png);
