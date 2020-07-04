@@ -687,6 +687,10 @@ section:not(:nth-child(1)) .card {
   text-decoration: underline !important;
 }
 
+#footer #footer-logo-container .footer-copy-right a {
+  color: #ffffff;
+}
+
 #footer #footer-logo-container .footer-bg-circle {
   position: absolute;
   top: -36%;

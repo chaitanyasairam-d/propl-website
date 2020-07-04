@@ -651,6 +651,9 @@ animation: bg-circle-rotate 6s linear infinite;
     .footer-copy-right {
       line-height: 1.88 !important;
       text-decoration: underline !important;
+      a {
+        color: #ffffff;
+      }
     }
     .footer-bg-circle {
       position: absolute;
