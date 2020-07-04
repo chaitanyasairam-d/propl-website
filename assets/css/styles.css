@@ -91,13 +91,6 @@ section:nth-child(3) {
   margin: 0 0.5rem;
 }
 
-.nav-bg .nav-link .nav-link {
-  color: #fff !important;
-  font-size: 0.85rem;
-  font-family: ProximaNovaSemiBold;
-  margin: 0 0.5rem;
-}
-
 .navbar-content {
   width: 100%;
 }
@@ -145,13 +138,11 @@ section:nth-child(3) {
   transition: all 0s;
 }
 
-.nav-link:active,
-.nav-link:focus {
+.nav-link:hover {
   color: #ff5050 !important;
 }
 
-.nav-link:active .dropdown-icon,
-.nav-link:focus .dropdown-icon {
+.nav-link:hover .dropdown-icon {
   background-image: url("../images/special_icons/down-arrow-orange.svg") !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -164,8 +155,7 @@ section:nth-child(3) {
   transition: all 0s;
 }
 
-.nav-link:active .home-dropdown-icon,
-.nav-link:focus .home-dropdown-icon {
+.nav-link:hover .home-dropdown-icon {
   background-image: url("../images/special_icons/down-arrow-orange.svg") !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -175,6 +165,10 @@ section:nth-child(3) {
   left: 3px;
   -webkit-transition: all 0s;
   transition: all 0s;
+}
+
+.nav-link:hover .custom-dropdown-menu {
+  display: block;
 }
 
 .nav-underline::after {
@@ -757,7 +751,7 @@ section:not(:nth-child(1)) .card {
   position: absolute;
   border-top-left-radius: 75px;
   left: -10px;
-  bottom: 35px;
+  bottom: 27px;
   z-index: -1;
 }
 
@@ -768,7 +762,7 @@ section:not(:nth-child(1)) .card {
 
 #business-design-sprint .card {
   z-index: 1;
-  margin-top: -45px;
+  margin-top: 4.3rem;
   margin-left: 40px;
 }
 
@@ -825,7 +819,8 @@ section:not(:nth-child(1)) .card {
 }
 
 #desirable .card-container {
-  margin-right: 60px;
+  max-width: 100% !important;
+  margin: 0 .5rem;
 }
 
 #desirable .row {
@@ -837,16 +832,16 @@ section:not(:nth-child(1)) .card {
 #desirable .card {
   text-align: center;
   width: 13rem;
-  height: 200px;
-  margin-bottom: 182px;
+  height: 170px;
+  margin-bottom: 152px;
   background-color: #ffffff;
   border-radius: 20px;
   border: solid 1px #707070;
 }
 
 #desirable .card img {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 15px;
@@ -857,10 +852,7 @@ section:not(:nth-child(1)) .card {
   font-family: ProximaNova;
   font-size: 20px;
   font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.43;
-  letter-spacing: normal;
   text-align: center;
   color: #061134;
 }
@@ -890,7 +882,7 @@ section:not(:nth-child(1)) .card {
   content: '';
   width: 1px;
   height: 18.8rem;
-  background-color: grey;
+  background-color: #C4C4C4;
   position: absolute;
   right: 0;
   top: 2.5rem;
@@ -926,9 +918,8 @@ section:not(:nth-child(1)) .card {
 
 #what-to-expect .card .card-body {
   padding: 0 1.5rem;
-  margin-bottom: 108px;
   font-family: ProximaNova;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -978,7 +969,7 @@ section:not(:nth-child(1)) .card {
 
 /* Experience page styling */
 #solution-delivery .btn-business {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 #solution-delivery .back-btn {
@@ -1021,7 +1012,9 @@ section:not(:nth-child(1)) .card {
 }
 
 #solution-delivery .card {
-  z-index: -1;
+  z-index: 1;
+  margin-top: 6.9rem;
+  margin-left: 35px;
 }
 
 #solution-delivery .card h1 {
@@ -1050,7 +1043,7 @@ section:not(:nth-child(1)) .card {
 }
 
 .solution-delivery-divider-bar::after {
-  height: 18.2rem !important;
+  height: 18.3rem !important;
 }
 
 /* Experience page styling */
@@ -1098,9 +1091,9 @@ section:not(:nth-child(1)) .card {
 }
 
 #innovation-transformation .card {
-  z-index: -1;
-  margin-top: -30px;
-  margin-left: 50px;
+  z-index: 1;
+  margin-top: 6rem;
+  margin-left: 40px;
 }
 
 #innovation-transformation .card h1 {
@@ -1337,7 +1330,7 @@ section:not(:nth-child(1)) .card {
 
 /* Experience page styling */
 #solution-design .btn-business {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 #solution-design .back-btn {
@@ -1370,7 +1363,7 @@ section:not(:nth-child(1)) .card {
   position: absolute;
   border-top-left-radius: 75px;
   left: -10px;
-  bottom: 35px;
+  bottom: 27px;
   z-index: -1;
 }
 
@@ -1380,9 +1373,9 @@ section:not(:nth-child(1)) .card {
 }
 
 #solution-design .card {
-  z-index: -1;
-  margin-top: -45px;
-  margin-left: 50px;
+  z-index: 1;
+  margin-top: 4.5rem;
+  margin-left: 38px;
 }
 
 #solution-design .card h1 {
@@ -1404,7 +1397,7 @@ section:not(:nth-child(1)) .card {
 
 #solution-design .card p {
   font-family: ProximaNova;
-  font-size: 20px;
+  font-size: 18.5px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -1465,8 +1458,8 @@ section:not(:nth-child(1)) .card {
 
 #experiential-learning .card {
   z-index: 1;
-  margin-top: -20px;
-  margin-left: 25px;
+  margin-top: 6rem;
+  margin-left: 36px;
 }
 
 #experiential-learning .card h1 {
@@ -1553,8 +1546,8 @@ section:not(:nth-child(1)) .card {
 #growth-strategy .card {
   z-index: 1;
   width: 18rem !important;
-  margin-top: -45px;
-  margin-left: 40px;
+  margin-top: 4rem;
+  margin-left: 30px;
 }
 
 #growth-strategy .card h1 {
@@ -1632,6 +1625,7 @@ section:not(:nth-child(1)) .card {
 
 #growth-experiments .card {
   z-index: 1;
+  margin-left: 25px;
 }
 
 #growth-experiments .card h1 {
@@ -1708,7 +1702,7 @@ section:not(:nth-child(1)) .card {
 }
 
 #entrepreneur-residence .card {
-  margin-top: -20px;
+  margin-top: 6rem;
   margin-left: 50px;
 }
 

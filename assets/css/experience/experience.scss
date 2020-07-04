@@ -58,7 +58,7 @@
     position: absolute;
     border-top-left-radius: 75px;
     left: -10px;
-    bottom: 35px;
+    bottom: 27px;
     z-index: -1;
   }
   .img-container {
@@ -69,7 +69,7 @@
   }
   .card {
     z-index: 1;
-    margin-top: -45px;
+    margin-top: 4.3rem;
     margin-left: 40px;
     h1 {
       font-family: MinionWebPro;
@@ -120,7 +120,8 @@
     color: #ffffff;
   }
   .card-container {
-    margin-right: 60px;
+    max-width: 100%!important;
+    margin: 0 .5rem;
   }
   .row {
     align-items: baseline;
@@ -128,17 +129,14 @@
   .card {
     text-align: center;
     width: 13rem;
-    height: 200px;
-    // margin-right: 20px;
-    // margin-right: auto;
-    // margin-left: auto;
-    margin-bottom: 182px;
+    height: 170px;
+    margin-bottom: 152px;
     background-color: #ffffff;
     border-radius: 20px;
     border: solid 1px #707070;
     img {
-      width: 100px;
-      height: 100px;
+      width: 75px;
+      height: 75px;
       margin-right: auto;
       margin-left: auto;
       margin-top: 15px;
@@ -148,10 +146,7 @@
       font-family: ProximaNova;
       font-size: 20px;
       font-weight: 600;
-      font-stretch: normal;
-      font-style: normal;
       line-height: 1.43;
-      letter-spacing: normal;
       text-align: center;
       color: #061134;
     }
@@ -192,7 +187,7 @@
     content: '';
     width: 1px;
     height: 18.8rem;
-    background-color: grey;
+    background-color: #C4C4C4;
     position: absolute;
     right: 0;
     top: 2.5rem;
@@ -226,9 +221,8 @@
     }
     .card-body {
       padding: 0 1.5rem;
-      margin-bottom: 108px;
       font-family: ProximaNova;
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 500;
       font-stretch: normal;
       font-style: normal;
