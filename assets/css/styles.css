@@ -335,7 +335,8 @@ section:not(:nth-child(1)) .card {
 
 .go-down-btn img {
   position: relative;
-  top: 85px;
+  top: 125px;
+  width: 1.7rem;
 }
 
 /*===Home Section styling*/
@@ -1215,7 +1216,6 @@ section:not(:nth-child(1)) .card {
 }
 
 .point-list .acheiver-container {
-  width: 65%;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -1238,11 +1238,6 @@ section:not(:nth-child(1)) .card {
 .point-list .acheiver-container .btn-points img {
   position: relative;
   left: 15px;
-}
-
-.do-list {
-  margin: 0 auto;
-  width: 90%;
 }
 
 .do-list ul {
@@ -1900,7 +1895,7 @@ section:not(:nth-child(1)) .card {
 }
 
 .modal-lg {
-  max-width: 1000px !important;
+  max-width: 900px !important;
 }
 
 .floating-form {
@@ -1921,7 +1916,7 @@ section:not(:nth-child(1)) .card {
   margin-bottom: 0;
 }
 
-.policy span {
+.policy span a {
   color: #ff5050;
   text-decoration: underline;
 }
@@ -2036,7 +2031,6 @@ section:not(:nth-child(1)) .card {
 .floating-input:focus,
 .floating-select:focus {
   outline: none;
-  border-bottom: 2px solid #5264ae;
 }
 
 .floating-label label {
@@ -2057,7 +2051,6 @@ section:not(:nth-child(1)) .card {
 .floating-input:not(:placeholder-shown) ~ label {
   top: -18px;
   font-size: 14px;
-  color: #5264ae;
 }
 
 .floating-select:focus ~ label,
@@ -2100,63 +2093,7 @@ section:not(:nth-child(1)) .card {
   opacity: 0.5;
 }
 
-/* active state */
-.floating-input:focus ~ .highlight,
-.floating-select:focus ~ .highlight {
-  -webkit-animation: inputHighlighter 0.3s ease;
-  animation: inputHighlighter 0.3s ease;
-}
-
-/* animation */
-@-webkit-keyframes inputHighlighter {
-  from {
-    background: #5264ae;
-  }
-  to {
-    width: 0;
-    background: transparent;
-  }
-}
-
-@keyframes inputHighlighter {
-  from {
-    background: #5264ae;
-  }
-  to {
-    width: 0;
-    background: transparent;
-  }
-}
-
 /****  floating-Lable style end ****/
-/***   daniel - Fork me friend - style   ***/
-.floating-credit {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  color: #aaa;
-  font-size: 13px;
-  font-family: arial, sans-serif;
-}
-
-.floating-credit a {
-  text-decoration: none;
-  color: #000000;
-  font-weight: bold;
-}
-
-.floating-credit a:hover {
-  border-bottom: 1px dotted #f8f8f8;
-}
-
-.floating-heading {
-  position: fixed;
-  color: #aaa;
-  font-size: 20px;
-  font-family: arial, sans-serif;
-}
-
-/***  daniel - Fork me friend - style  ***/
 @media only screen and (min-width: 320px) and (max-width: 465px) {
   #predict-fututre #img-bg-circle {
     display: none;

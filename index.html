@@ -9,6 +9,10 @@
       href="./assets/images/special_icons/favicon.ico"
       type="image/x-icon"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
@@ -257,9 +261,9 @@
         <div class="home-content-box">
           <div class="home-content-box-inner text-center">
             <div class="underline"></div>
-            <h1>Fast is the new normal</h1>
+            <h1 class="animate__animated animate__fadeInDown animate__delay-.5s">Fast is the new normal</h1>
             <div class="home_desc">
-              <h4>
+              <h4 class="animate__animated animate__fadeIn animate__delay-1s">
                 What’s your strategy to stay ahead of the curve?
               </h4>
             </div>
@@ -268,7 +272,7 @@
             </div>
             <div class="go-down">
               <a class="go-down-btn" href="#predict-fututre">
-                <img src="assets/images/special_icons/down-arrow-white.png" />
+                <img class="animate__animated animate__bounce animate__infinite animate__delay-1s" src="assets/icons/down_arrow.svg" />
               </a>
             </div>
           </div>
@@ -700,17 +704,16 @@
       aria-hidden="true"
     >
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content orange-background" id="m-content">
+        <div class="modal-content" id="m-content">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
           <div class="modal-body">
-            <div class="contact-submit">
+            <div class="contact-submit" id="success">
               <div class="submit-left">
                 <div class="success-img">
                   <span>#letspropl</span>
                 </div>
-                <!-- <img src="assets/images/special_icons/contact-success.png" class="img-fluid"> -->
               </div>
               <div class="submit-right d-flex">
                 <div class="message-container">
@@ -760,7 +763,7 @@
                     <p class="policy mt-2">
                       Propl is committed to protecting and respecting your privacy, and we’ll only
                       use your personal data to provide the info requested from us. Review our
-                      <span>Privacy Policy</span>
+                      <span><a href="assets/Privacy Policy.pdf" download>Privacy Policy</a></span>
                     </p>
                   </div>
                 </div>

@@ -75,7 +75,7 @@
     margin-bottom: 40px;
   }
   .acheiver-container {
-    width: 65%;
+    // width: 65%;
     text-align: center;
     margin-bottom: 40px;
     h4 {
@@ -99,7 +99,7 @@
 }
 
 .do-list {
-  @include marginAuto(90%);
+  // @include marginAuto(90%);
   ul {
     display: flex;
     flex-wrap: wrap;
