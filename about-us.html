@@ -8,7 +8,7 @@
       href="./assets/images/special_icons/favicon.ico"
       type="image/x-icon"
     />
-    <title>Propyl</title>
+    <title>Propl</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
@@ -144,7 +144,7 @@
             src="assets/images/special_icons/PP2_3.png"
             id="navbar-brand-img"
             class=""
-            alt="Propyl"
+            alt="Propl"
           />
         </a>
         <button
@@ -495,7 +495,7 @@
                 <img src="assets/icons/lets-propl.svg" class="img-fluid" />
               </div>
               <div class="text-container">
-                <p>Can’t wait to hear from you</p>
+                <p>We can't wait to hear from you!</p>
                 <button
                   class="btn btn-more text-white"
                   data-toggle="modal"
@@ -710,49 +710,7 @@
         $("#capabilityBtn ul").toggle(500);
         console.log("capability clicked")
       });
-
-
-
-      $('#success').hide()
-      var href = window.location.href;
-      if (href.includes('contact')) {
-        $('#exampleModal').modal('show');
-      }
-      $('#myModal').on('shown.bs.modal', function () {
-        $('#myInput').trigger('focus');
-      });
-      $('#success').hide();
-
-      function submitForm(){
-  //      console.log('submit clicked')
-      let name = $('#user_name').val();
-      let email = $('#user_email').val();
-      let message = $('#user_message').val();
-
- 
-     let data = {
-      service_id :"gmail",
-      template_id : "template_i2YiDv4m",
-      user_id: "user_o1SY3Yz3mI8GWtJeuZhIQ",
-      template_params: {
-        "from_name": name,
-        "reply_to": email,
-        "message": message
-     }
-     };
-     console.log(data)
-
-     $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
-      type: 'POST',
-      data: JSON.stringify(data),
-      contentType: 'application/json'
-  }).done(function() {
-     $('#success').addClass('orange-background').show();
-     $('#info-submit').hide();
-  }).fail(function(error) {
-      alert('Oops... ' + JSON.stringify(error));
-  });
-      }
     </script>
+    <script src="app.js"></script>
   </body>
 </html>

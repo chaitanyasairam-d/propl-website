@@ -2,7 +2,7 @@
 
 #solution-delivery {
   .btn-business {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
   }
   .back-btn {
     font-family: ProximaNova;
@@ -41,8 +41,9 @@
     }
   }
   .card {
-    z-index: -1;
-
+    z-index: 1;
+    margin-top: 6.9rem;
+    margin-left: 35px;
     h1 {
       font-family: MinionWebPro;
       font-size: 1.8rem;
@@ -70,5 +71,5 @@
 }
 
 .solution-delivery-divider-bar::after {
-  height: 18.2rem !important;
+  height: 18.3rem !important;
 }
