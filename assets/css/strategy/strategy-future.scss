@@ -32,11 +32,12 @@
 }
 
 .future-text {
-  width: 75%;
+  // width: 75%;
   p {
     font-family: $paragraph-font;
     font-size: 0.9rem;
     color: $text-color;
+    line-height: 1.67;
   }
 }
 .strategy-future {
