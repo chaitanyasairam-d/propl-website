@@ -794,31 +794,29 @@ section:not(:nth-child(1)) .card {
   color: #fff !important;
 }
 
-#business-design-sprint .btn-business {
-  margin-top: 1rem;
-}
-
-#business-design-sprint .back-btn {
+.back-btn {
   font-family: ProximaNova;
   font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.89;
-  letter-spacing: normal;
   text-align: left;
   color: #061134;
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 3rem !important;
+  margin-right: 2rem !important;
+  margin-left: -0.5rem !important;
 }
 
-#business-design-sprint .back-btn img {
+.back-btn img {
   width: 10px;
   margin-right: 7px;
 }
 
-#business-design-sprint .back-btn img:hover {
+.back-btn img:hover {
   cursor: pointer;
+}
+
+#business-design-sprint .btn-business {
+  margin-top: 1rem;
 }
 
 #business-design-sprint .img-border {
@@ -1044,29 +1042,6 @@ section:not(:nth-child(1)) .card {
   margin-top: 1.5rem;
 }
 
-#solution-delivery .back-btn {
-  font-family: ProximaNova;
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.89;
-  letter-spacing: normal;
-  text-align: left;
-  color: #061134;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-
-#solution-delivery .back-btn img {
-  width: 10px;
-  margin-right: 7px;
-}
-
-#solution-delivery .back-btn img:hover {
-  cursor: pointer;
-}
-
 #solution-delivery .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -1121,29 +1096,6 @@ section:not(:nth-child(1)) .card {
 /* Experience page styling */
 #innovation-transformation .btn-business {
   margin-top: 1rem;
-}
-
-#innovation-transformation .back-btn {
-  font-family: ProximaNova;
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.89;
-  letter-spacing: normal;
-  text-align: left;
-  color: #061134;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-
-#innovation-transformation .back-btn img {
-  width: 10px;
-  margin-right: 7px;
-}
-
-#innovation-transformation .back-btn img:hover {
-  cursor: pointer;
 }
 
 #innovation-transformation .img-border {
@@ -1396,29 +1348,6 @@ section:not(:nth-child(1)) .card {
   margin-top: 1.5rem;
 }
 
-#solution-design .back-btn {
-  font-family: ProximaNova;
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.89;
-  letter-spacing: normal;
-  text-align: left;
-  color: #061134;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-
-#solution-design .back-btn img {
-  width: 10px;
-  margin-right: 7px;
-}
-
-#solution-design .back-btn img:hover {
-  cursor: pointer;
-}
-
 #solution-design .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -1472,29 +1401,6 @@ section:not(:nth-child(1)) .card {
 /* Experience page styling */
 #experiential-learning .btn-business {
   margin-top: 1rem;
-}
-
-#experiential-learning .back-btn {
-  font-family: ProximaNova;
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.89;
-  letter-spacing: normal;
-  text-align: left;
-  color: #061134;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-
-#experiential-learning .back-btn img {
-  width: 10px;
-  margin-right: 7px;
-}
-
-#experiential-learning .back-btn img:hover {
-  cursor: pointer;
 }
 
 #experiential-learning .img-border {
@@ -1561,29 +1467,6 @@ section:not(:nth-child(1)) .card {
   margin-top: 2rem;
 }
 
-#growth-strategy .back-btn {
-  font-family: ProximaNova;
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.89;
-  letter-spacing: normal;
-  text-align: left;
-  color: #061134;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-
-#growth-strategy .back-btn img {
-  width: 10px;
-  margin-right: 7px;
-}
-
-#growth-strategy .back-btn img:hover {
-  cursor: pointer;
-}
-
 #growth-strategy .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -1591,7 +1474,7 @@ section:not(:nth-child(1)) .card {
   position: absolute;
   border-top-left-radius: 75px;
   left: -10px;
-  bottom: 25px;
+  bottom: 35px;
   z-index: -1;
 }
 
@@ -1639,29 +1522,6 @@ section:not(:nth-child(1)) .card {
 /* Experience page styling */
 #growth-experiments .btn-business {
   margin-top: 1rem;
-}
-
-#growth-experiments .back-btn {
-  font-family: ProximaNova;
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.89;
-  letter-spacing: normal;
-  text-align: left;
-  color: #061134;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-
-#growth-experiments .back-btn img {
-  width: 10px;
-  margin-right: 7px;
-}
-
-#growth-experiments .back-btn img:hover {
-  cursor: pointer;
 }
 
 #growth-experiments .img-border {
@@ -1717,29 +1577,6 @@ section:not(:nth-child(1)) .card {
 /* Experience page styling */
 #entrepreneur-residence .btn-business {
   margin-top: 1rem !important;
-}
-
-#entrepreneur-residence .back-btn {
-  font-family: ProximaNova;
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.89;
-  letter-spacing: normal;
-  text-align: left;
-  color: #061134;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-
-#entrepreneur-residence .back-btn img {
-  width: 10px;
-  margin-right: 7px;
-}
-
-#entrepreneur-residence .back-btn img:hover {
-  cursor: pointer;
 }
 
 #entrepreneur-residence .img-border {
@@ -2383,12 +2220,18 @@ section:not(:nth-child(1)) .card {
   section:nth-child(3) {
     margin: 0 !important;
   }
+  section:nth-child(3) .card {
+    margin: 0 !important;
+  }
   #home-navbar,
   #navbar {
     display: none;
   }
+  .navbar-brand {
+    margin-left: 1rem;
+  }
   .back-btn {
-    margin-top: 120px !important;
+    margin-bottom: 0 !important;
   }
   #mobile-navbar {
     display: block;
@@ -2415,7 +2258,6 @@ section:not(:nth-child(1)) .card {
   #overlay-button {
     position: absolute;
     right: 0;
-    top: 0.7rem;
     padding: 26px 11px;
     z-index: 5;
     cursor: pointer;

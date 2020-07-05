@@ -4,26 +4,7 @@
   .btn-business {
     margin-top: 2rem;
   }
-  .back-btn {
-    font-family: ProximaNova;
-    font-size: 14px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.89;
-    letter-spacing: normal;
-    text-align: left;
-    color: #061134;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    img {
-      width: 10px;
-      margin-right: 7px;
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
+
   .img-border {
     border: 1.5px solid $orange;
     height: 395px;
@@ -31,7 +12,7 @@
     position: absolute;
     border-top-left-radius: 75px;
     left: -10px;
-    bottom: 25px;
+    bottom: 35px;
     z-index: -1;
   }
   .img-container {

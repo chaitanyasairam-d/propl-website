@@ -26,31 +26,29 @@
     color: #fff !important;
   }
 }
-
+.back-btn {
+  font-family: ProximaNova;
+  font-size: 14px;
+  line-height: 1.89;
+  text-align: left;
+  color: #061134;
+  margin-top: 2rem;
+  margin-bottom: 3rem !important;
+  margin-right: 2rem !important;
+  margin-left: -0.5rem !important;
+  img {
+    width: 10px;
+    margin-right: 7px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
 #business-design-sprint {
   .btn-business {
     margin-top: 1rem;
   }
-  .back-btn {
-    font-family: ProximaNova;
-    font-size: 14px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.89;
-    letter-spacing: normal;
-    text-align: left;
-    color: #061134;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    img {
-      width: 10px;
-      margin-right: 7px;
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  }
+
   .img-border {
     border: 1.5px solid $orange;
     height: 395px;
