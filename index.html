@@ -709,6 +709,7 @@
                       <input class="floating-input" id="user_name" type="text" placeholder=" " />
                       <span class="highlight"></span>
                       <label>Name *</label>
+                      <span class="help-block" id='error'>complete all mandatory details</span>
                     </div>
                     <div class="floating-label">
                       <input class="floating-input" id="user_email" type="email" placeholder=" " />
@@ -723,7 +724,10 @@
                     <span class="note"
                       >(please provide some context or reason for reaching out)</span
                     >
-                    <a class="btn btn-more text-white" onclick="submitForm()">Let’s Propl</a>
+                    <button id="submit-btn" class="btn btn-more text-white">
+                      Let’s Propl
+                      <span id="spinner" class="spinner-border spinner-border-sm ml-2" role="status" aria-hidden="true"></span>
+                    </button>
                     <p class="policy mt-2">
                       Propl is committed to protecting and respecting your privacy, and we’ll only
                       use your personal data to provide the info requested from us. Review our
@@ -738,12 +742,11 @@
       </div>
     </div>
     <script src="assets/js/jQuery.js" charset="utf-8"></script>
-    <!-- <script
+    <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
-    ></script> -->
-
+    ></script>
     <script src="assets/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="app.js"></script>

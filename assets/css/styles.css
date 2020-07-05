@@ -1194,10 +1194,6 @@ section:not(:nth-child(1)) .card {
   line-height: 1.67;
 }
 
-.strategy-future .future-header {
-  width: 75%;
-}
-
 .btn-back {
   font-size: 0.75rem;
   font-family: ProximaNovaSemiBold;
@@ -1999,8 +1995,18 @@ section:not(:nth-child(1)) .card {
   opacity: 0.5;
 }
 
+.help-block {
+  color: #ff5050;
+  font-size: .7rem;
+  font-family: ProximaNova;
+}
+
+.form-contact .btn-more {
+  width: 135px;
+}
+
 /****  floating-Lable style end ****/
-@media only screen and (min-width: 320px) and (max-width: 465px) {
+@media only screen and (min-width: 320px) and (max-width: 478px) {
   br {
     display: none;
   }
