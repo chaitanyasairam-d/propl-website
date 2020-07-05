@@ -140,7 +140,8 @@ $mobile: 320px;
   }
   .do-list {
     @include marginAuto(100%);
-    li {
+    ul li {
+      flex: 1 1 100%;
       .card {
         width: 100% !important;
       }
@@ -198,6 +199,9 @@ $mobile: 320px;
     p {
       font-size: .7rem;
     }
+  }
+  .success-img {
+    display: none;
   }
   .close {
     img {

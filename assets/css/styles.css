@@ -1327,6 +1327,11 @@ section:not(:nth-child(1)) .card {
   color: #ff5050 !important;
 }
 
+.do-list ul li .card:hover .btn-more:hover {
+  background: #ffffff !important;
+  color: #ff5050 !important;
+}
+
 .capability-width .do-list {
   margin: 0 auto;
   width: 60%;
@@ -2138,10 +2143,13 @@ section:not(:nth-child(1)) .card {
     margin: 0 auto;
     width: 100%;
   }
-  .do-list li {
+  .do-list ul li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
     margin-bottom: 20px;
   }
-  .do-list li .card {
+  .do-list ul li .card {
     width: 100% !important;
   }
   .do-list .btn-more {
@@ -2188,6 +2196,9 @@ section:not(:nth-child(1)) .card {
   }
   .contact-header p {
     font-size: .7rem;
+  }
+  .success-img {
+    display: none;
   }
   .close img {
     width: .7rem;
