@@ -1,11 +1,31 @@
 $mobile: 320px;
 
 @mixin mobile {
-  @media (min-width: #{$mobile})  and (max-width:478px) {
+  @media (min-width: #{$mobile})  and (max-width:1000px) {
     @content;
   }
 }
-
+@media only screen and (min-width:1000.5px) and (max-width:1200px){
+  .nav-bg{
+    background-color:#0b1120;
+    padding: 1rem 2rem .5rem 2rem;
+  }
+}
+@media only screen and (min-width:1024px) and (max-width:1189px){
+  #home{
+    margin-top: -110px!important;
+  }
+}
+@media only screen and (min-width:1190px) {
+  #home{
+    margin-top: -150px!important;
+  }
+}
+// @media only screen and (min-width:1024px) {
+//   #home{
+//     margin-top: -110px!important;
+//   }
+// }
 @media only screen and (min-width: 320px) and (max-width: 478px) {
   br {
     display: none;
@@ -197,7 +217,7 @@ $mobile: 320px;
       font-size: 1rem;
     }
     p {
-      font-size: .7rem;
+      font-size: 0.7rem;
     }
   }
   .success-img {
@@ -205,7 +225,7 @@ $mobile: 320px;
   }
   .close {
     img {
-      width: .7rem;
+      width: 0.7rem;
     }
   }
   .contact-left {
@@ -369,24 +389,24 @@ $mobile: 320px;
 
         .custom-dropdown-menu {
           width: 100%;
+          background-color: rgba(0, 0, 0, 0.842) !important;
+          box-shadow: none !important;
+          text-align: center;
           li {
             width: 100%;
             list-style-type: none;
-            margin: 0.2px auto;
-            background-color: rgba(0, 0, 0, 0.842);
-            border: 0.5px solid black;
+            margin: 0.2px auto !important;
+            background-color: rgba(0, 0, 0, 0.842) !important;
+            border: 0.5px solid black !important;
             padding: 0 !important;
-            // &:hover{
-            //   background-color: rgba(0, 0, 0, 0.842);
-            //   color: $orange;
-
-            // }
+            text-align: center !important;
           }
         }
 
         a {
           color: white;
           text-decoration: none;
+          text-align: center !important;
           font-size: 0.8em;
           // &:hover{
           //   background-color: rgba(0, 0, 0, 0.842);
@@ -508,9 +528,8 @@ $mobile: 320px;
           padding: 0;
         }
       }
-     
     }
-    .all-rights{
+    .all-rights {
       display: block;
     }
     #footer-logo-container {
