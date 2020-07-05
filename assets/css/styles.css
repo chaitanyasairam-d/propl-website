@@ -1927,8 +1927,8 @@ section:not(:nth-child(1)) .card {
 
 .close {
   position: relative;
-  top: -39px;
-  left: 50%;
+  top: -50px;
+  left: 49%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1939,7 +1939,11 @@ section:not(:nth-child(1)) .card {
 }
 
 .close:hover {
-  color: #ffffff;
+  color: #ffffff !important;
+}
+
+.close img {
+  width: 1.3rem;
 }
 
 .modal-body {

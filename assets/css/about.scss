@@ -136,14 +136,17 @@
 }
 .close {
   position: relative;
-  top: -39px;
-  left: 50%;
+  top: -50px;
+  left: 49%;
   display: flex;
   justify-content: space-around;
   opacity: 1;
   color: #ffffff;
   &:hover {
-    color: #ffffff;
+    color: #ffffff !important;
+  }
+  img {
+    width: 1.3rem;
   }
 }
 
