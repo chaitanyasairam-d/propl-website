@@ -1,11 +1,31 @@
 $mobile: 320px;
 
 @mixin mobile {
-  @media (min-width: #{$mobile})  and (max-width:478px) {
+  @media (min-width: #{$mobile})  and (max-width:1000px) {
     @content;
   }
 }
-
+@media only screen and (min-width:1000.5px) and (max-width:1200px){
+  .nav-bg{
+    background-color:#0b1120;
+    padding: 1rem 2rem .5rem 2rem;
+  }
+}
+@media only screen and (min-width:1024px) and (max-width:1189px){
+  #home{
+    margin-top: -110px!important;
+  }
+}
+@media only screen and (min-width:1190px) {
+  #home{
+    margin-top: -150px!important;
+  }
+}
+// @media only screen and (min-width:1024px) {
+//   #home{
+//     margin-top: -110px!important;
+//   }
+// }
 @media only screen and (min-width: 320px) and (max-width: 478px) {
   br {
     display: none;

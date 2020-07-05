@@ -129,7 +129,7 @@ section:nth-child(3) {
 
 .nav-bg {
   background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
-  padding: 1.5rem 12rem;
+  padding: 1.5rem 8.5rem;
 
   .nav-link {
     color: #fff !important;
@@ -306,6 +306,7 @@ section:not(:nth-child(1)) {
   text-align: center;
   width: 120px;
   height: 40px;
+  font-weight:bold;
   border-color: $orange;
   background-color: $orange;
   border-radius: 15px 0 15px;

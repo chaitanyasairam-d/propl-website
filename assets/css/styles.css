@@ -128,7 +128,7 @@ section:nth-child(3) {
 .nav-bg {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #0b1120), color-stop(77%, rgba(11, 17, 33, 0)));
   background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
-  padding: 1.5rem 12rem;
+  padding: 1.5rem 8.5rem;
 }
 
 .nav-bg .nav-link {
@@ -321,6 +321,7 @@ section:not(:nth-child(1)) .card {
   text-align: center;
   width: 120px;
   height: 40px;
+  font-weight: bold;
   border-color: #ff5050;
   background-color: #ff5050;
   border-radius: 15px 0 15px;
@@ -778,6 +779,7 @@ section:not(:nth-child(1)) .card {
   border-bottom-left-radius: 0;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  font-weight: bold;
   font-family: ProximaNova;
   font-size: 14px;
   font-weight: 600;
@@ -2009,6 +2011,25 @@ section:not(:nth-child(1)) .card {
 }
 
 /****  floating-Lable style end ****/
+@media only screen and (min-width: 1000.5px) and (max-width: 1200px) {
+  .nav-bg {
+    background-color: #0b1120;
+    padding: 1rem 2rem .5rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1189px) {
+  #home {
+    margin-top: -110px !important;
+  }
+}
+
+@media only screen and (min-width: 1190px) {
+  #home {
+    margin-top: -150px !important;
+  }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 478px) {
   br {
     display: none;
@@ -2240,7 +2261,7 @@ section:not(:nth-child(1)) .card {
   } */
 }
 
-@media (min-width: 320px) and (max-width: 478px) {
+@media (min-width: 320px) and (max-width: 1000px) {
   section:nth-child(3) {
     margin: 0 !important;
   }
