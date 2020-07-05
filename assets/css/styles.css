@@ -1871,7 +1871,7 @@ section:not(:nth-child(1)) .card {
 .orange-background .contact-header h4 {
   color: #ffffff;
   font-family: MinionPro;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
 }
 
 .orange-background .contact-header p {
@@ -2185,6 +2185,15 @@ section:not(:nth-child(1)) .card {
     width: auto;
     margin-top: 5px;
     font-size: 0.7rem;
+  }
+  .contact-header h4 {
+    font-size: 1rem;
+  }
+  .contact-header p {
+    font-size: .7rem;
+  }
+  .close img {
+    width: .7rem;
   }
   .contact-left {
     display: none;
