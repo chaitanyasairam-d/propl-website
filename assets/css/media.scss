@@ -140,7 +140,8 @@ $mobile: 320px;
   }
   .do-list {
     @include marginAuto(100%);
-    li {
+    ul li {
+      flex: 1 1 100%;
       .card {
         width: 100% !important;
       }
@@ -196,12 +197,15 @@ $mobile: 320px;
       font-size: 1rem;
     }
     p {
-      font-size: .7rem;
+      font-size: 0.7rem;
     }
+  }
+  .success-img {
+    display: none;
   }
   .close {
     img {
-      width: .7rem;
+      width: 0.7rem;
     }
   }
   .contact-left {
@@ -365,24 +369,24 @@ $mobile: 320px;
 
         .custom-dropdown-menu {
           width: 100%;
-          background-color: rgba(0, 0, 0, 0.842)!important;
-          box-shadow: none!important;
+          background-color: rgba(0, 0, 0, 0.842) !important;
+          box-shadow: none !important;
           text-align: center;
           li {
             width: 100%;
             list-style-type: none;
-            margin: 0.2px auto!important;
-            background-color: rgba(0, 0, 0, 0.842)!important;
-            border: 0.5px solid black!important;
+            margin: 0.2px auto !important;
+            background-color: rgba(0, 0, 0, 0.842) !important;
+            border: 0.5px solid black !important;
             padding: 0 !important;
-            text-align: center!important;
+            text-align: center !important;
           }
         }
 
         a {
           color: white;
           text-decoration: none;
-          text-align: center!important;
+          text-align: center !important;
           font-size: 0.8em;
           // &:hover{
           //   background-color: rgba(0, 0, 0, 0.842);
@@ -504,9 +508,8 @@ $mobile: 320px;
           padding: 0;
         }
       }
-     
     }
-    .all-rights{
+    .all-rights {
       display: block;
     }
     #footer-logo-container {

@@ -40,12 +40,6 @@
     line-height: 1.67;
   }
 }
-// .strategy-future {
-//   .future-header {
-//     width: 75%;
-//   }
-// }
-
 .btn-back {
   font-size: 0.75rem;
   font-family: $paragraph-semi-bold-font;
@@ -146,6 +140,10 @@
           .btn-more {
             background: #ffffff;
             color: $orange !important;
+            &:hover {
+              background: #ffffff !important;
+              color: $orange !important;
+            }
           }
         }
       }
