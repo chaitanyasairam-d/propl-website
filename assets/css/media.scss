@@ -191,6 +191,19 @@ $mobile: 320px;
       }
     }
   }
+  .contact-header {
+    h4 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: .7rem;
+    }
+  }
+  .close {
+    img {
+      width: .7rem;
+    }
+  }
   .contact-left {
     display: none;
   }
