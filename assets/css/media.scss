@@ -365,24 +365,24 @@ $mobile: 320px;
 
         .custom-dropdown-menu {
           width: 100%;
+          background-color: rgba(0, 0, 0, 0.842)!important;
+          box-shadow: none!important;
+          text-align: center;
           li {
             width: 100%;
             list-style-type: none;
-            margin: 0.2px auto;
-            background-color: rgba(0, 0, 0, 0.842);
-            border: 0.5px solid black;
+            margin: 0.2px auto!important;
+            background-color: rgba(0, 0, 0, 0.842)!important;
+            border: 0.5px solid black!important;
             padding: 0 !important;
-            // &:hover{
-            //   background-color: rgba(0, 0, 0, 0.842);
-            //   color: $orange;
-
-            // }
+            text-align: center!important;
           }
         }
 
         a {
           color: white;
           text-decoration: none;
+          text-align: center!important;
           font-size: 0.8em;
           // &:hover{
           //   background-color: rgba(0, 0, 0, 0.842);

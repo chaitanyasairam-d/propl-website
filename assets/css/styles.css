@@ -128,12 +128,12 @@ section:nth-child(3) {
 .nav-bg {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #0b1120), color-stop(77%, rgba(11, 17, 33, 0)));
   background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
-  padding: 0.5rem 12rem;
+  padding: 1.5rem 12rem;
 }
 
 .nav-bg .nav-link {
   color: #fff !important;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-family: ProximaNovaSemiBold;
   margin: 0 0.5rem;
 }
@@ -160,7 +160,7 @@ section:nth-child(3) {
   padding-bottom: 1.5rem;
   font-family: ProximaNovaSemiBold;
   color: white;
-  font-size: 0.85rem;
+  font-size: 0.7rem;
   margin: 0 0.5rem;
   color: #0b1120 !important;
 }
@@ -187,7 +187,7 @@ section:nth-child(3) {
 }
 
 .navbar-brand img {
-  width: 125px;
+  width: 100px;
   margin-bottom: 1rem;
 }
 
@@ -1868,7 +1868,7 @@ section:not(:nth-child(1)) .card {
 .orange-background .contact-header h4 {
   color: #ffffff;
   font-family: MinionPro;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
 }
 
 .orange-background .contact-header p {
@@ -2183,6 +2183,15 @@ section:not(:nth-child(1)) .card {
     margin-top: 5px;
     font-size: 0.7rem;
   }
+  .contact-header h4 {
+    font-size: 1rem;
+  }
+  .contact-header p {
+    font-size: .7rem;
+  }
+  .close img {
+    width: .7rem;
+  }
   .contact-left {
     display: none;
   }
@@ -2341,18 +2350,24 @@ section:not(:nth-child(1)) .card {
   }
   #overlay ul li .custom-dropdown-menu {
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.842) !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    text-align: center;
   }
   #overlay ul li .custom-dropdown-menu li {
     width: 100%;
     list-style-type: none;
-    margin: 0.2px auto;
-    background-color: rgba(0, 0, 0, 0.842);
-    border: 0.5px solid black;
+    margin: 0.2px auto !important;
+    background-color: rgba(0, 0, 0, 0.842) !important;
+    border: 0.5px solid black !important;
     padding: 0 !important;
+    text-align: center !important;
   }
   #overlay ul li a {
     color: white;
     text-decoration: none;
+    text-align: center !important;
     font-size: 0.8em;
   }
   #overlay ul li a:hover,
