@@ -2018,18 +2018,6 @@ section:not(:nth-child(1)) .card {
   }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1189px) {
-  #home {
-    margin-top: -110px !important;
-  }
-}
-
-@media only screen and (min-width: 1190px) {
-  #home {
-    margin-top: -150px !important;
-  }
-}
-
 @media only screen and (min-width: 320px) and (max-width: 478px) {
   br {
     display: none;
