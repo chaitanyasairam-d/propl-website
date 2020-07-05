@@ -289,5 +289,15 @@
   pointer-events: none;
   opacity: 0.5;
 }
+.help-block {
+  color: #ff5050;
+  font-size: .7rem;
+  font-family: $paragraph-font;
+}
+.form-contact {
+  .btn-more {
+    width: 135px;
+  }
+}
 
 /****  floating-Lable style end ****/

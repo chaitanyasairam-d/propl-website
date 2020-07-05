@@ -54,10 +54,21 @@ $(function () {
     $('#myInput').trigger('focus');
   });
   $('#success').hide();
+  $("#error").hide();
+  $("#spinner").hide();
+  $('#submit-btn').click(function(){
+    submitForm();
+});
   function submitForm() {
     let name = $('#user_name').val();
     let email = $('#user_email').val();
     let message = $('#user_message').val();
+    if(!name.length || !email.length || !message.length) {
+      $("#error").show();
+      return;
+    }
+    $('#submit-btn').prop('disabled', true);
+    $("#spinner").show();
     let data = {
       service_id: "gmail",
       template_id: "template_i2YiDv4m",
@@ -75,8 +86,13 @@ $(function () {
     }).done(function () {
       $('#m-content').addClass('orange-background').show();
       $('#info-submit').hide();
+      $('#submit-btn').prop('disabled', true);
+      $('#success').show();
+    $("#spinner").hide();
     }).fail(function (error) {
       alert('Oops... ' + JSON.stringify(error));
+      $('#submit-btn').prop('disabled', true);
+    $("#spinner").hide();
     });
   }
 });
