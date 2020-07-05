@@ -670,13 +670,10 @@ section:not(:nth-child(1)) {
       opacity: 0.5;
       font-family: ProximaNova;
       font-size: 10px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
       line-height: 2.86;
-      letter-spacing: normal;
       text-align: left;
       color: #ffffff;
+      display:block;
     }
   }
   .item {
