@@ -120,8 +120,8 @@
     color: #ffffff;
   }
   .card-container {
-    max-width: 100%!important;
-    margin: 0 .5rem;
+    max-width: 100% !important;
+    margin: 0 0.5rem;
   }
   .row {
     align-items: baseline;
@@ -145,7 +145,6 @@
       padding: 0 0.7rem;
       font-family: ProximaNova;
       font-size: 20px;
-      font-weight: 600;
       line-height: 1.43;
       text-align: center;
       color: #061134;
@@ -187,7 +186,7 @@
     content: '';
     width: 1px;
     height: 18.8rem;
-    background-color: #C4C4C4;
+    background-color: #c4c4c4;
     position: absolute;
     right: 0;
     top: 2.5rem;
@@ -223,11 +222,7 @@
       padding: 0 1.5rem;
       font-family: ProximaNova;
       font-size: 16px;
-      font-weight: 500;
-      font-stretch: normal;
-      font-style: normal;
       line-height: 1.82;
-      letter-spacing: normal;
       text-align: center;
       color: #061134;
       word-wrap: break-word;
