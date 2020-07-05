@@ -382,7 +382,8 @@ section:not(:nth-child(1)) {
 .go-down-btn {
   img {
     position: relative;
-    top: 85px;
+    top: 125px;
+    width: 1.7rem;
   }
 }
 /*===Home Section styling*/
@@ -707,6 +708,9 @@ animation: bg-circle-rotate 6s linear infinite;
     .footer-copy-right {
       line-height: 1.88 !important;
       text-decoration: underline !important;
+      a {
+        color: #ffffff;
+      }
     }
     .footer-bg-circle {
       position: absolute;

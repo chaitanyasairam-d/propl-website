@@ -111,7 +111,7 @@
   border-radius: 75px 0px 75px;
 }
 .modal-lg {
-  max-width: 1000px !important;
+  max-width: 900px !important;
 }
 .floating-form {
   width: 320px;
@@ -128,9 +128,11 @@
   color: $text-color;
   margin-bottom: 0;
   span {
+    a {
     color: $orange;
     text-decoration: underline;
   }
+}
 }
 .close {
   position: relative;
@@ -165,7 +167,7 @@
     h4 {
       color: #ffffff;
       font-family: $header-font;
-      font-size: 1.5rem;
+      font-size: 1.9rem;
     }
     p {
       font-family: $paragraph-font;
@@ -180,6 +182,12 @@
 }
 .submit-left {
   max-width: 60%;
+  span {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    color: #ff5050;
+  }
 }
 .success-img {
   background-image: url(../images/special_icons/contact-success.png);
@@ -213,7 +221,7 @@
 .floating-input:focus,
 .floating-select:focus {
   outline: none;
-  border-bottom: 2px solid #5264ae;
+  // border-bottom: 2px solid #5264ae;
 }
 
 .floating-label {
@@ -236,7 +244,6 @@
 .floating-input:not(:placeholder-shown) ~ label {
   top: -18px;
   font-size: 14px;
-  color: #5264ae;
 }
 
 .floating-select:focus ~ label,
@@ -280,66 +287,4 @@
   opacity: 0.5;
 }
 
-/* active state */
-.floating-input:focus ~ .highlight,
-.floating-select:focus ~ .highlight {
-  -webkit-animation: inputHighlighter 0.3s ease;
-  -moz-animation: inputHighlighter 0.3s ease;
-  animation: inputHighlighter 0.3s ease;
-}
-
-/* animation */
-@-webkit-keyframes inputHighlighter {
-  from {
-    background: #5264ae;
-  }
-  to {
-    width: 0;
-    background: transparent;
-  }
-}
-@-moz-keyframes inputHighlighter {
-  from {
-    background: #5264ae;
-  }
-  to {
-    width: 0;
-    background: transparent;
-  }
-}
-@keyframes inputHighlighter {
-  from {
-    background: #5264ae;
-  }
-  to {
-    width: 0;
-    background: transparent;
-  }
-}
-
 /****  floating-Lable style end ****/
-
-/***   daniel - Fork me friend - style   ***/
-.floating-credit {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  color: #aaa;
-  font-size: 13px;
-  font-family: arial, sans-serif;
-}
-.floating-credit a {
-  text-decoration: none;
-  color: #000000;
-  font-weight: bold;
-}
-.floating-credit a:hover {
-  border-bottom: 1px dotted #f8f8f8;
-}
-.floating-heading {
-  position: fixed;
-  color: #aaa;
-  font-size: 20px;
-  font-family: arial, sans-serif;
-}
-/***  daniel - Fork me friend - style  ***/

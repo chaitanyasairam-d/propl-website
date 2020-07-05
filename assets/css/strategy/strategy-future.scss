@@ -14,7 +14,7 @@
 }
 .future-icon {
   img {
-    width: 3rem;
+    width: 3.5rem;
     margin-top: 1rem;
   }
 }
@@ -32,10 +32,17 @@
 }
 
 .future-text {
-  width: 75%;
+  // width: 75%;
   p {
     font-family: $paragraph-font;
     font-size: 0.9rem;
+    color: $text-color;
+    line-height: 1.67;
+  }
+}
+.strategy-future {
+  .future-header {
+    width: 75%;
   }
 }
 
@@ -65,10 +72,10 @@
     display: flex;
     flex: 1 1 50%;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .acheiver-container {
-    width: 65%;
+    // width: 65%;
     text-align: center;
     margin-bottom: 40px;
     h4 {
@@ -92,7 +99,7 @@
 }
 
 .do-list {
-  @include marginAuto(90%);
+  // @include marginAuto(90%);
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -100,10 +107,12 @@
       display: flex;
       flex: 1 1 33%;
       .card {
+        width: 90%;
         &:not(:nth-child(2)) {
           box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.1);
+          width: 90%;
         }
-        padding: 35px 15px;
+        padding: 35px 10px;
         border-radius: 1rem;
         .card-title {
           font-family: $header-font;
@@ -121,9 +130,12 @@
             text-align: center;
           }
         }
-      }
-      .orange-background {
-        background-color: $orange;
+        .btn-more {
+          color: #ffffff !important;
+        }
+        &:hover {
+          cursor: pointer;
+          background-color: $orange;
         color: hsl(0, 0%, 100%) !important;
         p {
           color: #ffffff !important;
@@ -133,11 +145,8 @@
         }
         .btn-more {
           background: #ffffff;
-          color: $orange;
-          &:hover {
-            background: #ffffff !important;
-            color: $orange !important;
-          }
+          color: $orange !important;
+        }
         }
       }
     }
@@ -148,4 +157,7 @@
   .do-list {
     @include marginAuto(60%);
   }
+}
+.p40 {
+  padding: 40px;
 }

@@ -54,13 +54,10 @@ $(function () {
     $('#myInput').trigger('focus');
   });
   $('#success').hide();
-
   function submitForm() {
     let name = $('#user_name').val();
     let email = $('#user_email').val();
     let message = $('#user_message').val();
-
-
     let data = {
       service_id: "gmail",
       template_id: "template_i2YiDv4m",
@@ -71,14 +68,12 @@ $(function () {
         "message": message
       }
     };
-    console.log(data)
-
     $.ajax('https://api.emailjs.com/api/v1.0/email/send', {
       type: 'POST',
       data: JSON.stringify(data),
       contentType: 'application/json'
     }).done(function () {
-      $('#success').addClass('orange-background').show();
+      $('#m-content').addClass('orange-background').show();
       $('#info-submit').hide();
     }).fail(function (error) {
       alert('Oops... ' + JSON.stringify(error));
