@@ -716,13 +716,10 @@ section:not(:nth-child(1)) .card {
   opacity: 0.5;
   font-family: ProximaNova;
   font-size: 10px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2.86;
-  letter-spacing: normal;
   text-align: left;
   color: #ffffff;
+  display: block;
 }
 
 #footer .item {
@@ -2497,6 +2494,9 @@ section:not(:nth-child(1)) .card {
   }
   #footer .footer-card li a {
     padding: 0;
+  }
+  #footer .all-rights {
+    display: block;
   }
   #footer #footer-logo-container .footer-img {
     width: 100px;
