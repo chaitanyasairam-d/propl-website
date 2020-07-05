@@ -1539,6 +1539,7 @@ section:not(:nth-child(1)) .card {
 #growth-experiments .card {
   z-index: 1;
   margin-left: 25px;
+  margin-top: 6rem;
 }
 
 #growth-experiments .card h1 {
@@ -1997,7 +1998,7 @@ section:not(:nth-child(1)) .card {
 
 .help-block {
   color: #ff5050;
-  font-size: .7rem;
+  font-size: 0.7rem;
   font-family: ProximaNova;
 }
 
