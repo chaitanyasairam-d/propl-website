@@ -344,17 +344,27 @@ $mobile: 320px;
            background-color: rgba(0, 0, 0, 0.842);
            border: .5px solid black;
           padding: 0!important;
-          &:hover{
-            background-color: rgba(0, 0, 0, 0.842);
-            color:white;
-          }
+          // &:hover{
+          //   background-color: rgba(0, 0, 0, 0.842);
+          //   color: $orange;
+
+          // }
          }
+        
         }
             
         a {
           color: white;
           text-decoration: none;
           font-size: 0.8em;
+          // &:hover{
+          //   background-color: rgba(0, 0, 0, 0.842);
+          //   color: $orange;
+          // }
+        }
+        a:hover,a:active,a:focus{
+          background-color: transparent;
+          color: $orange;
         }
        
       }
