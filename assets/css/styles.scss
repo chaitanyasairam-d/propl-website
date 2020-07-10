@@ -292,6 +292,14 @@ section:not(:nth-child(1)) {
   margin-bottom: 100px;
 }
 
+#achieve {
+  padding-bottom: 100px;
+  .container{
+    padding-top: 120px!important;
+  }
+
+}
+
 .card .group-19-icons {
   width: 100px;
   height: 100px;
