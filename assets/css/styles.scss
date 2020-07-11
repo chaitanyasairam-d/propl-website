@@ -80,6 +80,16 @@ section:nth-child(3) {
 
 #home-navbar {
   margin-top: 0 !important;
+  .nav-bg {
+    background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
+    padding: 1.5rem 8.5rem;
+    .nav-link {
+      color: #fff !important;
+      font-size: 0.75rem;
+      font-family: $paragraph-semi-bold-font;
+      margin: 0 .8rem;
+    }
+  }
 
   ul {
     list-style-type: none;
@@ -129,17 +139,7 @@ section:nth-child(3) {
   display: none;
 }
 
-.nav-bg {
-  background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
-  padding: 1.5rem 8.5rem;
 
-  .nav-link {
-    color: #fff !important;
-    font-size: 0.75rem;
-    font-family: $paragraph-semi-bold-font;
-    margin: 0 0.5rem;
-  }
-}
 
 .navbar-content {
   width: 100%;

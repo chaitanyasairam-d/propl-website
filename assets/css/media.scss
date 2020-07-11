@@ -6,6 +6,27 @@ $mobile: 320px;
   }
 }
 @media only screen and (min-width: 1000.5px) and (max-width: 1200px) {
+#home{
+  margin-top: -4rem!important;
+}
+  .nav-bg {
+    background-color: #0b1120;
+    padding: 1rem 2rem 0.5rem 2rem;
+  }
+}
+@media only screen and (min-width: 1200.5px) and (max-width: 1400px) {
+  #home{
+    margin-top: -4rem!important;
+  }
+  .nav-bg {
+    background-color: #0b1120;
+    padding: 1rem 2rem 0.5rem 2rem;
+  }
+}
+@media only screen and (min-width: 1400.5px) and (max-width: 1600px) {
+  #home{
+    margin-top: -2rem!important;
+  }
   .nav-bg {
     background-color: #0b1120;
     padding: 1rem 2rem 0.5rem 2rem;
@@ -264,7 +285,8 @@ $mobile: 320px;
     display: none;
   }
   .navbar-brand {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
   }
   .back-btn {
     margin-bottom: 0 !important;
@@ -274,7 +296,7 @@ $mobile: 320px;
     nav {
       position: absolute;
       width: 100%;
-      height: 11%;
+      height: 8%;
       background-color: #0b1120;
     }
     // nav{
@@ -296,6 +318,7 @@ $mobile: 320px;
 
   #overlay-button {
     position: absolute;
+    top: 15px;
     right: 0;
     padding: 26px 11px;
     z-index: 5;
