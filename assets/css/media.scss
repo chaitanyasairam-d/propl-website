@@ -5,7 +5,9 @@ $mobile: 320px;
     @content;
   }
 }
+@media only screen and (min-width:1000px) and (max-width:1159px){
 
+}
 
 @media only screen and (min-width: 320px) and (max-width: 478px) {
   br {

@@ -997,7 +997,7 @@ section:not(:nth-child(1)) .card {
 }
 
 #what-to-expect h3 {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   font-family: MinionPro;
   font-weight: bold;
   font-stretch: normal;
@@ -1023,9 +1023,13 @@ section:not(:nth-child(1)) .card {
   opacity: 0.6;
 }
 
+#what-to-expect .col-md-6:nth-child(even) .card:nth-child(1) {
+  margin-left: auto;
+}
+
 #what-to-expect .card {
   text-align: center;
-  width: 100%;
+  width: 75%;
   height: 14rem;
 }
 
@@ -1051,7 +1055,7 @@ section:not(:nth-child(1)) .card {
 #what-to-expect .card .card-body {
   padding: 0 1.5rem;
   font-family: ProximaNova;
-  font-size: .8rem;
+  font-size: .7rem;
   line-height: 1.82;
   text-align: center;
   color: #061134;
@@ -2015,7 +2019,7 @@ section:not(:nth-child(1)) .card {
   background-position: center;
   height: 20rem;
   background-size: cover;
-  width: 40rem;
+  width: 43rem;
 }
 
 /****  floating-Lable style start ****/
