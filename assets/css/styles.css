@@ -1021,7 +1021,7 @@ section:not(:nth-child(1)) .card {
 #what-to-expect .divider-bar::after {
   content: '';
   width: 1px;
-  height: 18.8rem;
+  height: 18.6rem;
   background-color: #c4c4c4;
   position: absolute;
   right: 0;
@@ -1029,13 +1029,17 @@ section:not(:nth-child(1)) .card {
   opacity: 0.6;
 }
 
+#what-to-expect .col-md-6:nth-child(odd) .card:nth-child(1) {
+  margin-left: -4rem;
+}
+
 #what-to-expect .col-md-6:nth-child(even) .card:nth-child(1) {
-  margin-left: auto;
+  margin-left: 4rem;
 }
 
 #what-to-expect .card {
   text-align: center;
-  width: 75%;
+  width: 100%;
   height: 14rem;
 }
 
