@@ -2534,6 +2534,16 @@ section:not(:nth-child(1)) .card {
     background-color: transparent;
     color: #ff5050;
   }
+  #business-design-sprint,
+  #solution-design,
+  #solution-delivery,
+  #growth-strategy,
+  #growth-experiments,
+  #entrepreneur-residence,
+  #innovation-transformation,
+  #experiential-learning {
+    width: 100% !important;
+  }
   #business-design-sprint .img-container img,
   #solution-design .img-container img,
   #solution-delivery .img-container img,
