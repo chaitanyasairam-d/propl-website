@@ -2136,31 +2136,31 @@ section:not(:nth-child(1)) .card {
 /****  floating-Lable style end ****/
 @media only screen and (min-width: 1000px) and (max-width: 1199px) {
   #home {
-    margin-top: -3rem !important;
+    margin-top: -4rem !important;
   }
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   #home {
-    margin-top: -3rem !important;
+    margin-top: -4rem !important;
   }
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1499px) {
   #home {
-    margin-top: -2rem !important;
+    margin-top: -4rem !important;
   }
 }
 
 @media only screen and (min-width: 1500px) and (max-width: 1599px) {
   #home {
-    margin-top: -1rem !important;
+    margin-top: -4rem !important;
   }
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1699px) {
   #home {
-    margin-top: 0rem !important;
+    margin-top: -4rem !important;
   }
 }
 
