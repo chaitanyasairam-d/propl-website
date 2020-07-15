@@ -546,22 +546,16 @@ section:not(:nth-child(1)) .card {
 /* predict fututre styling start */
 #predict-fututre .img-bg-circle {
   position: absolute;
+  margin-top: 3rem;
   right: 90%;
   z-index: 10;
 }
 
 #predict-fututre .img-bg-circle img {
-  width: 350px;
-  height: 350px;
+  width: 400px;
+  height: 400px;
   -webkit-animation: left-circle-rotate 13s linear infinite;
           animation: left-circle-rotate 13s linear infinite;
-}
-
-#we-believe .img-bg-circle img {
-  -webkit-transform: rotate(210deg);
-          transform: rotate(210deg);
-  -webkit-animation: left-circle-rotate 10s linear infinite;
-          animation: left-circle-rotate 10s linear infinite;
 }
 
 @-webkit-keyframes bg-circle-rotate {
@@ -709,21 +703,23 @@ section:not(:nth-child(1)) .card {
 
 #we-believe .img-circle-container {
   position: absolute;
-  margin-top: 150px;
+  margin-top: 5rem;
   width: 130px;
   right: 0;
   overflow: hidden;
 }
 
 #we-believe .img-circle-container .img-bg-circle {
-  width: 350px;
+  width: 400px;
   overflow: hidden;
 }
 
 #we-believe .img-circle-container .img-bg-circle img {
-  height: 350px;
-  width: 350px;
+  height: 400px;
+  width: 400px;
   overflow: hidden;
+  -webkit-animation: right-circle-rotate 10s linear infinite;
+          animation: right-circle-rotate 10s linear infinite;
 }
 
 /* we believe styling end */
@@ -1043,8 +1039,8 @@ section:not(:nth-child(1)) .card {
 }
 
 #what-to-expect .card .card-title {
-  font-family: ProximaNova;
-  font-size: 1.22rem;
+  font-family: ProximaNovaBold;
+  font-size: 1rem;
   font-weight: bold;
   line-height: 1;
   text-align: center;
@@ -1055,7 +1051,7 @@ section:not(:nth-child(1)) .card {
 #what-to-expect .card .card-body {
   padding: 0 1.5rem;
   font-family: ProximaNova;
-  font-size: 17px;
+  font-size: .8rem;
   line-height: 1.82;
   text-align: center;
   color: #061134;
