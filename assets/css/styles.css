@@ -523,7 +523,7 @@ section:not(:nth-child(1)) .card {
 }
 
 .testimonial-container .testimonial-footer h5 span {
-  font-family: MinionPro;
+  font-family: ProximaNovaBold;
 }
 
 .testimonial-container .testimonial-footer .testimonial-footer h5 {
@@ -2109,6 +2109,8 @@ section:not(:nth-child(1)) .card {
   color: #ff5050;
   font-size: 0.7rem;
   font-family: ProximaNova;
+  display: block;
+  margin-top: 10px;
 }
 
 .form-contact .btn-more {

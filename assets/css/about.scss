@@ -251,7 +251,7 @@
   background-position: center;
   height: 20rem;
   background-size: cover;
-  width: 40rem;
+  width: 43rem;
 }
 
 /****  floating-Lable style start ****/
@@ -346,6 +346,8 @@
   color: #ff5050;
   font-size: 0.7rem;
   font-family: $paragraph-font;
+  display: block;
+  margin-top: 10px;
 }
 .form-contact {
   .btn-more {

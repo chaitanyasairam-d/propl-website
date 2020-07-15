@@ -66,6 +66,9 @@ $(function () {
   $('#submit-btn').click(function () {
     submitForm();
   });
+  $(".do-list li").hover( function (e) {
+    $(this).toggleClass('animate__bounce');
+});
   function submitForm() {
     let name = $('#user_name').val();
     let email = $('#user_email').val();
