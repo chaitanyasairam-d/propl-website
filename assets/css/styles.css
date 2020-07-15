@@ -1371,6 +1371,8 @@ section:not(:nth-child(1)) .card {
 }
 
 .do-list ul li .card:hover {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
   cursor: pointer;
   background-color: #ff5050;
   color: white !important;
