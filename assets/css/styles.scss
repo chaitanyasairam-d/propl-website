@@ -83,11 +83,16 @@ section:nth-child(3) {
   margin-top: 100px;
 }
 
-#home-navbar {
-  margin-top: 0 !important;
-  .nav-bg {
-    background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
-    padding: 1.5rem 12.2rem 0 12.2rem;
+
+  #home-navbar{
+   .nav-bg {
+    background-image: linear-gradient(to bottom, #0b1120 100%, rgba(11, 17, 33, 0)80%);
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // left: 0;
+    padding: 1.5rem 10rem 0 10rem;
+    width: 100%;
     .nav-link {
       color: #fff !important;
       font-size: 0.75rem;
@@ -115,7 +120,7 @@ section:nth-child(3) {
   background-color: white;
   color: black;
   border-radius: 5px;
-  margin-left: 5.7px;
+  margin-left: 11px;
   text-align: center;
   position: absolute;
   display: none;
@@ -155,7 +160,7 @@ section:nth-child(3) {
   font-size: 0.9rem;
   background-color: #ffffff;
   box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-  padding: 1.5rem 12.2rem 0 12.2rem;
+  padding: 1.5rem 9.5rem 0 9.5rem;
   z-index: 9999;
 
   .nav-item {
@@ -166,7 +171,7 @@ section:nth-child(3) {
     font-family: $paragraph-semi-bold-font;
     color: white;
     font-size: 0.7rem;
-    margin: 0 0.5rem;
+    margin: 0 0.7rem;
     color: #0b1120 !important;
   }
   ul {
@@ -241,13 +246,14 @@ section:nth-child(3) {
 .nav-underline::after {
   position: relative;
   content: '';
-  top: 5px;
+  top: 4px;
   display: block;
   margin: 0 auto;
-  width: 55px;
+  width: 45px;
   height: 0.5px;
-  border-radius: 10px;
+  border: 2px solid;
   border-color: #ff5050;
+  border-radius: 50px;
 }
 
 .dropdown-icon {
@@ -342,7 +348,9 @@ section:not(:nth-child(1)) {
     border: none;
   }
 }
-
+.btn-more,.btn-business{
+  font-family: $paragraph-semi-bold-font;
+}
 .underline {
   margin: 0 auto;
   width: 45px;
@@ -355,6 +363,8 @@ section:not(:nth-child(1)) {
 #home {
   height: 100%;
   width: 100%;
+  margin-top: 0!important;
+
 }
 
 #home-cover {
@@ -518,9 +528,9 @@ section:not(:nth-child(1)) {
 
 /* common styling for all sections end */
 /* predict fututre styling start */
-.rotate-planets {
-  animation: bg-circle-rotate 6s linear infinite;
-}
+// .rotate-planets {
+//   animation: bg-circle-rotate 6s linear infinite;
+// }
 #predict-fututre .img-bg-circle {
   position: absolute;
   right: 90%;
@@ -528,11 +538,28 @@ section:not(:nth-child(1)) {
   img {
     width: 350px;
     height: 350px;
-    margin-top: 50%;
+
+      animation: left-circle-rotate 13s linear infinite;
   }
 }
+#we-believe .img-bg-circle img{
+  transform: rotate(210deg);
+  animation: left-circle-rotate 10s linear infinite;
+
+}
+
 
 @keyframes bg-circle-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes left-circle-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes right-circle-rotate {
   100% {
     transform: rotate(360deg);
   }
@@ -738,9 +765,13 @@ section:not(:nth-child(1)) {
     }
     .footer-bg-circle {
       position: absolute;
-      top: -36%;
+      top: -20%;
       right: -13%;
-      bottom: -88%;
+      bottom: -68%;
+      img{
+      animation: bg-circle-rotate 10s linear infinite;
+
+      }
     }
   }
 }

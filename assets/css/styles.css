@@ -75,14 +75,11 @@ section:nth-child(3) {
   margin-top: 100px;
 }
 
-#home-navbar {
-  margin-top: 0 !important;
-}
-
 #home-navbar .nav-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #0b1120), color-stop(77%, rgba(11, 17, 33, 0)));
-  background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
-  padding: 1.5rem 12.2rem 0 12.2rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #0b1120), color-stop(80%, rgba(11, 17, 33, 0)));
+  background-image: linear-gradient(to bottom, #0b1120 100%, rgba(11, 17, 33, 0) 80%);
+  padding: 1.5rem 10rem 0 10rem;
+  width: 100%;
 }
 
 #home-navbar .nav-bg .nav-link {
@@ -113,7 +110,7 @@ section:nth-child(3) {
   background-color: white;
   color: black;
   border-radius: 5px;
-  margin-left: 5.7px;
+  margin-left: 11px;
   text-align: center;
   position: absolute;
   display: none;
@@ -155,7 +152,7 @@ section:nth-child(3) {
   background-color: #ffffff;
   -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-  padding: 1.5rem 12.2rem 0 12.2rem;
+  padding: 1.5rem 9.5rem 0 9.5rem;
   z-index: 9999;
 }
 
@@ -168,7 +165,7 @@ section:nth-child(3) {
   font-family: ProximaNovaSemiBold;
   color: white;
   font-size: 0.7rem;
-  margin: 0 0.5rem;
+  margin: 0 0.7rem;
   color: #0b1120 !important;
 }
 
@@ -253,13 +250,14 @@ section:nth-child(3) {
 .nav-underline::after {
   position: relative;
   content: '';
-  top: 5px;
+  top: 4px;
   display: block;
   margin: 0 auto;
-  width: 55px;
+  width: 45px;
   height: 0.5px;
-  border-radius: 10px;
+  border: 2px solid;
   border-color: #ff5050;
+  border-radius: 50px;
 }
 
 .dropdown-icon {
@@ -363,6 +361,10 @@ section:not(:nth-child(1)) .card {
   border: none;
 }
 
+.btn-more, .btn-business {
+  font-family: ProximaNovaSemiBold;
+}
+
 .underline {
   margin: 0 auto;
   width: 45px;
@@ -375,6 +377,7 @@ section:not(:nth-child(1)) .card {
 #home {
   height: 100%;
   width: 100%;
+  margin-top: 0 !important;
 }
 
 #home-cover {
@@ -541,11 +544,6 @@ section:not(:nth-child(1)) .card {
 /*===testimonials*/
 /* common styling for all sections end */
 /* predict fututre styling start */
-.rotate-planets {
-  -webkit-animation: bg-circle-rotate 6s linear infinite;
-          animation: bg-circle-rotate 6s linear infinite;
-}
-
 #predict-fututre .img-bg-circle {
   position: absolute;
   right: 90%;
@@ -555,7 +553,15 @@ section:not(:nth-child(1)) .card {
 #predict-fututre .img-bg-circle img {
   width: 350px;
   height: 350px;
-  margin-top: 50%;
+  -webkit-animation: left-circle-rotate 13s linear infinite;
+          animation: left-circle-rotate 13s linear infinite;
+}
+
+#we-believe .img-bg-circle img {
+  -webkit-transform: rotate(210deg);
+          transform: rotate(210deg);
+  -webkit-animation: left-circle-rotate 10s linear infinite;
+          animation: left-circle-rotate 10s linear infinite;
 }
 
 @-webkit-keyframes bg-circle-rotate {
@@ -566,6 +572,34 @@ section:not(:nth-child(1)) .card {
 }
 
 @keyframes bg-circle-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes left-circle-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes left-circle-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes right-circle-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes right-circle-rotate {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
@@ -787,9 +821,14 @@ section:not(:nth-child(1)) .card {
 
 #footer #footer-logo-container .footer-bg-circle {
   position: absolute;
-  top: -36%;
+  top: -20%;
   right: -13%;
-  bottom: -88%;
+  bottom: -68%;
+}
+
+#footer #footer-logo-container .footer-bg-circle img {
+  -webkit-animation: bg-circle-rotate 10s linear infinite;
+          animation: bg-circle-rotate 10s linear infinite;
 }
 
 /* Experience page styling */
@@ -843,10 +882,6 @@ section:not(:nth-child(1)) .card {
   cursor: pointer;
 }
 
-#business-design-sprint .btn-business {
-  margin-top: 1.5rem;
-}
-
 #business-design-sprint .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -870,9 +905,9 @@ section:not(:nth-child(1)) .card {
 }
 
 #business-design-sprint .card h1 {
-  font-family: MinionWebPro;
+  font-family: MinionPro;
   font-weight: bold;
-  font-size: 1.9rem;
+  font-size: 2rem;
   line-height: 1.2;
   text-align: left;
   color: #061134;
@@ -908,12 +943,9 @@ section:not(:nth-child(1)) .card {
 
 #desirable .section-header {
   text-align: center;
-  font-family: MinionWebPro;
+  font-family: MinionPro;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.2;
-  letter-spacing: normal;
   text-align: left;
   color: #ffffff;
 }
@@ -949,7 +981,8 @@ section:not(:nth-child(1)) .card {
 
 #desirable .card .card-body {
   padding: 0 0.7rem;
-  font-family: ProximaNova;
+  font-weight: 600;
+  font-family: ProximaNovaSemiBold;
   font-size: 20px;
   line-height: 1.43;
   text-align: center;
@@ -963,7 +996,7 @@ section:not(:nth-child(1)) .card {
 
 #what-to-expect h3 {
   margin-bottom: 60px;
-  font-family: MinionWebPro;
+  font-family: MinionPro;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -985,6 +1018,7 @@ section:not(:nth-child(1)) .card {
   position: absolute;
   right: 0;
   top: 2.5rem;
+  opacity: 0.6;
 }
 
 #what-to-expect .card {
@@ -1003,8 +1037,9 @@ section:not(:nth-child(1)) .card {
 }
 
 #what-to-expect .card .card-title {
-  font-family: ProximaNovaSemiBold;
-  font-size: 1rem;
+  font-family: ProximaNova;
+  font-size: 1.22rem;
+  font-weight: bold;
   line-height: 1;
   text-align: center;
   color: #061134;
@@ -1014,7 +1049,7 @@ section:not(:nth-child(1)) .card {
 #what-to-expect .card .card-body {
   padding: 0 1.5rem;
   font-family: ProximaNova;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.82;
   text-align: center;
   color: #061134;
@@ -1059,10 +1094,6 @@ section:not(:nth-child(1)) .card {
 }
 
 /* Experience page styling */
-#solution-delivery .btn-business {
-  margin-top: 1.5rem;
-}
-
 #solution-delivery .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -1115,10 +1146,6 @@ section:not(:nth-child(1)) .card {
 }
 
 /* Experience page styling */
-#innovation-transformation .btn-business {
-  margin-top: 1rem;
-}
-
 #innovation-transformation .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -1383,10 +1410,6 @@ section:not(:nth-child(1)) .card {
 }
 
 /* Experience page styling */
-#solution-design .btn-business {
-  margin-top: 1.5rem;
-}
-
 #solution-design .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -1438,10 +1461,6 @@ section:not(:nth-child(1)) .card {
 }
 
 /* Experience page styling */
-#experiential-learning .btn-business {
-  margin-top: 1.8rem;
-}
-
 #experiential-learning .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -1502,10 +1521,6 @@ section:not(:nth-child(1)) .card {
 }
 
 /* Experience page styling */
-#growth-strategy .btn-business {
-  margin-top: 1rem;
-}
-
 #growth-strategy .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -1559,10 +1574,6 @@ section:not(:nth-child(1)) .card {
 }
 
 /* Experience page styling */
-#growth-experiments .btn-business {
-  margin-top: 1.5rem;
-}
-
 #growth-experiments .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -1610,10 +1621,6 @@ section:not(:nth-child(1)) .card {
 }
 
 /* Experience page styling */
-#entrepreneur-residence .btn-business {
-  margin-top: 1.3rem !important;
-}
-
 #entrepreneur-residence .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -2109,36 +2116,6 @@ section:not(:nth-child(1)) .card {
 }
 
 /****  floating-Lable style end ****/
-@media only screen and (min-width: 1000.5px) and (max-width: 1200px) {
-  #home {
-    margin-top: -6rem !important;
-  }
-  .nav-bg {
-    background-color: #0b1120;
-    padding: 1rem 2rem 0.5rem 2rem;
-  }
-}
-
-@media only screen and (min-width: 1200.5px) and (max-width: 1400px) {
-  #home {
-    margin-top: -6rem !important;
-  }
-  .nav-bg {
-    background-color: #0b1120;
-    padding: 1rem 2rem 0.5rem 2rem;
-  }
-}
-
-@media only screen and (min-width: 1400.5px) and (max-width: 1600px) {
-  #home {
-    margin-top: -2rem !important;
-  }
-  .nav-bg {
-    background-color: #0b1120;
-    padding: 1rem 2rem 0.5rem 2rem;
-  }
-}
-
 @media only screen and (min-width: 320px) and (max-width: 478px) {
   br {
     display: none;
@@ -2471,7 +2448,7 @@ section:not(:nth-child(1)) .card {
   #overlay {
     height: 100vh;
     width: 100vw;
-    background: #050505fa;
+    background: #0b1120fa;
     z-index: 2;
     top: 0;
     visibility: hidden;
@@ -2487,30 +2464,30 @@ section:not(:nth-child(1)) .card {
     position: relative;
   }
   #overlay ul li {
-    text-align: center;
+    text-align: left;
     padding: 1rem;
     list-style-type: none;
   }
   #overlay ul li .custom-dropdown-menu {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.842) !important;
+    background-color: #0b1120 !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
-    text-align: center;
+    text-align: left;
   }
   #overlay ul li .custom-dropdown-menu li {
     width: 100%;
     list-style-type: none;
     margin: 0.2px auto !important;
-    background-color: rgba(0, 0, 0, 0.842) !important;
-    border: 0.5px solid black !important;
+    background-color: #0b1120 !important;
+    border: 0.5px solid #0b1120 !important;
     padding: 0 !important;
-    text-align: center !important;
+    text-align: left !important;
   }
   #overlay ul li a {
     color: white;
     text-decoration: none;
-    text-align: center !important;
+    text-align: left !important;
     font-size: 0.8em;
   }
   #overlay ul li a:hover,
@@ -2519,23 +2496,17 @@ section:not(:nth-child(1)) .card {
     background-color: transparent;
     color: #ff5050;
   }
-  #business-design-sprint .img-container,
-  #business-design-sprint .img-border,
-  #solution-design .img-container,
-  #solution-design .img-border,
-  #solution-delivery .img-container,
-  #solution-delivery .img-border,
-  #growth-strategy .img-container,
-  #growth-strategy .img-border,
-  #growth-experiments .img-container,
-  #growth-experiments .img-border,
-  #entrepreneur-residence .img-container,
-  #entrepreneur-residence .img-border,
-  #innovation-transformation .img-container,
-  #innovation-transformation .img-border,
-  #experiential-learning .img-container,
-  #experiential-learning .img-border {
-    display: none;
+  #business-design-sprint .img-container img,
+  #solution-design .img-container img,
+  #solution-delivery .img-container img,
+  #growth-strategy .img-container img,
+  #growth-experiments .img-container img,
+  #entrepreneur-residence .img-container img,
+  #innovation-transformation .img-container img,
+  #experiential-learning .img-container img {
+    margin-top: 1rem;
+    width: 100% !important;
+    height: 223px !important;
   }
   #business-design-sprint .card,
   #solution-design .card,

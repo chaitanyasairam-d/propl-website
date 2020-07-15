@@ -5,33 +5,7 @@ $mobile: 320px;
     @content;
   }
 }
-@media only screen and (min-width: 1000.5px) and (max-width: 1200px) {
-#home{
-  margin-top: -6rem!important;
-}
-  .nav-bg {
-    background-color: #0b1120;
-    padding: 1rem 2rem 0.5rem 2rem;
-  }
-}
-@media only screen and (min-width: 1200.5px) and (max-width: 1400px) {
-  #home{
-    margin-top: -6rem!important;
-  }
-  .nav-bg {
-    background-color: #0b1120;
-    padding: 1rem 2rem 0.5rem 2rem;
-  }
-}
-@media only screen and (min-width: 1400.5px) and (max-width: 1600px) {
-  #home{
-    margin-top: -2rem!important;
-  }
-  .nav-bg {
-    background-color: #0b1120;
-    padding: 1rem 2rem 0.5rem 2rem;
-  }
-}
+
 
 @media only screen and (min-width: 320px) and (max-width: 478px) {
   br {
@@ -298,6 +272,7 @@ $mobile: 320px;
       width: 100%;
       height: 8%;
       background-color: #0b1120;
+    
     }
     // nav{
     //   background-color: #0a101d;
@@ -379,7 +354,7 @@ $mobile: 320px;
   #overlay {
     height: 100vh;
     width: 100vw;
-    background: #050505fa;
+    background: #0b1120fa;
     z-index: 2;
     top: 0;
     visibility: hidden;
@@ -392,30 +367,30 @@ $mobile: 320px;
       overflow: auto;
       position: relative;
       li {
-        text-align: center;
+        text-align: left;
         padding: 1rem;
         list-style-type: none;
 
         .custom-dropdown-menu {
           width: 100%;
-          background-color: rgba(0, 0, 0, 0.842) !important;
+          background-color: #0b1120 !important;
           box-shadow: none !important;
-          text-align: center;
+          text-align: left;
           li {
             width: 100%;
             list-style-type: none;
             margin: 0.2px auto !important;
-            background-color: rgba(0, 0, 0, 0.842) !important;
-            border: 0.5px solid black !important;
+            background-color: #0b1120 !important;
+            border: 0.5px solid #0b1120 !important;
             padding: 0 !important;
-            text-align: center !important;
+            text-align: left !important;
           }
         }
 
         a {
           color: white;
           text-decoration: none;
-          text-align: center !important;
+          text-align: left !important;
           font-size: 0.8em;
           // &:hover{
           //   background-color: rgba(0, 0, 0, 0.842);
@@ -440,9 +415,13 @@ $mobile: 320px;
   #entrepreneur-residence,
   #innovation-transformation,
   #experiential-learning {
-    .img-container,
-    .img-border {
-      display: none;
+    .img-container {
+      // display: none;
+      img{
+        margin-top: 1rem;
+        width: 100%!important;
+        height: 223px!important;
+      }
     }
     .card {
       margin-left: 0 !important;
