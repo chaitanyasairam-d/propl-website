@@ -63,6 +63,10 @@ a:active {
   margin-right: auto;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 @font-face {
   font-family: MinionPro;
   src: url("../Minion Web Pro Bold.ttf");

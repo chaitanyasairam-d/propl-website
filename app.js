@@ -58,7 +58,14 @@ $(function () {
     $('body').addClass("example-open");
   }).on('hide.bs.modal', function (e) {
     $('body').removeClass("example-open");
-    $('#success').hide();
+    $('#m-content').removeClass('orange-background');
+      $('#info-submit').show();
+      $('#submit-btn').prop('disabled', false);
+      $('#success').hide();
+      $("#spinner").hide();
+      $('#user_name').val('')
+      $('#user_email').val('')
+      $('#user_message').val('')
   })
   $('#success').hide();
   $("#error").hide();
