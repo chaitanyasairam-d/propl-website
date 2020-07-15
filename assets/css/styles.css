@@ -156,7 +156,7 @@ section:nth-child(3) {
   background-color: #ffffff;
   -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-  padding: 1.5rem 13.6rem 0 13.6rem;
+  padding: 1.5rem 10rem 0 10rem;
   z-index: 9999;
 }
 
