@@ -81,12 +81,13 @@ section:nth-child(3) {
 
   #home-navbar{
    .nav-bg {
-    background-image: linear-gradient(to bottom, #0b1120 70%, rgba(11, 17, 33, 0) 100%);
-    padding: 1.5rem 10rem 0 10rem;
+    background-image: linear-gradient(to bottom, #0b1120 70%, rgba(11, 17, 33, 0)80%);
     position: absolute;
-    top:0;
-    left: 0;
+    top: 0;
     right: 0;
+    left: 0;
+    padding: 1.5rem 10rem 0 10rem;
+    width: 100%;
     .nav-link {
       color: #fff !important;
       font-size: 0.75rem;
@@ -348,6 +349,8 @@ section:not(:nth-child(1)) {
 #home {
   height: 100%;
   width: 100%;
+  margin-top: 0!important;
+
 }
 
 #home-cover {

@@ -71,13 +71,14 @@ section:nth-child(3) {
 }
 
 #home-navbar .nav-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #0b1120), to(rgba(11, 17, 33, 0)));
-  background-image: linear-gradient(to bottom, #0b1120 70%, rgba(11, 17, 33, 0) 100%);
-  padding: 1.5rem 10rem 0 10rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #0b1120), color-stop(80%, rgba(11, 17, 33, 0)));
+  background-image: linear-gradient(to bottom, #0b1120 70%, rgba(11, 17, 33, 0) 80%);
   position: absolute;
   top: 0;
-  left: 0;
   right: 0;
+  left: 0;
+  padding: 1.5rem 10rem 0 10rem;
+  width: 100%;
 }
 
 #home-navbar .nav-bg .nav-link {
@@ -366,6 +367,7 @@ section:not(:nth-child(1)) .card {
 #home {
   height: 100%;
   width: 100%;
+  margin-top: 0 !important;
 }
 
 #home-cover {
@@ -2017,12 +2019,21 @@ section:not(:nth-child(1)) .card {
 }
 
 /****  floating-Lable style end ****/
-@media only screen and (min-width: 1000.5px) {
+@media only screen and (min-width: 1000.5px) and (max-width: 1199x) {
   #home {
-    margin-top: 2.5rem !important;
+    margin-top: 0.5rem !important;
   }
-  .nav-bg {
-    padding: 1rem 2rem 0.5rem 2rem;
+}
+
+@media only screen and (min-width: 1200.5px) and (max-width: 1400px) {
+  #home {
+    margin-top: 0.8rem !important;
+  }
+}
+
+@media only screen and (min-width: 1400.5px) and (max-width: 1600px) {
+  #home {
+    margin-top: 1rem !important;
   }
 }
 
