@@ -40,16 +40,21 @@
   line-height: 1.89;
   text-align: left;
   color: #061134;
-  margin-top: 2rem;
-  margin-bottom: 3rem !important;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem !important;
   margin-right: 2rem !important;
-  margin-left: -0.5rem !important;
+  margin-left: 1.6rem !important;
   img {
     width: 10px;
     margin-right: 7px;
     &:hover {
       cursor: pointer;
     }
+  }
+  a{
+    color: black;
+    text-transform: capitalize;
+    font-family: $paragraph-semi-bold-font;
   }
 }
 #business-design-sprint {
