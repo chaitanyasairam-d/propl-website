@@ -1099,7 +1099,7 @@ section:not(:nth-child(1)) .card {
 
 .business-footer-underline {
   margin: 0 auto;
-  width: 72vw;
+  width: 71.5vw;
   height: 8px;
   background-color: #ff5050;
   border-radius: 10px;
