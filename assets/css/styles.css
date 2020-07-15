@@ -50,10 +50,6 @@ a:active {
   margin: 2rem 0 0 0.8rem;
 }
 
-#future .back-btn {
-  margin-left: 0.5rem !important;
-}
-
 @font-face {
   font-family: MinionPro;
   src: url("../Minion Web Pro Bold.ttf");
@@ -354,6 +350,10 @@ section:not(:nth-child(1)) .card {
 .btn-more:hover {
   background: #ff5050 !important;
   border: none;
+}
+
+.btn-more, .btn-business {
+  font-family: ProximaNovaSemiBold;
 }
 
 .underline {
@@ -2356,7 +2356,7 @@ section:not(:nth-child(1)) .card {
   #overlay {
     height: 100vh;
     width: 100vw;
-    background: #050505fa;
+    background: #0b1120fa;
     z-index: 2;
     top: 0;
     visibility: hidden;
@@ -2372,30 +2372,30 @@ section:not(:nth-child(1)) .card {
     position: relative;
   }
   #overlay ul li {
-    text-align: center;
+    text-align: left;
     padding: 1rem;
     list-style-type: none;
   }
   #overlay ul li .custom-dropdown-menu {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.842) !important;
+    background-color: #0b1120 !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
-    text-align: center;
+    text-align: left;
   }
   #overlay ul li .custom-dropdown-menu li {
     width: 100%;
     list-style-type: none;
     margin: 0.2px auto !important;
-    background-color: rgba(0, 0, 0, 0.842) !important;
-    border: 0.5px solid black !important;
+    background-color: #0b1120 !important;
+    border: 0.5px solid #0b1120 !important;
     padding: 0 !important;
-    text-align: center !important;
+    text-align: left !important;
   }
   #overlay ul li a {
     color: white;
     text-decoration: none;
-    text-align: center !important;
+    text-align: left !important;
     font-size: 0.8em;
   }
   #overlay ul li a:hover,

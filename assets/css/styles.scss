@@ -46,10 +46,6 @@ a:active {
   margin: 2rem 0 0 0.8rem;
 }
 
-#future .back-btn{
-  margin-left:.5rem!important;
-}
-
 //font variables
 $header-font: MinionPro;
 $paragraph-font: ProximaNova;
@@ -341,7 +337,9 @@ section:not(:nth-child(1)) {
     border: none;
   }
 }
-
+.btn-more,.btn-business{
+  font-family: $paragraph-semi-bold-font;
+}
 .underline {
   margin: 0 auto;
   width: 50px;
