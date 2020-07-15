@@ -45,18 +45,6 @@ a:active {
 .back-btn {
   margin: 2rem 0 0 0.8rem;
 }
-#business-design-sprint,
-#solution-design,
-#solution-delivery,
-#growth-strategy,
-#growth-experiments,
-#entrepreneur-residence,
-#innovation-transformation,
-#experiential-learning{
-  width: 72%;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .cursor-pointer {
   cursor: pointer;
@@ -175,7 +163,7 @@ section:nth-child(3) {
   font-size: 0.9rem;
   background-color: #ffffff;
   box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-  padding: 1.5rem 12.95rem 0 12.95rem;
+  padding: 1.5rem 13.6rem 0 13.6rem;
   z-index: 9999;
 
   .nav-item {
@@ -212,7 +200,6 @@ section:nth-child(3) {
 .navbar-brand img {
   width: 100px;
   margin-bottom: 1rem;
-  margin-left: 1.2rem;
 }
 
 .nav-item .nav-link:hover {
