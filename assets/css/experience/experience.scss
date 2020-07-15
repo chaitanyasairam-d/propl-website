@@ -43,7 +43,7 @@
   margin-top: 2.5rem;
   margin-bottom: 2.5rem !important;
   margin-right: 2rem !important;
-  margin-left: 1.6rem !important;
+  margin-left: .8rem !important;
   img {
     width: 10px;
     margin-right: 7px;
@@ -268,9 +268,9 @@
 }
 
 .business-footer-underline {
-  margin: 0 auto;
-  width: 70vw;
-  height: 8px;
-  background-color: $orange;
-  border-radius: 10px;
+  margin: 0 0 0 14rem;
+  width: 67vw;
+    height: 8px;
+    background-color: #ff5050;
+    border-radius: 10px;
 }
