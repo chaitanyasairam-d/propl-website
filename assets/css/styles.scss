@@ -536,21 +536,16 @@ section:not(:nth-child(1)) {
 // }
 #predict-fututre .img-bg-circle {
   position: absolute;
+  margin-top: 3rem;
   right: 90%;
   z-index: 10;
   img {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
+    animation: left-circle-rotate 13s linear infinite;
 
-      animation: left-circle-rotate 13s linear infinite;
   }
 }
-#we-believe .img-bg-circle img{
-  transform: rotate(210deg);
-  animation: left-circle-rotate 10s linear infinite;
-
-}
-
 
 @keyframes bg-circle-rotate {
   100% {
@@ -667,17 +662,19 @@ section:not(:nth-child(1)) {
 
 #we-believe .img-circle-container {
   position: absolute;
-  margin-top: 150px;
+  margin-top: 5rem;
   width: 130px;
   right: 0;
   overflow: hidden;
   .img-bg-circle {
-    width: 350px;
+    width: 400px;
     overflow: hidden;
     img {
-      height: 350px;
-      width: 350px;
+      height:400px;
+      width:400px;
       overflow: hidden;
+    animation: right-circle-rotate 10s linear infinite;
+
     }
   }
 }
