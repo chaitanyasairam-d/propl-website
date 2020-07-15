@@ -414,9 +414,13 @@ $mobile: 320px;
   #entrepreneur-residence,
   #innovation-transformation,
   #experiential-learning {
-    .img-container,
-    .img-border {
-      display: none;
+    .img-container {
+      // display: none;
+      img{
+        margin-top: 1rem;
+        width: 100%!important;
+        height: 223px!important;
+      }
     }
     .card {
       margin-left: 0 !important;

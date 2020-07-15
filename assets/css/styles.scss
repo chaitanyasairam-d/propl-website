@@ -46,6 +46,10 @@ a:active {
   margin: 2rem 0 0 0.8rem;
 }
 
+#future .back-btn{
+  margin-left:.5rem!important;
+}
+
 //font variables
 $header-font: MinionPro;
 $paragraph-font: ProximaNova;
@@ -524,7 +528,7 @@ section:not(:nth-child(1)) {
     width: 350px;
     height: 350px;
 
-      animation: left-circle-rotate 10s linear infinite;
+      animation: left-circle-rotate 13s linear infinite;
   }
 }
 #we-believe .img-bg-circle img{

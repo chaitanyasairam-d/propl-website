@@ -50,6 +50,10 @@ a:active {
   margin: 2rem 0 0 0.8rem;
 }
 
+#future .back-btn {
+  margin-left: 0.5rem !important;
+}
+
 @font-face {
   font-family: MinionPro;
   src: url("../Minion Web Pro Bold.ttf");
@@ -539,8 +543,8 @@ section:not(:nth-child(1)) .card {
 #predict-fututre .img-bg-circle img {
   width: 350px;
   height: 350px;
-  -webkit-animation: left-circle-rotate 10s linear infinite;
-          animation: left-circle-rotate 10s linear infinite;
+  -webkit-animation: left-circle-rotate 13s linear infinite;
+          animation: left-circle-rotate 13s linear infinite;
 }
 
 #we-believe .img-bg-circle img {
@@ -863,10 +867,6 @@ section:not(:nth-child(1)) .card {
   cursor: pointer;
 }
 
-#business-design-sprint .btn-business {
-  margin-top: 1.5rem;
-}
-
 #business-design-sprint .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -1079,10 +1079,6 @@ section:not(:nth-child(1)) .card {
 }
 
 /* Experience page styling */
-#solution-delivery .btn-business {
-  margin-top: 1.5rem;
-}
-
 #solution-delivery .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -1135,10 +1131,6 @@ section:not(:nth-child(1)) .card {
 }
 
 /* Experience page styling */
-#innovation-transformation .btn-business {
-  margin-top: 1rem;
-}
-
 #innovation-transformation .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -1386,10 +1378,6 @@ section:not(:nth-child(1)) .card {
 }
 
 /* Experience page styling */
-#solution-design .btn-business {
-  margin-top: 1.5rem;
-}
-
 #solution-design .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -1441,10 +1429,6 @@ section:not(:nth-child(1)) .card {
 }
 
 /* Experience page styling */
-#experiential-learning .btn-business {
-  margin-top: 1.8rem;
-}
-
 #experiential-learning .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -1505,10 +1489,6 @@ section:not(:nth-child(1)) .card {
 }
 
 /* Experience page styling */
-#growth-strategy .btn-business {
-  margin-top: 1rem;
-}
-
 #growth-strategy .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -1562,10 +1542,6 @@ section:not(:nth-child(1)) .card {
 }
 
 /* Experience page styling */
-#growth-experiments .btn-business {
-  margin-top: 1.5rem;
-}
-
 #growth-experiments .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -1613,10 +1589,6 @@ section:not(:nth-child(1)) .card {
 }
 
 /* Experience page styling */
-#entrepreneur-residence .btn-business {
-  margin-top: 1.3rem !important;
-}
-
 #entrepreneur-residence .img-border {
   border: 1.5px solid #ff5050;
   height: 395px;
@@ -2431,23 +2403,17 @@ section:not(:nth-child(1)) .card {
     background-color: transparent;
     color: #ff5050;
   }
-  #business-design-sprint .img-container,
-  #business-design-sprint .img-border,
-  #solution-design .img-container,
-  #solution-design .img-border,
-  #solution-delivery .img-container,
-  #solution-delivery .img-border,
-  #growth-strategy .img-container,
-  #growth-strategy .img-border,
-  #growth-experiments .img-container,
-  #growth-experiments .img-border,
-  #entrepreneur-residence .img-container,
-  #entrepreneur-residence .img-border,
-  #innovation-transformation .img-container,
-  #innovation-transformation .img-border,
-  #experiential-learning .img-container,
-  #experiential-learning .img-border {
-    display: none;
+  #business-design-sprint .img-container img,
+  #solution-design .img-container img,
+  #solution-delivery .img-container img,
+  #growth-strategy .img-container img,
+  #growth-experiments .img-container img,
+  #entrepreneur-residence .img-container img,
+  #innovation-transformation .img-container img,
+  #experiential-learning .img-container img {
+    margin-top: 1rem;
+    width: 100% !important;
+    height: 223px !important;
   }
   #business-design-sprint .card,
   #solution-design .card,
