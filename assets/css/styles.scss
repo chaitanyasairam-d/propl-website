@@ -375,8 +375,10 @@ section:not(:nth-child(1)) {
   height: 100vh;
   background-image: url(../images/cover_bg.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  // background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
+
   z-index: 9999;
 }
 
