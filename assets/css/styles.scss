@@ -45,7 +45,18 @@ a:active {
 .back-btn {
   margin: 2rem 0 0 0.8rem;
 }
-
+#business-design-sprint,
+#solution-design,
+#solution-delivery,
+#growth-strategy,
+#growth-experiments,
+#entrepreneur-residence,
+#innovation-transformation,
+#experiential-learning{
+  width: 72%;
+  margin-left: auto;
+  margin-right: auto;
+}
 //font variables
 $header-font: MinionPro;
 $paragraph-font: ProximaNova;
@@ -97,7 +108,7 @@ section:nth-child(3) {
       color: #fff !important;
       font-size: 0.75rem;
       font-family: $paragraph-semi-bold-font;
-      margin: 0 .8rem;
+      margin: 0 0.4rem;
     }
   }
 
@@ -171,7 +182,8 @@ section:nth-child(3) {
     font-family: $paragraph-semi-bold-font;
     color: white;
     font-size: 0.7rem;
-    margin: 0 0.7rem;
+    margin:0 0.4rem;
+
     color: #0b1120 !important;
   }
   ul {
@@ -196,6 +208,7 @@ section:nth-child(3) {
 .navbar-brand img {
   width: 100px;
   margin-bottom: 1rem;
+  margin-left: 5rem;
 }
 
 .nav-item .nav-link:hover {
@@ -688,6 +701,7 @@ section:not(:nth-child(1)) {
   .footer {
     // background-color: red;
     padding-top: 70px;
+    width: 70%;
     // width: 90vw;
     // margin-left: 100px;
     margin: 0 auto;
@@ -755,6 +769,7 @@ section:not(:nth-child(1)) {
     .footer-copy-right {
       line-height: 1.88 !important;
       z-index: 1;
+      margin-right: -2rem;
       a {
         color: #ffffff;
         text-decoration: none;

@@ -10,7 +10,7 @@ $mobile: 320px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 478px) {
-  br {
+  br{
     display: none;
   }
   .p40 {
@@ -250,6 +250,15 @@ $mobile: 320px;
 // Experience page Styling
 
 @include mobile {
+
+  
+.business-footer-underline {
+  margin: 0 auto;
+  width: 80vw;
+    height: 8px;
+    background-color: #ff5050;
+    border-radius: 10px;
+}
   section:nth-child(3) {
     margin: 0 !important;
     .card {
@@ -261,8 +270,12 @@ $mobile: 320px;
     display: none;
   }
   .navbar-brand {
-    margin-left: 1.5rem;
+    margin-left: 1.5rem!important;
     margin-top: 1rem;
+    img{
+      margin-left:1rem!important;
+
+    }
   }
   .back-btn {
     margin-bottom: 0 !important;
@@ -417,6 +430,9 @@ $mobile: 320px;
   #entrepreneur-residence,
   #innovation-transformation,
   #experiential-learning {
+    // .back-btn{
+    //   margin-left: 0;
+    // }
     .img-container {
       // display: none;
       img{
@@ -441,6 +457,9 @@ $mobile: 320px;
     }
   }
   #desirable {
+    br{
+      display: block;
+    }
     h3 {
       font-size: 1.5rem;
     }
@@ -467,6 +486,9 @@ $mobile: 320px;
     padding-bottom: 40px;
   }
   #what-to-expect {
+    .btn-business{
+      margin-top: 25px;
+    }
     .section-starter {
       margin-top: 75px !important;
     }
@@ -483,7 +505,7 @@ $mobile: 320px;
     .card {
       width: 100% !important;
       height: 100% !important;
-      margin: 1rem auto 1rem 0 !important;
+      margin: 2rem auto 0 0 !important;
       padding: 0 !important;
 
       .card-body {
