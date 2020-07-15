@@ -70,14 +70,14 @@ section:nth-child(3) {
   margin-top: 100px;
 }
 
-#home-navbar {
-  margin-top: 0 !important;
-}
-
 #home-navbar .nav-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(65%, #0b1120), color-stop(77%, rgba(11, 17, 33, 0)));
-  background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
-  padding: 1.5rem 12.2rem 0 12.2rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #0b1120), to(rgba(11, 17, 33, 0)));
+  background-image: linear-gradient(to bottom, #0b1120 70%, rgba(11, 17, 33, 0) 100%);
+  padding: 1.5rem 10rem 0 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #home-navbar .nav-bg .nav-link {
@@ -150,7 +150,7 @@ section:nth-child(3) {
   background-color: #ffffff;
   -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-  padding: 1.5rem 12.2rem 0 12.2rem;
+  padding: 1.5rem 10rem 0 10rem;
   z-index: 9999;
 }
 
@@ -2017,32 +2017,11 @@ section:not(:nth-child(1)) .card {
 }
 
 /****  floating-Lable style end ****/
-@media only screen and (min-width: 1000.5px) and (max-width: 1200px) {
+@media only screen and (min-width: 1000.5px) {
   #home {
-    margin-top: -6rem !important;
+    margin-top: 2.5rem !important;
   }
   .nav-bg {
-    background-color: #0b1120;
-    padding: 1rem 2rem 0.5rem 2rem;
-  }
-}
-
-@media only screen and (min-width: 1200.5px) and (max-width: 1400px) {
-  #home {
-    margin-top: -6rem !important;
-  }
-  .nav-bg {
-    background-color: #0b1120;
-    padding: 1rem 2rem 0.5rem 2rem;
-  }
-}
-
-@media only screen and (min-width: 1400.5px) and (max-width: 1600px) {
-  #home {
-    margin-top: -2rem !important;
-  }
-  .nav-bg {
-    background-color: #0b1120;
     padding: 1rem 2rem 0.5rem 2rem;
   }
 }

@@ -78,11 +78,15 @@ section:nth-child(3) {
   margin-top: 100px;
 }
 
-#home-navbar {
-  margin-top: 0 !important;
-  .nav-bg {
-    background-image: linear-gradient(to bottom, #0b1120 65%, rgba(11, 17, 33, 0) 77%);
-    padding: 1.5rem 12.2rem 0 12.2rem;
+
+  #home-navbar{
+   .nav-bg {
+    background-image: linear-gradient(to bottom, #0b1120 70%, rgba(11, 17, 33, 0) 100%);
+    padding: 1.5rem 10rem 0 10rem;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
     .nav-link {
       color: #fff !important;
       font-size: 0.75rem;
@@ -150,7 +154,7 @@ section:nth-child(3) {
   font-size: 0.9rem;
   background-color: #ffffff;
   box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-  padding: 1.5rem 12.2rem 0 12.2rem;
+  padding: 1.5rem 10rem 0 10rem;
   z-index: 9999;
 
   .nav-item {
