@@ -67,6 +67,11 @@ $text-color: #061134;
   font-family: ProximaNovaSemiBold;
   src: url('../ProximaNova-Semibold.ttf');
 }
+@font-face {
+  font-family: ProximaNovaBold;
+  src: url('../ProximaNova-Bold.ttf');
+}
+
 /*mixins for margin 0 auto and custom width*/
 
 @mixin marginAuto($value) {
@@ -284,6 +289,9 @@ section:not(:nth-child(1)) {
 .mt50 {
   margin-top: 50px;
 }
+.content-header-container .mt50 {
+  margin-top: 35px;
+}
 
 .mt100 {
   margin-top: 100px;
@@ -291,18 +299,21 @@ section:not(:nth-child(1)) {
 .mb100 {
   margin-bottom: 100px;
 }
+.pt40 {
+  padding-top: 40px;
+}
 
 #achieve {
-  padding-bottom: 100px;
+  // padding-bottom: 100px;
   .container{
-    padding-top: 120px!important;
+    padding-top: 100px!important;
   }
 
 }
 
 .card .group-19-icons {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   object-fit: contain;
   margin: 0 auto;
 }
@@ -334,8 +345,8 @@ section:not(:nth-child(1)) {
 
 .underline {
   margin: 0 auto;
-  width: 50px;
-  height: 4px;
+  width: 45px;
+  height: 3px;
   background-color: $orange;
   border-radius: 10px;
 }
@@ -443,10 +454,10 @@ section:not(:nth-child(1)) {
 }
 
 .item {
-  width: 75%;
-  margin: 0 auto;
-  padding: 30px 0;
-  @include marginAuto(90%);
+  // width: 75%;
+  // margin: 0 auto;
+  // padding: 30px 0;
+  // @include marginAuto(90%);
   padding: 30px 0;
 }
 
@@ -457,14 +468,15 @@ section:not(:nth-child(1)) {
 }
 
 .testimonial-container {
+  @include marginAuto(85%);
   h4 {
     line-height: 2.27;
     color: $text-color;
-    font-size: 0.9rem;
+    font-size: 0.82rem;
     font-weight: 400;
     text-align: left;
     font-family: $paragraph-font;
-    height: 150px;
+    height: 140px;
   }
   .testimonial-footer {
     display: flex;
@@ -532,7 +544,7 @@ section:not(:nth-child(1)) {
 }
 
 .content-header-body h2 {
-  font-size: 1.85rem;
+  font-size: 1.6rem;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
@@ -548,7 +560,7 @@ section:not(:nth-child(1)) {
 }
 
 .content-header-body p {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.67;
@@ -561,7 +573,9 @@ section:not(:nth-child(1)) {
 .layout-margin {
   @include marginAuto(90%);
 }
-
+.predict-margin {
+  @include marginAuto(90%)
+}
 #predict-fututre .card-title {
   /* font-weight: normal; */
   font-style: normal;
@@ -579,7 +593,7 @@ section:not(:nth-child(1)) {
 }
 
 #predict-fututre .card-body .card-text {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.82;
@@ -605,13 +619,13 @@ section:not(:nth-child(1)) {
 
 #we-believe {
   .card-body {
-    padding: 0.7rem;
+    padding: 0rem;
   }
 }
 
 #we-believe .card-text {
   font-family: ProximaNova;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;

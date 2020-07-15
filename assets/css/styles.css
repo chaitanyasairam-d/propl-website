@@ -65,6 +65,11 @@ a:active {
   src: url("../ProximaNova-Semibold.ttf");
 }
 
+@font-face {
+  font-family: ProximaNovaBold;
+  src: url("../ProximaNova-Bold.ttf");
+}
+
 /*mixins for margin 0 auto and custom width*/
 section:nth-child(3) {
   margin-top: 100px;
@@ -298,6 +303,10 @@ section:not(:nth-child(1)) .card {
   margin-top: 50px;
 }
 
+.content-header-container .mt50 {
+  margin-top: 35px;
+}
+
 .mt100 {
   margin-top: 100px;
 }
@@ -306,17 +315,17 @@ section:not(:nth-child(1)) .card {
   margin-bottom: 100px;
 }
 
-#achieve {
-  padding-bottom: 100px;
+.pt40 {
+  padding-top: 40px;
 }
 
 #achieve .container {
-  padding-top: 120px !important;
+  padding-top: 100px !important;
 }
 
 .card .group-19-icons {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   -o-object-fit: contain;
      object-fit: contain;
   margin: 0 auto;
@@ -356,8 +365,8 @@ section:not(:nth-child(1)) .card {
 
 .underline {
   margin: 0 auto;
-  width: 50px;
-  height: 4px;
+  width: 45px;
+  height: 3px;
   background-color: #ff5050;
   border-radius: 10px;
 }
@@ -462,11 +471,6 @@ section:not(:nth-child(1)) .card {
 }
 
 .item {
-  width: 75%;
-  margin: 0 auto;
-  padding: 30px 0;
-  margin: 0 auto;
-  width: 90%;
   padding: 30px 0;
 }
 
@@ -476,14 +480,19 @@ section:not(:nth-child(1)) .card {
   border-bottom-right-radius: 75px;
 }
 
+.testimonial-container {
+  margin: 0 auto;
+  width: 85%;
+}
+
 .testimonial-container h4 {
   line-height: 2.27;
   color: #061134;
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   font-weight: 400;
   text-align: left;
   font-family: ProximaNova;
-  height: 150px;
+  height: 140px;
 }
 
 .testimonial-container .testimonial-footer {
@@ -570,7 +579,7 @@ section:not(:nth-child(1)) .card {
 }
 
 .content-header-body h2 {
-  font-size: 1.85rem;
+  font-size: 1.6rem;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.2;
@@ -586,7 +595,7 @@ section:not(:nth-child(1)) .card {
 }
 
 .content-header-body p {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.67;
@@ -599,6 +608,11 @@ section:not(:nth-child(1)) .card {
 }
 
 .layout-margin {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.predict-margin {
   margin: 0 auto;
   width: 90%;
 }
@@ -620,7 +634,7 @@ section:not(:nth-child(1)) .card {
 }
 
 #predict-fututre .card-body .card-text {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.82;
@@ -644,12 +658,12 @@ section:not(:nth-child(1)) .card {
 }
 
 #we-believe .card-body {
-  padding: 0.7rem;
+  padding: 0rem;
 }
 
 #we-believe .card-text {
   font-family: ProximaNova;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -1159,7 +1173,12 @@ section:not(:nth-child(1)) .card {
 /* strategy future css*/
 .strategy-container {
   margin: 0 auto;
-  width: 90%;
+  width: 85%;
+}
+
+.strategy-container .back-btn {
+  margin: 10px 20px !important;
+  margin-top: 50px !important;
 }
 
 .circle-img-container {
@@ -1172,11 +1191,11 @@ section:not(:nth-child(1)) .card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 110%;
 }
 
 .circle-img-container img {
-  width: 20rem;
+  height: 325px;
+  margin-top: 7.5rem;
 }
 
 .future-icon img {
@@ -1185,7 +1204,7 @@ section:not(:nth-child(1)) .card {
 }
 
 .future-header h2 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-family: MinionPro;
   text-align: left;
 }
@@ -1218,6 +1237,10 @@ section:not(:nth-child(1)) .card {
 
 #achieve .text-white {
   color: #fff;
+}
+
+.point-list {
+  margin-top: 50px;
 }
 
 .point-list ul {
@@ -1254,16 +1277,18 @@ section:not(:nth-child(1)) .card {
   letter-spacing: normal;
   text-align: center;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .point-list .acheiver-container .btn-points {
   color: #ff5050;
+  font-size: .85rem;
 }
 
 .point-list .acheiver-container .btn-points img {
   position: relative;
   left: 15px;
+  width: 15px;
 }
 
 .do-list ul {
@@ -1349,6 +1374,12 @@ section:not(:nth-child(1)) .card {
 
 .p40 {
   padding: 40px;
+}
+
+.strategy-future-container .back-btn {
+  margin: 10px 20px !important;
+  margin-top: 50px !important;
+  margin-bottom: 45px !important;
 }
 
 /* Experience page styling */
@@ -1634,14 +1665,24 @@ section:not(:nth-child(1)) .card {
 }
 
 .propl-about-container {
-  height: 20rem;
+  height: 19rem;
   background-color: #ff5050;
   border-radius: 0px 75px 0px;
-  margin-top: 6.5rem;
+  margin-top: 5.5rem;
 }
 
 .propl-about-container img {
   width: 60%;
+}
+
+#misssion .content-header-body p {
+  font-size: 1rem;
+  margin: 0 auto;
+  width: 85%;
+}
+
+#contact .content-header-body p {
+  font-size: 1rem;
 }
 
 .flex-container {
@@ -1707,10 +1748,11 @@ section:not(:nth-child(1)) .card {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 10px;
 }
 
 .love-list li .list-container .img-box img {
-  height: 75px;
+  height: 50px;
 }
 
 .love-list li .list-container .title h4 {
@@ -1723,8 +1765,6 @@ section:not(:nth-child(1)) .card {
   font-family: ProximaNova;
   line-height: 1.82;
   font-size: 0.75rem;
-  margin: 0 auto;
-  width: 80%;
   height: 5rem;
 }
 
@@ -1776,23 +1816,34 @@ section:not(:nth-child(1)) .card {
 .contact-container .text-container p {
   font-family: ProximaNova;
   width: 70%;
+  font-size: .85rem;
 }
 
 .contact-us-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
 }
 
-.contact-us-container img {
-  height: 23rem;
+.contact-us-container .contact-left {
+  padding: 0 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 45%;
+          flex: 1 1 45%;
+}
+
+.contact-us-container .contact-left img {
+  height: 22.5rem;
+  margin-top: 1rem;
 }
 
 .modal-backdrop {
   z-index: 100000 !important;
+}
+
+.example-open .modal-backdrop {
+  background-color: #061134;
+  opacity: .7;
 }
 
 .modal {
@@ -1804,11 +1855,11 @@ section:not(:nth-child(1)) .card {
 }
 
 .modal-lg {
-  max-width: 900px !important;
+  max-width: 825px !important;
 }
 
 .floating-form {
-  width: 320px;
+  width: 300px;
 }
 
 .note {
@@ -1845,10 +1896,16 @@ section:not(:nth-child(1)) .card {
 
 .close:hover {
   color: #ffffff !important;
+  opacity: 1 !important;
 }
 
 .close img {
-  width: 1.3rem;
+  width: 20px;
+  height: 20px;
+}
+
+.modal-content {
+  border: none !important;
 }
 
 .modal-body {
@@ -1868,6 +1925,38 @@ section:not(:nth-child(1)) .card {
           flex-direction: column;
   height: 100%;
   padding: 5px;
+  position: relative;
+  left: -25px;
+}
+
+.contact-right {
+  padding: 0 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+}
+
+.contact-right .contact-header {
+  margin-top: 1rem !important;
+}
+
+.contact-right .contact-header h4 {
+  color: #061134;
+  font-family: MinionPro;
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.contact-right .contact-text {
+  font-family: ProximaNova;
+  font-size: .85rem;
+  color: #061134;
+  margin-bottom: 0rem;
+}
+
+.contact-right .form-contact {
+  margin-top: 2.3rem;
 }
 
 .orange-background {
@@ -1882,11 +1971,12 @@ section:not(:nth-child(1)) .card {
   color: #ffffff;
   font-family: MinionPro;
   font-size: 1.7rem;
+  font-weight: 600;
 }
 
 .orange-background .contact-header p {
   font-family: ProximaNova;
-  font-size: 1rem;
+  font-size: .85rem;
   color: #ffffff;
 }
 
@@ -1900,7 +1990,7 @@ section:not(:nth-child(1)) .card {
 }
 
 .submit-left {
-  max-width: 60%;
+  max-width: 55%;
 }
 
 .submit-left span {
@@ -1916,17 +2006,17 @@ section:not(:nth-child(1)) .card {
   background-position: center;
   height: 20rem;
   background-size: cover;
-  width: 45rem;
+  width: 40rem;
 }
 
 /****  floating-Lable style start ****/
 .floating-label {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .floating-label:nth-child(3) {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .floating-input,
@@ -1949,7 +2039,7 @@ section:not(:nth-child(1)) .card {
 .floating-label label {
   color: #061134;
   font-size: 14px;
-  font-weight: 800;
+  font-weight: normal;
   position: absolute;
   pointer-events: none;
   font-family: ProximaNova;
@@ -2014,6 +2104,8 @@ section:not(:nth-child(1)) .card {
 
 .form-contact .btn-more {
   width: 135px;
+  margin-top: 30px;
+  font-weight: normal;
 }
 
 /****  floating-Lable style end ****/

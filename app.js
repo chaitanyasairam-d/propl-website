@@ -50,20 +50,27 @@ $(function () {
   if (href.includes('contact')) {
     $('#exampleModal').modal('show');
   }
-  $('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus');
-  });
+  // $('#myModal').on('shown.bs.modal', function () {
+  //   $('#myInput').trigger('focus');
+  // });
+
+  $('#exampleModal').on('show.bs.modal', function (e) {
+    $('body').addClass("example-open");
+  }).on('hide.bs.modal', function (e) {
+    $('body').removeClass("example-open");
+    $('#success').hide();
+  })
   $('#success').hide();
   $("#error").hide();
   $("#spinner").hide();
-  $('#submit-btn').click(function(){
+  $('#submit-btn').click(function () {
     submitForm();
-});
+  });
   function submitForm() {
     let name = $('#user_name').val();
     let email = $('#user_email').val();
     let message = $('#user_message').val();
-    if(!name.length || !email.length || !message.length) {
+    if (!name.length || !email.length || !message.length) {
       $("#error").show();
       return;
     }
@@ -88,11 +95,20 @@ $(function () {
       $('#info-submit').hide();
       $('#submit-btn').prop('disabled', true);
       $('#success').show();
-    $("#spinner").hide();
+      $("#spinner").hide();
     }).fail(function (error) {
       alert('Oops... ' + JSON.stringify(error));
       $('#submit-btn').prop('disabled', true);
-    $("#spinner").hide();
+      $("#spinner").hide();
     });
   }
 });
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//   anchor.addEventListener('click', function (e) {
+//       e.preventDefault();
+
+//       document.querySelector(this.getAttribute('href')).scrollIntoView({
+//           behavior: 'smooth'
+//       });
+//   });
+// });
