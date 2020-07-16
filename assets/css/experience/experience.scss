@@ -30,8 +30,8 @@
 }
 .img-container {
   img {
-    height: 380px!important;
-    width: 557px!important;
+    height: 380px !important;
+    width: 557px !important;
   }
 }
 .back-btn {
@@ -43,7 +43,7 @@
   margin-top: 2.5rem;
   margin-bottom: 2.5rem !important;
   margin-right: 2rem !important;
-  margin-left: .5rem !important;
+  margin-left: 0.5rem !important;
   img {
     width: 10px;
     margin-right: 7px;
@@ -51,7 +51,7 @@
       cursor: pointer;
     }
   }
-  a{
+  a {
     color: black;
     text-transform: capitalize;
     font-family: $paragraph-semi-bold-font;
@@ -165,7 +165,7 @@
   }
   h3 {
     margin-bottom: 40px;
-    font-family:$header-font;
+    font-family: $header-font;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -198,30 +198,30 @@
     top: 2.5rem;
     opacity: 0.6;
   }
-.col-md-6:nth-child(odd){
-  .card:nth-child(1){
-    margin-left: -4rem;
+  .col-md-6:nth-child(odd) {
+    .card:nth-child(1) {
+      margin-left: -4rem;
+    }
   }
-}
-.col-md-6:nth-child(even){
-  .card:nth-child(1){
-    margin-left: 4rem;
+  .col-md-6:nth-child(even) {
+    .card:nth-child(1) {
+      margin-left: 4rem;
+    }
   }
-}
-// .card:nth-child(2){
-//   margin-right: auto;
-//   margin-left: 0;
-// }
-// .card:nth-child(odd){
-//   margin-right: auto;
-// }
+  // .card:nth-child(2){
+  //   margin-right: auto;
+  //   margin-left: 0;
+  // }
+  // .card:nth-child(odd){
+  //   margin-right: auto;
+  // }
   .card {
     text-align: center;
     width: 100%;
     height: 14rem;
-  
+
     // margin: 0 auto;
-   
+
     img {
       width: 65px;
       height: 65px;
@@ -243,7 +243,7 @@
     .card-body {
       padding: 0 1.5rem;
       font-family: $paragraph-font;
-      font-size:.8rem;
+      font-size: 0.8rem;
       line-height: 1.82;
       text-align: center;
       color: #061134;
@@ -275,7 +275,7 @@
 .business-footer-underline {
   margin: 0 auto;
   width: 71.5vw;
-    height: 8px;
-    background-color: #ff5050;
-    border-radius: 10px;
+  height: 8px;
+  background-color: #ff5050;
+  border-radius: 10px;
 }
