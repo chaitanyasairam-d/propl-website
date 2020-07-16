@@ -161,7 +161,6 @@ section:nth-child(3) {
   background-color: #ffffff;
   -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-  padding: 1.5rem 13.7rem 0 13.7rem;
   z-index: 9999;
 }
 
@@ -202,7 +201,6 @@ section:nth-child(3) {
 
 .navbar-brand img {
   width: 100px;
-  margin-bottom: 1rem;
 }
 
 .nav-item .nav-link:hover {
