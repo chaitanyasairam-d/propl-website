@@ -2174,6 +2174,9 @@ section:not(:nth-child(1)) .card {
   #predict-fututre #img-bg-circle {
     display: none;
   }
+  #predict-fututre .card {
+    margin-bottom: 1.5rem;
+  }
   /*Home css*/
   /*----Home Css ----*/
   .home-content-box-inner h1 {
