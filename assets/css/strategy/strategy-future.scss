@@ -134,7 +134,8 @@
         .btn-more {
           color: #ffffff !important;
         }
-        &:hover {
+        &:hover { 
+          animation: pulse 2s ease-in finite;
           cursor: pointer;
           background-color: $orange;
           color: hsl(0, 0%, 100%) !important;
@@ -152,12 +153,31 @@
               color: $orange !important;
             }
           }
+          
         }
       }
     }
   }
 }
+@keyframes pulse {
+  0% {
+        transform: scale(1.1);
+    // -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    // box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+    transform: scale(0.9);
 
+      // -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+      // box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+    transform: scale(1);
+
+      // -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      // box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
 .capability-width {
   .do-list {
     @include marginAuto(60%);
