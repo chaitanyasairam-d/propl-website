@@ -2190,6 +2190,9 @@ section:not(:nth-child(1)) .card {
   #predict-fututre #img-bg-circle {
     display: none;
   }
+  #predict-fututre .card {
+    margin-bottom: 1.5rem;
+  }
   /*Home css*/
   /*----Home Css ----*/
   .home-content-box-inner h1 {
@@ -2218,7 +2221,7 @@ section:not(:nth-child(1)) .card {
     line-height: 1.5;
   }
   .card-title {
-    font-size: 1rem !important;
+    font-size: 1.3rem !important;
   }
   .card.text p label {
     width: 70% !important;

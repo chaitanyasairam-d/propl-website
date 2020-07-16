@@ -21,6 +21,11 @@ $mobile: 320px;
   #predict-fututre #img-bg-circle {
     display: none;
   }
+  #predict-fututre {
+    .card {
+      margin-bottom: 1.5rem;
+    } 
+  }
   /*Home css*/
   /*----Home Css ----*/
 
@@ -51,7 +56,7 @@ $mobile: 320px;
     line-height: 1.5;
   }
   .card-title {
-    font-size: 1rem !important;
+    font-size: 1.3rem !important;
   }
   .card.text p label {
     width: 70% !important;
