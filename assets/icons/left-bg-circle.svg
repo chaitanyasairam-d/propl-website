@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="591" height="591" viewBox="0 0 591 591">
+    <defs>
+        <style>
+            .prefix__cls-7{fill:none}.prefix__cls-4{fill:#ededed}.prefix__cls-5{fill:#d7d7d7}.prefix__cls-6{stroke:none}
+        </style>
+    </defs>
+    <g id="prefix__Group_564" data-name="Group 564" transform="rotate(180 295.5 295.5)">
+        <g id="prefix__Ellipse_11" fill="none" stroke="#c4c4c4" data-name="Ellipse 11" opacity="0.8">
+            <circle cx="295.5" cy="295.5" r="295.5" class="prefix__cls-6"/>
+            <circle cx="295.5" cy="295.5" r="295" class="prefix__cls-7"/>
+        </g>
+        <g id="prefix__Ellipse_12" fill="none" stroke="#c4c4c4" stroke-width="4px" data-name="Ellipse 12" opacity="0.3" transform="translate(12 12)">
+            <circle cx="283.5" cy="283.5" r="283.5" class="prefix__cls-6"/>
+            <circle cx="283.5" cy="283.5" r="281.5" class="prefix__cls-7"/>
+        </g>
+        <g id="prefix__Ellipse_13" fill="none" stroke="#c4c4c4" data-name="Ellipse 13" opacity="0.68" transform="translate(99 99)">
+            <circle cx="196.5" cy="196.5" r="196.5" class="prefix__cls-6"/>
+            <circle cx="196.5" cy="196.5" r="196" class="prefix__cls-7"/>
+        </g>
+        <circle id="prefix__Ellipse_20" cx="10" cy="10" r="10" class="prefix__cls-4" data-name="Ellipse 20" transform="translate(471.684 74.789)"/>
+        <circle id="prefix__Ellipse_60" cx="10" cy="10" r="10" class="prefix__cls-4" data-name="Ellipse 60" transform="translate(5.684 309.789)"/>
+        <circle id="prefix__Ellipse_21" cx="7" cy="7" r="7" class="prefix__cls-5" data-name="Ellipse 21" transform="translate(393 454)"/>
+        <circle id="prefix__Ellipse_61" cx="7" cy="7" r="7" class="prefix__cls-5" data-name="Ellipse 61" transform="translate(150 151)"/>
+    </g>
+</svg>

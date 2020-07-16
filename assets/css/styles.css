@@ -79,16 +79,21 @@ section:nth-child(3) {
   margin-top: 100px;
 }
 
+#home-navbar nav {
+  position: absolute;
+}
+
 #home-navbar .nav-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #0b1120), color-stop(80%, rgba(11, 17, 33, 0)));
-  background-image: linear-gradient(to bottom, #0b1120 100%, rgba(11, 17, 33, 0) 80%);
-  padding: 1.5rem 10rem 0 10rem;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #0b1120), color-stop(80%, rgba(11, 17, 33, 0)));
+  background: linear-gradient(to bottom, #0b1120 70%, rgba(11, 17, 33, 0) 80%);
+  padding: 1.5rem 13.7rem 0 13.7rem;
   width: 100%;
 }
 
 #home-navbar .nav-bg .nav-link {
   color: #fff !important;
   font-size: 0.75rem;
+  text-transform: capitalize;
   font-family: ProximaNovaSemiBold;
   margin: 0 0.4rem;
 }
@@ -156,7 +161,7 @@ section:nth-child(3) {
   background-color: #ffffff;
   -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-  padding: 1.5rem 10rem 0 10rem;
+  padding: 1.5rem 13.7rem 0 13.7rem;
   z-index: 9999;
 }
 
@@ -169,7 +174,8 @@ section:nth-child(3) {
   font-family: ProximaNovaSemiBold;
   color: white;
   font-size: 0.7rem;
-  margin: 0 0.4rem;
+  margin: 0 .8rem;
+  text-transform: capitalize;
   color: #0b1120 !important;
 }
 
@@ -548,6 +554,16 @@ section:not(:nth-child(1)) .card {
 /*===testimonials*/
 /* common styling for all sections end */
 /* predict fututre styling start */
+#predict-fututre .container:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(100vh - 4px);
+}
+
 #predict-fututre .img-bg-circle {
   position: absolute;
   margin-top: 3rem;
@@ -1387,6 +1403,8 @@ section:not(:nth-child(1)) .card {
 }
 
 .do-list ul li .card:hover {
+  -webkit-animation: pulse 2s ease-in finite;
+          animation: pulse 2s ease-in finite;
   cursor: pointer;
   background-color: #ff5050;
   color: white !important;
@@ -1408,6 +1426,36 @@ section:not(:nth-child(1)) .card {
 .do-list ul li .card:hover .btn-more:hover {
   background: #ffffff !important;
   color: #ff5050 !important;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  70% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  70% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 .capability-width .do-list {
