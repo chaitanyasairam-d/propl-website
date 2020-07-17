@@ -2242,25 +2242,43 @@ section:not(:nth-child(1)) .card {
   br {
     display: none;
   }
+  .underline {
+    height: 4px;
+  }
   .p40 {
     padding: 0px;
   }
   #predict-fututre #img-bg-circle {
     display: none;
   }
+  #predict-fututre .container:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 3rem;
+    height: auto;
+  }
   #predict-fututre .card {
     margin-bottom: 1.5rem;
   }
   /*Home css*/
   /*----Home Css ----*/
+  #home-cover {
+    background-image: url(../images/hero_mobile.png);
+  }
   .home-content-box-inner h1 {
-    font-size: 1.65rem;
-    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    line-height: 1.3;
   }
   .home-content-box-inner h4 {
-    font-size: 1rem !important;
+    font-size: .85rem !important;
     margin: 0 auto;
     width: 80%;
+    font-family: ProximaNova;
   }
   .home_desc {
     width: 350px;
@@ -2293,20 +2311,27 @@ section:not(:nth-child(1)) .card {
     width: 100px;
   }
   /*testimonials*/
-  .item {
-    width: 100%;
-    padding: 30px 20px;
+  .testimonials {
+    border-radius: 35px 0 35px;
   }
-  .item .testimonial-container h4 {
+  .testimonial-item {
+    width: 100%;
+    padding: 15px 10px;
+  }
+  .testimonial-item .testimonial-container {
+    width: 90%;
+  }
+  .testimonial-item .testimonial-container h4 {
     height: auto;
+    min-height: 15rem;
     font-size: 0.7rem;
     line-height: 2;
   }
-  .item .testimonial-container .testimonial-footer h5 {
+  .testimonial-item .testimonial-container .testimonial-footer h5 {
     font-size: 0.7rem;
-    top: 5px;
+    top: 0;
   }
-  .item .testimonial-container .testimonial-footer h5 span {
+  .testimonial-item .testimonial-container .testimonial-footer h5 span {
     font-size: 0.8rem;
   }
   /*predict-future*/
@@ -2315,6 +2340,10 @@ section:not(:nth-child(1)) .card {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
+  }
+  .circle-img-container img {
+    height: auto;
+    margin-top: 2rem;
   }
   .btn-business {
     font-size: 12px;
@@ -2507,7 +2536,7 @@ section:not(:nth-child(1)) .card {
     position: absolute;
     width: 100%;
     height: 8%;
-    background-color: #0b1120;
+    background-color: transparent;
   }
   #mobile-navbar-fixed {
     display: block;

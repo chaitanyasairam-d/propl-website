@@ -21,11 +21,24 @@ $mobile: 320px;
   br {
     display: none;
   }
+  .underline {
+    height: 4px;
+  }
   .p40 {
     padding: 0px;
   }
   #predict-fututre #img-bg-circle {
     display: none;
+  }
+  #predict-fututre .container:nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 3rem;
+    height: auto;
   }
   #predict-fututre {
     .card {
@@ -34,15 +47,20 @@ $mobile: 320px;
   }
   /*Home css*/
   /*----Home Css ----*/
+  #home-cover {
+    background-image: url(../images/hero_mobile.png);
+  }
 
   .home-content-box-inner h1 {
-    font-size: 1.65rem;
-    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    line-height: 1.3;
   }
 
   .home-content-box-inner h4 {
-    font-size: 1rem !important;
+    font-size: .85rem !important;
     @include marginAuto(80%);
+    font-family: ProximaNova;
   }
 
   .home_desc {
@@ -77,12 +95,17 @@ $mobile: 320px;
     width: 100px;
   }
   /*testimonials*/
-  .item {
+  .testimonials {
+    border-radius: 35px 0 35px;
+  }
+  .testimonial-item {
     width: 100%;
-    padding: 30px 20px;
+    padding: 15px 10px;
     .testimonial-container {
+      width: 90%;
       h4 {
         height: auto;
+        min-height: 15rem;
         font-size: 0.7rem;
         line-height: 2;
       }
@@ -91,7 +114,7 @@ $mobile: 320px;
           font-size: 0.8rem;
         }
         font-size: 0.7rem;
-        top: 5px;
+        top: 0;
       }
     }
   }
@@ -100,6 +123,10 @@ $mobile: 320px;
   /*strategy-future*/
   .flex-container {
     flex: 1 1 100%;
+  }
+  .circle-img-container img {
+    height: auto;
+    margin-top: 2rem;
   }
   .btn-business {
     font-size: 12px;
@@ -296,7 +323,7 @@ $mobile: 320px;
       position: absolute;
       width: 100%;
       height: 8%;
-      background-color: #0b1120;
+      background-color: transparent;
     }
     // nav{
     //   background-color: #0a101d;
