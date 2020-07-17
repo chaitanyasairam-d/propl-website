@@ -12,7 +12,7 @@ $mobile: 320px;
 // }
 
 @media only screen and (min-width: 320px) and (max-width: 478px) {
-  br{
+  br {
     display: none;
   }
   .p40 {
@@ -24,7 +24,7 @@ $mobile: 320px;
   #predict-fututre {
     .card {
       margin-bottom: 1.5rem;
-    } 
+    }
   }
   /*Home css*/
   /*----Home Css ----*/
@@ -257,15 +257,13 @@ $mobile: 320px;
 // Experience page Styling
 
 @include mobile {
-
-  
-.business-footer-underline {
-  margin: 0 auto;
-  width: 80vw;
+  .business-footer-underline {
+    margin: 0 auto;
+    width: 80vw;
     height: 8px;
     background-color: #ff5050;
     border-radius: 10px;
-}
+  }
   section:nth-child(3) {
     margin: 0 !important;
     .card {
@@ -277,11 +275,10 @@ $mobile: 320px;
     display: none;
   }
   .navbar-brand {
-    margin-left: 1.5rem!important;
+    margin-left: 1.5rem !important;
     margin-top: 1rem;
-    img{
-      margin-left:1rem!important;
-
+    img {
+      margin-left: 1rem !important;
     }
   }
   .back-btn {
@@ -294,7 +291,6 @@ $mobile: 320px;
       width: 100%;
       height: 8%;
       background-color: #0b1120;
-    
     }
     // nav{
     //   background-color: #0a101d;
@@ -442,10 +438,10 @@ $mobile: 320px;
     // }
     .img-container {
       // display: none;
-      img{
+      img {
         margin-top: 1rem;
-        width: 100%!important;
-        height: 223px!important;
+        width: 100% !important;
+        height: 223px !important;
       }
     }
     .card {
@@ -464,7 +460,7 @@ $mobile: 320px;
     }
   }
   #desirable {
-    br{
+    br {
       display: block;
     }
     h3 {
@@ -493,7 +489,7 @@ $mobile: 320px;
     padding-bottom: 40px;
   }
   #what-to-expect {
-    .btn-business{
+    .btn-business {
       margin-top: 25px;
     }
     .section-starter {
