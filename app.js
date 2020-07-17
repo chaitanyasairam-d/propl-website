@@ -35,6 +35,7 @@ $(function () {
     autoplay: true,
     autoplayTimeout: 20000,
     autoplayHoverPause: true,
+    autoheight:true,
     responsive: {
       0: {
         items: 1,
@@ -142,39 +143,3 @@ $(function () {
     });
   }
 });
-
-// const element = document.querySelector('.my-element');
-// //element.classList.add('animate__animated', 'animate__bounceOutLeft');
-
-// element.addEventListener('animationend', () => {
-//   // do something
-//   console.log('yay!!');
-// });
-const animateCSS = (element, animation, prefix = 'animate__') =>
-  // We create a Promise and return it
-  new Promise((resolve, reject) => {
-    const animationName = `${prefix}${animation}`;
-    const node = document.querySelector(element);
-
-    node.classList.add(`${prefix}animated`, animationName);
-
-    // When the animation ends, we clean the classes and resolve the Promise
-    function handleAnimationEnd() {
-      node.classList.remove(`${prefix}animated`, animationName);
-      node.removeEventListener('animationend', handleAnimationEnd);
-
-      resolve('Animation ended');
-    }
-
-    node.addEventListener('animationend', handleAnimationEnd);
-  });
-
-// or
-// setTimeout(function(){ 
-//   animateCSS('.my-element', 'slideInDown');
-//   animateCSS('.my-element', 'bounce').then((message) => {
-//     // Do something after the animation
-//     animateCSS('.my-element','slideInUp')
-//     console.log(message)
-//   });
-//  }, 3000);
