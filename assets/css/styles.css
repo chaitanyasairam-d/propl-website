@@ -2424,6 +2424,8 @@ section:not(:nth-child(1)) .card {
   /*Abouts us */
   .propl-about-container {
     height: 8.5rem;
+    border-radius: 0px 35px 0px;
+    margin-top: 1rem;
   }
   .love-list li {
     -webkit-box-flex: 1;
