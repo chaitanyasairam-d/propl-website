@@ -231,6 +231,7 @@ $mobile: 320px;
     }
     p {
       font-size: 0.7rem;
+      margin-bottom: .5rem;
     }
   }
   .success-img {
@@ -244,8 +245,21 @@ $mobile: 320px;
   .contact-left {
     display: none;
   }
+  .mobile_message {
+    display: flex;
+    margin-bottom: 0;
+    color: #fff;
+    font-family: ProximaNova;
+  }
   .modal-content {
     padding: 10px;
+  }
+  .contact-submit {
+    padding: 15px;
+  }
+  .submit-right {
+    flex-direction: column;
+    height: 15rem;
   }
   .modal-content {
     border-radius: 35px 0px 35px;
