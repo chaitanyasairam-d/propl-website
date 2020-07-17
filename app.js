@@ -50,22 +50,18 @@ $(function () {
   if (href.includes('contact')) {
     $('#exampleModal').modal('show');
   }
-  // $('#myModal').on('shown.bs.modal', function () {
-  //   $('#myInput').trigger('focus');
-  // });
-
   $('#exampleModal').on('show.bs.modal', function (e) {
     $('body').addClass("example-open");
   }).on('hide.bs.modal', function (e) {
     $('body').removeClass("example-open");
     $('#m-content').removeClass('orange-background');
-      $('#info-submit').show();
-      $('#submit-btn').prop('disabled', false);
-      $('#success').hide();
-      $("#spinner").hide();
-      $('#user_name').val('')
-      $('#user_email').val('')
-      $('#user_message').val('')
+    $('#info-submit').show();
+    $('#submit-btn').prop('disabled', false);
+    $('#success').hide();
+    $("#spinner").hide();
+    $('#user_name').val('')
+    $('#user_email').val('')
+    $('#user_message').val('')
   })
   $('#success').hide();
   $("#error").hide();
@@ -73,17 +69,22 @@ $(function () {
   $('#submit-btn').click(function () {
     submitForm();
   });
-//   $(".do-list li").hover( function (e) {
-//     $(this).toggleClass('pulse');
-// });
+  //   $(".do-list li").hover( function (e) {
+  //     $(this).toggleClass('pulse');
+  // });
   function submitForm() {
     let name = $('#user_name').val();
     let email = $('#user_email').val();
     let message = $('#user_message').val();
     if (!name.length || !email.length || !message.length) {
+      $('#error').addClass('mt-0');
       $("#error").show();
+      $('#submit-btn').addClass('mt-1');
       return;
     }
+    $("#error").hide();
+    $('#error').removeClass('mt-0');
+    $('#submit-btn').removeClass('mt-1');
     $('#submit-btn').prop('disabled', true);
     $("#spinner").show();
     let data = {
@@ -113,12 +114,39 @@ $(function () {
     });
   }
 });
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//   anchor.addEventListener('click', function (e) {
-//       e.preventDefault();
 
-//       document.querySelector(this.getAttribute('href')).scrollIntoView({
-//           behavior: 'smooth'
-//       });
-//   });
+// const element = document.querySelector('.my-element');
+// //element.classList.add('animate__animated', 'animate__bounceOutLeft');
+
+// element.addEventListener('animationend', () => {
+//   // do something
+//   console.log('yay!!');
 // });
+const animateCSS = (element, animation, prefix = 'animate__') =>
+  // We create a Promise and return it
+  new Promise((resolve, reject) => {
+    const animationName = `${prefix}${animation}`;
+    const node = document.querySelector(element);
+
+    node.classList.add(`${prefix}animated`, animationName);
+
+    // When the animation ends, we clean the classes and resolve the Promise
+    function handleAnimationEnd() {
+      node.classList.remove(`${prefix}animated`, animationName);
+      node.removeEventListener('animationend', handleAnimationEnd);
+
+      resolve('Animation ended');
+    }
+
+    node.addEventListener('animationend', handleAnimationEnd);
+  });
+
+// or
+// setTimeout(function(){ 
+//   animateCSS('.my-element', 'slideInDown');
+//   animateCSS('.my-element', 'bounce').then((message) => {
+//     // Do something after the animation
+//     animateCSS('.my-element','slideInUp')
+//     console.log(message)
+//   });
+//  }, 3000);
