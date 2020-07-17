@@ -200,12 +200,12 @@
   }
   .col-md-6:nth-child(odd) {
     .card:nth-child(1) {
-      margin-left: -4rem;
+      margin-left: -3rem;
     }
   }
   .col-md-6:nth-child(even) {
     .card:nth-child(1) {
-      margin-left: 4rem;
+      margin-left: 3rem;
     }
   }
   // .card:nth-child(2){
@@ -234,7 +234,6 @@
     .card-title {
       font-family: ProximaNovaBold;
       font-size: 1rem;
-      font-weight: bold;
       line-height: 1;
       text-align: center;
       color: #061134;
@@ -273,9 +272,11 @@
 }
 
 .business-footer-underline {
+  position: relative;
   margin: 0 auto;
-  width: 71.5vw;
+  width: 100%;
   height: 8px;
   background-color: #ff5050;
   border-radius: 10px;
+  left: 1.5%;
 }

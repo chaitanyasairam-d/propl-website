@@ -1,4 +1,27 @@
 $(function () {
+
+  $(function () {
+    $(window).scroll(function () {
+      var $scroll = $(this).scrollTop()
+      $nav = $('#home-navbar .navbar');
+      // set distance user needs to scroll before we start fadeIn
+      if ($scroll > 110) { //For dynamic effect use $nav.height() instead of '100'
+      $nav.removeClass('nav-bg');
+        $nav.addClass('navbar-bg-onscroll').slideDown('slow');
+        $('#home-navbar .navbar-brand img').attr('src','./assets/icons/Propl - dark -  logo.svg')
+        $('#home-navbar .dropdown-btn span').removeClass('home-dropdown-icon')
+        $('#home-navbar .dropdown-btn span').addClass('dropdown-icon')
+      } else {
+        $nav.addClass('nav-bg');
+        $nav.removeClass('navbar-bg-onscroll').slideDown('slow');
+        $('#home-navbar .dropdown-btn span').removeClass('dropdown-icon')
+        $('#home-navbar .dropdown-btn span').addClass('home-dropdown-icon')
+        $('#home-navbar .navbar-brand img').attr('src','./assets/icons/Propl - logo.svg')
+      }
+    });
+  });
+
+
   $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
