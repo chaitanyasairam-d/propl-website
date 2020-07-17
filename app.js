@@ -1,5 +1,11 @@
 $(function () {
 
+        $('.close-btn').on('click',()=>{
+          $('#overlay').hide(200);
+        })
+        $('#overlay-button').on('click',()=>{
+          $('#overlay').show(200);
+        })
     $(window).scroll(function () {
       var $scroll = $(this).scrollTop()
       $nav = $('#home-navbar .navbar');

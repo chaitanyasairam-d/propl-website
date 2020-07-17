@@ -271,10 +271,10 @@ $mobile: 320px;
     display: none;
   }
   .navbar-brand {
-    margin-left: 1.5rem !important;
     img {
-        margin-left: 1rem !important;
-        width: 100px;
+      margin-top: 1.2rem;
+        margin-left: 1.5rem !important;
+        width: 90px;
     }
   }
   .back-btn {
@@ -306,85 +306,48 @@ $mobile: 320px;
     margin: 0 !important;
   }
 
-  #overlay-button {
-    position: absolute;
-    top: 15px;
-    right:10px;
-    // padding: 26px 11px;
+ .mobile-menu {
+   position: absolute;
+   top: 1.2rem;
+   right:2rem;
     z-index: 5;
     cursor: pointer;
-    // user-select: none;
-    // span {
-      // height: 4px;
-      // width: 25px;
-      // border-radius: 2px;
-      // background-color: white;
-      // position: relative;
-      // display: block;
-      // transition: all 0.2s ease-in-out;
-      // &:before {
-      //   top: -10px;
-      //   visibility: visible;
-      // }
-      // &:after {
-      //   top: 10px;
-      // }
-      // &:before,
-      // &:after {
-      //   height: 4px;
-      //   width: 25px;
-      //   border-radius: 2px;
-      //   background-color: white;
-      //   position: absolute;
-      //   content: '';
-      //   transition: all 0.2s ease-in-out;
-      // }
+
+    // &:hover,&:focus,&:focus-within,&:active{
+    //   #overlay{
+    //     display: block;
+    //     z-index: 999;
+    //   }
     // }
-  }
 
-  input[type='checkbox'] {
-    display: none;
-  }
-
-  input[type='checkbox']:checked ~ #overlay {
-    visibility: visible;
-  }
-
-  input[type='checkbox']:checked ~ #overlay-button {
-    &:hover span,
-    span {
-      background: transparent;
-    }
-    span {
-      &:before {
-        transform: rotate(45deg) translate(7px, 7px);
-        opacity: 1;
-      }
-      &:after {
-        transform: rotate(-45deg) translate(7px, -7px);
-      }
+    .close-btn{
+      float: right;
+      position: absolute;
+      top: 1.2rem;
+   right:2rem;
+      z-index: 999999999;
     }
   }
-
-  #overlay {
-    height: 100vh;
-    width: 100vw;
-    background: #0b1120fa;
-    z-index: 2;
-    top: 0;
-    visibility: hidden;
-    position: fixed;
-    transition: all 0.3s;
-    &.active {
-      visibility: visible;
-    }
-    ul {
-      overflow: auto;
+  .overlay-content{
+    margin: 2rem 0.5rem;
+    overflow: hidden;
+  }
+#overlay {
+  height: 100vh;
+  width: 100vw;
+  background: #0b1120;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  ul {
+    overflow: auto;
       position: relative;
       li {
         text-align: left;
-        padding: 1rem;
+        padding: .7rem;
         list-style-type: none;
+        font-family: ProximaNovaSemiBold;
 
         .custom-dropdown-menu {
           width: 100%;
@@ -394,6 +357,8 @@ $mobile: 320px;
           li {
             width: 100%;
             list-style-type: none;
+          font-family: ProximaNovaSemiBold;
+
             margin: 0.2px auto !important;
             background-color: #0b1120 !important;
             border: 0.5px solid #0b1120 !important;
@@ -406,6 +371,7 @@ $mobile: 320px;
           color: white;
           text-decoration: none;
           text-align: left !important;
+          font-family: ProximaNovaSemiBold;
           font-size: 0.8em;
           // &:hover{
           //   background-color: rgba(0, 0, 0, 0.842);

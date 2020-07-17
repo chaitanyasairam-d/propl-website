@@ -2490,12 +2490,10 @@ section:not(:nth-child(1)) .card {
   #navbar {
     display: none;
   }
-  .navbar-brand {
-    margin-left: 1.5rem !important;
-  }
   .navbar-brand img {
-    margin-left: 1rem !important;
-    width: 100px;
+    margin-top: 1.2rem;
+    margin-left: 1.5rem !important;
+    width: 90px;
   }
   .back-btn {
     margin-bottom: 0 !important;
@@ -2522,29 +2520,32 @@ section:not(:nth-child(1)) .card {
   #home {
     margin: 0 !important;
   }
-  #overlay-button {
+  .mobile-menu {
     position: absolute;
-    top: 15px;
-    right: 10px;
+    top: 1.2rem;
+    right: 2rem;
     z-index: 5;
     cursor: pointer;
   }
-  #overlay:focus #overlay {
-    visibility: visible;
+  .mobile-menu .close-btn {
+    float: right;
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    z-index: 999999999;
+  }
+  .overlay-content {
+    margin: 2rem 0.5rem;
+    overflow: hidden;
   }
   #overlay {
     height: 100vh;
     width: 100vw;
-    background: #0b1120fa;
-    z-index: 2;
-    top: 0;
-    visibility: hidden;
+    background: #0b1120;
+    display: none;
     position: fixed;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-  }
-  #overlay.active {
-    visibility: visible;
+    top: 0;
+    left: 0;
   }
   #overlay ul {
     overflow: auto;
@@ -2552,8 +2553,9 @@ section:not(:nth-child(1)) .card {
   }
   #overlay ul li {
     text-align: left;
-    padding: 1rem;
+    padding: .7rem;
     list-style-type: none;
+    font-family: ProximaNovaSemiBold;
   }
   #overlay ul li .custom-dropdown-menu {
     width: 100%;
@@ -2565,6 +2567,7 @@ section:not(:nth-child(1)) .card {
   #overlay ul li .custom-dropdown-menu li {
     width: 100%;
     list-style-type: none;
+    font-family: ProximaNovaSemiBold;
     margin: 0.2px auto !important;
     background-color: #0b1120 !important;
     border: 0.5px solid #0b1120 !important;
@@ -2575,6 +2578,7 @@ section:not(:nth-child(1)) .card {
     color: white;
     text-decoration: none;
     text-align: left !important;
+    font-family: ProximaNovaSemiBold;
     font-size: 0.8em;
   }
   #overlay ul li a:hover,
