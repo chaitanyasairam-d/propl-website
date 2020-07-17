@@ -1276,6 +1276,11 @@ section:not(:nth-child(1)) .card {
   word-wrap: break-word;
 }
 
+.capability-container .circle-img-container img {
+  width: 21rem;
+  height: auto;
+}
+
 .innovation-transformation-divider-bar::after {
   height: 18.5rem !important;
 }
