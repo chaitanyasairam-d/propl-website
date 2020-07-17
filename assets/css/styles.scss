@@ -49,7 +49,18 @@ a:active {
 .cursor-pointer {
   cursor: pointer;
 }
+.get-started-arrow{
+  animation: get-started-animation 2.2s ease-in-out infinite;
+}
+@keyframes get-started-animation{
+  50%{
+    transform: translateY(20px);
+  }
 
+  100%{
+    transform: translateY(0);
+  }
+}
 //font variables
 $header-font: MinionPro;
 $paragraph-font: ProximaNova;
@@ -90,7 +101,7 @@ section:nth-child(3) {
 #home-navbar {
   .nav-bg {
     font-size: 0.9rem;
-    background: linear-gradient(to bottom, #0b1120 70%, rgba(11, 17, 33, 0) 80%);
+    background: linear -gradient(to bottom, #0b1120 70%, rgba(11, 17, 33, 0) 80%);
     height: 5rem;
     z-index: 9999;
 
@@ -110,7 +121,10 @@ section:nth-child(3) {
       li{
         position: relative;
         &:hover {
-          color: $orange !important;
+          color: $orange!important;
+          .nav-link{
+            color: $orange!important;
+          }
           .dropdown-btn {
             color: $orange !important;
           }
@@ -187,6 +201,9 @@ section:nth-child(3) {
       position: relative;
       &:hover {
         color: $orange !important;
+        .nav-link{
+          color: $orange!important;
+        }
         .dropdown-btn {
           color: $orange !important;
         }
