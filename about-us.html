@@ -27,7 +27,7 @@
         <div id="overlay">
           <ul>
             <li>
-              <a class="nav-link" href="./about-us.html">About us</a>
+              <a class="nav-link" href="#">About us</a>
             </li>
             <li id="strategyBtn">
               <a class="nav-link" href="#" id="navbarDropdown" role="button">
@@ -113,27 +113,25 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link cursor-pointer" data-toggle="modal" data-target="#exampleModal"
-                >Contact us</a
-              >
+              <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Contact us</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <section id="navbar">
-      <nav class="navbar navbar-expand-lg nav-bg fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-bg-onscroll fixed-top">
         <div class="container">
          <div class="row w-100  align-items-baseline">
           <div class="col-md-3 d-flex justify-content-center">
             <a class="navbar-brand" href="./index.html">
-              <img src="./assets/icons/Propl - logo.svg" width="100" alt="" />
+              <img src="./assets/icons/Propl - dark -  logo.svg" width="100" alt="" />
             </a>
           </div>
           <div class="col-md-9 d-flex align-items-end">
             <ul class="navbar-nav ml-auto">
               <li>
-                <a class="nav-link" href="./about-us.html">About us</a>
+                <a class="nav-link dropdown-toggle nav-underline" href="./about-us.html">About us</a>
               </li>
               <li>
                 <a
@@ -143,7 +141,7 @@
                   role="button"
                 >
                   Strategy
-                  <span class="home-dropdown-icon">
+                  <span class="dropdown-icon">
                     <img src="" class="img-fluid p-2" alt="" />
                   </span>
                 </a>
@@ -171,7 +169,7 @@
                   href="./experience/experience-is-everything.html"
                   id="navbarDropdown"
                 >
-                  Experience<span class="home-dropdown-icon">
+                  Experience<span class="dropdown-icon">
                     <img src="" class="img-fluid p-2" alt="" />
                   </span>
                 </a>
@@ -197,7 +195,7 @@
                 <a
                   class="nav-link dropdown-btn"
                   href="./capability/capability-building.html"
-                  id="navbarDropdown">Capability Building<span class="home-dropdown-icon">
+                  id="navbarDropdown">Capability Building<span class="dropdown-icon">
                     <img src="" class="img-fluid p-2" alt="" />
                   </span>
                 </a>
@@ -690,30 +688,6 @@
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"
     ></script>
     <script src="assets/js/owl.carousel.min.js"></script>
-    <script>
-      $('#experienceBtn ul').hide();
-      $('#capabilityBtn ul').hide();
-      $('#strategyBtn ul').hide();
-
-      $('#strategyBtn').click(function () {
-        $('#strategyBtn ul').toggle(500);
-        $('#experienceBtn ul').hide();
-        $('#capabilityBtn ul').hide();
-        console.log('startegy clicked');
-      });
-      $('#experienceBtn').click(function () {
-        $('#strategyBtn ul').hide();
-        $('#capabilityBtn ul').hide();
-        $('#experienceBtn ul').toggle(500);
-        console.log('experiencee clicked');
-      });
-      $('#capabilityBtn').click(function () {
-        $('#strategyBtn ul').hide();
-        $('#experienceBtn ul').hide();
-        $('#capabilityBtn ul').toggle(500);
-        console.log('capability clicked');
-      });
-    </script>
     <script src="app.js"></script>
   </body>
 </html>
