@@ -1432,7 +1432,7 @@ section:not(:nth-child(1)) .card {
 
 .do-list ul li .card .card-title {
   font-family: MinionPro;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.25;
   text-align: center;
 }
