@@ -332,7 +332,21 @@ $mobile: 320px;
   #home {
     margin: 0 !important;
   }
-
+  .get-started-arrow{
+    animation: get-started-animation 2.2s ease-in-out infinite;
+  }
+  @keyframes get-started-animation{
+    0%{
+      transform: translateY(-50px);
+    }
+    50%{
+      transform: translateY(-30px);
+    }
+  
+    100%{
+      transform: translateY(-50px);
+    }
+  }
  .mobile-menu {
    position: absolute;
    top: 1.2rem;

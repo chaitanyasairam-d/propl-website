@@ -2549,6 +2549,38 @@ section:not(:nth-child(1)) .card {
   #home {
     margin: 0 !important;
   }
+  .get-started-arrow {
+    -webkit-animation: get-started-animation 2.2s ease-in-out infinite;
+            animation: get-started-animation 2.2s ease-in-out infinite;
+  }
+  @-webkit-keyframes get-started-animation {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+    50% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+    100% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+  }
+  @keyframes get-started-animation {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+    50% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+    100% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+  }
   .mobile-menu {
     position: absolute;
     top: 1.2rem;
