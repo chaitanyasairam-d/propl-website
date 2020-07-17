@@ -19,104 +19,115 @@
   <body>
     <header id="mobile-navbar-fixed">
       <nav>
-        <a class="navbar-brand" href="../index.html">
-          <img src="../assets/icons/Propl - logo.svg" width="100" alt="" />
-        </a>
-        <input type="checkbox" id="overlay-input" />
-        <label for="overlay-input" id="overlay-button"><span></span></label>
-        <div id="overlay">
-          <ul>
-            <li>
-              <a class="nav-link" href="../about-us.html">About us</a>
-            </li>
-            <li id="strategyBtn">
-              <a class="nav-link" href="#" id="navbarDropdown" role="button">
-                Strategy
-                <span class="home-dropdown-icon">
-                  <img src="" class="img-fluid p-2" alt="" />
-                </span>
-              </a>
-              <ul class="custom-dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="#">Shape the future</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./growth-strategy-sprint.html"
-                    >Growth Strategy Sprint</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./growth-experiments.html">Growth Experiments</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./entrepreneur-in-residence.html"
-                    >Enterpreneur in Residence</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li id="experienceBtn">
-              <a class="nav-link" href="#" id="navbarDropdown">
-                Experience<span class="home-dropdown-icon">
-                  <img src="" class="img-fluid p-2" alt="" />
-                </span>
-              </a>
-              <ul class="custom-dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="../experience/experience-is-everything.html"
-                    >Experience is Everything</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../experience/business-design-spirit.html"
-                    >Business Design Spirit</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../experience/human-centric-solution.html"
-                    >Human Centered Solution</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../experience/solution-delivery.html"
-                    >Solution Delivery</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li id="capabilityBtn">
-              <a class="nav-link" href="#" id="navbarDropdown">
-                Capability Building<span class="home-dropdown-icon">
-                  <img src="" class="img-fluid p-2" alt="" />
-                </span>
-              </a>
-              <ul class="custom-dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="../capability/capability-building.html"
-                    >Capability Building</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../capability/innovation-transformation.html"
-                    >Innovation Transformation</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../capability/experiental-learning.html"
-                    >Experiental Learning</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link cursor-pointer" data-toggle="modal" data-target="#exampleModal"
-                >Contact us</a
-              >
-            </li>
-          </ul>
+        <div class="d-flex align-items-baseline justify-space-between">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/icons/Propl - logo.svg" width="100" alt="" />
+          </a>
+          <div class="mobile-menu">
+            <div id="overlay-button">
+              <img src="../assets/icons/hamburger.svg" alt="">
+            </div>
+              <div id="overlay">
+                <div class="close-btn">
+                  <img src="../assets/icons/cross.svg" alt="">
+                </div>
+                <ul class="overlay-content">
+                  <li>
+                    <a class="nav-link" href="../about-us.html">About us</a>
+                  </li>
+                  <li id="strategyBtn">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button">
+                      Strategy
+                      <span class="home-dropdown-icon">
+                        <img src="" class="img-fluid p-2" alt="" />
+                      </span>
+                    </a>
+                    <ul class="custom-dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="#">Shape the future</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="./growth-strategy-sprint.html"
+                          >Growth Strategy Sprint</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="./growth-experiments.html">Growth Experiments</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="./entrepreneur-in-residence.html"
+                          >Enterpreneur in Residence</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="experienceBtn">
+                    <a class="nav-link" href="#" id="navbarDropdown">
+                      Experience<span class="home-dropdown-icon">
+                        <img src="" class="img-fluid p-2" alt="" />
+                      </span>
+                    </a>
+                    <ul class="custom-dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="../experience/experience-is-everything.html"
+                          >Experience is Everything</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../experience/business-design-spirit.html"
+                          >Business Design Spirit</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../experience/human-centric-solution.html"
+                          >Human Centered Solution</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../experience/solution-delivery.html"
+                          >Solution Delivery</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li id="capabilityBtn">
+                    <a class="nav-link" href="#" id="navbarDropdown">
+                      Capability Building<span class="home-dropdown-icon">
+                        <img src="" class="img-fluid p-2" alt="" />
+                      </span>
+                    </a>
+                    <ul class="custom-dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li>
+                        <a class="dropdown-item" href="../capability/capability-building.html"
+                          >Capability Building</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../capability/innovation-transformation.html"
+                          >Innovation Transformation</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="../capability/experiental-learning.html"
+                          >Experiental Learning</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link cursor-pointer" data-toggle="modal" data-target="#exampleModal"
+                      >Contact us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+          </div>
+          </div>
         </div>
+        
       </nav>
     </header>
+
     <section id="navbar">
       <nav class="navbar navbar-expand-lg navbar-bg-onscroll fixed-top">
         <div class="container">

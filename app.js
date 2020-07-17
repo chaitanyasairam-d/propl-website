@@ -23,6 +23,16 @@ $(function () {
         $('#home-navbar .dropdown-btn span').addClass('home-dropdown-icon')
         $('#home-navbar .navbar-brand img').attr('src','./assets/icons/Propl - logo.svg')
       }
+      
+      $mobileNav = $('header:nth-child(1)');
+      $homeMobileNav = $('.home-mobile-nav')
+      // set distance user needs to scroll before we start fadeIn
+      if ($scroll > 80) { //For dynamic effect use $nav.height() instead of '100'
+          $homeMobileNav.attr('id','mobile-navbar-fixed');
+        } else {
+          $homeMobileNav.attr('id','mobile-navbar');
+          
+      }
     });
 
     

@@ -305,6 +305,7 @@ $mobile: 320px;
     }
   }
   .back-btn {
+    margin-top: 3.5rem!important;
     margin-bottom: 0 !important;
   }
   #mobile-navbar {
@@ -324,11 +325,18 @@ $mobile: 320px;
     display: block;
     background-color: #0b1120;
     nav {
-      position: sticky;
+      position: fixed;
       top: 0;
+      left: 0;
+      right: 0;
+      padding-bottom: .5rem;
+    background-color: #0b1120;
+
       z-index: 999999999;
     }
+    margin-bottom: 1rem;
   }
+
   #home {
     margin: 0 !important;
   }

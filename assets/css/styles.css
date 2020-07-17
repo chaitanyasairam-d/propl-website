@@ -2525,6 +2525,7 @@ section:not(:nth-child(1)) .card {
     width: 90px;
   }
   .back-btn {
+    margin-top: 3.5rem !important;
     margin-bottom: 0 !important;
   }
   #mobile-navbar {
@@ -2539,11 +2540,15 @@ section:not(:nth-child(1)) .card {
   #mobile-navbar-fixed {
     display: block;
     background-color: #0b1120;
+    margin-bottom: 1rem;
   }
   #mobile-navbar-fixed nav {
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: .5rem;
+    background-color: #0b1120;
     z-index: 999999999;
   }
   #home {
