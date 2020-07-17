@@ -189,6 +189,8 @@ $mobile: 320px;
   /*Abouts us */
   .propl-about-container {
     height: 8.5rem;
+    border-radius: 0px 35px 0px;
+    margin-top: 1rem;
   }
   .love-list {
     li {
@@ -231,6 +233,7 @@ $mobile: 320px;
     }
     p {
       font-size: 0.7rem;
+      margin-bottom: .5rem;
     }
   }
   .success-img {
@@ -244,9 +247,25 @@ $mobile: 320px;
   .contact-left {
     display: none;
   }
+  .mobile_message {
+    display: flex;
+    margin-bottom: 0;
+    color: #fff;
+    font-family: ProximaNova;
+  }
   .modal-content {
     padding: 10px;
   }
+  .contact-submit {
+    padding: 15px;
+  }
+  .submit-right {
+    flex-direction: column;
+    height: 15rem;
+  }
+  .modal-content {
+    border-radius: 35px 0px 35px;
+}
 }
 @media only screen and (min-width: 500px) and (max-width: 800px) {
   #predict-fututre #img-bg-circle {
