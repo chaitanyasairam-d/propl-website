@@ -2587,7 +2587,7 @@ section:not(:nth-child(1)) .card {
   .mobile-menu {
     position: absolute;
     top: 1.2rem;
-    right: 2rem;
+    right: 1.5rem;
     z-index: 5;
     cursor: pointer;
   }
@@ -2595,7 +2595,7 @@ section:not(:nth-child(1)) .card {
     float: right;
     position: absolute;
     top: 1.2rem;
-    right: 2rem;
+    right: 1.5rem;
     z-index: 999999999;
   }
   .overlay-content {
@@ -2772,6 +2772,10 @@ section:not(:nth-child(1)) .card {
   #footer {
     height: 50rem !important;
   }
+  #footer .footer {
+    margin: 0 !important;
+    width: 100%;
+  }
   #footer .footer-card {
     text-align: left;
     margin: 0 !important;
@@ -2795,7 +2799,7 @@ section:not(:nth-child(1)) .card {
     display: block !important;
   }
   #footer #footer-logo-container li:nth-child(3) a {
-    margin: 1rem 0;
+    margin: 2rem 0;
   }
   #footer #footer-logo-container .footer-bg-circle {
     display: none;

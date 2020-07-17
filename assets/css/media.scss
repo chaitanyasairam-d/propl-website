@@ -353,7 +353,7 @@ $mobile: 320px;
  .mobile-menu {
    position: absolute;
    top: 1.2rem;
-   right:2rem;
+   right:1.5rem;
     z-index: 5;
     cursor: pointer;
 
@@ -368,7 +368,7 @@ $mobile: 320px;
       float: right;
       position: absolute;
       top: 1.2rem;
-   right:2rem;
+   right:1.5rem;
       z-index: 999999999;
     }
   }
@@ -538,7 +538,12 @@ $mobile: 320px;
   }
   #footer {
     height: 50rem !important;
-    .footer-card {
+.footer{
+  margin: 0!important;
+  width: 100%;
+
+}  
+  .footer-card {
       text-align: left;
       margin: 0 !important;
       ul {
@@ -551,6 +556,7 @@ $mobile: 320px;
         }
       }
     }
+   
     .all-rights {
       display: block;
     }
@@ -558,11 +564,11 @@ $mobile: 320px;
       .footer-img {
         width: 100px;
       }
-
       li:nth-child(3) {
+     
         display: block !important;
         a {
-          margin: 1rem 0;
+          margin: 2rem 0;
         }
       }
       .footer-bg-circle {
