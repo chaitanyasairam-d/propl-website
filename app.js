@@ -1,11 +1,10 @@
 $(function () {
 
-  $(function () {
     $(window).scroll(function () {
       var $scroll = $(this).scrollTop()
       $nav = $('#home-navbar .navbar');
       // set distance user needs to scroll before we start fadeIn
-      if ($scroll > 110) { //For dynamic effect use $nav.height() instead of '100'
+      if ($scroll > 90) { //For dynamic effect use $nav.height() instead of '100'
       $nav.removeClass('nav-bg');
         $nav.addClass('navbar-bg-onscroll').slideDown('slow');
         $('#home-navbar .navbar-brand img').attr('src','./assets/icons/Propl - dark -  logo.svg')
@@ -19,8 +18,8 @@ $(function () {
         $('#home-navbar .navbar-brand img').attr('src','./assets/icons/Propl - logo.svg')
       }
     });
-  });
 
+    
 
   $('.owl-carousel').owlCarousel({
     loop: true,

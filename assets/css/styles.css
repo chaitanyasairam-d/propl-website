@@ -54,6 +54,33 @@ a:active {
   cursor: pointer;
 }
 
+.get-started-arrow {
+  -webkit-animation: get-started-animation 2.2s ease-in-out infinite;
+          animation: get-started-animation 2.2s ease-in-out infinite;
+}
+
+@-webkit-keyframes get-started-animation {
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes get-started-animation {
+  50% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 @font-face {
   font-family: MinionPro;
   src: url("../Minion Web Pro Bold.ttf");
@@ -81,8 +108,7 @@ section:nth-child(3) {
 
 #home-navbar .nav-bg {
   font-size: 0.9rem;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #0b1120), color-stop(80%, rgba(11, 17, 33, 0)));
-  background: linear-gradient(to bottom, #0b1120 70%, rgba(11, 17, 33, 0) 80%);
+  background: linear -gradient(to bottom, #0b1120 70%, rgba(11, 17, 33, 0) 80%);
   height: 5rem;
   z-index: 9999;
 }
@@ -109,6 +135,10 @@ section:nth-child(3) {
 }
 
 #home-navbar .nav-bg ul li:hover {
+  color: #ff5050 !important;
+}
+
+#home-navbar .nav-bg ul li:hover .nav-link {
   color: #ff5050 !important;
 }
 
@@ -192,6 +222,10 @@ section:nth-child(3) {
 }
 
 .navbar-bg-onscroll ul li:hover {
+  color: #ff5050 !important;
+}
+
+.navbar-bg-onscroll ul li:hover .nav-link {
   color: #ff5050 !important;
 }
 
