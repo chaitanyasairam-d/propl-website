@@ -6,3 +6,5 @@ assets/css/strategy-future.css.map
 assets/css/about.css.map
 .prettierrc
 assets/css/media.css.map
+firebase.json
+.firebaserc

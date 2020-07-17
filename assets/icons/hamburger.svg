@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Group_576" data-name="Group 576" transform="translate(-317 -29)">
+    <rect id="Rectangle_107" data-name="Rectangle 107" width="30" height="30" transform="translate(317 29)" fill="none"/>
+    <g id="Group_575" data-name="Group 575" transform="translate(223.273 -117.76)">
+      <g id="Group_570" data-name="Group 570" transform="translate(99.726 160.748)">
+        <g id="Group_569" data-name="Group 569" transform="translate(0 0)">
+          <path id="Path_503" data-name="Path 503" d="M117.2,240.579H100.633a.907.907,0,1,0,0,1.814H117.2a.907.907,0,0,0,0-1.814Z" transform="translate(-99.726 -240.579)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_572" data-name="Group 572" transform="translate(100.935 155.76)">
+        <g id="Group_571" data-name="Group 571" transform="translate(0 0)">
+          <path id="Path_504" data-name="Path 504" d="M135.343,155.76H121.195a.907.907,0,0,0,0,1.814h14.148a.907.907,0,1,0,0-1.814Z" transform="translate(-120.288 -155.76)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_574" data-name="Group 574" transform="translate(100.935 165.736)">
+        <g id="Group_573" data-name="Group 573" transform="translate(0 0)">
+          <path id="Path_505" data-name="Path 505" d="M135.343,325.4H121.195a.907.907,0,0,0,0,1.814h14.148a.907.907,0,1,0,0-1.814Z" transform="translate(-120.288 -325.397)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

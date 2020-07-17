@@ -5,17 +5,7 @@ $mobile: 320px;
     @content;
   }
 }
-// @media only screen and (min-width:1000px) and (min-device-height:745px){
-//  #home{
-//   margin-top: -2rem!important;
-//  }
-// }
-@media (print), (prefers-reduced-motion: reduce) {
-  .animated {
-    // animation: unset !important;
-    // transition: none !important;
-  }
-}
+
 
 @media only screen and (min-width: 320px) and (max-width: 478px) {
   br {
@@ -282,9 +272,9 @@ $mobile: 320px;
   }
   .navbar-brand {
     margin-left: 1.5rem !important;
-    margin-top: 1rem;
     img {
-      margin-left: 1rem !important;
+        margin-left: 1rem !important;
+        width: 100px;
     }
   }
   .back-btn {
@@ -292,6 +282,7 @@ $mobile: 320px;
   }
   #mobile-navbar {
     display: block;
+    
     nav {
       position: absolute;
       width: 100%;
@@ -318,37 +309,37 @@ $mobile: 320px;
   #overlay-button {
     position: absolute;
     top: 15px;
-    right: 0;
-    padding: 26px 11px;
+    right:10px;
+    // padding: 26px 11px;
     z-index: 5;
     cursor: pointer;
-    user-select: none;
-    span {
-      height: 4px;
-      width: 25px;
-      border-radius: 2px;
-      background-color: white;
-      position: relative;
-      display: block;
-      transition: all 0.2s ease-in-out;
-      &:before {
-        top: -10px;
-        visibility: visible;
-      }
-      &:after {
-        top: 10px;
-      }
-      &:before,
-      &:after {
-        height: 4px;
-        width: 25px;
-        border-radius: 2px;
-        background-color: white;
-        position: absolute;
-        content: '';
-        transition: all 0.2s ease-in-out;
-      }
-    }
+    // user-select: none;
+    // span {
+      // height: 4px;
+      // width: 25px;
+      // border-radius: 2px;
+      // background-color: white;
+      // position: relative;
+      // display: block;
+      // transition: all 0.2s ease-in-out;
+      // &:before {
+      //   top: -10px;
+      //   visibility: visible;
+      // }
+      // &:after {
+      //   top: 10px;
+      // }
+      // &:before,
+      // &:after {
+      //   height: 4px;
+      //   width: 25px;
+      //   border-radius: 2px;
+      //   background-color: white;
+      //   position: absolute;
+      //   content: '';
+      //   transition: all 0.2s ease-in-out;
+      // }
+    // }
   }
 
   input[type='checkbox'] {

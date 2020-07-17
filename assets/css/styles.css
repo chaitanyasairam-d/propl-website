@@ -2487,10 +2487,10 @@ section:not(:nth-child(1)) .card {
   }
   .navbar-brand {
     margin-left: 1.5rem !important;
-    margin-top: 1rem;
   }
   .navbar-brand img {
     margin-left: 1rem !important;
+    width: 100px;
   }
   .back-btn {
     margin-bottom: 0 !important;
@@ -2520,60 +2520,12 @@ section:not(:nth-child(1)) .card {
   #overlay-button {
     position: absolute;
     top: 15px;
-    right: 0;
-    padding: 26px 11px;
+    right: 10px;
     z-index: 5;
     cursor: pointer;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
   }
-  #overlay-button span {
-    height: 4px;
-    width: 25px;
-    border-radius: 2px;
-    background-color: white;
-    position: relative;
-    display: block;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  #overlay-button span:before {
-    top: -10px;
+  #overlay:focus #overlay {
     visibility: visible;
-  }
-  #overlay-button span:after {
-    top: 10px;
-  }
-  #overlay-button span:before, #overlay-button span:after {
-    height: 4px;
-    width: 25px;
-    border-radius: 2px;
-    background-color: white;
-    position: absolute;
-    content: '';
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  input[type='checkbox'] {
-    display: none;
-  }
-  input[type='checkbox']:checked ~ #overlay {
-    visibility: visible;
-  }
-  input[type='checkbox']:checked ~ #overlay-button:hover span,
-  input[type='checkbox']:checked ~ #overlay-button span {
-    background: transparent;
-  }
-  input[type='checkbox']:checked ~ #overlay-button span:before {
-    -webkit-transform: rotate(45deg) translate(7px, 7px);
-            transform: rotate(45deg) translate(7px, 7px);
-    opacity: 1;
-  }
-  input[type='checkbox']:checked ~ #overlay-button span:after {
-    -webkit-transform: rotate(-45deg) translate(7px, -7px);
-            transform: rotate(-45deg) translate(7px, -7px);
   }
   #overlay {
     height: 100vh;
