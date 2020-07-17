@@ -247,6 +247,9 @@ $mobile: 320px;
   .modal-content {
     padding: 10px;
   }
+  .modal-content {
+    border-radius: 35px 0px 35px;
+}
 }
 @media only screen and (min-width: 500px) and (max-width: 800px) {
   #predict-fututre #img-bg-circle {
