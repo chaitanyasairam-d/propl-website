@@ -2279,8 +2279,10 @@ section:not(:nth-child(1)) .card {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 3rem;
     height: 100%;
+  }
+  #predict-fututre {
+    padding-top: 3rem;
   }
   #predict-fututre .card {
     margin-bottom: 1.5rem;

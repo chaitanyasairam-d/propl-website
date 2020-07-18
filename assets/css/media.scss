@@ -34,10 +34,11 @@ $tab:768px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 3rem;
+    // padding-top: 3rem;
     height: 100%;
   }
   #predict-fututre {
+    padding-top: 3rem;
     .card {
       margin-bottom: 1.5rem;
     }
