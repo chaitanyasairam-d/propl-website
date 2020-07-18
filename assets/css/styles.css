@@ -2436,6 +2436,10 @@ section:not(:nth-child(1)) .card {
   .do-list .btn-more {
     margin-top: 0px;
   }
+  .strategy-container .back-btn {
+    margin-top: 3.5rem !important;
+    margin-bottom: 0 !important;
+  }
   /*strategy-future*/
   /*Abouts us */
   .propl-about-container {
