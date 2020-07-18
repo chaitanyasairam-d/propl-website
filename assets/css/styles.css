@@ -446,7 +446,7 @@ section:not(:nth-child(1)) .card {
 
 #home-cover {
   height: 100vh;
-  background-image: url(../images/rename.png);
+  background-image: url(../cache/rename.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -2933,7 +2933,6 @@ section:not(:nth-child(1)) .card {
     background-color: white;
     -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
             box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-    margin-bottom: 1rem;
   }
   #mobile-navbar-fixed nav {
     position: fixed;
