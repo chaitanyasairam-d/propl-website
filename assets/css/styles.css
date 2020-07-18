@@ -2817,7 +2817,7 @@ section:not(:nth-child(1)) .card {
     padding: 0 !important;
   }
   #what-to-expect .card .card-title {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
   }
   #what-to-expect .card .card-body {
     width: 100% !important;
