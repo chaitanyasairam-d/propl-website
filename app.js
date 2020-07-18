@@ -9,35 +9,45 @@ $(function () {
         $('#overlay-button').on('click',()=>{
           $('#overlay').show(200);
         })
+        $('#contact-us-btn').on('click',()=>{
+          $('#overlay').hide();
+          $("#experienceBtn ul").hide();
+          $("#capabilityBtn ul").hide();
+          $("#strategyBtn ul").hide();
+        })
     $(window).scroll(function () {
       var $scroll = $(this).scrollTop()
       $nav = $('#home-navbar .navbar');
       // set distance user needs to scroll before we start fadeIn
       if ($scroll > 90) { //For dynamic effect use $nav.height() instead of '100'
       $nav.removeClass('nav-bg');
-      $nav.addClass('navbar-bg-onscroll').slideDown('slow');
-      $('#home-navbar .navbar-brand img').attr('src', './assets/icons/Propl - dark -  logo.svg')
-      $('#home-navbar .dropdown-btn span').removeClass('home-dropdown-icon')
-      $('#home-navbar .dropdown-btn span').addClass('dropdown-icon')
+        $nav.addClass('navbar-bg-onscroll').slideDown('slow');
+        $('#home-navbar .navbar-brand img').attr('src','./assets/icons/Propl - dark -  logo.svg')
+        $('#home-navbar .dropdown-btn span').removeClass('home-dropdown-icon')
+        $('#home-navbar .dropdown-btn span').addClass('dropdown-icon')
+      } else {
+        $nav.addClass('nav-bg');
+        $nav.removeClass('navbar-bg-onscroll').slideDown('slow');
+        $('#home-navbar .dropdown-btn span').removeClass('dropdown-icon')
+        $('#home-navbar .dropdown-btn span').addClass('home-dropdown-icon')
+        $('#home-navbar .navbar-brand img').attr('src','./assets/icons/Propl - logo.svg')
+      }
+      
+      $mobileNav = $('header:nth-child(1)');
+      $homeMobileNav = $('.home-mobile-nav');
+      $mobileFixedNav = $('.mobile-navbar-fixed');
+      // set distance user needs to scroll before we start fadeIn
+      if ($scroll > 80) { //For dynamic effect use $nav.height() instead of '100'
+      $homeMobileNav.attr('id','mobile-navbar-fixed');
+      $('.home-mobile-nav .navbar-brand img').attr('src','./assets/icons/Propl - dark -  logo.svg')
+      $('.home-mobile-nav .mobile-menu #overlay-button img').attr('src','./assets/icons/hamburger - Dark.svg');
     } else {
-      $nav.addClass('nav-bg');
-      $nav.removeClass('navbar-bg-onscroll').slideDown('slow');
-      $('#home-navbar .dropdown-btn span').removeClass('dropdown-icon')
-      $('#home-navbar .dropdown-btn span').addClass('home-dropdown-icon')
-      $('#home-navbar .navbar-brand img').attr('src', './assets/icons/Propl - logo.svg')
+      $homeMobileNav.attr('id','mobile-navbar');
+      $('.home-mobile-nav .navbar-brand img').attr('src','./assets/icons/Propl - logo.svg')
+      $('.home-mobile-nav #overlay-button img').attr('src','./assets/icons/hamburger.svg');
+      
     }
-
-    $mobileNav = $('header:nth-child(1)');
-    $homeMobileNav = $('.home-mobile-nav')
-    // set distance user needs to scroll before we start fadeIn
-    if ($scroll > 80) { //For dynamic effect use $nav.height() instead of '100'
-      $homeMobileNav.attr('id', 'mobile-navbar-fixed');
-    } else {
-      $homeMobileNav.attr('id', 'mobile-navbar');
-
-    }
-  });
-
+    });
 
 
   $('.owl-carousel').owlCarousel({

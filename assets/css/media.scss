@@ -371,14 +371,16 @@ $tab:768px;
   }
   #mobile-navbar-fixed {
     display: block;
-    background-color: #0b1120;
+    background-color: white;
     nav {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       padding-bottom: .5rem;
-    background-color: #0b1120;
+    background-color: white;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+
 
       z-index: 999999999;
     }
@@ -438,29 +440,23 @@ $tab:768px;
   top: 0;
   left: 0;
   ul {
-    overflow: auto;
-      position: relative;
       li {
-        text-align: left;
-        padding: .7rem;
-        list-style-type: none;
+        padding: .5rem;
         font-family: ProximaNovaSemiBold;
-
         .custom-dropdown-menu {
           width: 100%;
-          background-color: #0b1120 !important;
-          box-shadow: none !important;
-          text-align: left;
-          li {
+
+          position: relative;
+          background-color: transparent!important;
+          box-shadow: none!important;
+          li{
+            padding: .2rem;
             width: 100%;
             list-style-type: none;
-          font-family: ProximaNovaSemiBold;
-
-            margin: 0.2px auto !important;
-            background-color: #0b1120 !important;
-            border: 0.5px solid #0b1120 !important;
-            padding: 0 !important;
-            text-align: left !important;
+            &:nth-child(n+2){
+              opacity: 0.8;
+              margin-left: .7rem!important;
+            }
           }
         }
 
@@ -470,10 +466,7 @@ $tab:768px;
           text-align: left !important;
           font-family: ProximaNovaSemiBold;
           font-size: 0.8em;
-          // &:hover{
-          //   background-color: rgba(0, 0, 0, 0.842);
-          //   color: $orange;
-          // }
+         
         }
         a:hover,
         a:active,
@@ -503,6 +496,9 @@ $tab:768px;
         width: 100% !important;
         height: 223px !important;
       }
+      h1{
+        font-size:1.3rem
+      }
     }
     .card {
       margin-left: 0 !important;
@@ -524,7 +520,7 @@ $tab:768px;
       display: block;
     }
     h3 {
-      font-size: 1.4rem;
+      font-size: 1.3rem!important;
     }
     .card-container {
       height: 170px !important;
@@ -549,6 +545,9 @@ $tab:768px;
     padding-bottom: 40px;
   }
   #what-to-expect {
+    h3{
+      font-size:1.3rem!important;
+    }
     .btn-business {
       margin-top: 25px;
     }
@@ -693,14 +692,18 @@ $tab:768px;
   }
   #mobile-navbar-fixed {
     display: block;
-    background-color: #0b1120;
+    background-color: white;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+
     nav {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       padding-bottom: .5rem;
-    background-color: #0b1120;
+      background-color: white;
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+
 
       z-index: 999999999;
     }
