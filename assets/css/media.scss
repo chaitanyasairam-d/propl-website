@@ -21,6 +21,9 @@ $tab:768px;
   .underline {
     height: 4px;
   }
+  .content-header-container {
+    margin-bottom: 0px;
+  }
   .p40 {
     padding: 0px;
   }
@@ -41,12 +44,16 @@ $tab:768px;
     padding-top: 3rem;
     .card {
       margin-bottom: 1.5rem;
+      p {
+        margin-bottom: 0px;
+      }
     }
   }
   /*Home css*/
   /*----Home Css ----*/
   #home-cover {
     background-image: url(../images/hero_mobile.png);
+    background-size: cover;
   }
 
   .home-content-box-inner h1 {
@@ -123,7 +130,7 @@ $tab:768px;
     flex: 1 1 100%;
   }
   .circle-img-container img {
-    height: 100%;
+    height: auto;
     margin-top: 2rem;
   }
   .btn-business {
@@ -180,11 +187,17 @@ $tab:768px;
     width: 100%;
   }
   .do-list {
+    br {
+      display: block;
+    }
     @include marginAuto(100%);
     ul li {
       flex: 1 1 100%;
       .card {
         width: 100% !important;
+        p {
+          height: 175px;
+        }
       }
       margin-bottom: 20px;
     }

@@ -2264,6 +2264,9 @@ section:not(:nth-child(1)) .card {
   .underline {
     height: 4px;
   }
+  .content-header-container {
+    margin-bottom: 0px;
+  }
   .p40 {
     padding: 0px;
   }
@@ -2285,10 +2288,14 @@ section:not(:nth-child(1)) .card {
   #predict-fututre .card {
     margin-bottom: 1.5rem;
   }
+  #predict-fututre .card p {
+    margin-bottom: 0px;
+  }
   /*Home css*/
   /*----Home Css ----*/
   #home-cover {
     background-image: url(../images/hero_mobile.png);
+    background-size: cover;
   }
   .home-content-box-inner h1 {
     font-size: 2rem;
@@ -2363,7 +2370,7 @@ section:not(:nth-child(1)) .card {
             flex: 1 1 100%;
   }
   .circle-img-container img {
-    height: 100%;
+    height: auto;
     margin-top: 2rem;
   }
   .btn-business {
@@ -2425,6 +2432,9 @@ section:not(:nth-child(1)) .card {
     margin: 0 auto;
     width: 100%;
   }
+  .do-list br {
+    display: block;
+  }
   .do-list ul li {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
@@ -2433,6 +2443,9 @@ section:not(:nth-child(1)) .card {
   }
   .do-list ul li .card {
     width: 100% !important;
+  }
+  .do-list ul li .card p {
+    height: 175px;
   }
   .do-list .btn-more {
     margin-top: 0px;
