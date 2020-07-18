@@ -38,10 +38,12 @@ $tab:768px;
     -ms-flex-align: center;
     align-items: center;
     // padding-top: 3rem;
+    margin-top: 75px;
     height: 100%;
   }
   #predict-fututre {
-    padding-top: 3rem;
+    // padding-top: calc(100vh - 97vh);
+    // padding-top: 3rem;
     .card {
       margin-bottom: 1.5rem;
       p {
@@ -51,13 +53,13 @@ $tab:768px;
   }
   /*Home css*/
   /*----Home Css ----*/
-  #home {
-    height: 90%;
-  }
   #home-cover {
     background-image: url(../images/hero_mobile.png);
     background-size: cover;
-    height: 90vh;
+    .home-content-box-inner {
+      top: 50%;
+    }
+    // height: 90vh;
   }
 
   .home-content-box-inner h1 {

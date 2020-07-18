@@ -446,7 +446,7 @@ section:not(:nth-child(1)) .card {
 
 #home-cover {
   height: 100vh;
-  background-image: url(../images/test-phase-1.jpg);
+  background-image: url(../images/rename.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -2285,10 +2285,8 @@ section:not(:nth-child(1)) .card {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    margin-top: 75px;
     height: 100%;
-  }
-  #predict-fututre {
-    padding-top: 3rem;
   }
   #predict-fututre .card {
     margin-bottom: 1.5rem;
@@ -2298,13 +2296,12 @@ section:not(:nth-child(1)) .card {
   }
   /*Home css*/
   /*----Home Css ----*/
-  #home {
-    height: 90%;
-  }
   #home-cover {
     background-image: url(../images/hero_mobile.png);
     background-size: cover;
-    height: 90vh;
+  }
+  #home-cover .home-content-box-inner {
+    top: 50%;
   }
   .home-content-box-inner h1 {
     font-size: 2rem;
