@@ -2,6 +2,9 @@ $(function () {
 
         $('.close-btn').on('click',()=>{
           $('#overlay').hide(200);
+          $("#experienceBtn ul").hide();
+          $("#capabilityBtn ul").hide();
+          $("#strategyBtn ul").hide();
         })
         $('#overlay-button').on('click',()=>{
           $('#overlay').show(200);
