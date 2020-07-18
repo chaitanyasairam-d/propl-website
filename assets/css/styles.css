@@ -2288,7 +2288,7 @@ section:not(:nth-child(1)) .card {
     height: 100%;
   }
   #predict-fututre {
-    padding-top: calc(100vh - 97vh);
+    padding-top: 3rem;
   }
   #predict-fututre .card {
     margin-bottom: 1.5rem;
