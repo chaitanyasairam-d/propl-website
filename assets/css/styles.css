@@ -411,11 +411,13 @@ section:not(:nth-child(1)) .card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #ffffff;
 }
 
 .btn-more:hover {
   background: #ff5050 !important;
   border: none;
+  color: #ffffff;
 }
 
 .btn-more,
@@ -2293,9 +2295,13 @@ section:not(:nth-child(1)) .card {
   }
   /*Home css*/
   /*----Home Css ----*/
+  #home {
+    height: 90%;
+  }
   #home-cover {
     background-image: url(../images/hero_mobile.png);
     background-size: cover;
+    height: 90vh;
   }
   .home-content-box-inner h1 {
     font-size: 2rem;
