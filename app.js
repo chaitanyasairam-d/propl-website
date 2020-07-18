@@ -1,16 +1,19 @@
 $(function () {
 
-  $('.close-btn').on('click', () => {
-    $('#overlay').hide(200);
-  })
-  $('#overlay-button').on('click', () => {
-    $('#overlay').show(200);
-  })
-  $(window).scroll(function () {
-    var $scroll = $(this).scrollTop()
-    $nav = $('#home-navbar .navbar');
-    // set distance user needs to scroll before we start fadeIn
-    if ($scroll > 90) { //For dynamic effect use $nav.height() instead of '100'
+        $('.close-btn').on('click',()=>{
+          $('#overlay').hide(200);
+          $("#experienceBtn ul").hide();
+          $("#capabilityBtn ul").hide();
+          $("#strategyBtn ul").hide();
+        })
+        $('#overlay-button').on('click',()=>{
+          $('#overlay').show(200);
+        })
+    $(window).scroll(function () {
+      var $scroll = $(this).scrollTop()
+      $nav = $('#home-navbar .navbar');
+      // set distance user needs to scroll before we start fadeIn
+      if ($scroll > 90) { //For dynamic effect use $nav.height() instead of '100'
       $nav.removeClass('nav-bg');
       $nav.addClass('navbar-bg-onscroll').slideDown('slow');
       $('#home-navbar .navbar-brand img').attr('src', './assets/icons/Propl - dark -  logo.svg')
