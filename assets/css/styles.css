@@ -33,7 +33,6 @@ a:active {
 .btn:focus {
   text-decoration: none;
   outline: 0;
-  background: #ff5050 !important;
 }
 
 .btn:focus,
@@ -2874,12 +2873,6 @@ section:not(:nth-child(1)) .card {
     background-color: #ff5050;
     border-radius: 10px;
   }
-  section:nth-child(3) {
-    margin: 0 !important;
-  }
-  section:nth-child(3) .card {
-    margin: 0 !important;
-  }
   #home-navbar,
   #navbar {
     display: none;
@@ -3144,7 +3137,7 @@ section:not(:nth-child(1)) .card {
     height: 5px !important;
   }
   #footer {
-    height: 50rem !important;
+    height: 30rem !important;
   }
   #footer .footer {
     margin: 0 !important;
@@ -3177,6 +3170,16 @@ section:not(:nth-child(1)) .card {
   }
   #footer #footer-logo-container li:nth-child(3) a {
     margin: 2rem 0 !important;
+  }
+  #footer #footer-logo-container .footer-bg-circle {
+    position: absolute;
+    top: 0;
+    right: -15%;
+    bottom: 0;
+  }
+  #footer #footer-logo-container .footer-bg-circle img {
+    -webkit-animation: bg-circle-rotate 10s linear infinite;
+            animation: bg-circle-rotate 10s linear infinite;
   }
 }
 /*# sourceMappingURL=styles.css.map */

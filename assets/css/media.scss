@@ -634,12 +634,12 @@ $tab:768px;
     background-color: #ff5050;
     border-radius: 10px;
   }
-  section:nth-child(3) {
-    margin: 0 !important;
-    .card {
-      margin: 0 !important;
-    }
-  }
+  // section:nth-child(3) {
+  //   margin: 0 !important;
+  //   .card {
+  //     margin: 0 !important;
+  //   }
+  // }
   #home-navbar,
   #navbar {
     display: none;
@@ -902,7 +902,7 @@ $tab:768px;
     height: 5px !important;
   }
   #footer {
-    height: 50rem !important;
+    height: 30rem !important;
 .footer{
   margin: 0!important;
   width: 100%;
@@ -939,7 +939,15 @@ $tab:768px;
           margin: 2rem 0!important;
         }
       }
-     
+      .footer-bg-circle {
+        position: absolute;
+        top: 0;
+        right: -15%;
+        bottom:0;
+        img {
+          animation: bg-circle-rotate 10s linear infinite;
+        }
+      }
     }
   }
 }
