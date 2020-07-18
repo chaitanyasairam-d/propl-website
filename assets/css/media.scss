@@ -1,10 +1,17 @@
 $mobile: 320px;
+$tab:768px;
 
 @mixin mobile {
-  @media (min-width: #{$mobile})  and (max-width:1000px) {
+  @media (min-width: #{$mobile})  and (max-width:767px) {
     @content;
   }
 }
+@mixin tab {
+  @media (min-width: #{$tab})  and (max-width:1199px) {
+    @content;
+  }
+}
+
 
 
 @media only screen and (min-width: 320px) and (max-width: 478px) {
@@ -324,6 +331,7 @@ $mobile: 320px;
     }
   }
   .back-btn {
+    margin-top: 3.5rem!important;
     margin-bottom: 0 !important;
   }
   #mobile-navbar {
@@ -343,11 +351,18 @@ $mobile: 320px;
     display: block;
     background-color: #0b1120;
     nav {
-      position: sticky;
+      position: fixed;
       top: 0;
+      left: 0;
+      right: 0;
+      padding-bottom: .5rem;
+    background-color: #0b1120;
+
       z-index: 999999999;
     }
+    margin-bottom: 1rem;
   }
+
   #home {
     margin: 0 !important;
   }
@@ -518,8 +533,20 @@ $mobile: 320px;
     .section-starter {
       margin-top: 75px !important;
     }
-    .divider-bar {
-      display: none;
+    .col-md-6:nth-child(odd) {
+      .card:nth-child(1) {
+        margin-left: 0!important;
+      }
+    }
+    .col-md-6:nth-child(even) {
+      .card:nth-child(1) {
+        margin-left: 0!important;
+      }
+    }
+    .divider-bar::after {
+      content: null;
+      width: 0;
+      height: 0;
     }
     .divider-btn {
       margin-top: 20px;
@@ -590,6 +617,325 @@ $mobile: 320px;
       .footer-bg-circle {
         display: none;
       }
+    }
+  }
+}
+
+
+@include tab{
+  .business-footer-underline {
+    margin: 0 auto;
+    width: 80vw;
+    height: 8px;
+    background-color: #ff5050;
+    border-radius: 10px;
+  }
+  section:nth-child(3) {
+    margin: 0 !important;
+    .card {
+      margin: 0 !important;
+    }
+  }
+  #home-navbar,
+  #navbar {
+    display: none;
+  }
+  .navbar-brand {
+    img {
+      margin-top: 1.2rem;
+        margin-left: 1.5rem !important;
+        width: 90px;
+    }
+  }
+  .back-btn {
+    margin-top: 3.5rem!important;
+    margin-bottom: 0 !important;
+  }
+  #mobile-navbar {
+    display: block;
+    
+    nav {
+      position: absolute;
+      width: 100%;
+      height: 8%;
+      background-color: transparent;
+    }
+    // nav{
+    //   background-color: #0a101d;
+    // }
+  }
+  #mobile-navbar-fixed {
+    display: block;
+    background-color: #0b1120;
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding-bottom: .5rem;
+    background-color: #0b1120;
+
+      z-index: 999999999;
+    }
+    margin-bottom: 1rem;
+  }
+
+  #home {
+    margin: 0 !important;
+  }
+  .get-started-arrow{
+    animation: get-started-animation 2.2s ease-in-out infinite;
+  }
+  @keyframes get-started-animation{
+    0%{
+      transform: translateY(-50px);
+    }
+    50%{
+      transform: translateY(-30px);
+    }
+  
+    100%{
+      transform: translateY(-50px);
+    }
+  }
+ .mobile-menu {
+   position: absolute;
+   top: 1.2rem;
+   right:1.5rem;
+    z-index: 5;
+    cursor: pointer;
+
+    // &:hover,&:focus,&:focus-within,&:active{
+    //   #overlay{
+    //     display: block;
+    //     z-index: 999;
+    //   }
+    // }
+
+    .close-btn{
+      float: right;
+      position: absolute;
+      top: 1.2rem;
+   right:1.5rem;
+      z-index: 999999999;
+    }
+  }
+  .overlay-content{
+    margin: 2rem 0.5rem;
+    overflow: hidden;
+  }
+#overlay {
+  height: 100vh;
+  width: 100vw;
+  background: #0b1120;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  ul {
+    overflow: auto;
+      position: relative;
+      li {
+        text-align: left;
+        padding: .7rem;
+        list-style-type: none;
+        font-family: ProximaNovaSemiBold;
+
+        .custom-dropdown-menu {
+          width: 100%;
+          background-color: #0b1120 !important;
+          box-shadow: none !important;
+          text-align: left;
+          li {
+            width: 100%;
+            list-style-type: none;
+          font-family: ProximaNovaSemiBold;
+
+            margin: 0.2px auto !important;
+            background-color: #0b1120 !important;
+            border: 0.5px solid #0b1120 !important;
+            padding: 0 !important;
+            text-align: left !important;
+          }
+        }
+
+        a {
+          color: white;
+          text-decoration: none;
+          text-align: left !important;
+          font-family: ProximaNovaSemiBold;
+          font-size: 0.8em;
+          // &:hover{
+          //   background-color: rgba(0, 0, 0, 0.842);
+          //   color: $orange;
+          // }
+        }
+        a:hover,
+        a:active,
+        a:focus {
+          background-color: transparent;
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  #business-design-sprint,
+  #solution-design,
+  #solution-delivery,
+  #growth-strategy,
+  #growth-experiments,
+  #entrepreneur-residence,
+  #innovation-transformation,
+  #experiential-learning {
+    // .back-btn{
+    //   margin-left: 0;
+    // }
+    .img-container {
+      // display: none;
+      img {
+        margin-top: 1rem;
+        width: 400px !important;
+        height: 286px!important;
+      }
+    }
+    .card {
+      margin-left: 0 !important;
+      width: 100% !important;
+      .card-body {
+        width: 100% !important;
+        padding-right: 0 !important;
+        .card-title {
+          font-size: 1.2rem !important;
+        }
+        .card-body-text {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  #desirable {
+    br {
+      display: block;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    .card-container {
+      height: 170px !important;
+      margin: 1rem 0 !important;
+      padding: 0 !important;
+      flex: 0 0 33.333333%;
+      .card {
+        margin: 0 auto;
+        width: 75% !important;
+        height: 100% !important;
+        padding: 0;
+        margin: 0 auto;
+        img {
+          width: 70px !important;
+          height: 70px !important;
+        }
+        .card-body {
+          font-size: 0.85rem;
+          height: 100%;
+        }
+      }
+    }
+    padding-bottom: 40px;
+  }
+  #what-to-expect {
+
+    .divider-bar::after {
+        margin-top: 2.5rem;
+        height: 130%;
+    }
+    
+    .btn-business {
+      margin-top: 25px;
+      width: 200px;
+    }
+    .section-starter {
+      margin-top: 75px !important;
+    }
+    .col-md-6:nth-child(odd) {
+      .card:nth-child(1) {
+        margin-left: 1.5rem!important;
+      }
+    }
+    .col-md-6:nth-child(even) {
+      .card:nth-child(1) {
+        margin-left:0 !important;
+      }
+    }
+    
+    .break{
+      display: none;
+    }
+
+    .card {
+      width: 90% !important;
+      height: 100% !important;
+      margin: 2rem auto 0 0 !important;
+      padding: 0 !important;
+
+      .card-body {
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+    }
+  }
+  #loved-by {
+    .section-starter {
+      margin-top: 75px !important;
+    }
+  }
+
+  .business-footer-underline {
+    width: 80vw !important;
+    height: 5px !important;
+  }
+  #footer {
+    height: 50rem !important;
+.footer{
+  margin: 0!important;
+  width: 100%;
+
+}  
+  .footer-card {
+      text-align: left;
+      margin: 0 !important;
+      ul {
+        margin: 0 !important;
+      }
+      li {
+        text-align: left;
+        a {
+          padding: 0;
+        }
+      }
+    }
+   
+    .all-rights {
+      display: block;
+    }
+    #footer-logo-container {
+      .footer-img {
+        width: 100px;
+      }
+      li:nth-child(3) {
+     
+        display: block !important;
+        .footer-copy-right{
+          margin-top: 2rem;
+        }
+        a {
+          margin: 2rem 0!important;
+        }
+      }
+     
     }
   }
 }

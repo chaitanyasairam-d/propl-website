@@ -2545,7 +2545,7 @@ section:not(:nth-child(1)) .card {
   } */
 }
 
-@media (min-width: 320px) and (max-width: 1000px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .business-footer-underline {
     margin: 0 auto;
     width: 80vw;
@@ -2569,6 +2569,7 @@ section:not(:nth-child(1)) .card {
     width: 90px;
   }
   .back-btn {
+    margin-top: 3.5rem !important;
     margin-bottom: 0 !important;
   }
   #mobile-navbar {
@@ -2583,11 +2584,15 @@ section:not(:nth-child(1)) .card {
   #mobile-navbar-fixed {
     display: block;
     background-color: #0b1120;
+    margin-bottom: 1rem;
   }
   #mobile-navbar-fixed nav {
-    position: -webkit-sticky;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: .5rem;
+    background-color: #0b1120;
     z-index: 999999999;
   }
   #home {
@@ -2781,8 +2786,16 @@ section:not(:nth-child(1)) .card {
   #what-to-expect .section-starter {
     margin-top: 75px !important;
   }
-  #what-to-expect .divider-bar {
-    display: none;
+  #what-to-expect .col-md-6:nth-child(odd) .card:nth-child(1) {
+    margin-left: 0 !important;
+  }
+  #what-to-expect .col-md-6:nth-child(even) .card:nth-child(1) {
+    margin-left: 0 !important;
+  }
+  #what-to-expect .divider-bar::after {
+    content: null;
+    width: 0;
+    height: 0;
   }
   #what-to-expect .divider-btn {
     margin-top: 20px;
@@ -2844,6 +2857,320 @@ section:not(:nth-child(1)) .card {
   }
   #footer #footer-logo-container .footer-bg-circle {
     display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .business-footer-underline {
+    margin: 0 auto;
+    width: 80vw;
+    height: 8px;
+    background-color: #ff5050;
+    border-radius: 10px;
+  }
+  section:nth-child(3) {
+    margin: 0 !important;
+  }
+  section:nth-child(3) .card {
+    margin: 0 !important;
+  }
+  #home-navbar,
+  #navbar {
+    display: none;
+  }
+  .navbar-brand img {
+    margin-top: 1.2rem;
+    margin-left: 1.5rem !important;
+    width: 90px;
+  }
+  .back-btn {
+    margin-top: 3.5rem !important;
+    margin-bottom: 0 !important;
+  }
+  #mobile-navbar {
+    display: block;
+  }
+  #mobile-navbar nav {
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    background-color: transparent;
+  }
+  #mobile-navbar-fixed {
+    display: block;
+    background-color: #0b1120;
+    margin-bottom: 1rem;
+  }
+  #mobile-navbar-fixed nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: .5rem;
+    background-color: #0b1120;
+    z-index: 999999999;
+  }
+  #home {
+    margin: 0 !important;
+  }
+  .get-started-arrow {
+    -webkit-animation: get-started-animation 2.2s ease-in-out infinite;
+            animation: get-started-animation 2.2s ease-in-out infinite;
+  }
+  @-webkit-keyframes get-started-animation {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+    50% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+    100% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+  }
+  @keyframes get-started-animation {
+    0% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+    50% {
+      -webkit-transform: translateY(-30px);
+              transform: translateY(-30px);
+    }
+    100% {
+      -webkit-transform: translateY(-50px);
+              transform: translateY(-50px);
+    }
+  }
+  .mobile-menu {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    z-index: 5;
+    cursor: pointer;
+  }
+  .mobile-menu .close-btn {
+    float: right;
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
+    z-index: 999999999;
+  }
+  .overlay-content {
+    margin: 2rem 0.5rem;
+    overflow: hidden;
+  }
+  #overlay {
+    height: 100vh;
+    width: 100vw;
+    background: #0b1120;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  #overlay ul {
+    overflow: auto;
+    position: relative;
+  }
+  #overlay ul li {
+    text-align: left;
+    padding: .7rem;
+    list-style-type: none;
+    font-family: ProximaNovaSemiBold;
+  }
+  #overlay ul li .custom-dropdown-menu {
+    width: 100%;
+    background-color: #0b1120 !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    text-align: left;
+  }
+  #overlay ul li .custom-dropdown-menu li {
+    width: 100%;
+    list-style-type: none;
+    font-family: ProximaNovaSemiBold;
+    margin: 0.2px auto !important;
+    background-color: #0b1120 !important;
+    border: 0.5px solid #0b1120 !important;
+    padding: 0 !important;
+    text-align: left !important;
+  }
+  #overlay ul li a {
+    color: white;
+    text-decoration: none;
+    text-align: left !important;
+    font-family: ProximaNovaSemiBold;
+    font-size: 0.8em;
+  }
+  #overlay ul li a:hover,
+  #overlay ul li a:active,
+  #overlay ul li a:focus {
+    background-color: transparent;
+    color: #ff5050;
+  }
+  #business-design-sprint .img-container img,
+  #solution-design .img-container img,
+  #solution-delivery .img-container img,
+  #growth-strategy .img-container img,
+  #growth-experiments .img-container img,
+  #entrepreneur-residence .img-container img,
+  #innovation-transformation .img-container img,
+  #experiential-learning .img-container img {
+    margin-top: 1rem;
+    width: 400px !important;
+    height: 286px !important;
+  }
+  #business-design-sprint .card,
+  #solution-design .card,
+  #solution-delivery .card,
+  #growth-strategy .card,
+  #growth-experiments .card,
+  #entrepreneur-residence .card,
+  #innovation-transformation .card,
+  #experiential-learning .card {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  #business-design-sprint .card .card-body,
+  #solution-design .card .card-body,
+  #solution-delivery .card .card-body,
+  #growth-strategy .card .card-body,
+  #growth-experiments .card .card-body,
+  #entrepreneur-residence .card .card-body,
+  #innovation-transformation .card .card-body,
+  #experiential-learning .card .card-body {
+    width: 100% !important;
+    padding-right: 0 !important;
+  }
+  #business-design-sprint .card .card-body .card-title,
+  #solution-design .card .card-body .card-title,
+  #solution-delivery .card .card-body .card-title,
+  #growth-strategy .card .card-body .card-title,
+  #growth-experiments .card .card-body .card-title,
+  #entrepreneur-residence .card .card-body .card-title,
+  #innovation-transformation .card .card-body .card-title,
+  #experiential-learning .card .card-body .card-title {
+    font-size: 1.2rem !important;
+  }
+  #business-design-sprint .card .card-body .card-body-text,
+  #solution-design .card .card-body .card-body-text,
+  #solution-delivery .card .card-body .card-body-text,
+  #growth-strategy .card .card-body .card-body-text,
+  #growth-experiments .card .card-body .card-body-text,
+  #entrepreneur-residence .card .card-body .card-body-text,
+  #innovation-transformation .card .card-body .card-body-text,
+  #experiential-learning .card .card-body .card-body-text {
+    font-size: 0.8rem;
+  }
+  #desirable {
+    padding-bottom: 40px;
+  }
+  #desirable br {
+    display: block;
+  }
+  #desirable h3 {
+    font-size: 1.5rem;
+  }
+  #desirable .card-container {
+    height: 170px !important;
+    margin: 1rem 0 !important;
+    padding: 0 !important;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+  }
+  #desirable .card-container .card {
+    margin: 0 auto;
+    width: 75% !important;
+    height: 100% !important;
+    padding: 0;
+    margin: 0 auto;
+  }
+  #desirable .card-container .card img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  #desirable .card-container .card .card-body {
+    font-size: 0.85rem;
+    height: 100%;
+  }
+  #what-to-expect .divider-bar::after {
+    margin-top: 2.5rem;
+    height: 130%;
+  }
+  #what-to-expect .btn-business {
+    margin-top: 25px;
+    width: 200px;
+  }
+  #what-to-expect .section-starter {
+    margin-top: 75px !important;
+  }
+  #what-to-expect .col-md-6:nth-child(odd) .card:nth-child(1) {
+    margin-left: 1.5rem !important;
+  }
+  #what-to-expect .col-md-6:nth-child(even) .card:nth-child(1) {
+    margin-left: 0 !important;
+  }
+  #what-to-expect .break {
+    display: none;
+  }
+  #what-to-expect .card {
+    width: 90% !important;
+    height: 100% !important;
+    margin: 2rem auto 0 0 !important;
+    padding: 0 !important;
+  }
+  #what-to-expect .card .card-body {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  #loved-by .section-starter {
+    margin-top: 75px !important;
+  }
+  .business-footer-underline {
+    width: 80vw !important;
+    height: 5px !important;
+  }
+  #footer {
+    height: 50rem !important;
+  }
+  #footer .footer {
+    margin: 0 !important;
+    width: 100%;
+  }
+  #footer .footer-card {
+    text-align: left;
+    margin: 0 !important;
+  }
+  #footer .footer-card ul {
+    margin: 0 !important;
+  }
+  #footer .footer-card li {
+    text-align: left;
+  }
+  #footer .footer-card li a {
+    padding: 0;
+  }
+  #footer .all-rights {
+    display: block;
+  }
+  #footer #footer-logo-container .footer-img {
+    width: 100px;
+  }
+  #footer #footer-logo-container li:nth-child(3) {
+    display: block !important;
+  }
+  #footer #footer-logo-container li:nth-child(3) .footer-copy-right {
+    margin-top: 2rem;
+  }
+  #footer #footer-logo-container li:nth-child(3) a {
+    margin: 2rem 0 !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */
