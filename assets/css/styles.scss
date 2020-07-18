@@ -9,7 +9,6 @@ body {
   text-rendering: optimizeLegibility;
   box-sizing: border-box;
   font-size: 20px;
-  scroll-behavior: smooth;
 }
 
 button {
@@ -401,9 +400,11 @@ section:not(:nth-child(1)) {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  color: #ffffff !important;
   &:hover {
     background: $orange !important;
     border: none;
+    color: #ffffff;
   }
 }
 .btn-more,

@@ -49,7 +49,6 @@ $(function () {
     }
     });
 
-    
 
   $('.owl-carousel').owlCarousel({
     loop: true,
@@ -59,7 +58,7 @@ $(function () {
     autoplay: true,
     autoplayTimeout: 20000,
     autoplayHoverPause: true,
-    autoheight:true,
+    autoheight: true,
     responsive: {
       0: {
         items: 1,
@@ -108,6 +107,7 @@ $(function () {
   }).on('hide.bs.modal', function (e) {
     $('body').removeClass("example-open");
     $("#error").hide();
+    $("#error_email").hide();
     $('#m-content').removeClass('orange-background');
     $('#info-submit').show();
     $('#submit-btn').prop('disabled', false);
@@ -116,23 +116,40 @@ $(function () {
     $('#user_name').val('')
     $('#user_email').val('')
     $('#user_message').val('')
+    $('#error').removeClass('mt-0');
+    $('#submit-btn').removeClass('mt-1');
   })
   $('#success').hide();
   $("#error").hide();
+  $("#error_email").hide();
   $("#spinner").hide();
   $('#submit-btn').click(function () {
     submitForm();
   });
+  function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+  }
   function submitForm() {
     let name = $('#user_name').val();
     let email = $('#user_email').val();
     let message = $('#user_message').val();
+    var mail = isEmail(email)
+    if (!mail && email.length) {
+      $("#error_email").show();
+      $('#error_email').addClass('mt-0');
+      $('#submit-btn').addClass('mt-1');
+      $("#error").hide();
+      return;
+    }
     if (!name.length || !email.length || !message.length) {
+      $("#error_email").hide();
       $('#error').addClass('mt-0');
       $("#error").show();
       $('#submit-btn').addClass('mt-1');
       return;
     }
+    $("#error_email").hide();
     $("#error").hide();
     $('#error').removeClass('mt-0');
     $('#submit-btn').removeClass('mt-1');
@@ -164,4 +181,13 @@ $(function () {
       $("#spinner").hide();
     });
   }
+});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
 });
