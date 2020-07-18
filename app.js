@@ -83,6 +83,7 @@ $(function () {
     $('body').addClass("example-open");
   }).on('hide.bs.modal', function (e) {
     $('body').removeClass("example-open");
+    $("#error").hide();
     $('#m-content').removeClass('orange-background');
     $('#info-submit').show();
     $('#submit-btn').prop('disabled', false);
@@ -98,9 +99,6 @@ $(function () {
   $('#submit-btn').click(function () {
     submitForm();
   });
-  //   $(".do-list li").hover( function (e) {
-  //     $(this).toggleClass('pulse');
-  // });
   function submitForm() {
     let name = $('#user_name').val();
     let email = $('#user_email').val();

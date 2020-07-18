@@ -870,6 +870,10 @@ section:not(:nth-child(1)) .card {
   color: #ffffff;
 }
 
+#footer #footer-logo-container li:hover {
+  color: #ffffff !important;
+}
+
 #footer #footer-logo-container .btn {
   color: #ffffff;
   font-size: 12px;
@@ -882,9 +886,17 @@ section:not(:nth-child(1)) .card {
   margin-right: -2rem;
 }
 
+#footer #footer-logo-container .footer-copy-right:hover {
+  color: #ffffff;
+}
+
 #footer #footer-logo-container .footer-copy-right a {
   color: #ffffff;
   text-decoration: none;
+}
+
+#footer #footer-logo-container .footer-copy-right a:hover {
+  color: #ff5050;
 }
 
 #footer #footer-logo-container .footer-bg-circle {
@@ -1404,6 +1416,10 @@ section:not(:nth-child(1)) .card {
   position: relative;
   left: 15px;
   width: 15px;
+}
+
+.do-list {
+  margin-left: 4%;
 }
 
 .do-list ul {
