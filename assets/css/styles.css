@@ -256,11 +256,11 @@ li:hover .dropdown-toggle .custom-dropdown-menu {
   transition: all 0s;
 }
 
-li:hover {
+.nav-bg li:hover, .navbar-bg-onsscroll li:hover, #mobile-navbar li:hover, #mobile-navbar-fixed li:hover {
   color: #ff5050 !important;
 }
 
-li:hover .dropdown-icon {
+.nav-bg li:hover .dropdown-icon, .navbar-bg-onsscroll li:hover .dropdown-icon, #mobile-navbar li:hover .dropdown-icon, #mobile-navbar-fixed li:hover .dropdown-icon {
   background-image: url("../images/special_icons/down-arrow-orange.svg") !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -272,7 +272,7 @@ li:hover .dropdown-icon {
   transition: all 0s;
 }
 
-li:hover .home-dropdown-icon {
+.nav-bg li:hover .home-dropdown-icon, .navbar-bg-onsscroll li:hover .home-dropdown-icon, #mobile-navbar li:hover .home-dropdown-icon, #mobile-navbar-fixed li:hover .home-dropdown-icon {
   background-image: url("../images/special_icons/down-arrow-orange.svg") !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -923,6 +923,7 @@ section:not(:nth-child(1)) .card {
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   font-weight: bold;
+  border: 0 !important;
   font-family: ProximaNova;
   font-size: 14px;
   font-weight: 600;

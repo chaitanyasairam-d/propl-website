@@ -239,33 +239,35 @@ li:hover{
   transition: all 0s;
 }
 
-li:hover  {
-  color: $orange !important;
-  .dropdown-icon {
-    background-image: url('../images/special_icons/down-arrow-orange.svg') !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    z-index: 9999999;
-    width: 20px;
-    margin-left: 6px;
-    -webkit-transition: all 0s;
-    transition: all 0s;
+.nav-bg,.navbar-bg-onsscroll,#mobile-navbar,#mobile-navbar-fixed{
+  li:hover  {
+    color: $orange !important;
+    .dropdown-icon {
+      background-image: url('../images/special_icons/down-arrow-orange.svg') !important;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 9999999;
+      width: 20px;
+      margin-left: 6px;
+      -webkit-transition: all 0s;
+      transition: all 0s;
+    }
+  
+    .home-dropdown-icon {
+      background-image: url('../images/special_icons/down-arrow-orange.svg') !important;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      z-index: 9999999;
+      width: 20px;
+      margin-left: 6px;
+      -webkit-transition: all 0s;
+      transition: all 0s;
+    }
   }
-
-  .home-dropdown-icon {
-    background-image: url('../images/special_icons/down-arrow-orange.svg') !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    z-index: 9999999;
-    width: 20px;
-    margin-left: 6px;
-    -webkit-transition: all 0s;
-    transition: all 0s;
-  }
+  
 }
-
 .home-dropdown-menu {
   display: absolute;
   background-color: white;
