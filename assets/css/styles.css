@@ -243,6 +243,11 @@ li:hover .dropdown-toggle .custom-dropdown-menu {
   margin-top: -3rem;
 }
 
+.navbar-bg-onscroll .custom-dropdown-menu li:nth-child(n+2), .nav-bg .custom-dropdown-menu li:nth-child(n+2) {
+  margin-left: .7rem;
+  opacity: 0.8;
+}
+
 .dropdown-item {
   font-size: 0.8rem;
   font-family: ProximaNova;

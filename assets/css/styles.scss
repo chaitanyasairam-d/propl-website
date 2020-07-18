@@ -225,7 +225,14 @@ li:hover{
   }
 }
 
-
+.navbar-bg-onscroll,.nav-bg{
+  .custom-dropdown-menu{
+    li:nth-child(n+2){
+      margin-left: .7rem;
+      opacity: 0.8;
+    }
+  }
+}
 
 .dropdown-item {
   font-size: 0.8rem;
