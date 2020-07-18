@@ -1,25 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="591" height="591" viewBox="0 0 591 591">
-    <defs>
-        <style>
-            .prefix__cls-8{fill:none}.prefix__cls-5{fill:#344977}.prefix__cls-6{fill:#466baf}.prefix__cls-7{stroke:none}
-        </style>
-    </defs>
-    <g id="prefix__Group_63" data-name="Group 63" opacity="0.566" transform="translate(-1211 -599)">
-        <g id="prefix__Ellipse_11" fill="none" stroke="#80b5ff" data-name="Ellipse 11" opacity="0.8" transform="translate(1211 599)">
-            <circle cx="295.5" cy="295.5" r="295.5" class="prefix__cls-7"/>
-            <circle cx="295.5" cy="295.5" r="295" class="prefix__cls-8"/>
-        </g>
-        <g id="prefix__Ellipse_12" fill="none" stroke="#80b5ff" stroke-width="4px" data-name="Ellipse 12" opacity="0.3" transform="translate(1223 611)">
-            <circle cx="283.5" cy="283.5" r="283.5" class="prefix__cls-7"/>
-            <circle cx="283.5" cy="283.5" r="281.5" class="prefix__cls-8"/>
-        </g>
-        <g id="prefix__Ellipse_13" fill="none" stroke="#80b5ff" data-name="Ellipse 13" opacity="0.68" transform="translate(1310 698)">
-            <circle cx="196.5" cy="196.5" r="196.5" class="prefix__cls-7"/>
-            <circle cx="196.5" cy="196.5" r="196" class="prefix__cls-8"/>
-        </g>
-        <circle id="prefix__Ellipse_18" cx="10" cy="10" r="10" class="prefix__cls-5" data-name="Ellipse 18" transform="translate(1543 607)"/>
-        <circle id="prefix__Ellipse_63" cx="10" cy="10" r="10" class="prefix__cls-5" data-name="Ellipse 63" transform="translate(1703 1071)"/>
-        <circle id="prefix__Ellipse_19" cx="7" cy="7" r="7" class="prefix__cls-6" data-name="Ellipse 19" transform="translate(1689 838)"/>
-        <circle id="prefix__Ellipse_62" cx="7" cy="7" r="7" class="prefix__cls-6" data-name="Ellipse 62" transform="translate(1351 1013)"/>
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.566;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-8 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #80b5ff;
+      }
+
+      .cls-2 {
+        opacity: 0.8;
+      }
+
+      .cls-3 {
+        stroke-width: 4px;
+        opacity: 0.3;
+      }
+
+      .cls-4 {
+        opacity: 0.68;
+      }
+
+      .cls-5 {
+        fill: #344977;
+      }
+
+      .cls-6 {
+        fill: #466baf;
+      }
+
+      .cls-7 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_63" data-name="Group 63" class="cls-1">
+    <g id="Ellipse_11" data-name="Ellipse 11" class="cls-2">
+      <circle class="cls-7" cx="295.5" cy="295.5" r="295.5"/>
+      <circle class="cls-8" cx="295.5" cy="295.5" r="295"/>
     </g>
+    <g id="Ellipse_12" data-name="Ellipse 12" class="cls-3" transform="translate(12 12)">
+      <circle class="cls-7" cx="283.5" cy="283.5" r="283.5"/>
+      <circle class="cls-8" cx="283.5" cy="283.5" r="281.5"/>
+    </g>
+    <g id="Ellipse_13" data-name="Ellipse 13" class="cls-4" transform="translate(99 99)">
+      <circle class="cls-7" cx="196.5" cy="196.5" r="196.5"/>
+      <circle class="cls-8" cx="196.5" cy="196.5" r="196"/>
+    </g>
+    <circle id="Ellipse_18" data-name="Ellipse 18" class="cls-5" cx="10" cy="10" r="10" transform="translate(332 8)"/>
+    <circle id="Ellipse_19" data-name="Ellipse 19" class="cls-6" cx="7" cy="7" r="7" transform="translate(478 239)"/>
+    <circle id="Ellipse_62" data-name="Ellipse 62" class="cls-6" cx="7" cy="7" r="7" transform="translate(140 414)"/>
+  </g>
 </svg>

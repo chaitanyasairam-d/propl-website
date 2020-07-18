@@ -1,41 +1,41 @@
 $(function () {
 
-        $('.close-btn').on('click',()=>{
-          $('#overlay').hide(200);
-        })
-        $('#overlay-button').on('click',()=>{
-          $('#overlay').show(200);
-        })
-    $(window).scroll(function () {
-      var $scroll = $(this).scrollTop()
-      $nav = $('#home-navbar .navbar');
-      // set distance user needs to scroll before we start fadeIn
-      if ($scroll > 90) { //For dynamic effect use $nav.height() instead of '100'
+  $('.close-btn').on('click', () => {
+    $('#overlay').hide(200);
+  })
+  $('#overlay-button').on('click', () => {
+    $('#overlay').show(200);
+  })
+  $(window).scroll(function () {
+    var $scroll = $(this).scrollTop()
+    $nav = $('#home-navbar .navbar');
+    // set distance user needs to scroll before we start fadeIn
+    if ($scroll > 90) { //For dynamic effect use $nav.height() instead of '100'
       $nav.removeClass('nav-bg');
-        $nav.addClass('navbar-bg-onscroll').slideDown('slow');
-        $('#home-navbar .navbar-brand img').attr('src','./assets/icons/Propl - dark -  logo.svg')
-        $('#home-navbar .dropdown-btn span').removeClass('home-dropdown-icon')
-        $('#home-navbar .dropdown-btn span').addClass('dropdown-icon')
-      } else {
-        $nav.addClass('nav-bg');
-        $nav.removeClass('navbar-bg-onscroll').slideDown('slow');
-        $('#home-navbar .dropdown-btn span').removeClass('dropdown-icon')
-        $('#home-navbar .dropdown-btn span').addClass('home-dropdown-icon')
-        $('#home-navbar .navbar-brand img').attr('src','./assets/icons/Propl - logo.svg')
-      }
-      
-      $mobileNav = $('header:nth-child(1)');
-      $homeMobileNav = $('.home-mobile-nav')
-      // set distance user needs to scroll before we start fadeIn
-      if ($scroll > 80) { //For dynamic effect use $nav.height() instead of '100'
-          $homeMobileNav.attr('id','mobile-navbar-fixed');
-        } else {
-          $homeMobileNav.attr('id','mobile-navbar');
-          
-      }
-    });
+      $nav.addClass('navbar-bg-onscroll').slideDown('slow');
+      $('#home-navbar .navbar-brand img').attr('src', './assets/icons/Propl - dark -  logo.svg')
+      $('#home-navbar .dropdown-btn span').removeClass('home-dropdown-icon')
+      $('#home-navbar .dropdown-btn span').addClass('dropdown-icon')
+    } else {
+      $nav.addClass('nav-bg');
+      $nav.removeClass('navbar-bg-onscroll').slideDown('slow');
+      $('#home-navbar .dropdown-btn span').removeClass('dropdown-icon')
+      $('#home-navbar .dropdown-btn span').addClass('home-dropdown-icon')
+      $('#home-navbar .navbar-brand img').attr('src', './assets/icons/Propl - logo.svg')
+    }
 
-    
+    $mobileNav = $('header:nth-child(1)');
+    $homeMobileNav = $('.home-mobile-nav')
+    // set distance user needs to scroll before we start fadeIn
+    if ($scroll > 80) { //For dynamic effect use $nav.height() instead of '100'
+      $homeMobileNav.attr('id', 'mobile-navbar-fixed');
+    } else {
+      $homeMobileNav.attr('id', 'mobile-navbar');
+
+    }
+  });
+
+
 
   $('.owl-carousel').owlCarousel({
     loop: true,
@@ -45,7 +45,7 @@ $(function () {
     autoplay: true,
     autoplayTimeout: 20000,
     autoplayHoverPause: true,
-    autoheight:true,
+    autoheight: true,
     responsive: {
       0: {
         items: 1,
@@ -94,6 +94,7 @@ $(function () {
   }).on('hide.bs.modal', function (e) {
     $('body').removeClass("example-open");
     $("#error").hide();
+    $("#error_email").hide();
     $('#m-content').removeClass('orange-background');
     $('#info-submit').show();
     $('#submit-btn').prop('disabled', false);
@@ -102,23 +103,40 @@ $(function () {
     $('#user_name').val('')
     $('#user_email').val('')
     $('#user_message').val('')
+    $('#error').removeClass('mt-0');
+    $('#submit-btn').removeClass('mt-1');
   })
   $('#success').hide();
   $("#error").hide();
+  $("#error_email").hide();
   $("#spinner").hide();
   $('#submit-btn').click(function () {
     submitForm();
   });
+  function isEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+  }
   function submitForm() {
     let name = $('#user_name').val();
     let email = $('#user_email').val();
     let message = $('#user_message').val();
+    var mail = isEmail(email)
+    if (!mail && email.length) {
+      $("#error_email").show();
+      $('#error_email').addClass('mt-0');
+      $('#submit-btn').addClass('mt-1');
+      $("#error").hide();
+      return;
+    }
     if (!name.length || !email.length || !message.length) {
+      $("#error_email").hide();
       $('#error').addClass('mt-0');
       $("#error").show();
       $('#submit-btn').addClass('mt-1');
       return;
     }
+    $("#error_email").hide();
     $("#error").hide();
     $('#error').removeClass('mt-0');
     $('#submit-btn').removeClass('mt-1');
@@ -150,4 +168,13 @@ $(function () {
       $("#spinner").hide();
     });
   }
+});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
 });
