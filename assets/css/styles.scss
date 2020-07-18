@@ -804,6 +804,9 @@ section:not(:nth-child(1)) {
       line-height: 2.5;
       text-align: left;
       color: #ffffff;
+      &:hover {
+        color: #ffffff !important;
+      }
     }
     .btn {
       color: #ffffff;
@@ -815,9 +818,15 @@ section:not(:nth-child(1)) {
       line-height: 1.88 !important;
       z-index: 1;
       margin-right: -2rem;
+      &:hover {
+        color: #ffffff;
+      }
       a {
         color: #ffffff;
         text-decoration: none;
+        &:hover {
+          color: $orange;
+        }
       }
     }
     .footer-bg-circle {
