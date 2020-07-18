@@ -38,12 +38,15 @@ $tab:768px;
     -ms-flex-align: center;
     align-items: center;
     // padding-top: 3rem;
-    margin-top: 75px;
+    // margin-top: 75px;
     height: 100%;
   }
   #predict-fututre {
     // padding-top: calc(100vh - 97vh);
     // padding-top: 3rem;
+    .layout-margin {
+      margin-top: 75px;
+    }
     .card {
       margin-bottom: 1.5rem;
       p {
