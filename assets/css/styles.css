@@ -2284,7 +2284,7 @@ section:not(:nth-child(1)) .card {
     height: 100%;
   }
   #predict-fututre {
-    padding-top: 3rem;
+    padding-top: calc(100vh - 97vh);
   }
   #predict-fututre .card {
     margin-bottom: 1.5rem;
@@ -2294,13 +2294,9 @@ section:not(:nth-child(1)) .card {
   }
   /*Home css*/
   /*----Home Css ----*/
-  #home {
-    height: 90%;
-  }
   #home-cover {
     background-image: url(../images/hero_mobile.png);
     background-size: cover;
-    height: 90vh;
   }
   .home-content-box-inner h1 {
     font-size: 2rem;
