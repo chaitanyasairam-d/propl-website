@@ -2363,7 +2363,7 @@ section:not(:nth-child(1)) .card {
             flex: 1 1 100%;
   }
   .circle-img-container img {
-    height: auto;
+    height: 100%;
     margin-top: 2rem;
   }
   .btn-business {
