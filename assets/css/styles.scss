@@ -99,6 +99,9 @@ section:nth-child(3) {
 }
 
 #home-navbar {  
+  nav{
+    height: 4rem!important;
+  }
   .nav-bg {
     font-size: 0.9rem;
     background: linear -gradient(to bottom, #0b1120 70%, rgba(11, 17, 33, 0) 80%);
@@ -424,7 +427,8 @@ section:not(:nth-child(1)) {
 
 #home-cover {
   height: 100vh;
-  background-image: url(../images/rename.png);
+  // background-image: url(../images/rename.png);
+  background-image: url(../images/test-phase-1.jpg);
   background-repeat: no-repeat;
   // background-size: cover;
   background-size: 100% 100%;
