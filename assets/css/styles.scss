@@ -397,7 +397,7 @@ section:not(:nth-child(1)) {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: #ffffff !important;
   &:hover {
     background: $orange !important;
     border: none;
