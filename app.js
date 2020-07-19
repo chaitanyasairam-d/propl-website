@@ -161,7 +161,7 @@ $(function () {
       user_id: "user_o1SY3Yz3mI8GWtJeuZhIQ",
       template_params: {
         "from_name": name,
-        "reply_to": email,
+        "from_email": email,
         "message": message
       }
     };
