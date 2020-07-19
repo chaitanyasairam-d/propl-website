@@ -217,8 +217,10 @@ $tab:768px;
     }
   }
   .strategy-container .back-btn {
-    margin-top: 3.5rem !important;
-    margin-bottom: 0 !important;
+    margin: 3.5rem 0px 0px 0px !important;
+}
+.strategy-future-container .back-btn {
+  margin: 3.5rem 0px 0px 0px !important;
 }
   /*strategy-future*/
 
@@ -371,7 +373,6 @@ $tab:768px;
   }
   #mobile-navbar {
     display: block;
-    margin-bottom: 0px;
     
     nav {
       position: absolute;
@@ -383,9 +384,13 @@ $tab:768px;
     //   background-color: #0a101d;
     // }
   }
+  .home-mobile-nav {
+    margin-bottom: 0 !important;
+  }
   #mobile-navbar-fixed {
     display: block;
     background-color: white;
+    margin-bottom: 1rem;
     nav {
       position: fixed;
       top: 0;

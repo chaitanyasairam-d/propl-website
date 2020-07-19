@@ -2498,8 +2498,10 @@ section:not(:nth-child(1)) .card {
     margin-top: 0px;
   }
   .strategy-container .back-btn {
-    margin-top: 3.5rem !important;
-    margin-bottom: 0 !important;
+    margin: 3.5rem 0px 0px 0px !important;
+  }
+  .strategy-future-container .back-btn {
+    margin: 3.5rem 0px 0px 0px !important;
   }
   /*strategy-future*/
   /*Abouts us */
@@ -2645,7 +2647,6 @@ section:not(:nth-child(1)) .card {
   }
   #mobile-navbar {
     display: block;
-    margin-bottom: 0px;
   }
   #mobile-navbar nav {
     position: absolute;
@@ -2653,9 +2654,13 @@ section:not(:nth-child(1)) .card {
     height: 8%;
     background-color: transparent;
   }
+  .home-mobile-nav {
+    margin-bottom: 0 !important;
+  }
   #mobile-navbar-fixed {
     display: block;
     background-color: white;
+    margin-bottom: 1rem;
   }
   #mobile-navbar-fixed nav {
     position: fixed;
