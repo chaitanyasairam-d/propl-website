@@ -155,10 +155,15 @@ $(function () {
     $('#submit-btn').removeClass('mt-2');
     $('#submit-btn').prop('disabled', true);
     $("#spinner").show();
+    var service_id = "default_service";
+    var template_id = "template_SrRZ0fEy"; //prod server
+    var user_id = "user_8Uba2Fxf8q0A8BvlOjV5N";//prod server
+    //var template_id = "template_i2YiDv4m"; //testing server
+    //var user_id = "user_o1SY3Yz3mI8GWtJeuZhIQ"; //testing server
     let data = {
-      service_id: "gmail",
-      template_id: "template_i2YiDv4m",
-      user_id: "user_o1SY3Yz3mI8GWtJeuZhIQ",
+      service_id, 
+      template_id,
+      user_id,
       template_params: {
         "from_name": name,
         "from_email": email,
