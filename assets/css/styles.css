@@ -2643,11 +2643,11 @@ section:not(:nth-child(1)) .card {
     margin-top: 3.5rem !important;
     margin-bottom: 0 !important;
   }
-  #mobile-navbar {
+  .home-mobile-nav {
     display: block;
-    margin-bottom: 0px;
+    margin-bottom: 0 !important;
   }
-  #mobile-navbar nav {
+  .home-mobile-nav nav {
     position: absolute;
     width: 100%;
     height: 8%;
