@@ -2409,7 +2409,7 @@ section:not(:nth-child(1)) .card {
     margin-top: 2rem;
   }
   .btn-business {
-    font-size: 12px;
+    font-size: 0.7rem;
   }
   .future-header {
     width: 100%;
