@@ -2644,6 +2644,7 @@ section:not(:nth-child(1)) .card {
   }
   #mobile-navbar {
     display: block;
+    margin-bottom: 0px;
   }
   #mobile-navbar nav {
     position: absolute;
@@ -2654,7 +2655,6 @@ section:not(:nth-child(1)) .card {
   #mobile-navbar-fixed {
     display: block;
     background-color: white;
-    margin-bottom: 1rem;
   }
   #mobile-navbar-fixed nav {
     position: fixed;
