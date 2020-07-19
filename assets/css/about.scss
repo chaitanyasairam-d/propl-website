@@ -59,6 +59,7 @@
         font-family: ProximaNovaBold;
         font-weight: 600;
         font-size: 1rem;
+        color: $text-color;
       }
       .text {
         font-family: $paragraph-font;
@@ -68,6 +69,7 @@
         height: 5rem;
         p {
           margin-bottom: 0;
+          color: $text-color;
         }
       }
     }
@@ -100,6 +102,7 @@
       font-family: $paragraph-font;
       width: 70%;
       font-size: 0.85rem;
+      color: $text-color;
     }
   }
 }

@@ -692,6 +692,25 @@ section:not(:nth-child(1)) .card {
   font-family: MinionPro;
 }
 
+.content-header-body h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: .85rem;
+  margin-top: 1rem;
+  font-family: ProximaNovaBold;
+}
+
+.content-header-body h5 img {
+  height: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
 #we-believe .content-header-body p {
   margin: 0 auto;
   width: 64%;
@@ -1907,6 +1926,7 @@ section:not(:nth-child(1)) .card {
   font-family: ProximaNovaBold;
   font-weight: 600;
   font-size: 1rem;
+  color: #061134;
 }
 
 .love-list li .list-container .text {
@@ -1918,6 +1938,7 @@ section:not(:nth-child(1)) .card {
 
 .love-list li .list-container .text p {
   margin-bottom: 0;
+  color: #061134;
 }
 
 .contact-container {
@@ -1965,6 +1986,7 @@ section:not(:nth-child(1)) .card {
   font-family: ProximaNova;
   width: 70%;
   font-size: 0.85rem;
+  color: #061134;
 }
 
 .contact-us-container {
@@ -2383,7 +2405,7 @@ section:not(:nth-child(1)) .card {
     margin-top: 2rem;
   }
   .btn-business {
-    font-size: 12px;
+    font-size: 0.7rem;
   }
   .future-header {
     width: 100%;

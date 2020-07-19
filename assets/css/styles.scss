@@ -638,7 +638,9 @@ section:not(:nth-child(1)) {
   margin-bottom: 50px;
 }
 
-.content-header-body h2 {
+.content-header-body { 
+
+h2 {
   font-size: 1.6rem;
   font-stretch: normal;
   font-style: normal;
@@ -647,6 +649,19 @@ section:not(:nth-child(1)) {
   text-align: center;
   color: $text-color;
   font-family: $header-font;
+}
+h5 {
+  display: flex;
+  flex-direction: column;
+  font-size: .85rem;
+  margin-top: 1rem;
+  font-family: ProximaNovaBold;
+  img {
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+}
 }
 #we-believe {
   .content-header-body p {
