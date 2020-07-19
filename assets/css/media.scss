@@ -57,7 +57,7 @@ $tab:768px;
   /*Home css*/
   /*----Home Css ----*/
   #home-cover {
-    background-image: url(../images/hero_mobile.png);
+    // background-image: url(../images/hero_mobile.png);
     background-size: cover;
     .home-content-box-inner {
       top: 50%;
@@ -144,6 +144,8 @@ $tab:768px;
   }
   .btn-business {
     font-size: 0.7rem;
+    font-weight: normal;
+    font-family: ProximaNovaSemiBold;
   }
   .future-header {
     width: 100%;
@@ -226,6 +228,12 @@ $tab:768px;
     border-radius: 0px 35px 0px;
     margin-top: 1rem;
   }
+  .test-container img {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    height: 50px;
+}
   .love-list {
     li {
       flex: 1 1 100%;

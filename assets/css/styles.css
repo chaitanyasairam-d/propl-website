@@ -1850,6 +1850,8 @@ section:not(:nth-child(1)) .card {
   font-size: 1rem;
   margin: 0 auto;
   width: 85%;
+  font-family: ProximaNova;
+  color: #061134;
 }
 
 #contact .content-header-body p {
@@ -1943,6 +1945,17 @@ section:not(:nth-child(1)) .card {
 .love-list li .list-container .text p {
   margin-bottom: 0;
   color: #061134;
+}
+
+.test-container {
+  position: relative;
+}
+
+.test-container img {
+  position: absolute;
+  top: -35px;
+  left: 75px;
+  height: 80px;
 }
 
 .contact-container {
@@ -2326,7 +2339,6 @@ section:not(:nth-child(1)) .card {
   /*Home css*/
   /*----Home Css ----*/
   #home-cover {
-    background-image: url(../images/hero_mobile.png);
     background-size: cover;
   }
   #home-cover .home-content-box-inner {
@@ -2410,6 +2422,8 @@ section:not(:nth-child(1)) .card {
   }
   .btn-business {
     font-size: 0.7rem;
+    font-weight: normal;
+    font-family: ProximaNovaSemiBold;
   }
   .future-header {
     width: 100%;
@@ -2495,6 +2509,12 @@ section:not(:nth-child(1)) .card {
     height: 8.5rem;
     border-radius: 0px 35px 0px;
     margin-top: 1rem;
+  }
+  .test-container img {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    height: 50px;
   }
   .love-list li {
     -webkit-box-flex: 1;

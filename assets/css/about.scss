@@ -10,6 +10,8 @@
 #misssion .content-header-body p {
   font-size: 1rem;
   @include marginAuto(85%);
+  font-family: $paragraph-font;
+  color: $text-color;
 }
 #contact .content-header-body p {
   font-size: 1rem;
@@ -73,6 +75,15 @@
         }
       }
     }
+  }
+}
+.test-container {
+  position: relative;
+  img {
+    position: absolute;
+    top: -35px;
+    left: 75px;
+    height: 80px;
   }
 }
 

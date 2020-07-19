@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40.295" height="40.295" viewBox="0 0 40.295 40.295">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff5050;
+      }
+
+      .cls-2 {
+        fill: #f1f2f2;
+      }
+    </style>
+  </defs>
+  <g id="linkedin" transform="translate(0 0.001)">
+    <circle id="Ellipse_63" data-name="Ellipse 63" class="cls-1" cx="20.148" cy="20.148" r="20.148" transform="translate(0 -0.001)"/>
+    <g id="Group_585" data-name="Group 585" transform="translate(9.722 8.608)">
+      <path id="Path_509" data-name="Path 509" class="cls-2" d="M49.532,37.129v8.306H44.716v-7.75c0-1.946-.7-3.275-2.439-3.275a2.634,2.634,0,0,0-2.47,1.761,3.3,3.3,0,0,0-.159,1.174v8.09H34.831s.065-13.126,0-14.484h4.817V33c-.01.016-.023.032-.032.047h.032V33a4.782,4.782,0,0,1,4.34-2.393c3.168,0,5.544,2.07,5.544,6.518ZM29.793,23.969a2.51,2.51,0,1,0-.063,5.005h.031a2.511,2.511,0,1,0,.032-5.005ZM27.354,45.435h4.814V30.951H27.354Z" transform="translate(-27.068 -23.969)"/>
+    </g>
+  </g>
+</svg>
