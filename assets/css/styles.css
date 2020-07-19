@@ -2336,6 +2336,7 @@ section:not(:nth-child(1)) .card {
   /*Home css*/
   /*----Home Css ----*/
   #home-cover {
+    background-image: url(../images/hero_mobile.png);
     background-size: cover;
   }
   #home-cover .home-content-box-inner {
