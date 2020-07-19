@@ -117,7 +117,7 @@ $(function () {
     $('#user_email').val('')
     $('#user_message').val('')
     $('#error').removeClass('mt-0');
-    $('#submit-btn').removeClass('mt-1');
+    $('#submit-btn').removeClass('mt-2');
   })
   $('#success').hide();
   $("#error").hide();
@@ -138,7 +138,7 @@ $(function () {
     if (!mail && email.length) {
       $("#error_email").show();
       $('#error_email').addClass('mt-0');
-      $('#submit-btn').addClass('mt-1');
+      $('#submit-btn').addClass('mt-2');
       $("#error").hide();
       return;
     }
@@ -146,13 +146,13 @@ $(function () {
       $("#error_email").hide();
       $('#error').addClass('mt-0');
       $("#error").show();
-      $('#submit-btn').addClass('mt-1');
+      $('#submit-btn').addClass('mt-2');
       return;
     }
     $("#error_email").hide();
     $("#error").hide();
     $('#error').removeClass('mt-0');
-    $('#submit-btn').removeClass('mt-1');
+    $('#submit-btn').removeClass('mt-2');
     $('#submit-btn').prop('disabled', true);
     $("#spinner").show();
     let data = {
