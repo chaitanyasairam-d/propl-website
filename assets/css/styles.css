@@ -1890,6 +1890,10 @@ section:not(:nth-child(1)) .card {
   width: 80%;
 }
 
+.future-text p {
+  width: 85%;
+}
+
 .scale {
   display: block;
   margin-top: 1rem;
@@ -2525,6 +2529,9 @@ section:not(:nth-child(1)) .card {
   }
   /*strategy-future*/
   /*Abouts us */
+  .future-text p {
+    width: 100%;
+  }
   .propl-about-container {
     height: 8.5rem;
     border-radius: 0px 35px 0px;
