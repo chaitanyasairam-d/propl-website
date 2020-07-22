@@ -845,10 +845,6 @@ section:not(:nth-child(1)) .card {
   padding-bottom: 2rem;
 }
 
-#footer .layout-margin {
-  width: 100%;
-}
-
 #footer .footer {
   padding-top: 70px;
   width: 70%;
@@ -911,7 +907,6 @@ section:not(:nth-child(1)) .card {
 }
 
 #footer #footer-logo-container li {
-  width: 96%;
   font-family: ProximaNova;
   font-size: 13px;
   line-height: 2.5;
