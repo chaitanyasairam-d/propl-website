@@ -845,6 +845,10 @@ section:not(:nth-child(1)) .card {
   padding-bottom: 2rem;
 }
 
+#footer .layout-margin {
+  width: 100%;
+}
+
 #footer .footer {
   padding-top: 70px;
   width: 70%;
@@ -902,8 +906,12 @@ section:not(:nth-child(1)) .card {
   text-decoration: underline !important;
 }
 
+#footer #footer-logo-container .footer-img img {
+  width: 100px;
+}
+
 #footer #footer-logo-container li {
-  width: 90%;
+  width: 96%;
   font-family: ProximaNova;
   font-size: 13px;
   line-height: 2.5;
@@ -917,8 +925,9 @@ section:not(:nth-child(1)) .card {
 
 #footer #footer-logo-container .btn {
   color: #ffffff;
-  font-size: .75rem;
+  font-size: .65rem;
   border-radius: 20px 0 20px 0 !important;
+  border: 0;
 }
 
 #footer #footer-logo-container .footer-copy-right {

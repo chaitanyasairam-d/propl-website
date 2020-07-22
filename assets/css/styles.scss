@@ -790,6 +790,9 @@ h5 {
   background-color: #1a2239;
   overflow: hidden;
   padding-bottom: 2rem;
+  .layout-margin{
+    width:100%;
+  }
   .footer {
     // background-color: red;
     padding-top: 70px;
@@ -844,8 +847,14 @@ h5 {
     text-decoration: underline !important;
   }
   #footer-logo-container {
+    .footer-img{
+      img{
+        width:100px
+      }
+      
+    }
     li {
-      width: 90%;
+      width:96%;
       font-family: ProximaNova;
       font-size: 13px;
       line-height: 2.5;
@@ -857,8 +866,9 @@ h5 {
     }
     .btn {
       color: #ffffff;
-      font-size: .75rem;
+      font-size: .65rem;
       border-radius: 20px 0 20px 0 !important;
+      border: 0;
     }
 
     .footer-copy-right {
