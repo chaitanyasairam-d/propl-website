@@ -105,7 +105,12 @@ section:nth-child(3) {
 #entrepreneur-residence,
 #innovation-transformation,
 #experiential-learning {
-
+.col-md-7{
+  padding-left: .5rem;
+}
+.back-btn{
+  margin-left: 0rem !important;
+}
     h1{
       font-size:1.6rem!important;
     }
