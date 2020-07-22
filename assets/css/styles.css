@@ -1356,11 +1356,11 @@ section:not(:nth-child(1)) .card {
 /* strategy future css*/
 .strategy-container {
   margin: 0 auto;
-  width: 85%;
+  width: 90%;
 }
 
 .strategy-container .back-btn {
-  margin: 10px 20px !important;
+  margin: 10px 5px !important;
   margin-top: 50px !important;
 }
 

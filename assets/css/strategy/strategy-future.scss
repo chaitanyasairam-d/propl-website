@@ -1,9 +1,9 @@
 /* strategy future css*/
 
 .strategy-container {
-  @include marginAuto(85%);
+  @include marginAuto(90%);
   .back-btn {
-    margin: 10px 20px !important;
+    margin: 10px 5px !important;
     margin-top: 50px !important;
   }
 }
