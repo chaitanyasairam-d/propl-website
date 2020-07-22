@@ -242,6 +242,9 @@ li:hover{
 
 .navbar-bg-onscroll,.nav-bg{
   .custom-dropdown-menu{
+    li:nth-child(1){
+      margin-left:.3rem!important;
+    }
     li:nth-child(n+2){
       margin-left: .7rem;
       opacity: 0.8;
@@ -879,7 +882,7 @@ h5 {
       right: -13%;
       bottom: -68%;
       img {
-        animation: bg-circle-rotate 10s linear infinite;
+        animation: bg-circle-rotate 18s linear infinite;
       }
     }
   }

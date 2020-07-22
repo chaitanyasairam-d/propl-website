@@ -255,6 +255,10 @@ li:hover .dropdown-toggle .custom-dropdown-menu {
   margin-top: -3rem;
 }
 
+.navbar-bg-onscroll .custom-dropdown-menu li:nth-child(1), .nav-bg .custom-dropdown-menu li:nth-child(1) {
+  margin-left: 0.3rem !important;
+}
+
 .navbar-bg-onscroll .custom-dropdown-menu li:nth-child(n+2), .nav-bg .custom-dropdown-menu li:nth-child(n+2) {
   margin-left: .7rem;
   opacity: 0.8;
@@ -944,8 +948,8 @@ section:not(:nth-child(1)) .card {
 }
 
 #footer #footer-logo-container .footer-bg-circle img {
-  -webkit-animation: bg-circle-rotate 10s linear infinite;
-          animation: bg-circle-rotate 10s linear infinite;
+  -webkit-animation: bg-circle-rotate 18s linear infinite;
+          animation: bg-circle-rotate 18s linear infinite;
 }
 
 /* Experience page styling */
