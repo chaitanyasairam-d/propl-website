@@ -1890,7 +1890,7 @@ section:not(:nth-child(1)) .card {
   width: 80%;
 }
 
-.future-text p {
+.future-text .about-text {
   width: 85%;
 }
 
@@ -2529,7 +2529,7 @@ section:not(:nth-child(1)) .card {
   }
   /*strategy-future*/
   /*Abouts us */
-  .future-text p {
+  .future-text .about-us {
     width: 100%;
   }
   .propl-about-container {
