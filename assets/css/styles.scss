@@ -626,6 +626,7 @@ section:not(:nth-child(1)) {
   display: flex;
   align-items: center;
   height: calc(100vh - 4px);
+  padding-top: 4rem;;
 }
 #predict-fututre .img-bg-circle {
   position: absolute;

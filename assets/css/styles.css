@@ -655,6 +655,7 @@ section:not(:nth-child(1)) .card {
       -ms-flex-align: center;
           align-items: center;
   height: calc(100vh - 4px);
+  padding-top: 4rem;
 }
 
 #predict-fututre .img-bg-circle {
@@ -2376,6 +2377,7 @@ section:not(:nth-child(1)) .card {
     -ms-flex-align: center;
     align-items: center;
     height: 100%;
+    padding-top: 0;
   }
   #predict-fututre .layout-margin {
     margin-top: 75px;
