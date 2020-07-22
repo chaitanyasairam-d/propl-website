@@ -1360,7 +1360,7 @@ section:not(:nth-child(1)) .card {
 }
 
 .strategy-container .back-btn {
-  margin: 10px 5px !important;
+  margin: 10px 0px !important;
   margin-top: 50px !important;
 }
 
@@ -1595,7 +1595,7 @@ section:not(:nth-child(1)) .card {
 }
 
 .strategy-future-container .back-btn {
-  margin: 10px 20px !important;
+  margin: 10px 0px !important;
   margin-top: 50px !important;
   margin-bottom: 45px !important;
 }
@@ -1867,6 +1867,7 @@ section:not(:nth-child(1)) .card {
   background-color: #ff5050;
   border-radius: 0px 75px 0px;
   margin-top: 5.5rem;
+  margin-left: 3.5rem;
 }
 
 .propl-about-container img {
@@ -1897,6 +1898,7 @@ section:not(:nth-child(1)) .card {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
+  padding: .5rem;
 }
 
 .about .future-text {
@@ -2450,6 +2452,7 @@ section:not(:nth-child(1)) .card {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
+    padding: 0;
   }
   .circle-img-container img {
     height: auto;
@@ -2549,6 +2552,7 @@ section:not(:nth-child(1)) .card {
     height: 8.5rem;
     border-radius: 0px 35px 0px;
     margin-top: 1rem;
+    margin-left: 0;
   }
   .test-container img {
     position: absolute;
