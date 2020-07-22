@@ -105,7 +105,12 @@ section:nth-child(3) {
 #entrepreneur-residence,
 #innovation-transformation,
 #experiential-learning {
-
+.col-md-7{
+  padding-left: .5rem;
+}
+.back-btn{
+  margin-left: 0rem !important;
+}
     h1{
       font-size:1.6rem!important;
     }
@@ -790,9 +795,7 @@ h5 {
   background-color: #1a2239;
   overflow: hidden;
   padding-bottom: 2rem;
-  .layout-margin{
-    width:100%;
-  }
+  
   .footer {
     // background-color: red;
     padding-top: 70px;
@@ -854,7 +857,6 @@ h5 {
       
     }
     li {
-      width:96%;
       font-family: ProximaNova;
       font-size: 13px;
       line-height: 2.5;

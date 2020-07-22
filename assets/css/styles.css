@@ -105,6 +105,28 @@ section:nth-child(3) {
   margin-top: 100px;
 }
 
+#business-design-sprint .col-md-7,
+#solution-design .col-md-7,
+#solution-delivery .col-md-7,
+#growth-strategy .col-md-7,
+#growth-experiments .col-md-7,
+#entrepreneur-residence .col-md-7,
+#innovation-transformation .col-md-7,
+#experiential-learning .col-md-7 {
+  padding-left: .5rem;
+}
+
+#business-design-sprint .back-btn,
+#solution-design .back-btn,
+#solution-delivery .back-btn,
+#growth-strategy .back-btn,
+#growth-experiments .back-btn,
+#entrepreneur-residence .back-btn,
+#innovation-transformation .back-btn,
+#experiential-learning .back-btn {
+  margin-left: 0rem !important;
+}
+
 #business-design-sprint h1,
 #solution-design h1,
 #solution-delivery h1,
@@ -845,10 +867,6 @@ section:not(:nth-child(1)) .card {
   padding-bottom: 2rem;
 }
 
-#footer .layout-margin {
-  width: 100%;
-}
-
 #footer .footer {
   padding-top: 70px;
   width: 70%;
@@ -911,7 +929,6 @@ section:not(:nth-child(1)) .card {
 }
 
 #footer #footer-logo-container li {
-  width: 96%;
   font-family: ProximaNova;
   font-size: 13px;
   line-height: 2.5;
