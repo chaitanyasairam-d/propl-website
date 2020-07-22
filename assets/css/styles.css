@@ -2533,7 +2533,7 @@ section:not(:nth-child(1)) .card {
   }
   /*strategy-future*/
   /*Abouts us */
-  .future-text .about-us {
+  .future-text .about-text {
     width: 100%;
   }
   .propl-about-container {
