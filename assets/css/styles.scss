@@ -13,7 +13,7 @@ body {
 
 button {
   outline: none !important;
-}
+} 
 
 a,
 a:focus,
@@ -41,22 +41,22 @@ a:active {
 .btn-back {
   color: black !important;
 }
-.back-btn { 
+.back-btn {
   margin: 2rem 0 0 0.8rem;
 }
 
 .cursor-pointer {
   cursor: pointer;
 }
-.get-started-arrow{
+.get-started-arrow {
   animation: get-started-animation 2.2s ease-in-out infinite;
 }
-@keyframes get-started-animation{
-  50%{
+@keyframes get-started-animation {
+  50% {
     transform: translateY(20px);
   }
 
-  100%{
+  100% {
     transform: translateY(0);
   }
 }
@@ -105,19 +105,19 @@ section:nth-child(3) {
 #entrepreneur-residence,
 #innovation-transformation,
 #experiential-learning {
-.col-md-7{
-  padding-left: .5rem;
-}
-.back-btn{
-  margin-left: 0rem !important;
-}
-    h1{
-      font-size:1.6rem!important;
-    }
+  .col-md-7 {
+    padding-left: 0.5rem;
   }
-#home-navbar {  
-  nav{
-    height: 4rem!important;
+  .back-btn {
+    margin-left: 0rem !important;
+  }
+  h1 {
+    font-size: 1.6rem !important;
+  }
+}
+#home-navbar {
+  nav {
+    height: 4rem !important;
   }
   .nav-bg {
     font-size: 0.9rem;
@@ -135,22 +135,22 @@ section:nth-child(3) {
     }
     ul {
       list-style-type: none;
-      li{
+      li {
         position: relative;
         &:hover {
-          color: $orange!important;
-          .nav-link{
-            color: $orange!important;
+          color: $orange !important;
+          .nav-link {
+            color: $orange !important;
           }
           .dropdown-btn {
             color: $orange !important;
           }
           .custom-dropdown-menu {
             display: block;
-            margin-top: -1rem ;
-            margin-left: .8rem ;
+            margin-top: -1rem;
+            margin-left: 0.8rem;
           }
-        } 
+        }
       }
     }
   }
@@ -177,14 +177,13 @@ section:nth-child(3) {
     padding: 0.25rem 0.45rem;
     text-align: left;
     background-color: transparent;
-    font-family:ProximaNovaSemiBold ;
+    font-family: ProximaNovaSemiBold;
     border: 0;
     font-weight: 500;
     font-size: 0.68rem;
     &:hover {
       color: $orange;
     }
-  
   }
 }
 
@@ -212,19 +211,21 @@ section:nth-child(3) {
     padding-bottom: 1.5rem;
     font-family: $paragraph-semi-bold-font;
     font-size: 0.7rem;
-    margin: 0 .7rem;
+    margin: 0 0.7rem;
     text-transform: capitalize;
     color: #0b1120 !important;
   }
 
   ul {
     list-style-type: none;
-    li{
+    li {
       position: relative;
-      &:hover,&:focus,&:focus-within {
+      &:hover,
+      &:focus,
+      &:focus-within {
         color: $orange !important;
-        .nav-link{
-          color: $orange!important;
+        .nav-link {
+          color: $orange !important;
         }
         .dropdown-btn {
           color: $orange !important;
@@ -232,26 +233,27 @@ section:nth-child(3) {
         .custom-dropdown-menu {
           display: block;
         }
-      } 
+      }
     }
   }
 }
 
-li:hover{
-  .dropdown-toggle{
-    .custom-dropdown-menu{
+li:hover {
+  .dropdown-toggle {
+    .custom-dropdown-menu {
       margin-top: -3rem;
     }
   }
 }
 
-.navbar-bg-onscroll,.nav-bg{
-  .custom-dropdown-menu{
-    li:nth-child(1){
-      margin-left:.3rem!important;
+.navbar-bg-onscroll,
+.nav-bg {
+  .custom-dropdown-menu {
+    li:nth-child(1) {
+      margin-left: 0.3rem !important;
     }
-    li:nth-child(n+2){
-      margin-left: .7rem;
+    li:nth-child(n + 2) {
+      margin-left: 0.7rem;
       opacity: 0.8;
     }
   }
@@ -271,8 +273,11 @@ li:hover{
   transition: all 0s;
 }
 
-.nav-bg,.navbar-bg-onsscroll,#mobile-navbar,#mobile-navbar-fixed{
-  .nav-link:hover  {
+.nav-bg,
+.navbar-bg-onsscroll,
+#mobile-navbar,
+#mobile-navbar-fixed {
+  .nav-link:hover {
     .dropdown-icon {
       background-image: url('../images/special_icons/down-arrow-orange.svg') !important;
       background-position: center;
@@ -284,7 +289,7 @@ li:hover{
       -webkit-transition: all 0s;
       transition: all 0s;
     }
-  
+
     .home-dropdown-icon {
       background-image: url('../images/special_icons/down-arrow-orange.svg') !important;
       background-position: center;
@@ -297,7 +302,6 @@ li:hover{
       transition: all 0s;
     }
   }
-  
 }
 .home-dropdown-menu {
   display: absolute;
@@ -327,18 +331,17 @@ li:hover{
   // border-color: #ff5050;
   // border-radius: 50px;
   position: absolute;
-    content: '';
-    top: 35px;
-    left: 0;
-    margin: 0 auto;
-    display: block;
-    right: 0;
-    width: 45px;
-    height: 0.5px;
-    border: 2px solid;
-    border-color: #ff5050;
-    border-radius: 50px;
- 
+  content: '';
+  top: 35px;
+  left: 0;
+  margin: 0 auto;
+  display: block;
+  right: 0;
+  width: 45px;
+  height: 0.5px;
+  border: 2px solid;
+  border-color: #ff5050;
+  border-radius: 50px;
 }
 
 .dropdown-icon {
@@ -661,30 +664,29 @@ section:not(:nth-child(1)) {
 }
 
 .content-header-body {
-
-h2 {
-  font-size: 1.6rem;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.2;
-  letter-spacing: normal;
-  text-align: center;
-  color: $text-color;
-  font-family: $header-font;
-}
-h5 {
-  display: flex;
-  flex-direction: column;
-  font-size: 1rem;
-  margin-top: 1rem;
-  font-family: MinionPro;
-  img {
-    height: 30px;
-    width: 30px;
-    margin-left: 10px;
-    margin-top: 10px;
+  h2 {
+    font-size: 1.6rem;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+    color: $text-color;
+    font-family: $header-font;
   }
-}
+  h5 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-family: MinionPro;
+    img {
+      height: 30px;
+      width: 30px;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+  }
 }
 #we-believe {
   .content-header-body p {
@@ -795,7 +797,7 @@ h5 {
   background-color: #1a2239;
   overflow: hidden;
   padding-bottom: 2rem;
-  
+
   .footer {
     // background-color: red;
     padding-top: 70px;
@@ -850,11 +852,10 @@ h5 {
     text-decoration: underline !important;
   }
   #footer-logo-container {
-    .footer-img{
-      img{
-        width:100px
+    .footer-img {
+      img {
+        width: 100px;
       }
-      
     }
     li {
       font-family: ProximaNova;
@@ -868,7 +869,7 @@ h5 {
     }
     .btn {
       color: #ffffff;
-      font-size: .65rem;
+      font-size: 0.65rem;
       border-radius: 20px 0 20px 0 !important;
       border: 0;
     }

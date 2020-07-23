@@ -113,7 +113,7 @@ section:nth-child(3) {
 #entrepreneur-residence .col-md-7,
 #innovation-transformation .col-md-7,
 #experiential-learning .col-md-7 {
-  padding-left: .5rem;
+  padding-left: 0.5rem;
 }
 
 #business-design-sprint .back-btn,
@@ -181,7 +181,7 @@ section:nth-child(3) {
 #home-navbar .nav-bg ul li:hover .custom-dropdown-menu {
   display: block;
   margin-top: -1rem;
-  margin-left: .8rem;
+  margin-left: 0.8rem;
 }
 
 .custom-dropdown-menu {
@@ -244,7 +244,7 @@ section:nth-child(3) {
   padding-bottom: 1.5rem;
   font-family: ProximaNovaSemiBold;
   font-size: 0.7rem;
-  margin: 0 .7rem;
+  margin: 0 0.7rem;
   text-transform: capitalize;
   color: #0b1120 !important;
 }
@@ -277,12 +277,14 @@ li:hover .dropdown-toggle .custom-dropdown-menu {
   margin-top: -3rem;
 }
 
-.navbar-bg-onscroll .custom-dropdown-menu li:nth-child(1), .nav-bg .custom-dropdown-menu li:nth-child(1) {
+.navbar-bg-onscroll .custom-dropdown-menu li:nth-child(1),
+.nav-bg .custom-dropdown-menu li:nth-child(1) {
   margin-left: 0.3rem !important;
 }
 
-.navbar-bg-onscroll .custom-dropdown-menu li:nth-child(n+2), .nav-bg .custom-dropdown-menu li:nth-child(n+2) {
-  margin-left: .7rem;
+.navbar-bg-onscroll .custom-dropdown-menu li:nth-child(n + 2),
+.nav-bg .custom-dropdown-menu li:nth-child(n + 2) {
+  margin-left: 0.7rem;
   opacity: 0.8;
 }
 
@@ -301,7 +303,10 @@ li:hover .dropdown-toggle .custom-dropdown-menu {
   transition: all 0s;
 }
 
-.nav-bg .nav-link:hover .dropdown-icon, .navbar-bg-onsscroll .nav-link:hover .dropdown-icon, #mobile-navbar .nav-link:hover .dropdown-icon, #mobile-navbar-fixed .nav-link:hover .dropdown-icon {
+.nav-bg .nav-link:hover .dropdown-icon,
+.navbar-bg-onsscroll .nav-link:hover .dropdown-icon,
+#mobile-navbar .nav-link:hover .dropdown-icon,
+#mobile-navbar-fixed .nav-link:hover .dropdown-icon {
   background-image: url("../images/special_icons/down-arrow-orange.svg") !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -313,7 +318,10 @@ li:hover .dropdown-toggle .custom-dropdown-menu {
   transition: all 0s;
 }
 
-.nav-bg .nav-link:hover .home-dropdown-icon, .navbar-bg-onsscroll .nav-link:hover .home-dropdown-icon, #mobile-navbar .nav-link:hover .home-dropdown-icon, #mobile-navbar-fixed .nav-link:hover .home-dropdown-icon {
+.nav-bg .nav-link:hover .home-dropdown-icon,
+.navbar-bg-onsscroll .nav-link:hover .home-dropdown-icon,
+#mobile-navbar .nav-link:hover .home-dropdown-icon,
+#mobile-navbar-fixed .nav-link:hover .home-dropdown-icon {
   background-image: url("../images/special_icons/down-arrow-orange.svg") !important;
   background-position: center;
   background-repeat: no-repeat;
@@ -942,7 +950,7 @@ section:not(:nth-child(1)) .card {
 
 #footer #footer-logo-container .btn {
   color: #ffffff;
-  font-size: .65rem;
+  font-size: 0.65rem;
   border-radius: 20px 0 20px 0 !important;
   border: 0;
 }
@@ -1072,7 +1080,7 @@ section:not(:nth-child(1)) .card {
   padding-right: 3.5rem;
 }
 
-#business-design-sprint .card p {
+#business-design-sprint .card .card-text {
   font-family: ProximaNova;
   font-size: 17px;
   font-weight: 500;
@@ -2395,11 +2403,11 @@ section:not(:nth-child(1)) .card {
   }
   .home-content-box-inner h1 {
     font-size: 2rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     line-height: 1.3;
   }
   .home-content-box-inner h4 {
-    font-size: .85rem !important;
+    font-size: 0.85rem !important;
     margin: 0 auto;
     width: 80%;
     font-family: ProximaNova;
@@ -2421,7 +2429,7 @@ section:not(:nth-child(1)) .card {
     line-height: 1.5;
   }
   .content-header-body p h5 {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .card-title {
     font-size: 1.3rem !important;
@@ -2609,7 +2617,7 @@ section:not(:nth-child(1)) .card {
   }
   .contact-header p {
     font-size: 0.7rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
   }
   .success-img {
     display: none;
@@ -2676,13 +2684,6 @@ section:not(:nth-child(1)) .card {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .business-footer-underline {
-    margin: 0 auto;
-    width: 80vw;
-    height: 8px;
-    background-color: #ff5050;
-    border-radius: 10px;
-  }
   section:nth-child(3) {
     margin: 0 !important;
   }
@@ -2724,7 +2725,7 @@ section:not(:nth-child(1)) .card {
     top: 0;
     left: 0;
     right: 0;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
     background-color: white;
     -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
             box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
@@ -2793,7 +2794,7 @@ section:not(:nth-child(1)) .card {
     left: 0;
   }
   #overlay ul li {
-    padding: .5rem;
+    padding: 0.5rem;
     font-family: ProximaNovaSemiBold;
   }
   #overlay ul li .custom-dropdown-menu {
@@ -2804,11 +2805,11 @@ section:not(:nth-child(1)) .card {
             box-shadow: none !important;
   }
   #overlay ul li .custom-dropdown-menu li {
-    padding: .2rem;
+    padding: 0.2rem;
     width: 100%;
     list-style-type: none;
   }
-  #overlay ul li .custom-dropdown-menu li:nth-child(n+2) {
+  #overlay ul li .custom-dropdown-menu li:nth-child(n + 2) {
     opacity: 0.8;
     margin-left: 0.7rem !important;
   }
@@ -2827,6 +2828,26 @@ section:not(:nth-child(1)) .card {
   #overlay ul li a:focus {
     background-color: transparent;
     color: #ff5050;
+  }
+  #business-design-sprint .col-md-7,
+  #solution-design .col-md-7,
+  #solution-delivery .col-md-7,
+  #growth-strategy .col-md-7,
+  #growth-experiments .col-md-7,
+  #entrepreneur-residence .col-md-7,
+  #innovation-transformation .col-md-7,
+  #experiential-learning .col-md-7 {
+    padding-left: 0;
+  }
+  #business-design-sprint .col-md-7 .back-btn,
+  #solution-design .col-md-7 .back-btn,
+  #solution-delivery .col-md-7 .back-btn,
+  #growth-strategy .col-md-7 .back-btn,
+  #growth-experiments .col-md-7 .back-btn,
+  #entrepreneur-residence .col-md-7 .back-btn,
+  #innovation-transformation .col-md-7 .back-btn,
+  #experiential-learning .col-md-7 .back-btn {
+    margin-left: 0 !important;
   }
   #business-design-sprint .img-container img,
   #solution-design .img-container img,
@@ -3011,21 +3032,14 @@ section:not(:nth-child(1)) .card {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .business-footer-underline {
-    margin: 0 auto;
-    width: 80vw;
-    height: 8px;
-    background-color: #ff5050;
-    border-radius: 10px;
-  }
+@media (min-width: 768px) and (max-width: 999px) {
   #home-navbar,
   #navbar {
     display: none;
   }
   .navbar-brand img {
     margin-top: 1.2rem;
-    margin-left: 1.5rem !important;
+    margin-left: 2rem !important;
     width: 90px;
   }
   .back-btn {
@@ -3041,22 +3055,24 @@ section:not(:nth-child(1)) .card {
     height: 8%;
     background-color: transparent;
   }
+  .home-mobile-nav {
+    margin-bottom: 0 !important;
+  }
   #mobile-navbar-fixed {
     display: block;
     background-color: white;
-    -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-            box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
+    margin-bottom: 1rem;
   }
   #mobile-navbar-fixed nav {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
     background-color: white;
     -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
             box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-    z-index: 999999999;
+    z-index: 999;
   }
   #home {
     margin: 0 !important;
@@ -3120,32 +3136,28 @@ section:not(:nth-child(1)) .card {
     top: 0;
     left: 0;
   }
-  #overlay ul {
-    overflow: auto;
-    position: relative;
-  }
   #overlay ul li {
-    text-align: left;
-    padding: .7rem;
-    list-style-type: none;
+    padding: 0.5rem;
     font-family: ProximaNovaSemiBold;
   }
   #overlay ul li .custom-dropdown-menu {
     width: 100%;
-    background-color: #0b1120 !important;
+    position: relative;
+    background-color: transparent !important;
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
-    text-align: left;
   }
-  #overlay ul li li {
+  #overlay ul li .custom-dropdown-menu li {
+    padding: 0.2rem;
     width: 100%;
     list-style-type: none;
-    font-family: ProximaNovaSemiBold;
-    margin: 0.2px auto !important;
-    background-color: #0b1120 !important;
-    border: 0.5px solid #0b1120 !important;
-    padding: 0 !important;
-    text-align: left !important;
+  }
+  #overlay ul li .custom-dropdown-menu li:nth-child(n + 2) {
+    opacity: 0.8;
+    margin-left: 0.7rem !important;
+  }
+  #overlay ul li .custom-dropdown-menu li .dropdown-item {
+    padding: 0.2rem !important;
   }
   #overlay ul li a {
     color: white;
@@ -3160,6 +3172,46 @@ section:not(:nth-child(1)) .card {
     background-color: transparent;
     color: #ff5050;
   }
+  #business-design-sprint br,
+  #solution-design br,
+  #solution-delivery br,
+  #growth-strategy br,
+  #growth-experiments br,
+  #entrepreneur-residence br,
+  #innovation-transformation br,
+  #experiential-learning br {
+    display: none;
+  }
+  #business-design-sprint .col-md-7,
+  #solution-design .col-md-7,
+  #solution-delivery .col-md-7,
+  #growth-strategy .col-md-7,
+  #growth-experiments .col-md-7,
+  #entrepreneur-residence .col-md-7,
+  #innovation-transformation .col-md-7,
+  #experiential-learning .col-md-7 {
+    padding-left: 0;
+  }
+  #business-design-sprint .col-md-7 .back-btn,
+  #solution-design .col-md-7 .back-btn,
+  #solution-delivery .col-md-7 .back-btn,
+  #growth-strategy .col-md-7 .back-btn,
+  #growth-experiments .col-md-7 .back-btn,
+  #entrepreneur-residence .col-md-7 .back-btn,
+  #innovation-transformation .col-md-7 .back-btn,
+  #experiential-learning .col-md-7 .back-btn {
+    margin: 0 !important;
+  }
+  #business-design-sprint .layout-margin,
+  #solution-design .layout-margin,
+  #solution-delivery .layout-margin,
+  #growth-strategy .layout-margin,
+  #growth-experiments .layout-margin,
+  #entrepreneur-residence .layout-margin,
+  #innovation-transformation .layout-margin,
+  #experiential-learning .layout-margin {
+    width: 100% !important;
+  }
   #business-design-sprint .img-container img,
   #solution-design .img-container img,
   #solution-delivery .img-container img,
@@ -3170,49 +3222,32 @@ section:not(:nth-child(1)) .card {
   #experiential-learning .img-container img {
     margin-top: 1rem;
     width: 400px !important;
-    height: 286px !important;
+    height: 100% !important;
   }
-  #business-design-sprint .card,
-  #solution-design .card,
-  #solution-delivery .card,
-  #growth-strategy .card,
-  #growth-experiments .card,
-  #entrepreneur-residence .card,
-  #innovation-transformation .card,
-  #experiential-learning .card {
+  #business-design-sprint .img-container h1,
+  #solution-design .img-container h1,
+  #solution-delivery .img-container h1,
+  #growth-strategy .img-container h1,
+  #growth-experiments .img-container h1,
+  #entrepreneur-residence .img-container h1,
+  #innovation-transformation .img-container h1,
+  #experiential-learning .img-container h1 {
+    font-size: 1.4rem !important;
+  }
+  #business-design-sprint .card {
     margin-left: 0 !important;
+    margin-top: 1.3rem !important;
     width: 100% !important;
   }
-  #business-design-sprint .card .card-body,
-  #solution-design .card .card-body,
-  #solution-delivery .card .card-body,
-  #growth-strategy .card .card-body,
-  #growth-experiments .card .card-body,
-  #entrepreneur-residence .card .card-body,
-  #innovation-transformation .card .card-body,
-  #experiential-learning .card .card-body {
+  #business-design-sprint .card .card-body {
     width: 100% !important;
     padding-right: 0 !important;
   }
-  #business-design-sprint .card .card-body .card-title,
-  #solution-design .card .card-body .card-title,
-  #solution-delivery .card .card-body .card-title,
-  #growth-strategy .card .card-body .card-title,
-  #growth-experiments .card .card-body .card-title,
-  #entrepreneur-residence .card .card-body .card-title,
-  #innovation-transformation .card .card-body .card-title,
-  #experiential-learning .card .card-body .card-title {
-    font-size: 1.2rem !important;
+  #business-design-sprint .card .card-body .card-title {
+    font-size: 1.3rem !important;
   }
-  #business-design-sprint .card .card-body .card-body-text,
-  #solution-design .card .card-body .card-body-text,
-  #solution-delivery .card .card-body .card-body-text,
-  #growth-strategy .card .card-body .card-body-text,
-  #growth-experiments .card .card-body .card-body-text,
-  #entrepreneur-residence .card .card-body .card-body-text,
-  #innovation-transformation .card .card-body .card-body-text,
-  #experiential-learning .card .card-body .card-body-text {
-    font-size: 0.8rem;
+  #business-design-sprint .card .card-body .card-text {
+    font-size: 0.7rem !important;
   }
   #desirable {
     padding-bottom: 40px;

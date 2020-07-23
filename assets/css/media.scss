@@ -1,5 +1,5 @@
 $mobile: 320px;
-$tab:768px;
+$tab: 768px;
 
 @mixin mobile {
   @media (min-width: #{$mobile})  and (max-width:767px) {
@@ -7,12 +7,10 @@ $tab:768px;
   }
 }
 @mixin tab {
-  @media (min-width: #{$tab})  and (max-width:1199px) {
+  @media (min-width: #{$tab})  and (max-width:999px) {
     @content;
   }
 }
-
-
 
 @media only screen and (min-width: 320px) and (max-width: 478px) {
   br {
@@ -67,12 +65,12 @@ $tab:768px;
 
   .home-content-box-inner h1 {
     font-size: 2rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     line-height: 1.3;
   }
 
   .home-content-box-inner h4 {
-    font-size: .85rem !important;
+    font-size: 0.85rem !important;
     @include marginAuto(80%);
     font-family: ProximaNova;
   }
@@ -93,7 +91,7 @@ $tab:768px;
     text-align: center;
     line-height: 1.5;
     h5 {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
   .card-title {
@@ -221,10 +219,10 @@ $tab:768px;
   }
   .strategy-container .back-btn {
     margin: 3.5rem 0px 0px 0px !important;
-}
-.strategy-future-container .back-btn {
-  margin: 3.5rem 0px 0px 0px !important;
-}
+  }
+  .strategy-future-container .back-btn {
+    margin: 3.5rem 0px 0px 0px !important;
+  }
   /*strategy-future*/
 
   /*Abouts us */
@@ -243,7 +241,7 @@ $tab:768px;
     top: -20px;
     left: -20px;
     height: 50px;
-}
+  }
   .love-list {
     li {
       flex: 1 1 100%;
@@ -285,7 +283,7 @@ $tab:768px;
     }
     p {
       font-size: 0.7rem;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
   }
   .success-img {
@@ -317,7 +315,7 @@ $tab:768px;
   }
   .modal-content {
     border-radius: 35px 0px 35px;
-}
+  }
 }
 @media only screen and (min-width: 500px) and (max-width: 800px) {
   #predict-fututre #img-bg-circle {
@@ -351,13 +349,6 @@ $tab:768px;
 // Experience page Styling
 
 @include mobile {
-  .business-footer-underline {
-    margin: 0 auto;
-    width: 80vw;
-    height: 8px;
-    background-color: #ff5050;
-    border-radius: 10px;
-  }
   section:nth-child(3) {
     margin: 0 !important;
     .card {
@@ -371,17 +362,17 @@ $tab:768px;
   .navbar-brand {
     img {
       margin-top: 1.2rem;
-        margin-left: 1.5rem !important;
-        width: 90px;
+      margin-left: 1.5rem !important;
+      width: 90px;
     }
   }
   .back-btn {
-    margin-top: 3.5rem!important;
+    margin-top: 3.5rem !important;
     margin-bottom: 0 !important;
   }
   #mobile-navbar {
     display: block;
-    
+
     nav {
       position: absolute;
       width: 100%;
@@ -404,10 +395,9 @@ $tab:768px;
       top: 0;
       left: 0;
       right: 0;
-      padding-bottom: .5rem;
-    background-color: white;
-  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-
+      padding-bottom: 0.5rem;
+      background-color: white;
+      box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
 
       z-index: 999;
     }
@@ -416,25 +406,25 @@ $tab:768px;
   #home {
     margin: 0 !important;
   }
-  .get-started-arrow{
+  .get-started-arrow {
     animation: get-started-animation 2.2s ease-in-out infinite;
   }
-  @keyframes get-started-animation{
-    0%{
+  @keyframes get-started-animation {
+    0% {
       transform: translateY(-50px);
     }
-    50%{
+    50% {
       transform: translateY(-30px);
     }
-  
-    100%{
+
+    100% {
       transform: translateY(-50px);
     }
   }
- .mobile-menu {
-   position: absolute;
-   top: 1.2rem;
-   right:1.5rem;
+  .mobile-menu {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
     z-index: 5;
     cursor: pointer;
 
@@ -445,46 +435,46 @@ $tab:768px;
     //   }
     // }
 
-    .close-btn{
+    .close-btn {
       float: right;
       position: absolute;
       top: 1.2rem;
-   right:1.5rem;
+      right: 1.5rem;
       z-index: 999999999;
     }
   }
-  .overlay-content{
+  .overlay-content {
     margin: 2rem 0.5rem;
     overflow: hidden;
   }
-#overlay {
-  height: 100vh;
-  width: 100vw;
-  background: #0b1120;
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  ul {
+  #overlay {
+    height: 100vh;
+    width: 100vw;
+    background: #0b1120;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    ul {
       li {
-        padding: .5rem;
+        padding: 0.5rem;
         font-family: ProximaNovaSemiBold;
         .custom-dropdown-menu {
           width: 100%;
 
           position: relative;
-          background-color: transparent!important;
-          box-shadow: none!important;
-          li{
-            padding: .2rem;
+          background-color: transparent !important;
+          box-shadow: none !important;
+          li {
+            padding: 0.2rem;
             width: 100%;
             list-style-type: none;
-            &:nth-child(n+2){
+            &:nth-child(n + 2) {
               opacity: 0.8;
-              margin-left: .7rem!important;
+              margin-left: 0.7rem !important;
             }
-            .dropdown-item{
-              padding: 0.2rem!important;
+            .dropdown-item {
+              padding: 0.2rem !important;
             }
           }
         }
@@ -495,7 +485,6 @@ $tab:768px;
           text-align: left !important;
           font-family: ProximaNovaSemiBold;
           font-size: 0.8em;
-         
         }
         a:hover,
         a:active,
@@ -518,6 +507,12 @@ $tab:768px;
     // .back-btn{
     //   margin-left: 0;
     // }
+    .col-md-7 {
+      padding-left: 0;
+      .back-btn {
+        margin-left: 0 !important;
+      }
+    }
     .img-container {
       // display: none;
       img {
@@ -525,8 +520,8 @@ $tab:768px;
         width: 100% !important;
         height: 223px !important;
       }
-      h1{
-        font-size:1.4rem!important;
+      h1 {
+        font-size: 1.4rem !important;
       }
     }
     .card {
@@ -549,7 +544,7 @@ $tab:768px;
       display: block;
     }
     h3 {
-      font-size: 1.4rem!important;
+      font-size: 1.4rem !important;
     }
     .card-container {
       height: 170px !important;
@@ -574,8 +569,8 @@ $tab:768px;
     padding-bottom: 40px;
   }
   #what-to-expect {
-    h3{
-      font-size:1.4rem!important;
+    h3 {
+      font-size: 1.4rem !important;
       margin-bottom: 0;
     }
     .btn-business {
@@ -586,12 +581,12 @@ $tab:768px;
     }
     .col-md-6:nth-child(odd) {
       .card:nth-child(1) {
-        margin-left: 0!important;
+        margin-left: 0 !important;
       }
     }
     .col-md-6:nth-child(even) {
       .card:nth-child(1) {
-        margin-left: 0!important;
+        margin-left: 0 !important;
       }
     }
     .divider-bar::after {
@@ -611,8 +606,8 @@ $tab:768px;
       height: 100% !important;
       margin: 2rem auto 0 0 !important;
       padding: 0 !important;
-      .card-title{
-          font-size: 1rem !important;
+      .card-title {
+        font-size: 1rem !important;
       }
       .card-body {
         width: 100% !important;
@@ -634,12 +629,11 @@ $tab:768px;
   }
   #footer {
     height: 50rem !important;
-.footer{
-  margin: 0!important;
-  width: 100%;
-
-}  
-  .footer-card {
+    .footer {
+      margin: 0 !important;
+      width: 100%;
+    }
+    .footer-card {
       text-align: left;
       margin: 0 !important;
       ul {
@@ -652,7 +646,7 @@ $tab:768px;
         }
       }
     }
-   
+
     .all-rights {
       display: block;
     }
@@ -661,7 +655,6 @@ $tab:768px;
         width: 100px;
       }
       li:nth-child(3) {
-     
         display: block !important;
         a {
           margin: 2rem 0;
@@ -670,28 +663,20 @@ $tab:768px;
       .footer-bg-circle {
         display: none;
       }
-      .footer-copy-right{
-        margin-top:2rem!important;
+      .footer-copy-right {
+        margin-top: 2rem !important;
       }
     }
   }
 }
 
 
-@include tab{ 
-  .business-footer-underline {
-    margin: 0 auto;
-    width: 80vw;
-    height: 8px;
-    background-color: #ff5050;
-    border-radius: 10px;
-  }
-  // section:nth-child(3) {
-  //   margin: 0 !important;
-  //   .card {
-  //     margin: 0 !important;
-  //   }
-  // }
+
+
+
+
+@include tab {
+
   #home-navbar,
   #navbar {
     display: none;
@@ -699,17 +684,17 @@ $tab:768px;
   .navbar-brand {
     img {
       margin-top: 1.2rem;
-        margin-left: 1.5rem !important;
-        width: 90px;
+      margin-left: 2rem !important;
+      width: 90px;
     }
   }
   .back-btn {
-    margin-top: 3.5rem!important;
+    margin-top: 3.5rem !important;
     margin-bottom: 0 !important;
   }
   #mobile-navbar {
     display: block;
-    
+
     nav {
       position: absolute;
       width: 100%;
@@ -720,47 +705,48 @@ $tab:768px;
     //   background-color: #0a101d;
     // }
   }
+  .home-mobile-nav {
+    margin-bottom: 0 !important;
+  }
   #mobile-navbar-fixed {
     display: block;
     background-color: white;
-  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
-
+    margin-bottom: 1rem;
     nav {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
-      padding-bottom: .5rem;
+      padding-bottom: 0.5rem;
       background-color: white;
       box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.16);
 
-
-      z-index: 999999999;
+      z-index: 999;
     }
   }
 
   #home {
     margin: 0 !important;
   }
-  .get-started-arrow{
+  .get-started-arrow {
     animation: get-started-animation 2.2s ease-in-out infinite;
   }
-  @keyframes get-started-animation{
-    0%{
+  @keyframes get-started-animation {
+    0% {
       transform: translateY(-50px);
     }
-    50%{
+    50% {
       transform: translateY(-30px);
     }
-  
-    100%{
+
+    100% {
       transform: translateY(-50px);
     }
   }
- .mobile-menu {
-   position: absolute;
-   top: 1.2rem;
-   right:1.5rem;
+  .mobile-menu {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.5rem;
     z-index: 5;
     cursor: pointer;
 
@@ -771,62 +757,56 @@ $tab:768px;
     //   }
     // }
 
-    .close-btn{
+    .close-btn {
       float: right;
       position: absolute;
       top: 1.2rem;
-   right:1.5rem;
+      right: 1.5rem;
       z-index: 999999999;
     }
   }
-  .overlay-content{
+  .overlay-content {
     margin: 2rem 0.5rem;
     overflow: hidden;
   }
-#overlay {
-  height: 100vh;
-  width: 100vw;
-  background: #0b1120;
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  ul {
-    overflow: auto;
-      position: relative;
+  #overlay {
+    height: 100vh;
+    width: 100vw;
+    background: #0b1120;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    ul {
       li {
-        text-align: left;
-        padding: .7rem;
-        list-style-type: none;
+        padding: 0.5rem;
         font-family: ProximaNovaSemiBold;
-
         .custom-dropdown-menu {
           width: 100%;
-          background-color: #0b1120 !important;
+
+          position: relative;
+          background-color: transparent !important;
           box-shadow: none !important;
-          text-align: left; 
-          }
           li {
+            padding: 0.2rem;
             width: 100%;
             list-style-type: none;
-            font-family: ProximaNovaSemiBold;
-            margin: 0.2px auto !important;
-            background-color: #0b1120 !important;
-            border: 0.5px solid #0b1120 !important;
-            padding: 0 !important;
-            text-align: left !important;
+            &:nth-child(n + 2) {
+              opacity: 0.8;
+              margin-left: 0.7rem !important;
+            }
+            .dropdown-item {
+              padding: 0.2rem !important;
+            }
           }
-         
+        }
+
         a {
           color: white;
           text-decoration: none;
           text-align: left !important;
           font-family: ProximaNovaSemiBold;
           font-size: 0.8em;
-          // &:hover{
-          //   background-color: rgba(0, 0, 0, 0.842);
-          //   color: $orange;
-          // }
         }
         a:hover,
         a:active,
@@ -837,7 +817,6 @@ $tab:768px;
       }
     }
   }
-
   #business-design-sprint,
   #solution-design,
   #solution-delivery,
@@ -846,39 +825,56 @@ $tab:768px;
   #entrepreneur-residence,
   #innovation-transformation,
   #experiential-learning {
-    // .back-btn{
-    //   margin-left: 0;
-    // }
+    br {
+      display: none;
+    }
+    .col-md-7 {
+      padding-left: 0;
+      .back-btn {
+        margin: 0 !important;
+      }
+    }
+    .layout-margin {
+      width: 100% !important;
+    }
+
     .img-container {
-      // display: none;
       img {
         margin-top: 1rem;
         width: 400px !important;
-        height: 286px!important;
+        height: 100% !important;
+      }
+
+      h1 {
+        font-size: 1.4rem !important;
       }
     }
+  }
+ 
+  #business-design-sprint{
     .card {
       margin-left: 0 !important;
+      margin-top: 1.3rem !important;
       width: 100% !important;
       .card-body {
         width: 100% !important;
         padding-right: 0 !important;
         .card-title {
-          font-size: 1.2rem !important;
+          font-size: 1.3rem !important;
         }
-        .card-body-text {
-          font-size: 0.8rem;
+        .card-text {
+          font-size: 0.7rem!important;
         }
       }
     }
   }
+
   #desirable {
     br {
       display: block;
     }
     h3 {
       font-size: 1.5rem;
-      
     }
     .card-container {
       height: 170px !important;
@@ -904,12 +900,11 @@ $tab:768px;
     padding-bottom: 40px;
   }
   #what-to-expect {
-
     .divider-bar::after {
-        margin-top: 2.5rem;
-        height: 130%;
+      margin-top: 2.5rem;
+      height: 130%;
     }
-    
+
     .btn-business {
       margin-top: 25px;
       width: 200px;
@@ -919,16 +914,16 @@ $tab:768px;
     }
     .col-md-6:nth-child(odd) {
       .card:nth-child(1) {
-        margin-left: 1.5rem!important;
+        margin-left: 1.5rem !important;
       }
     }
     .col-md-6:nth-child(even) {
       .card:nth-child(1) {
-        margin-left:0 !important;
+        margin-left: 0 !important;
       }
     }
-    
-    .break{
+
+    .break {
       display: none;
     }
 
@@ -958,12 +953,11 @@ $tab:768px;
   }
   #footer {
     height: 30rem !important;
-.footer{
-  margin: 0!important;
-  width: 100%;
-
-}  
-  .footer-card {
+    .footer {
+      margin: 0 !important;
+      width: 100%;
+    }
+    .footer-card {
       text-align: left;
       margin: 0 !important;
       ul {
@@ -976,7 +970,7 @@ $tab:768px;
         }
       }
     }
-   
+
     .all-rights {
       display: block;
     }
@@ -985,20 +979,19 @@ $tab:768px;
         width: 100px;
       }
       li:nth-child(3) {
-     
         display: block !important;
-        .footer-copy-right{
+        .footer-copy-right {
           margin-top: 2rem;
         }
         a {
-          margin: 2rem 0!important;
+          margin: 2rem 0 !important;
         }
       }
       .footer-bg-circle {
         position: absolute;
         top: 0;
         right: -15%;
-        bottom:0;
+        bottom: 0;
         img {
           animation: bg-circle-rotate 10s linear infinite;
         }
