@@ -38,6 +38,7 @@ $tab: 768px;
     // padding-top: 3rem;
     // margin-top: 75px;
     height: 100%;
+    padding-top: 0;
   }
   #predict-fututre {
     // padding-top: calc(100vh - 97vh);
@@ -138,6 +139,7 @@ $tab: 768px;
   /*strategy-future*/
   .flex-container {
     flex: 1 1 100%;
+    padding: 0;
   }
   .circle-img-container img {
     height: auto;
@@ -235,6 +237,7 @@ $tab: 768px;
     height: 8.5rem;
     border-radius: 0px 35px 0px;
     margin-top: 1rem;
+    margin-left: 0;
   }
   .test-container img {
     position: absolute;
