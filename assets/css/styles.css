@@ -3258,6 +3258,21 @@ section:not(:nth-child(1)) .card {
   #business-design-sprint .card .card-body .card-text {
     font-size: 0.7rem !important;
   }
+  #solution-design .card {
+    margin-left: 0 !important;
+    margin-top: 1.3rem !important;
+    width: 100% !important;
+  }
+  #solution-design .card .card-body {
+    width: 100% !important;
+    padding-right: 0 !important;
+  }
+  #solution-design .card .card-body .card-title {
+    font-size: 1.3rem !important;
+  }
+  #solution-design .card .card-body .card-text {
+    font-size: 0.7rem !important;
+  }
   #desirable {
     padding-bottom: 40px;
   }

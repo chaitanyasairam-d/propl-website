@@ -874,6 +874,24 @@ $tab: 768px;
       }
     }
   }
+  #solution-design{
+    .card {
+      margin-left: 0 !important;
+      margin-top: 1.3rem !important;
+      width: 100% !important;
+      .card-body {
+        width: 100% !important;
+        padding-right: 0 !important;
+        .card-title {
+          font-size: 1.3rem !important;
+        }
+        .card-text {
+          font-size: 0.7rem!important;
+        }
+      }
+    }
+  }
+
 
   #desirable {
     br {
