@@ -2432,6 +2432,9 @@ section:not(:nth-child(1)) .card {
     text-align: center;
     line-height: 1.5;
   }
+  .content-header-body p .d-block {
+    margin-bottom: 1rem !important;
+  }
   .content-header-body p h5 {
     font-size: 0.8rem;
   }
