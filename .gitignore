@@ -9,3 +9,4 @@ assets/css/media.css.map
 firebase.json
 .firebaserc
 .firebase/hosting..cache
+.vscode/*
