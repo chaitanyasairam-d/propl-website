@@ -29,25 +29,6 @@
   <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="assets/css/media.css" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173039836-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-173039836-1');
-</script>
-
- <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173039836-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-173039836-1');
-</script></head>
 
 <body>
   <header id="mobile-navbar" class="home-mobile-nav">
@@ -726,15 +707,29 @@
   <script src="assets/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
   <script src="app.js"></script>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <!-- <script src="/__/firebase/7.16.1/firebase-app.js"></script> -->
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
 
-  <!-- TODO: Add SDKs for Firebase products that you want to use
+<!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-  <!-- <script src="/__/firebase/7.16.1/firebase-analytics.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
 
-  <!-- Initialize Firebase -->
-  <!-- <script src="/__/firebase/init.js"></script> -->
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD-pO7mUcI3ic3pzY9CwPQd-jPLrkckI-E",
+    authDomain: "propl-website.firebaseapp.com",
+    databaseURL: "https://propl-website.firebaseio.com",
+    projectId: "propl-website",
+    storageBucket: "propl-website.appspot.com",
+    messagingSenderId: "717940475733",
+    appId: "1:717940475733:web:3a1939105519f2d81151dc",
+    measurementId: "G-L1YRF8G52D"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 
 </html>

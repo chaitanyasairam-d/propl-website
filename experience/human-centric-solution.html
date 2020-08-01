@@ -728,5 +728,27 @@
     <script src="../assets/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
     <script src="../assets/js/owl.carousel.min.js"></script>
     <script src="../app.js"></script>
-  </body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD-pO7mUcI3ic3pzY9CwPQd-jPLrkckI-E",
+    authDomain: "propl-website.firebaseapp.com",
+    databaseURL: "https://propl-website.firebaseio.com",
+    projectId: "propl-website",
+    storageBucket: "propl-website.appspot.com",
+    messagingSenderId: "717940475733",
+    appId: "1:717940475733:web:3a1939105519f2d81151dc",
+    measurementId: "G-L1YRF8G52D"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script></body>
 </html>
