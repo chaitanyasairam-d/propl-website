@@ -7,13 +7,19 @@
     margin-top: 50px !important;
   }
 }
+.future-breadcrumb {
+  .back-btn {
+    margin:40px 10px 5px !important
+  }
+  padding: 0 3rem;
+}
 .circle-img-container {
   display: flex;
   justify-content: center;
   align-items: center;
   img {
     height: 325px;
-    margin-top: 7.5rem;
+    margin-top: 3.5rem;
   }
 }
 .future-icon {

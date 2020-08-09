@@ -1390,6 +1390,14 @@ section:not(:nth-child(1)) .card {
   margin-top: 50px !important;
 }
 
+.future-breadcrumb {
+  padding: 0 3rem;
+}
+
+.future-breadcrumb .back-btn {
+  margin: 40px 10px 5px !important;
+}
+
 .circle-img-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1404,7 +1412,7 @@ section:not(:nth-child(1)) .card {
 
 .circle-img-container img {
   height: 325px;
-  margin-top: 7.5rem;
+  margin-top: 3.5rem;
 }
 
 .future-icon img {
@@ -1757,7 +1765,6 @@ section:not(:nth-child(1)) .card {
 #growth-strategy .card {
   z-index: 1;
   width: 18rem !important;
-  margin-top: 5.25rem;
   margin-left: 30px;
 }
 
@@ -1855,7 +1862,6 @@ section:not(:nth-child(1)) .card {
 }
 
 #entrepreneur-residence .card {
-  margin-top: 6.5rem;
   margin-left: 35px;
 }
 
@@ -2572,6 +2578,12 @@ section:not(:nth-child(1)) .card {
   }
   .strategy-future-container .back-btn {
     margin: 3.5rem 0px 0px 0px !important;
+  }
+  .future-breadcrumb {
+    padding: 0 .65rem;
+  }
+  .future-breadcrumb .back-btn {
+    margin: 75px 10px 10px !important;
   }
   /*strategy-future*/
   /*Abouts us */
