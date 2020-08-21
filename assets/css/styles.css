@@ -1041,7 +1041,7 @@ section:not(:nth-child(1)) .card {
 
 .back-btn a {
   color: #061134 !important;
-  font-size: 0.7rem !important;
+  font-size: 0.75rem !important;
   text-transform: capitalize;
   font-family: ProximaNovaSemiBold;
 }
