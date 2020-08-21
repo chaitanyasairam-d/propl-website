@@ -1023,7 +1023,7 @@ section:not(:nth-child(1)) .card {
   font-size: 14px;
   line-height: 1.89;
   text-align: left;
-  color: #061134;
+  color: #061134 !important;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem !important;
   margin-right: 2rem !important;
@@ -1040,7 +1040,8 @@ section:not(:nth-child(1)) .card {
 }
 
 .back-btn a {
-  color: black;
+  color: #061134 !important;
+  font-size: 0.7rem !important;
   text-transform: capitalize;
   font-family: ProximaNovaSemiBold;
 }
