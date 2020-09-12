@@ -1,3 +1,18 @@
+
+var nodeArray = [
+  document.querySelector('#predict-fututre'),
+  document.querySelector('#we-believe'),
+  document.querySelector('#clients'),
+  document.querySelector('#testimonials') //testimonials
+];
+var slideUp = {
+  distance: '150%',
+  origin: 'bottom',
+  // opacity: 0.5,
+  //easing: 'cubic-bezier(0.5, 0, 0, 1)',
+  delay:500,
+};
+ScrollReveal().reveal(nodeArray,slideUp);
 $(function () {
 
         $('.close-btn').on('click',()=>{
