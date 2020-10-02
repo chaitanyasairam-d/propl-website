@@ -24,14 +24,15 @@
   <link rel="shortcut icon" href="./assets/images/special_icons/favicon-dark.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" SameSite="none"
     crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sal.js@0.8.1/dist/sal.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sal.js@0.8.1/dist/sal.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
   <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="assets/css/media.css" />
-  <script src="https://cdn.jsdelivr.net/npm/sal.js@0.8.1/dist/sal.min.js"></script>
-  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/sal.js@0.8.1/dist/sal.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
 
 <body>
   <header id="mobile-navbar" class="home-mobile-nav">
@@ -253,8 +254,8 @@
       <div class="row layout-margin">
         <div class="underline"></div>
         <div class="col-md-12 ml-auto mr-auto">
-          <div class="content-header-container">
-            <div class="content-header-body mt50 mb-4">
+          <div class="content-header-container" data-aos="fade-up" data-aos-delay="50">
+            <div class="content-header-body mt50 mb-4" >
               <h2>
                 A digital-first approach to emerge stronger!
               </h2>
@@ -271,7 +272,7 @@
         <div class="img-bg-circle">
           <img src="assets/icons/left-bg-circle.svg" alt="planets" class="rotate-planets" />
         </div>
-        <div class="row predict-margin">
+        <div class="row predict-margin" data-aos="fade-up" data-aos-delay="150">
           <div class="col-md-4 p-0">
             <div class="card">
               <img src="assets/icons/rocket-inclined.svg" class="group-19-icons" alt="..." />
@@ -732,26 +733,29 @@
   <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
   <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    window.sr = ScrollReveal();
-    var nodeArray = [
-      document.querySelector('#test'),
-      document.querySelector('#clients'),
-      document.querySelector('#we-believe'),
-      document.querySelector('#testimonials'),
-    ];
-    var slideUp = {
-      duration: 1000,
-      distance: '100%',
-      easing: 'ease-out',
-      origin: 'bottom',
-      scale: 1,
-      viewFactor: 0,
-      delay: 500,
-      opacity: 1
-    };
-    sr.reveal(nodeArray, slideUp);
+    AOS.init({
+      duration: 900
+    });
+    // window.sr = ScrollReveal();
+    // var nodeArray = [
+    //   document.querySelector('#test'),
+    //   document.querySelector('#clients'),
+    //   document.querySelector('#we-believe'),
+    //   document.querySelector('#testimonials'),
+    // ];
+    // var slideUp = {
+    //   duration: 1000,
+    //   distance: '100%',
+    //   easing: 'ease-out',
+    //   origin: 'bottom',
+    //   scale: 1,
+    //   viewFactor: 0,
+    //   delay: 500,
+    //   opacity: 1
+    // };
+    // sr.reveal(nodeArray, slideUp);
     // var slideRight = {...slideUp,origin:'left',distance:'150%',duration: 1500,}
     // sr.reveal('#c-list',slideRight)
     // Your web app's Firebase configuration
