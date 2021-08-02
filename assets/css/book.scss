@@ -1,0 +1,97 @@
+.content-text {
+  color: #ff5050 !important;
+  font-family: ProximaNova;
+  margin-top: 2rem;
+}
+
+.mention-container {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .highlight-box {
+    border-radius: 4px;
+    border: solid 1px #ff5050;
+    padding: 10px;
+    p {
+      font-family: ProximaNova;
+      margin-bottom: 0;
+      color: #061134;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.text-underline {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+.underline-link {
+  text-decoration: underline;
+  text-decoration-color: red;
+  color: #061134;
+  &:hover {
+    color: #061134;
+    text-decoration: underline;
+    text-decoration-color: red;
+  }
+}
+
+.about-text {
+  .text-bold {
+    font-weight: 800;
+    color: #061134;
+    font-style: italic;
+  }
+}
+
+#book-info {
+  .about-text {
+    font-size: 0.85rem;
+    width: 90%;
+
+    .scale {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+#early-access {
+  .btn-business {
+    width: 200px;
+  }
+}
+
+.access-text p {
+  font-family: ProximaNova;
+}
+
+#book-testimonial {
+  .testimonial-container {
+    h4 {
+      height: auto;
+    }
+  }
+}
+#exampleModal1 .contact-us-container .contact-left {
+  .author-testimonial {
+    p {
+      font-family: ProximaNova;
+      text-align: center;
+      font-weight: 800;
+      font-size: 0.8rem;
+    }
+    span {
+      color: #ff5050;
+      font-size: 0.9rem;
+      font-family: ProximaNovaSemiBold;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  img {
+    margin: 0 auto;
+    display: flex;
+  }
+}

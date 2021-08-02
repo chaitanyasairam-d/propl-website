@@ -2485,6 +2485,9 @@ section:not(:nth-child(1)) .card {
   .testimonial-item .testimonial-container .testimonial-footer h5 span {
     font-size: 0.8rem;
   }
+  #book-testimonial .testimonial-container h4 {
+    min-height: 10rem;
+  }
   /*predict-future*/
   /*strategy-future*/
   .flex-container {
@@ -2583,10 +2586,15 @@ section:not(:nth-child(1)) .card {
     margin: 3.5rem 0px 0px 0px !important;
   }
   .future-breadcrumb {
-    padding: 0 .65rem;
+    padding: 0 0.65rem;
   }
   .future-breadcrumb .back-btn {
-    margin: 75px 10px 10px !important;
+    margin: 50px 10px 10px !important;
+  }
+  .mention-container li {
+    margin-bottom: 0.8rem;
+    width: 100%;
+    text-align: center;
   }
   /*strategy-future*/
   /*Abouts us */
@@ -3404,5 +3412,108 @@ section:not(:nth-child(1)) .card {
     -webkit-animation: bg-circle-rotate 10s linear infinite;
             animation: bg-circle-rotate 10s linear infinite;
   }
+}
+
+.content-text {
+  color: #ff5050 !important;
+  font-family: ProximaNova;
+  margin-top: 2rem;
+}
+
+.mention-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mention-container .highlight-box {
+  border-radius: 4px;
+  border: solid 1px #ff5050;
+  padding: 10px;
+}
+
+.mention-container .highlight-box p {
+  font-family: ProximaNova;
+  margin-bottom: 0;
+  color: #061134;
+  font-size: 0.8rem;
+}
+
+.text-underline {
+  text-decoration: underline;
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
+}
+
+.underline-link {
+  text-decoration: underline;
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
+  color: #061134;
+}
+
+.underline-link:hover {
+  color: #061134;
+  text-decoration: underline;
+  -webkit-text-decoration-color: red;
+          text-decoration-color: red;
+}
+
+.about-text .text-bold {
+  font-weight: 800;
+  color: #061134;
+  font-style: italic;
+}
+
+#book-info .about-text {
+  font-size: 0.85rem;
+  width: 90%;
+}
+
+#book-info .about-text .scale {
+  margin-top: 0.5rem;
+}
+
+#early-access .btn-business {
+  width: 200px;
+}
+
+.access-text p {
+  font-family: ProximaNova;
+}
+
+#book-testimonial .testimonial-container h4 {
+  height: auto;
+}
+
+#exampleModal1 .contact-us-container .contact-left .author-testimonial p {
+  font-family: ProximaNova;
+  text-align: center;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+#exampleModal1 .contact-us-container .contact-left .author-testimonial span {
+  color: #ff5050;
+  font-size: 0.9rem;
+  font-family: ProximaNovaSemiBold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#exampleModal1 .contact-us-container .contact-left img {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=styles.css.map */

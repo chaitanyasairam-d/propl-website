@@ -137,6 +137,13 @@ $tab: 768px;
       }
     }
   }
+  #book-testimonial {
+    .testimonial-container {
+      h4 {
+        min-height: 10rem;
+      }
+    }
+  }
 
   /*predict-future*/
   /*strategy-future*/
@@ -230,9 +237,16 @@ $tab: 768px;
   }
   .future-breadcrumb {
     .back-btn {
-      margin: 50px 10px 10px!important
+      margin: 50px 10px 10px !important;
     }
-    padding: 0 .65rem;
+    padding: 0 0.65rem;
+  }
+  .mention-container {
+    li {
+      margin-bottom: 0.8rem;
+      width: 100%;
+      text-align: center;
+    }
   }
   /*strategy-future*/
 
@@ -682,13 +696,7 @@ $tab: 768px;
   }
 }
 
-
-
-
-
-
 @include tab {
-
   #home-navbar,
   #navbar {
     display: none;
@@ -862,42 +870,41 @@ $tab: 768px;
       }
     }
   }
- 
-  #business-design-sprint{
-    .card {
-      margin-left: 0 !important;
-      margin-top: 1.3rem !important;
-      width: 100% !important;
-      .card-body {
-        width: 100% !important;
-        padding-right: 0 !important;
-        .card-title {
-          font-size: 1.3rem !important;
-        }
-        .card-text {
-          font-size: 0.7rem!important;
-        }
-      }
-    }
-  }
-  #solution-design{
-    .card {
-      margin-left: 0 !important;
-      margin-top: 1.3rem !important;
-      width: 100% !important;
-      .card-body {
-        width: 100% !important;
-        padding-right: 0 !important;
-        .card-title {
-          font-size: 1.3rem !important;
-        }
-        .card-text {
-          font-size: 0.7rem!important;
-        }
-      }
-    }
-  }
 
+  #business-design-sprint {
+    .card {
+      margin-left: 0 !important;
+      margin-top: 1.3rem !important;
+      width: 100% !important;
+      .card-body {
+        width: 100% !important;
+        padding-right: 0 !important;
+        .card-title {
+          font-size: 1.3rem !important;
+        }
+        .card-text {
+          font-size: 0.7rem !important;
+        }
+      }
+    }
+  }
+  #solution-design {
+    .card {
+      margin-left: 0 !important;
+      margin-top: 1.3rem !important;
+      width: 100% !important;
+      .card-body {
+        width: 100% !important;
+        padding-right: 0 !important;
+        .card-title {
+          font-size: 1.3rem !important;
+        }
+        .card-text {
+          font-size: 0.7rem !important;
+        }
+      }
+    }
+  }
 
   #desirable {
     br {
