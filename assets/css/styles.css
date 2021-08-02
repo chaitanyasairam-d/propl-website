@@ -3460,7 +3460,6 @@ section:not(:nth-child(1)) .card {
   text-decoration: underline;
   -webkit-text-decoration-color: red;
           text-decoration-color: red;
-  text-decoration-thickness: 3px;
   color: #061134;
   text-underline-offset: 3px;
 }
@@ -3476,7 +3475,6 @@ section:not(:nth-child(1)) .card {
   text-decoration: underline !important;
   -webkit-text-decoration-color: red !important;
           text-decoration-color: red !important;
-  text-decoration-thickness: 3px !important;
   text-underline-offset: 3px !important;
 }
 
@@ -3519,18 +3517,19 @@ section:not(:nth-child(1)) .card {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100px;
 }
 
 #exampleModal1 .contact-us-container .contact-left .author-testimonial p {
   font-family: ProximaNova;
   text-align: center;
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 #exampleModal1 .contact-us-container .contact-left .author-testimonial span {
   color: #ff5050;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-family: ProximaNovaSemiBold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3596,6 +3595,7 @@ section:not(:nth-child(1)) .card {
   font-size: .85rem;
   margin-left: 1rem;
   font-family: ProximaNovaSemiBold;
+  margin-bottom: .75rem;
 }
 
 .img-container-book img {

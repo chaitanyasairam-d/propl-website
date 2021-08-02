@@ -16,11 +16,11 @@
         <text id="Vamshi_Guntha" class="cls-3" transform="translate(621 1456)">
             <tspan x="-111.401" y="0">Vamshi Guntha</tspan>
         </text>
-        <text id="A_Digi-Tale_" class="cls-3" transform="translate(621 1126)">
+        <text id="A_Digi-Tale_" class="cls-3" transform="translate(620 1118)">
             <tspan x="-99.195" y="0">A Digi-Tale…</tspan>
         </text>
-        <text id="about_navigating_the_business_challanges_to_become_a_digital-first_organisation" fill="#484848" font-family="ProximaNova-Regular, Proxima Nova" font-size="22px" transform="translate(621 1163)">
-            <tspan x="-198.682" y="0">about navigating the business challanges</tspan><tspan x="-175.527" y="30">to become a digital-first organisation</tspan>
+        <text id="about_driving_business_transformation_with_digital_" fill="#484848" font-family="ProximaNova-Regular, Proxima Nova" font-size="22px" transform="translate(620 1155)">
+            <tspan x="-66.055" y="0">about driving </tspan><tspan x="-172.381" y="30">business transformation with digital</tspan>
         </text>
         <g id="Mask_Group_4" clip-path="url(#clip-path)">
             <g id="Group_1552">
@@ -604,7 +604,7 @@
                 </g>
             </g>
         </g>
-        <g id="Group_1558" transform="translate(0 250)">
+        <g id="Group_1558" transform="translate(0 258)">
             <text id="Realizations" class="cls-3" transform="translate(621 599)">
                 <tspan x="-121.329" y="0">REALIZATIONS</tspan>
             </text>
@@ -618,7 +618,7 @@
                     </text>
                 </g>
             </g>
-            <path id="Line_19" fill="none" stroke="#484848" d="M0 0L250 0" transform="translate(496.5 614.5)"/>
         </g>
+        <path id="Rectangle_118" fill="#ff5050" d="M0 0H330V3H0z" transform="translate(455 1196)"/>
     </g>
 </svg>
