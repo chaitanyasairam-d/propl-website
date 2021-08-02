@@ -12,7 +12,7 @@
   }
   .highlight-box {
     border-radius: 4px;
-    border: solid 1px rgba(255, 80, 80, .3);
+    border: solid 1px rgba(255, 80, 80, 0.3);
     padding: 10px;
     p {
       font-family: ProximaNova;
@@ -32,10 +32,17 @@
   text-decoration-color: red;
   text-decoration-thickness: 3px;
   color: #061134;
+  text-underline-offset: 3px;
   &:hover {
     background-color: red;
     color: #fff;
-    transition: ease .5s;
+    transition: ease 0.5s;
+  }
+  &:active, &:visited, &:focus {
+    text-decoration: underline !important;
+    text-decoration-color: red !important;
+    text-decoration-thickness: 3px !important;
+    text-underline-offset: 3px !important;
   }
 }
 
@@ -45,6 +52,11 @@
     color: #061134;
     font-style: italic;
   }
+  
+}
+.text-book {
+  font-size: .85rem;
+  font-family: ProximaNova;
 }
 
 #book-info {
@@ -66,7 +78,7 @@
 
 .access-text p {
   font-family: ProximaNova;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 #book-testimonial {
@@ -100,6 +112,9 @@
     display: flex;
   }
 }
+#exampleModal1 .contact-us-container .contact-left img {
+  height: 20rem;
+}
 #exampleModal1 .contact-right .form-contact {
   margin-top: 2rem;
 }
@@ -111,13 +126,13 @@
 
 #book-addon {
   .text p {
-    padding:0 1.75rem;
+    padding: 0 1.75rem;
   }
 }
 
 #benefit {
   .do-list .card {
-    border-radius: .75rem;
+    border-radius: 0.75rem;
     &:hover {
       background-color: #fff;
       p {
@@ -130,5 +145,26 @@
         color: #061134;
       }
     }
+  }
+}
+
+#book-intro .strategy-future-container .back-btn {
+  margin-bottom: 0 !important;
+}
+
+.bullet-point {
+  ul {
+    margin-bottom: 0;
+  }
+  li {
+    font-size: .85rem;
+    margin-left: 1rem;
+    font-family: ProximaNovaSemiBold;
+  }
+}
+
+.img-container-book {
+  img {
+    width: 80%;
   }
 }

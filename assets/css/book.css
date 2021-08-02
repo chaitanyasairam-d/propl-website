@@ -40,19 +40,33 @@
           text-decoration-color: red;
   text-decoration-thickness: 3px;
   color: #061134;
+  text-underline-offset: 3px;
 }
 
 .underline-link:hover {
   background-color: red;
   color: #fff;
-  -webkit-transition: ease .5s;
-  transition: ease .5s;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.underline-link:active, .underline-link:visited, .underline-link:focus {
+  text-decoration: underline !important;
+  -webkit-text-decoration-color: red !important;
+          text-decoration-color: red !important;
+  text-decoration-thickness: 3px !important;
+  text-underline-offset: 3px !important;
 }
 
 .about-text .text-bold {
   font-weight: 800;
   color: #061134;
   font-style: italic;
+}
+
+.text-book {
+  font-size: .85rem;
+  font-family: ProximaNova;
 }
 
 #book-info .about-text {
@@ -70,7 +84,7 @@
 
 .access-text p {
   font-family: ProximaNova;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 #book-testimonial .testimonial-container h4 {
@@ -111,6 +125,10 @@
   display: flex;
 }
 
+#exampleModal1 .contact-us-container .contact-left img {
+  height: 20rem;
+}
+
 #exampleModal1 .contact-right .form-contact {
   margin-top: 2rem;
 }
@@ -125,7 +143,7 @@
 }
 
 #benefit .do-list .card {
-  border-radius: .75rem;
+  border-radius: 0.75rem;
 }
 
 #benefit .do-list .card:hover {
@@ -142,5 +160,23 @@
 
 #benefit .do-list .card:hover .card-title {
   color: #061134;
+}
+
+#book-intro .strategy-future-container .back-btn {
+  margin-bottom: 0 !important;
+}
+
+.bullet-point ul {
+  margin-bottom: 0;
+}
+
+.bullet-point li {
+  font-size: .85rem;
+  margin-left: 1rem;
+  font-family: ProximaNovaSemiBold;
+}
+
+.img-container-book img {
+  width: 80%;
 }
 /*# sourceMappingURL=book.css.map */
