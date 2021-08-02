@@ -2623,6 +2623,9 @@ section:not(:nth-child(1)) .card {
     width: 100%;
     height: 4rem;
   }
+  #book-addon li .list-container .text {
+    height: 7rem;
+  }
   .contact-container {
     width: 100%;
   }
@@ -2683,6 +2686,9 @@ section:not(:nth-child(1)) .card {
   }
   .modal-content {
     border-radius: 35px 0px 35px;
+  }
+  .mt100 {
+    margin-top: 75px;
   }
 }
 
@@ -3539,6 +3545,10 @@ section:not(:nth-child(1)) .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#exampleModal1 .contact-us-container .contact-left img {
+  height: 20rem;
 }
 
 #exampleModal1 .contact-right .form-contact {

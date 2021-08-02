@@ -280,6 +280,12 @@ $tab: 768px;
       }
     }
   }
+
+  #book-addon {
+    li .list-container .text {
+      height: 7rem;
+    }
+  }
   .contact-container {
     width: 100%;
     .contact-box {
@@ -341,6 +347,9 @@ $tab: 768px;
   }
   .modal-content {
     border-radius: 35px 0px 35px;
+  }
+  .mt100 {
+    margin-top: 75px;
   }
 }
 @media only screen and (min-width: 500px) and (max-width: 800px) {
