@@ -205,8 +205,21 @@ $(function () {
     $("#submit-btn"+id).removeClass("mt-2");
     $("#submit-btn"+id).prop("disabled", true);
     $("#spinner"+id).show();
-    var service_id = "default_service";
-    var template_id = "template_SrRZ0fEy"; //prod server
+    let bookObj = {};
+    bookObj.name = name;
+    bookObj.email = email;
+    bookObj.message = message;
+    if(id.length) {
+      bookObj.template_id = "template_esviryv";
+    } else {
+      bookObj.template_id = "template_i2YiDv4m";
+    }
+    sendEmail(bookObj,id);
+  }
+});
+function sendEmail(bookObj,id) {
+  var service_id = "default_service";
+    var template_id = bookObj.template_id; //prod server
     var user_id = "user_8Uba2Fxf8q0A8BvlOjV5N"; //prod server
     //var template_id = "template_i2YiDv4m"; //testing server
     //var user_id = "user_o1SY3Yz3mI8GWtJeuZhIQ"; //testing server
@@ -215,9 +228,10 @@ $(function () {
       template_id,
       user_id,
       template_params: {
-        from_name: name,
-        from_email: email,
-        message: message,
+        from_name: bookObj.name,
+        from_email: bookObj.email,
+        message: bookObj.message,
+        from_mail:bookObj.email
       },
     };
     $.ajax("https://api.emailjs.com/api/v1.0/email/send", {
@@ -237,8 +251,7 @@ $(function () {
         $("#submit-btn"+id).prop("disabled", true);
         $("#spinner"+id).hide();
       });
-  }
-});
+}
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
