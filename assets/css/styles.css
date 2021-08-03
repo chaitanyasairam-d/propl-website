@@ -2488,6 +2488,9 @@ section:not(:nth-child(1)) .card {
   #book-testimonial .testimonial-container h4 {
     min-height: 10rem;
   }
+  #book-info .future-text {
+    margin-top: 1rem !important;
+  }
   /*predict-future*/
   /*strategy-future*/
   .flex-container {
@@ -2572,7 +2575,7 @@ section:not(:nth-child(1)) .card {
   }
   .do-list ul li .card {
     width: 100% !important;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1) !important;
   }
   .do-list ul li .card p {
     height: 175px;
@@ -3605,5 +3608,8 @@ section:not(:nth-child(1)) .card {
 
 #request-early-access {
   scroll-margin-top: 100px;
+}
+#book-info .future-text {
+  margin-top: 2.5rem;
 }
 /*# sourceMappingURL=styles.css.map */

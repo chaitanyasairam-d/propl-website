@@ -183,4 +183,8 @@
 #request-early-access {
   scroll-margin-top: 100px;
 }
+
+#book-info .future-text {
+  margin-top: 2.5rem;
+}
 /*# sourceMappingURL=book.css.map */

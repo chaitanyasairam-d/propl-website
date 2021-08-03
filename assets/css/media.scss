@@ -219,9 +219,6 @@ $tab: 768px;
       flex: 1 1 100%;
       .card {
         width: 100% !important;
-        &:not(:nth-child(2)) {
-          box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1) !important;
-        }
         p {
           height: 175px;
         }
@@ -292,6 +289,9 @@ $tab: 768px;
     li .list-container .text {
       height: 7rem;
     }
+  }
+  #book-info .future-text {
+    margin-top: 1rem;
   }
   .contact-container {
     width: 100%;
