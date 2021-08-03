@@ -219,6 +219,9 @@ $tab: 768px;
       flex: 1 1 100%;
       .card {
         width: 100% !important;
+        &:not(:nth-child(2)) {
+          box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1) !important;
+        }
         p {
           height: 175px;
         }
@@ -228,6 +231,10 @@ $tab: 768px;
     .btn-more {
       margin-top: 0px;
     }
+  }
+
+  .do-list ul li .card:not(:nth-child(2)) {
+        box-shadow: 0 10px 10px 0 rgb(0 0 0 / 10%) !important;
   }
   .strategy-container .back-btn {
     margin: 3.5rem 0px 0px 0px !important;

@@ -2572,6 +2572,7 @@ section:not(:nth-child(1)) .card {
   }
   .do-list ul li .card {
     width: 100% !important;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
   }
   .do-list ul li .card p {
     height: 175px;
