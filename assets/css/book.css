@@ -179,4 +179,8 @@
 .img-container-book img {
   width: 80%;
 }
+
+#request-early-access {
+  scroll-margin-top: 100px;
+}
 /*# sourceMappingURL=book.css.map */

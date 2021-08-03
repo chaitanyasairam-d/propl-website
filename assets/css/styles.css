@@ -2476,7 +2476,7 @@ section:not(:nth-child(1)) .card {
     height: auto;
     min-height: 15rem;
     font-size: 0.7rem;
-    line-height: 2;
+    line-height: 1.7;
   }
   .testimonial-item .testimonial-container .testimonial-footer h5 {
     font-size: 0.7rem;
@@ -3600,5 +3600,9 @@ section:not(:nth-child(1)) .card {
 
 .img-container-book img {
   width: 80%;
+}
+
+#request-early-access {
+  scroll-margin-top: 100px;
 }
 /*# sourceMappingURL=styles.css.map */
