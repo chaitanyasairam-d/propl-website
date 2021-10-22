@@ -14,7 +14,9 @@ $tab: 768px;
 
 @media only screen and (min-width: 320px) and (max-width: 478px) {
   br {
-    display: none;
+    display: inline;
+    content: ' ';
+    padding: 0 2px;
   }
   .underline {
     height: 4px;
