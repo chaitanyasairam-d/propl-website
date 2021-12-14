@@ -2493,6 +2493,12 @@ section:not(:nth-child(1)) .card {
   #book-info .future-text {
     margin-top: 1rem !important;
   }
+  #book-title img { height: 75px !important;
+    display: block;
+    text-align: center;
+    /* width: 100%; */
+    margin: 0 auto;
+  }
   /*predict-future*/
   /*strategy-future*/
   .flex-container {
@@ -3613,5 +3619,18 @@ section:not(:nth-child(1)) .card {
 }
 #book-info .future-text {
   margin-top: 2.5rem;
+}
+#book-title img {
+  height: 100px;
+}
+
+#book-title {
+  font-size: 1.2rem;
+}
+
+.wiley-slant {
+  height: 65px;
+  position: relative;
+  top: 40px;
 }
 /*# sourceMappingURL=styles.css.map */

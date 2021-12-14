@@ -901,6 +901,12 @@ section:not(:nth-child(1)) {
     }
   }
 }
+.book-title img {
+  height: 100px;
+}
+.wiley-logo {
+  height:100px;
+}
 
 @import './experience/experience.scss';
 @import './experience/experience-2.scss';
