@@ -813,7 +813,7 @@ section:not(:nth-child(1)) .card {
   color: #061134;
   margin-top: 15px;
   font-family: ProximaNova;
-  height: 5rem;
+  height: 5.5rem;
 }
 
 #predict-fututre h4 {
@@ -3621,7 +3621,7 @@ section:not(:nth-child(1)) .card {
   margin-top: 2.5rem;
 }
 #book-title img {
-  height: 100px;
+  height: 75px;
 }
 
 #book-title {
