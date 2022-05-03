@@ -10,3 +10,6 @@ firebase.json
 .firebaserc
 .firebase/hosting..cache
 .vscode/*
+node_modules/*
+package.json
+package-lock.json
