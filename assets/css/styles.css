@@ -2502,6 +2502,10 @@ section:not(:nth-child(1)) .card {
   #book-intro img{
     margin-bottom: 30px!important;
   }
+
+  #early-access img{
+      width: 200px;
+  }
   /*predict-future*/
   /*strategy-future*/
   .flex-container {
